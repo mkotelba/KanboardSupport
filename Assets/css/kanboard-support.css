@@ -86,7 +86,7 @@ h2 .fa-code {
     font-weight: bold;
 }
 
-table > thead > tr > th, table > tbody > tr > td, table > tbody > tr > th {
+#UserTable > thead > tr > th, #UserTable > tbody > tr > td, #UserTable > tbody > tr > th {
     padding: 4px 15px;
 }
 
