@@ -1,5 +1,21 @@
 # Changelog
 
+## v2.6
+
+### What's Changed
+
+_(most recent changes are listed on top):_
+- FIX: Unix Line Endings
+- FIX: Remove About Page Override- add ApplicationBranding compatibility - fixes #5
+- FIX: CSS Selector Too Restrictive
+- FIX: No unit for zero needed
+- FIX: Do not use empty rulesets
+- FIX: Remove CSS Global Selectors
+- FIX: Trying to access array offset on value of type `int` - fixes #6
+- FIX: CSS Transition
+- FIX: CSS Variable
+- Fix CSS Jumping Side Menu
+
 
 ## v2.5
 
@@ -71,7 +87,5 @@ _(most recent changes are listed on top):_
 - Update plugin file for extra page and sidebar hook
 
 
+Read the full [**Changelog**](../master/changelog.md "See changes") or view the [**README**](../master/README.md "View README")
 
-[**Full Changelog**](../master/changelog.md "See changes")
-
-[**README**](../master/README.md "View README")
