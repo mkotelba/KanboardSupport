@@ -90,9 +90,9 @@ Compatibility
 - Requires [Kanboard](https://github.com/fguillot/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
 
 #### Other Plugins & Action Plugins
-- _No known issues_
+- Compatible with [ApplicationBranding](https://github.com/aljawaid/ApplicationBranding)
 #### Core Files & Templates
-- `01` Template override
+- _No template overrides_
 - _No database changes_
 
 
