@@ -222,7 +222,7 @@
     </section>
 
 <!-- DATABASE CONNECTION -->
-    <section class="support-section">
+    <section id="DBSupportSection" class="support-section">
         <h2 class=""><i class="fa fa-database"></i> <?= t('Database Connection') ?></h2>
         <div class="db-info">
             <ul class="">
