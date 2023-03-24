@@ -315,7 +315,7 @@ table.support-table.user-table tr td:first-child::before {
     position: relative;
     padding: 2px 4px;
     width: 160px;
-    height: 75px;
+    height: 95px;
     margin: 10px 5px;
     cursor: context-menu;
 }
