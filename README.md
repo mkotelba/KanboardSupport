@@ -92,7 +92,7 @@ Compatibility
 #### Other Plugins & Action Plugins
 - Compatible with [ApplicationBranding](https://github.com/aljawaid/ApplicationBranding)
 #### Core Files & Templates
-- _No template overrides_
+- 01 template override
 - _No database changes_
 
 

@@ -11,6 +11,10 @@ class Plugin extends Base
 {
     public function initialize()
     {
+        // Template Override
+        //  - Override name should be camelCase e.g. pluginNameExampleCamelCase
+        $this->template->setTemplateOverride('config/webhook', 'kanboardSupport:config/webhook');
+
         // CSS - Asset Hook - keep filename lowercase
         $this->hook->on('template:layout:css', array('template' => 'plugins/KanboardSupport/Assets/css/kanboard-support.css'));
 
