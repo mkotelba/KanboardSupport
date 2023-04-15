@@ -58,7 +58,7 @@
     </section>
 
 <!-- PRIVACY WARNING -->
-    <section class="support-section">
+    <section class="support-section privacy-warning">
         <h2 class=""><i class="fa fa-warning pp-red"></i> <?= t('Your Data Privacy') ?></h2>
         <div class="">
             <p class=""><?= t('This page shows sensitive data. Hide selective information before sharing.') ?></p>

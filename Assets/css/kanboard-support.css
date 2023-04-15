@@ -471,3 +471,7 @@ margin-right: 8px;}
 .privacy-none {
     display: none;
 }
+
+section.privacy-warning p {
+    display: inline-block;
+}
