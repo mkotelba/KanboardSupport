@@ -1,8 +1,8 @@
-<!-- KanboardSupport -->
+<!-- KanboardSupport Plugin -->
 <div class="page-header">
     <h2 class=""><?= t('Webhook settings') ?></h2>
 </div>
-<form method="post" class="" action="<?= $this->url->href('ConfigController', 'save', array('redirect' => 'webhook')) ?>" autocomplete="off">
+<form method="post" class="" action="<?= $this->url->href('ConfigController', 'save', array('redirect' => 'webhook')) ?>" autocomplete="true">
     <?= $this->form->csrf() ?>
 
     <?= $this->form->label(t('Webhook URL'), 'webhook_url') ?>
