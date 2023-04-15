@@ -1,5 +1,18 @@
 # Changelog
 
+## v2.7
+
+### What's Changed
+
+_(most recent changes are listed on top):_
+- FIX: User Dropdown CSS Target
+- FIX: Debug Mode Not Showing Correct Value
+- FIX: Privacy Button Alignment
+- FIX: Icon Spacing
+- FIX: Sidebar Menu Indicator
+- Prepare compatibility for ContentCleaner
+
+
 ## v2.6
 
 ### What's Changed
