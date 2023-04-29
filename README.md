@@ -1,12 +1,10 @@
-# Kanboard Technical Support
-
-#### _Plugin for [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software")_
+# KanboardSupport
+![GitHub All Releases](https://img.shields.io/github/downloads/aljawaid/KanboardSupport/total?style=for-the-badge "GitHub All Downloads") - **_A plugin for [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software")_**
 
 Add a support section in the Kanboard Settings interface so that end users can easily gather any information required by their internal technical support departments and for troubleshooting purposes. 
 
 
-Features
--------------
+## Features
 
 - NEW: Hide sensitive data before sharing technical information _(v2.5+)_
 - **Directory Permissions**
@@ -42,8 +40,7 @@ Features
   - Display useful file paths for configuration files
 
 
-Screenshots
-----------
+## Screenshots
 
 **Directory Permissions**
 
@@ -74,79 +71,52 @@ Screenshots
 ![PHP Information](../master/screenshot-php.png "PHP Information")
 
 
-Usage
--------------
+## Usage
 
-Go to `Settings` &#10562; `Technical Support` 
+Go to `Settings` &#10562; `Technical Information` 
 
 **_or_**
 
-Go to User Menu (top right) &#10562; `Technical Support`
+Go to User Menu (top right) &#10562; `Technical Information`
 
+## Installation & Compatibility
 
-Compatibility
--------------
+<details>
+    <summary><strong>Installation</strong></summary>
+
+- Install via the **[Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") Plugin Directory** or see [INSTALL.md](../master/INSTALL.md)
+- Read the full [**Changelog**](../master/changelog.md "See changes") to see the latest updates
+
+</details>
+<details>
+    <summary><strong>Compatibility</strong></summary>
 
 - Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
+- **Other Plugins & Action Plugins**
+  - _No known issues_
+  - Compatible with [ApplicationBranding](https://github.com/aljawaid/ApplicationBranding), [ContentCleaner](https://github.com/aljawaid/ContentCleaner)
+- **Core Files & Templates**
+  - `01` Template override
+  - _No database changes_
 
-#### Other Plugins & Action Plugins
-- Compatible with [ApplicationBranding](https://github.com/aljawaid/ApplicationBranding), [ContentCleaner](https://github.com/aljawaid/ContentCleaner)
-#### Core Files & Templates
-- 01 template override
-- _No database changes_
-
-
-Changelog
----------
-
-Read the full [**Changelog**](../master/changelog.md "See changes")
- 
-
-Installation
-------------
-
-- **Install via the [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") Plugin Directory**
-  - _Go to:_
-    - Kanboard: `Plugins` &#10562; `Plugin Directory`
-  - _or with [PluginManager](https://github.com/aljawaid/PluginManager) installed:_
-    - Kanboard: `Settings` &#10562; `Plugins` &#10562; `Plugin Directory`
-
-**_or_**
-
-- **Install via the [Releases](../master/Releases/ "A copy of each release is saved in the folder") folder**
-  - A copy of each release is saved in the `/Releases` folder of the repository
-  - Simply extract the `.zip` file into the `/plugins` directory
-
-**_or_**
-
-- **Install via [GitHub](https://github.com/aljawaid "Find the correct plugin from the list of repositories")**
-  - Download the `.zip` file and decompress everything under the directory `/plugins`
-  - The folder inside the `.zip` must not contain any branch names and must be exact case (matching the plugin name)
-
-_Note: The `/plugins` folder is case-sensitive._
-
-**_or_**
-
-- **Install using Git CLI**
-  - `git clone` (_or ftp upload_) and extract the `.zip` file into this folder: `.\plugins\` (must be exact case)
-
-
-Translations
-------------
+</details>
+<details>
+    <summary><strong>Translations</strong></summary>
 
 - English (UK)
 - German
-- _Contributors welcome_
+- _Starter template available_
+
+</details>
 
 
-Authors & Contributors
-----------------------
+## Authors & Contributors
 
 - [@aljawaid](https://github.com/aljawaid) - Author
 - [RainerBielefeld](https://github.com/RainerBielefeld) - Contributor
 - _Contributors welcome_
 
 
-License
--------
+## License
+
 - This project is distributed under the [MIT License](../master/LICENSE "Read The MIT license")
