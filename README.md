@@ -1,12 +1,14 @@
-# KanboardSupport
+<h1 name="readme-top">KanboardSupport</h1>
+
 ![GitHub All Releases](https://img.shields.io/github/downloads/aljawaid/KanboardSupport/total?style=for-the-badge "GitHub All Downloads") - **_A plugin for [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software")_**
 
 Add a support section in the Kanboard Settings interface so that end users can easily gather any information required by their internal technical support departments and for troubleshooting purposes. 
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>]</p>
 
 ## Features
 
-- NEW: Hide sensitive data before sharing technical information _(v2.5+)_
+- Hide sensitive data before sharing technical information
 - **Directory Permissions**
   - Check if directories are writeable or not
   - Display folder owner to Admins
@@ -21,7 +23,7 @@ Add a support section in the Kanboard Settings interface so that end users can e
   - Show if debug mode is enabled or not
 - **Database Connection**
   - Display basic database information (without password) from the config file
-  - Moved SQLite database (upload/download) options from About page
+  - Moved SQLite database (upload/download) options from the About page
 - **Email Connection**
   - Show basic mail server settings
   - BCC field value only displayed for Admins
@@ -39,6 +41,7 @@ Add a support section in the Kanboard Settings interface so that end users can e
   - Check PHP minimum requirement
   - Display useful file paths for configuration files
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Screenshots
 
@@ -70,6 +73,7 @@ Add a support section in the Kanboard Settings interface so that end users can e
 
 ![PHP Information](../master/screenshot-php.png "PHP Information")
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Usage
 
@@ -78,6 +82,8 @@ Go to `Settings` &#10562; `Technical Information`
 **_or_**
 
 Go to User Menu (top right) &#10562; `Technical Information`
+
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Installation & Compatibility
 
@@ -109,6 +115,7 @@ Go to User Menu (top right) &#10562; `Technical Information`
 
 </details>
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## Authors & Contributors
 
@@ -116,7 +123,11 @@ Go to User Menu (top right) &#10562; `Technical Information`
 - [RainerBielefeld](https://github.com/RainerBielefeld) - Contributor
 - _Contributors welcome_
 
+<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
 
 ## License
 
 - This project is distributed under the [MIT License](../master/LICENSE "Read The MIT license")
+
+<a name="readme-bottom"></a>
+<p align="right">[<a href="#readme-top">&#8593; Top</a>]</p>
