@@ -1,4 +1,4 @@
-<h1 name="readme-top">KanboardSupport</h1>
+<h1 name="user-content-readme-top">KanboardSupport</h1>
 <p align="center">
     <a href="https://github.com/aljawaid/KanboardSupport/releases">
         <img src="https://img.shields.io/github/v/release/aljawaid/KanboardSupport?style=for-the-badge&color=brightgreen" alt="GitHub Latest Release (by date)" title="GitHub Latest Release (by date)">
@@ -33,7 +33,7 @@
 
 Add a support section in the Kanboard Settings interface so that end users can easily gather any information required by their internal technical support departments and for troubleshooting purposes. 
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Features
 
@@ -70,7 +70,7 @@ Add a support section in the Kanboard Settings interface so that end users can e
   - Check PHP minimum requirement
   - Display useful file paths for configuration files
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#usage">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#usage">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Screenshots
 
@@ -102,7 +102,7 @@ Add a support section in the Kanboard Settings interface so that end users can e
 
 ![PHP Information](../master/screenshot-php.png "PHP Information")
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Usage
 
@@ -112,7 +112,7 @@ Go to `Settings` &#10562; `Technical Information`
 
 Go to User Menu (top right) &#10562; `Technical Information`
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Installation & Compatibility
 
@@ -144,7 +144,7 @@ Go to User Menu (top right) &#10562; `Technical Information`
 
 </details>
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#usage">&#8592; Previous</a>] [<a href="#license">&#8594; Next</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#usage">&#8592; Previous</a>] [<a href="#license">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Authors & Contributors
 
@@ -152,7 +152,7 @@ Go to User Menu (top right) &#10562; `Technical Information`
 - [RainerBielefeld](https://github.com/RainerBielefeld) - Contributor
 - _Contributors welcome_
 
-<p align="right">[<a href="#readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#readme-top">&#8593; Top</a>]</p>
+<p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## License
 
@@ -160,7 +160,7 @@ Go to User Menu (top right) &#10562; `Technical Information`
 
 ---
 
-<h3 align="center">
+<p align="center">
     <a href="https://github.com/aljawaid/KanboardSupport/stargazers" title="View Stargazers">
         <img src="https://img.shields.io/github/stars/aljawaid/KanboardSupport?logo=github&style=flat-square" alt="KanboardSupport">
     </a>
@@ -182,6 +182,6 @@ Go to User Menu (top right) &#10562; `Technical Information`
     <a href="https://github.com/aljawaid/KanboardSupport/compare/" title="Latest Commits">
         <img alt="GitHub commits since latest release (by date)" src="https://img.shields.io/github/commits-since/aljawaid/KanboardSupport/latest?style=flat-square">
     </a>
-</h3>
-<a name="readme-bottom"></a>
-<p align="right">[<a href="#readme-top">&#8593; Top</a>]</p>
+</p>
+<a name="user-content-readme-bottom"></a>
+<p align="right">[<a href="#user-content-readme-top">&#8593; Top</a>]</p>
