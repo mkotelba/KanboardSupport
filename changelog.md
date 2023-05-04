@@ -2,8 +2,6 @@
 
 ## v2.7
 
-### What's Changed
-
 _(most recent changes are listed on top):_
 - FIX: User Dropdown CSS Target
 - FIX: Debug Mode Not Showing Correct Value
@@ -14,8 +12,6 @@ _(most recent changes are listed on top):_
 
 
 ## v2.6
-
-### What's Changed
 
 _(most recent changes are listed on top):_
 - FIX: Unix Line Endings
@@ -32,8 +28,6 @@ _(most recent changes are listed on top):_
 
 ## v2.5
 
-### What's Changed
-
 _(most recent changes are listed on top):_
 - 5b45488 NEW: Add User Warning for Sharing Info & Hide Data
 - Add button to hide sensitive data
@@ -44,8 +38,6 @@ _(most recent changes are listed on top):_
 
 
 ## v2.0
-
-### What's Changed
 
 _(most recent changes are listed on top):_
 - Handle Cache Directory Permission Check Differently
@@ -58,8 +50,6 @@ _(most recent changes are listed on top):_
 
 
 ## v1.5
-
-### What's Changed
 
 _(most recent changes are listed on top):_
 - NEW: Add Server Configuration Section
@@ -77,8 +67,6 @@ _(most recent changes are listed on top):_
 
 
 ## v1.0
-
-### What's Changed
 
 _(most recent changes are listed on top):_
 - Initial release
