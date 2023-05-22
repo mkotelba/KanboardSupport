@@ -110,14 +110,14 @@
                 <span class="data-wrap">
                     <li class="app-info-title"><?= t('Data Directory') ?></li>
                     <li class="app-info-value value-path border-bottom-thick privacy"><?= DATA_DIR ?></li>
-                        <?php if (! is_writable(DATA_DIR)): ?>
-                            <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
-                        <?php else: ?>
-                            <span class="pass-tick" title="<?= t('This directory is writeable by the web server user') ?>">&#10004;</span>
-                        <?php endif ?>
-                        <?php if ($this->user->isAdmin()): ?>
+                    <?php if (!is_writable(DATA_DIR)): ?>
+                        <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
+                    <?php else: ?>
+                        <span class="pass-tick" title="<?= t('This directory is writeable by the web server user') ?>">&#10004;</span>
+                    <?php endif ?>
+                    <?php if ($this->user->isAdmin()): ?>
                         <div id="pCheck" class="p-check">
-                            <?php if (! is_writable(DATA_DIR)): ?>
+                            <?php if (!is_writable(DATA_DIR)): ?>
                                 <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(DATA_DIR) ?></span>
                                 <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(DATA_DIR) ?></span>
                                 <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(DATA_DIR) ?></span>
@@ -132,14 +132,14 @@
                 <span class="data-wrap">
                     <li class="app-info-title"><?= t('Files Directory') ?></li>
                     <li class="app-info-value value-path border-bottom-thick privacy"><?= FILES_DIR ?></li>
-                        <?php if (! is_writable(FILES_DIR)): ?>
-                            <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
-                        <?php else: ?>
-                            <span class="pass-tick" title="<?= t('This directory is writeable by the web server user') ?>">&#10004;</span>
-                        <?php endif ?>
-                        <?php if ($this->user->isAdmin()): ?>
+                    <?php if (!is_writable(FILES_DIR)): ?>
+                        <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
+                    <?php else: ?>
+                        <span class="pass-tick" title="<?= t('This directory is writeable by the web server user') ?>">&#10004;</span>
+                    <?php endif ?>
+                    <?php if ($this->user->isAdmin()): ?>
                         <div id="pCheck" class="p-check">
-                            <?php if (! is_writable(FILES_DIR)): ?>
+                            <?php if (!is_writable(FILES_DIR)): ?>
                                 <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(FILES_DIR) ?></span>
                                 <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(FILES_DIR) ?></span>
                                 <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(FILES_DIR) ?></span>
@@ -154,40 +154,40 @@
                 <span class="data-wrap">
                     <li class="app-info-title"><?= t('Cache Directory') ?></li>
                     <li class="app-info-value value-path border-bottom-thick privacy"><?= CACHE_DIR ?></li>
-                    <?php if (! is_writable(CACHE_DIR)): ?>
-                            <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
-                        <?php else: ?>
-                            <span class="pass-tick" title="<?= t('This directory is writeable by the web server user') ?>">&#10004;</span>
-                        <?php endif ?>
-                        <?php if (CACHE_DRIVER == 'memory'): ?>
-                            <span class="p-note"><i><?= t('Not required as Cache Driver is set to') ?></i> <code><?= t('memory') ?></code></span>
-                        <?php else: ?>
-                            <?php if ($this->user->isAdmin()): ?>
+                    <?php if (!is_writable(CACHE_DIR)): ?>
+                        <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
+                    <?php else: ?>
+                        <span class="pass-tick" title="<?= t('This directory is writeable by the web server user') ?>">&#10004;</span>
+                    <?php endif ?>
+                    <?php if (CACHE_DRIVER == 'memory'): ?>
+                        <span class="p-note"><i><?= t('Not required as Cache Driver is set to') ?></i> <code><?= t('memory') ?></code></span>
+                    <?php else: ?>
+                        <?php if ($this->user->isAdmin()): ?>
                             <div id="pCheck" class="p-check">
-                            <?php if (! is_writable(CACHE_DIR)): ?>
-                                <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(CACHE_DIR) ?></span>
-                                <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(CACHE_DIR) ?></span>
-                                <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(CACHE_DIR) ?></span>
-                            <?php else: ?>
-                                <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(CACHE_DIR) ?></span>
-                                <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(CACHE_DIR) ?></span>
-                                <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(CACHE_DIR) ?></span>
-                            <?php endif ?>
+                                <?php if (!is_writable(CACHE_DIR)): ?>
+                                    <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(CACHE_DIR) ?></span>
+                                    <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(CACHE_DIR) ?></span>
+                                    <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(CACHE_DIR) ?></span>
+                                <?php else: ?>
+                                    <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(CACHE_DIR) ?></span>
+                                    <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(CACHE_DIR) ?></span>
+                                    <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(CACHE_DIR) ?></span>
+                                <?php endif ?>
                             </div>
-                            <?php endif ?>
                         <?php endif ?>
+                    <?php endif ?>
                 </span>
                 <span class="data-wrap">
                     <li class="app-info-title"><?= t('Plugins Directory') ?></li>
                     <li class="app-info-value value-path border-bottom-thick privacy"><?= PLUGINS_DIR ?></li>
                     <?php if (! is_writable(PLUGINS_DIR)): ?>
-                            <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
-                        <?php else: ?>
-                            <span class="pass-tick" title="<?= t('This directory is writeable by the web server user') ?>">&#10004;</span>
-                        <?php endif ?>
-                        <?php if ($this->user->isAdmin()): ?>
+                        <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
+                    <?php else: ?>
+                        <span class="pass-tick" title="<?= t('This directory is writeable by the web server user') ?>">&#10004;</span>
+                    <?php endif ?>
+                    <?php if ($this->user->isAdmin()): ?>
                         <div id="pCheck" class="p-check">
-                            <?php if (! is_writable(PLUGINS_DIR)): ?>
+                            <?php if (!is_writable(PLUGINS_DIR)): ?>
                                 <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(PLUGINS_DIR) ?></span>
                                 <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(PLUGINS_DIR) ?></span>
                                 <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(PLUGINS_DIR) ?></span>
@@ -378,7 +378,7 @@
                 <ul class="server-list">
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('Operating System') ?></li>
-                        <li class="server-value server-config-value border-bottom-thick"><?= @php_uname('s').' '.@php_uname('r').' '.@php_uname('m') ?></li>
+                        <li class="server-value server-config-value border-bottom-thick"><?= @php_uname('s') . ' ' . @php_uname('r') . ' ' . @php_uname('m') ?></li>
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('HTTP Client') ?></li>
@@ -415,46 +415,46 @@
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('Document Root') ?></li>
                         <li class="server-value server-config-value border-bottom-thick value-path privacy"><?= $_SERVER['DOCUMENT_ROOT'] ?></li>
-                        <?php if (! is_writable($_SERVER['DOCUMENT_ROOT'])): ?>
+                        <?php if (!is_writable($_SERVER['DOCUMENT_ROOT'])): ?>
                             <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
                         <?php else: ?>
                             <span class="pass-tick" title="<?= t('This directory is writeable by the web server user') ?>">&#10004;</span>
                         <?php endif ?>
                         <?php if ($this->user->isAdmin()): ?>
-                        <div id="pCheck" class="p-check">
-                            <?php if (! is_writable($_SERVER['DOCUMENT_ROOT'])): ?>
-                                <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions($_SERVER['DOCUMENT_ROOT']) ?></span>
-                                <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux($_SERVER['DOCUMENT_ROOT']) ?></span>
-                                <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner($_SERVER['DOCUMENT_ROOT']) ?></span>
-                            <?php else: ?>
-                                <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions($_SERVER['DOCUMENT_ROOT']) ?></span>
-                                <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux($_SERVER['DOCUMENT_ROOT']) ?></span>
-                                <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner($_SERVER['DOCUMENT_ROOT']) ?></span>
-                            <?php endif ?>
-                        </div>
-                    <?php endif ?>
+                            <div id="pCheck" class="p-check">
+                                <?php if (!is_writable($_SERVER['DOCUMENT_ROOT'])): ?>
+                                    <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions($_SERVER['DOCUMENT_ROOT']) ?></span>
+                                    <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux($_SERVER['DOCUMENT_ROOT']) ?></span>
+                                    <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner($_SERVER['DOCUMENT_ROOT']) ?></span>
+                                <?php else: ?>
+                                    <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions($_SERVER['DOCUMENT_ROOT']) ?></span>
+                                    <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux($_SERVER['DOCUMENT_ROOT']) ?></span>
+                                    <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner($_SERVER['DOCUMENT_ROOT']) ?></span>
+                                <?php endif ?>
+                            </div>
+                        <?php endif ?>
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('Session Save Path') ?></li>
                         <li class="server-value server-config-value border-bottom-thick value-path"><?= session_save_path() ?></li>
-                        <?php if (! is_writable(session_save_path())): ?>
+                        <?php if (!is_writable(session_save_path())): ?>
                             <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
                         <?php else: ?>
                             <span class="pass-tick" title="<?= t('This directory is writeable by the web server user') ?>">&#10004;</span>
                         <?php endif ?>
                         <?php if ($this->user->isAdmin()): ?>
-                        <div id="pCheck" class="p-check">
-                            <?php if (! is_writable(session_save_path())): ?>
-                                <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(session_save_path()) ?></span>
-                                <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(session_save_path()) ?></span>
-                                <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(session_save_path()) ?></span>
-                            <?php else: ?>
-                                <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(session_save_path()) ?></span>
-                                <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(session_save_path()) ?></span>
-                                <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(session_save_path()) ?></span>
-                            <?php endif ?>
-                        </div>
-                    <?php endif ?>
+                            <div id="pCheck" class="p-check">
+                                <?php if (!is_writable(session_save_path())): ?>
+                                    <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(session_save_path()) ?></span>
+                                    <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(session_save_path()) ?></span>
+                                    <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(session_save_path()) ?></span>
+                                <?php else: ?>
+                                    <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(session_save_path()) ?></span>
+                                    <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(session_save_path()) ?></span>
+                                    <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(session_save_path()) ?></span>
+                                <?php endif ?>
+                            </div>
+                        <?php endif ?>
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('Absolute Path') ?></li>
@@ -571,23 +571,23 @@
                 <code>mbstring</code>
             </div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
-            <?php if (extension_loaded('mbstring')): ?>
-                <span class="value-version"><?= phpversion('mbstring') ?></span>
-            <?php else: ?>
-                <span class="value-version"><?= t('Not Detected') ?></span>
-            <?php endif ?>
+                <?php if (extension_loaded('mbstring')): ?>
+                    <span class="value-version"><?= phpversion('mbstring') ?></span>
+                <?php else: ?>
+                    <span class="value-version"><?= t('Not Detected') ?></span>
+                <?php endif ?>
             </div>
             <?php if (!extension_loaded('mbstring')): ?>
                 <div class="tile-required" title=""><?= t('Required') ?></div>
             <?php endif ?>
             <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
-                <span class="tile-check">
-            <?php if (extension_loaded('mbstring')): ?>
+            <span class="tile-check">
+                <?php if (extension_loaded('mbstring')): ?>
                     <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
-            <?php else: ?>
+                <?php else: ?>
                     <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
-                </span>
-            <?php endif ?>
+                <?php endif ?>
+            </span>
         </div>
         <!-- hash -->
         <div class="tile-wrapper">
@@ -595,23 +595,23 @@
                 <code>hash</code>
             </div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
-            <?php if (extension_loaded('hash')): ?>
-                <span class="value-version"><?= phpversion('hash') ?></span>
-            <?php else: ?>
-                <span class="value-version"><?= t('Not Detected') ?></span>
-            <?php endif ?>
+                <?php if (extension_loaded('hash')): ?>
+                    <span class="value-version"><?= phpversion('hash') ?></span>
+                <?php else: ?>
+                    <span class="value-version"><?= t('Not Detected') ?></span>
+                <?php endif ?>
             </div>
             <?php if (!extension_loaded('hash')): ?>
                 <div class="tile-required" title=""><?= t('Required') ?></div>
             <?php endif ?>
             <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
-                <span class="tile-check">
-            <?php if (extension_loaded('hash')): ?>
+            <span class="tile-check">
+                <?php if (extension_loaded('hash')): ?>
                     <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
-            <?php else: ?>
+                <?php else: ?>
                     <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
-                </span>
-            <?php endif ?>
+                <?php endif ?>
+            </span>
         </div>
         <!-- openssl -->
         <div class="tile-wrapper">
@@ -619,23 +619,23 @@
                 <code>openssl</code>
             </div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
-            <?php if (extension_loaded('openssl')): ?>
-                <span class="value-version"><?= phpversion('openssl') ?></span>
-            <?php else: ?>
-                <span class="value-version"><?= t('Not Detected') ?></span>
-            <?php endif ?>
+                <?php if (extension_loaded('openssl')): ?>
+                    <span class="value-version"><?= phpversion('openssl') ?></span>
+                <?php else: ?>
+                    <span class="value-version"><?= t('Not Detected') ?></span>
+                <?php endif ?>
             </div>
             <?php if (!extension_loaded('openssl')): ?>
                 <div class="tile-required" title=""><?= t('Required') ?></div>
             <?php endif ?>
             <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
-                <span class="tile-check">
-            <?php if (extension_loaded('openssl')): ?>
+            <span class="tile-check">
+                <?php if (extension_loaded('openssl')): ?>
                     <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
-            <?php else: ?>
+                <?php else: ?>
                     <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
-                </span>
-            <?php endif ?>
+                <?php endif ?>
+            </span>
         </div>
         <!-- json -->
         <div class="tile-wrapper">
@@ -643,23 +643,23 @@
                 <code>json</code>
             </div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
-            <?php if (extension_loaded('json')): ?>
-                <span class="value-version"><?= phpversion('json') ?></span>
-            <?php else: ?>
-                <span class="value-version"><?= t('Not Detected') ?></span>
-            <?php endif ?>
+                <?php if (extension_loaded('json')): ?>
+                    <span class="value-version"><?= phpversion('json') ?></span>
+                <?php else: ?>
+                    <span class="value-version"><?= t('Not Detected') ?></span>
+                <?php endif ?>
             </div>
             <?php if (!extension_loaded('json')): ?>
                 <div class="tile-required" title=""><?= t('Required') ?></div>
             <?php endif ?>
             <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
-                <span class="tile-check">
-            <?php if (extension_loaded('json')): ?>
+            <span class="tile-check">
+                <?php if (extension_loaded('json')): ?>
                     <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
-            <?php else: ?>
+                <?php else: ?>
                     <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
-                </span>
-            <?php endif ?>
+                <?php endif ?>
+            </span>
         </div>
         <!-- ctype -->
         <div class="tile-wrapper">
@@ -667,23 +667,23 @@
                 <code>ctype</code>
             </div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
-            <?php if (extension_loaded('ctype')): ?>
-                <span class="value-version"><?= phpversion('ctype') ?></span>
-            <?php else: ?>
-                <span class="value-version"><?= t('Not Detected') ?></span>
-            <?php endif ?>
+                <?php if (extension_loaded('ctype')): ?>
+                    <span class="value-version"><?= phpversion('ctype') ?></span>
+                <?php else: ?>
+                    <span class="value-version"><?= t('Not Detected') ?></span>
+                <?php endif ?>
             </div>
             <?php if (!extension_loaded('ctype')): ?>
                 <div class="tile-required" title=""><?= t('Required') ?></div>
             <?php endif ?>
             <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
-                <span class="tile-check">
-            <?php if (extension_loaded('ctype')): ?>
+            <span class="tile-check">
+                <?php if (extension_loaded('ctype')): ?>
                     <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
-            <?php else: ?>
+                <?php else: ?>
                     <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
-                </span>
-            <?php endif ?>
+                <?php endif ?>
+            </span>
         </div>
         <!-- filter -->
         <div class="tile-wrapper">
@@ -691,23 +691,23 @@
                 <code>filter</code>
             </div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
-            <?php if (extension_loaded('filter')): ?>
-                <span class="value-version"><?= phpversion('filter') ?></span>
-            <?php else: ?>
-                <span class="value-version"><?= t('Not Detected') ?></span>
-            <?php endif ?>
+                <?php if (extension_loaded('filter')): ?>
+                    <span class="value-version"><?= phpversion('filter') ?></span>
+                <?php else: ?>
+                    <span class="value-version"><?= t('Not Detected') ?></span>
+                <?php endif ?>
             </div>
             <?php if (!extension_loaded('filter')): ?>
                 <div class="tile-required" title=""><?= t('Required') ?></div>
             <?php endif ?>
             <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
-                <span class="tile-check">
-            <?php if (extension_loaded('filter')): ?>
+            <span class="tile-check">
+                <?php if (extension_loaded('filter')): ?>
                     <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
-            <?php else: ?>
+                <?php else: ?>
                     <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
-                </span>
-            <?php endif ?>
+                <?php endif ?>
+            </span>
         </div>
         <!-- session -->
         <div class="tile-wrapper">
@@ -715,23 +715,23 @@
                 <code>session</code>
             </div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
-            <?php if (extension_loaded('session')): ?>
-                <span class="value-version"><?= phpversion('session') ?></span>
-            <?php else: ?>
-                <span class="value-version"><?= t('Not Detected') ?></span>
-            <?php endif ?>
+                <?php if (extension_loaded('session')): ?>
+                    <span class="value-version"><?= phpversion('session') ?></span>
+                <?php else: ?>
+                    <span class="value-version"><?= t('Not Detected') ?></span>
+                <?php endif ?>
             </div>
             <?php if (!extension_loaded('session')): ?>
                 <div class="tile-required" title=""><?= t('Required') ?></div>
             <?php endif ?>
             <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
-                <span class="tile-check">
-            <?php if (extension_loaded('session')): ?>
+            <span class="tile-check">
+                <?php if (extension_loaded('session')): ?>
                     <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
-            <?php else: ?>
+                <?php else: ?>
                     <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
-                </span>
-            <?php endif ?>
+                <?php endif ?>
+            </span>
         </div>
         <!-- dom -->
         <div class="tile-wrapper">
@@ -739,23 +739,23 @@
                 <code>dom</code>
             </div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
-            <?php if (extension_loaded('dom')): ?>
-                <span class="value-version"><?= phpversion('dom') ?></span>
-            <?php else: ?>
-                <span class="value-version"><?= t('Not Detected') ?></span>
-            <?php endif ?>
+                <?php if (extension_loaded('dom')): ?>
+                    <span class="value-version"><?= phpversion('dom') ?></span>
+                <?php else: ?>
+                    <span class="value-version"><?= t('Not Detected') ?></span>
+                <?php endif ?>
             </div>
             <?php if (!extension_loaded('dom')): ?>
                 <div class="tile-required" title=""><?= t('Required') ?></div>
             <?php endif ?>
             <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
-                <span class="tile-check">
-            <?php if (extension_loaded('dom')): ?>
+            <span class="tile-check">
+                <?php if (extension_loaded('dom')): ?>
                     <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
-            <?php else: ?>
+                <?php else: ?>
                     <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
-                </span>
-            <?php endif ?>
+                <?php endif ?>
+            </span>
         </div>
         <!-- SimpleXML -->
         <div class="tile-wrapper">
@@ -763,23 +763,23 @@
                 <code>SimpleXML</code>
             </div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
-            <?php if (extension_loaded('SimpleXML')): ?>
-                <span class="value-version"><?= phpversion('SimpleXML') ?></span>
-            <?php else: ?>
-                <span class="value-version"><?= t('Not Detected') ?></span>
-            <?php endif ?>
+                <?php if (extension_loaded('SimpleXML')): ?>
+                    <span class="value-version"><?= phpversion('SimpleXML') ?></span>
+                <?php else: ?>
+                    <span class="value-version"><?= t('Not Detected') ?></span>
+                <?php endif ?>
             </div>
             <?php if (!extension_loaded('SimpleXML')): ?>
                 <div class="tile-required" title=""><?= t('Required') ?></div>
             <?php endif ?>
             <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
-                <span class="tile-check">
-            <?php if (extension_loaded('SimpleXML')): ?>
+            <span class="tile-check">
+                <?php if (extension_loaded('SimpleXML')): ?>
                     <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
-            <?php else: ?>
+                <?php else: ?>
                     <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
-                </span>
-            <?php endif ?>
+                <?php endif ?>
+            </span>
         </div>
         <!-- xml -->
         <div class="tile-wrapper">
@@ -787,23 +787,23 @@
                 <code>xml</code>
             </div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
-            <?php if (extension_loaded('xml')): ?>
-                <span class="value-version"><?= phpversion('xml') ?></span>
-            <?php else: ?>
-                <span class="value-version"><?= t('Not Detected') ?></span>
-            <?php endif ?>
+                <?php if (extension_loaded('xml')): ?>
+                    <span class="value-version"><?= phpversion('xml') ?></span>
+                <?php else: ?>
+                    <span class="value-version"><?= t('Not Detected') ?></span>
+                <?php endif ?>
             </div>
             <?php if (!extension_loaded('xml')): ?>
                 <div class="tile-required" title=""><?= t('Required') ?></div>
             <?php endif ?>
             <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
-                <span class="tile-check">
-            <?php if (extension_loaded('xml')): ?>
+            <span class="tile-check">
+                <?php if (extension_loaded('xml')): ?>
                     <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
-            <?php else: ?>
+                <?php else: ?>
                     <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
-                </span>
-            <?php endif ?>
+                <?php endif ?>
+            </span>
         </div>
         <!-- zip -->
         <div class="tile-wrapper">
@@ -811,21 +811,21 @@
                 <code>zip</code>
             </div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
-            <?php if (extension_loaded('zip')): ?>
-                <span class="value-version"><?= phpversion('zip') ?></span>
-            <?php else: ?>
-                <span class="value-version"><?= t('Not Detected') ?></span>
-            <?php endif ?>
+                <?php if (extension_loaded('zip')): ?>
+                    <span class="value-version"><?= phpversion('zip') ?></span>
+                <?php else: ?>
+                    <span class="value-version"><?= t('Not Detected') ?></span>
+                <?php endif ?>
             </div>
             <div class="tile-optional" title=""><?= t('Optional') ?></div>
             <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
-                <span class="tile-check">
-            <?php if (extension_loaded('zip')): ?>
+            <span class="tile-check">
+                <?php if (extension_loaded('zip')): ?>
                     <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
-            <?php else: ?>
+                <?php else: ?>
                     <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
-                </span>
-            <?php endif ?>
+                <?php endif ?>
+            </span>
         </div>
         <!-- ldap -->
         <div class="tile-wrapper">
@@ -833,21 +833,21 @@
                 <code>ldap</code>
             </div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
-            <?php if (extension_loaded('ldap')): ?>
-                <span class="value-version"><?= phpversion('ldap') ?></span>
-            <?php else: ?>
-                <span class="value-version"><?= t('Not Detected') ?></span>
-            <?php endif ?>
+                <?php if (extension_loaded('ldap')): ?>
+                    <span class="value-version"><?= phpversion('ldap') ?></span>
+                <?php else: ?>
+                    <span class="value-version"><?= t('Not Detected') ?></span>
+                <?php endif ?>
             </div>
             <div class="tile-optional" title=""><?= t('Optional') ?></div>
             <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
-                <span class="tile-check">
-            <?php if (extension_loaded('ldap')): ?>
+            <span class="tile-check">
+                <?php if (extension_loaded('ldap')): ?>
                     <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
-            <?php else: ?>
+                <?php else: ?>
                     <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
-                </span>
-            <?php endif ?>
+                <?php endif ?>
+            </span>
         </div>
         <!-- curl -->
         <div class="tile-wrapper">
@@ -855,21 +855,21 @@
                 <code>curl</code>
             </div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
-            <?php if (extension_loaded('curl')): ?>
-                <span class="value-version"><?= phpversion('curl') ?></span>
-            <?php else: ?>
-                <span class="value-version"><?= t('Not Detected') ?></span>
-            <?php endif ?>
+                <?php if (extension_loaded('curl')): ?>
+                    <span class="value-version"><?= phpversion('curl') ?></span>
+                <?php else: ?>
+                    <span class="value-version"><?= t('Not Detected') ?></span>
+                <?php endif ?>
             </div>
             <div class="tile-optional" title=""><?= t('Optional') ?></div>
             <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
-                <span class="tile-check">
-            <?php if (extension_loaded('curl')): ?>
+            <span class="tile-check">
+                <?php if (extension_loaded('curl')): ?>
                     <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
-            <?php else: ?>
+                <?php else: ?>
                     <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
-                </span>
-            <?php endif ?>
+                <?php endif ?>
+            </span>
         </div>
         <!-- PDO Extension -->
         <div class="tile-wrapper">
@@ -885,21 +885,21 @@
                 <?php endif ?>
             </div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
-            <?php if (DB_DRIVER === 'mysql' && !extension_loaded('pdo_mysql')): ?>
-                <small><?= t('Missing PDO Extension') ?></small>
-            <?php else: ?>
-                <?= phpversion('pdo_mysql') ?>
-            <?php endif ?>
-            <?php if (DB_DRIVER === 'postgres' && !extension_loaded('pdo_pgsql')): ?>
-                <small><?= t('Missing PDO Extension') ?></small>
-            <?php else: ?>
-                <?= phpversion('pdo_pgsql') ?>
-            <?php endif ?>
-            <?php if (DB_DRIVER === 'sqlite' && !extension_loaded('pdo_sqlite')): ?>
-                <small><?= t('Missing PDO Extension') ?></small>
-            <?php else: ?>
-                <?= phpversion('pdo_sqlite') ?>
-            <?php endif ?>
+                <?php if (DB_DRIVER === 'mysql' && !extension_loaded('pdo_mysql')): ?>
+                    <small><?= t('Missing PDO Extension') ?></small>
+                <?php else: ?>
+                    <?= phpversion('pdo_mysql') ?>
+                <?php endif ?>
+                <?php if (DB_DRIVER === 'postgres' && !extension_loaded('pdo_pgsql')): ?>
+                    <small><?= t('Missing PDO Extension') ?></small>
+                <?php else: ?>
+                    <?= phpversion('pdo_pgsql') ?>
+                <?php endif ?>
+                <?php if (DB_DRIVER === 'sqlite' && !extension_loaded('pdo_sqlite')): ?>
+                    <small><?= t('Missing PDO Extension') ?></small>
+                <?php else: ?>
+                    <?= phpversion('pdo_sqlite') ?>
+                <?php endif ?>
             </div>
             <?php if (DB_DRIVER === 'mysql'): ?>
                 <div class="tile-detected" title=""><?= t('MySQL Detected') ?></div>
@@ -911,18 +911,18 @@
                 <div class="tile-detected" title=""><?= t('SQLite Detected') ?></div>
             <?php endif ?>
             <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
-                <span class="tile-check">
-            <?php if (DB_DRIVER === 'mysql' && !extension_loaded('pdo_mysql')): ?>
+            <span class="tile-check">
+                <?php if (DB_DRIVER === 'mysql' && !extension_loaded('pdo_mysql')): ?>
                     <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
-            <?php elseif (DB_DRIVER === 'postgres' && !extension_loaded('pdo_pgsql')): ?>
-                <span class="tile-check">
-                    <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
-            <?php elseif (DB_DRIVER === 'sqlite' && !extension_loaded('pdo_sqlite')): ?>
-                <span class="tile-check">
-                    <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
-            <?php else: ?>
+                <?php elseif (DB_DRIVER === 'postgres' && !extension_loaded('pdo_pgsql')): ?>
+                    <span class="tile-check">
+                        <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
+                <?php elseif (DB_DRIVER === 'sqlite' && !extension_loaded('pdo_sqlite')): ?>
+                    <span class="tile-check">
+                        <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
+                <?php else: ?>
                     <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
-                </span>
-            <?php endif ?>
+                <?php endif ?>
+            </span>
         </div>
     </section>
