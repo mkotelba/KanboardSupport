@@ -61,21 +61,21 @@ class SupportHelper extends Base
         $info .= (($perms & 0x0100) ? 'r' : '-');
         $info .= (($perms & 0x0080) ? 'w' : '-');
         $info .= (($perms & 0x0040) ?
-                    (($perms & 0x0800) ? 's' : 'x' ) :
+                    (($perms & 0x0800) ? 's' : 'x') :
                     (($perms & 0x0800) ? 'S' : '-'));
 
         // Group
         $info .= (($perms & 0x0020) ? 'r' : '-');
         $info .= (($perms & 0x0010) ? 'w' : '-');
         $info .= (($perms & 0x0008) ?
-                    (($perms & 0x0400) ? 's' : 'x' ) :
+                    (($perms & 0x0400) ? 's' : 'x') :
                     (($perms & 0x0400) ? 'S' : '-'));
 
         // World
         $info .= (($perms & 0x0004) ? 'r' : '-');
         $info .= (($perms & 0x0002) ? 'w' : '-');
         $info .= (($perms & 0x0001) ?
-                    (($perms & 0x0200) ? 't' : 'x' ) :
+                    (($perms & 0x0200) ? 't' : 'x') :
                     (($perms & 0x0200) ? 'T' : '-'));
 
         echo $info;
@@ -84,7 +84,8 @@ class SupportHelper extends Base
 
     public function getPermissionsLinux($directory)
     {
-        if(!file_exists($directory)) return false;
+        if (!file_exists($directory))
+            return false;
 
         echo substr(sprintf('%o', fileperms($directory)), -4);
         clearstatcache();
