@@ -12,7 +12,7 @@
     --pp-green: #2EA02E;
     --pp-green-dark: #055D20;
     --pp-orange: #FF6500;
-    --button-blue-gradient: linear-gradient(to bottom, #7892c2 80%, #476e9e 100%);
+    --button-blue-gradient: linear-gradient(to bottom, #7892C2 80%, #476E9E 100%);
     --blue-border-gradient-match: #476E9E;
     --tech-bg-grey: #7E8181;
     --tech-bg-text-color-xwhite: #F0F0F0;
@@ -39,9 +39,7 @@
     transition: var(--transition-kanboard-support);
 }
 
-/*a:hover { color: var(--pp-red-alt-2) !important; }*/
-
-.display-none, .d-none { display: none !important; }
+.display-none, .d-none { display: none; }
 
 .font-weight-bold { font-weight: bold; }
 
@@ -52,8 +50,6 @@
 .text-left { text-align: left; }
 
 .relative { position: relative; }
-
-.font-weight-bold { font-weight: bold; }
 
 .table-center {
     margin: auto;
@@ -151,8 +147,6 @@ h2 .fa-code {
     padding-top: 5px;
 }
 
-/*.value-btn {}*/
-
 #valueBTN {
     text-decoration: none !important;
     padding: 0 3px 1px 3px;
@@ -188,8 +182,6 @@ h2 .fa-code {
     padding-top: 5px;
 }
 
-/*.value-required {}*/
-
 .no-border-left {
     border-left: 0 !important;
 }
@@ -219,13 +211,14 @@ table.support-table.user-table tr > td:first-child {
 table.support-table.user-table tr td:first-child::before {
     content: counter(rowNumber);
     min-width: 1em;
-    margin-right: 0.5em;
+    margin-right: .5em;
     border-right: 2px solid var(--tech-bg-grey-border-match);
     padding-right: 15px;
     padding-top: 1px;
     padding-bottom: 1px;
     color: var(--tech-light-grey);
 }
+
 /* END OF TABLE ROW NUMBERS */
 
 .app-info, .php-info, .db-info, .mail-info, .server-info {
@@ -344,9 +337,9 @@ table.support-table.user-table tr td:first-child::before {
 .tile-name code, .server-config-value code {
     border-radius: var(--border-radius-kanboard-support);
     background-color: rgba(27, 31, 35, 0.22) !important;
-    font-size: 0.9rem !important;
-    font-family: Monospace !important;
-    letter-spacing: 0.08rem;
+    font-size: .9rem !important;
+    font-family: monospace !important;
+    letter-spacing: .08rem;
     color: var(--pp-red-alt-2) !important;
     margin: auto 3px !important;
     padding: 1px 3px 2px 4px !important;
@@ -379,15 +372,9 @@ table.support-table.user-table tr td:first-child::before {
     position: relative;
 }
 
-/*.server-info {}*/
-
 .server-col {
     display: block;
 }
-
-/*.server-config {}*/
-
-/*.server-value {}*/
 
 .server-list {
     margin-left: 10px;
@@ -411,8 +398,6 @@ table.support-table.user-table tr td:first-child::before {
     margin-right: 2px;
 }
 
-/*.p-check {}*/
-
 .p-dir {
     font-family: Arial;
     letter-spacing: 1px;
@@ -423,7 +408,7 @@ table.support-table.user-table tr td:first-child::before {
 margin-right: 8px;}
 
 .p-owner {
-    font-family: "Monospace";
+    font-family: monospace;
 }
 
 .p-note {
@@ -438,7 +423,7 @@ margin-right: 8px;}
 }
 
 .privacy-data::after {
-    content: '<data hidden>';
+    content: "<data hidden>";
     font-style: italic;
     visibility: visible;
     top: 0;
@@ -449,7 +434,7 @@ margin-right: 8px;}
 .privacy-data {
     position: relative;
     visibility: hidden;
-    filter: blur(1px) brightness(0.5);
+    filter: blur(1px) brightness(.5);
     color: var(--pp-grey);
 }
 
