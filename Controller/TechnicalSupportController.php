@@ -6,13 +6,12 @@ use Kanboard\Controller\BaseController;
 
 /**
  * Class Technical Support
- * 
+ *
  * @author aljawaid
- * 
  */
 class TechnicalSupportController extends \Kanboard\Controller\ConfigController
 {
-	/**
+    /**
      * Display the Support Page
      *
      * @access public
