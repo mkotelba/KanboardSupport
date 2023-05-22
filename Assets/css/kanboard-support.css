@@ -336,7 +336,7 @@ table.support-table.user-table tr td:first-child::before {
 
 .tile-name code, .server-config-value code {
     border-radius: var(--border-radius-kanboard-support);
-    background-color: rgba(27, 31, 35, 0.22) !important;
+    background-color: rgba(27, 31, 35, .22) !important;
     font-size: .9rem !important;
     font-family: monospace !important;
     letter-spacing: .08rem;
