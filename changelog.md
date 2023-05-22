@@ -1,5 +1,30 @@
 # Changelog
 
+## v2.8
+
+_(most recent changes are listed on top):_
+- FIX: Code Syntax - `kanboard-support.css`
+- FIX: Code Syntax - `support.php`
+- FIX: Code Syntax - `messages.css`
+- FIX: Code Syntax - `kanboard-support.css`
+- FIX: Code Syntax - `SupportHelper.php` - add ignore rule
+- FIX: Code Syntax - `SupportHelper.php`
+- FIX: Code Syntax - `TechnicalSupportController.php`
+- NEW: Add Code Scanning Badges to README.md
+- FIX: Syntax & Line Endings
+- FIX: README Navigation Links for GitHub
+- FIX: Markdown Syntax
+- FIX: Code Syntax
+- NEW: Add Footer Badges to README.md
+- NEW: Add Section Navigation Links to README.md
+- NEW: Add Badges to README.md
+- NEW: Add README Page Navigation Links
+- FIX: Content Flow for README.md
+- Create INSTALL.md
+- FIX: CSS Syntax - thanks @cptsanifair
+- FIX: Message Box Alignment
+
+
 ## v2.7
 
 _(most recent changes are listed on top):_
