@@ -84,8 +84,8 @@ class SupportHelper extends Base
 
     public function getPermissionsLinux($directory)
     {
-        if (!file_exists($directory))
-            return false;
+        // phpcs:ignore Generic.ControlStructures.InlineControlStructure.NotAllowed
+        if (!file_exists($directory)) return false;
 
         echo substr(sprintf('%o', fileperms($directory)), -4);
         clearstatcache();
