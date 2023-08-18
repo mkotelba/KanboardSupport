@@ -344,7 +344,7 @@ table.support-table.user-table tr td:first-child::before {
     letter-spacing: .08rem;
     color: var(--pp-red-alt-2) !important;
     margin: auto 3px !important;
-    padding: 1px 3px 2px 4px !important;
+    padding: 1px 3px 0 4px !important;
 }
 
 .tile-version {
