@@ -156,6 +156,7 @@ h2 .fa-code {
     text-transform: uppercase;
     border: 2px solid var(--tech-bg-grey-border-match);
     border-radius: var(--border-radius-kanboard-support);
+    transition: var(--transition-kanboard-support);
 }
 
 #valueBTN:hover {
@@ -447,6 +448,7 @@ margin-right: 8px;}
     text-transform: uppercase;
     border: 2px solid var(--tech-bg-grey-border-match);
     border-radius: var(--border-radius-kanboard-support);
+    transition: var(--transition-kanboard-support);
 }
 
 .data-btn svg {
