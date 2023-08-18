@@ -460,3 +460,9 @@ margin-right: 8px;}
 section.privacy-warning p {
     display: inline-block;
 }
+
+a.kb-updates-link {
+    text-decoration: none;
+    transition: var(--transition-kanboard-support);
+    font-style: italic;
+}

@@ -90,7 +90,7 @@
                 <span class="data-wrap">
                     <li class="app-info-title"><?= t('Updates') ?></li>
                     <li class="app-info-value border-bottom-thick">
-                        <a href="https://github.com/kanboard/kanboard/releases" target="_blank" rel="noopener noreferrer" title="<?= t('Opens in a new window') ?>">
+                        <a href="https://github.com/kanboard/kanboard/releases" class="kb-updates-link" target="_blank" rel="noopener noreferrer" title="<?= t('Opens in a new window') ?>">
                             <i class="fa fa-external-link"></i> <?= t('Check for updates') ?>
                         </a>
                     </li>
