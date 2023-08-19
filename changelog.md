@@ -1,5 +1,14 @@
 # Changelog
 
+## v2.9
+
+_(most recent changes are listed on top):_
+- FIX: Padding for Background
+- FIX: Link Style Consistency
+- FIX: Button Transitions
+- FIX: Style Updates Link
+
+
 ## v2.8
 
 _(most recent changes are listed on top):_
