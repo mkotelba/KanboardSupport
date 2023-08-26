@@ -1,5 +1,5 @@
 <?php
-    $user = $this->user->getid();
+    $user = $this->user->getId();
     $user2 = $this->user->getFullname();
 ?>
     <div class="page-header" style="margin-top: 10px;">
@@ -23,7 +23,7 @@
                         <td class="cell-title"><?= t('Your Profile Full Name') ?></td>
                         <td class="cell-value value-name" width=""><?= $this->user->getFullname() ?></td>
                         <td class="cell-title"><?= t('Your User ID') ?></td>
-                        <td class="cell-value value"><?= $this->user->getid() ?></td>
+                        <td class="cell-value value"><?= $this->user->getId() ?></td>
                     </tr>
                     <tr class="support-table-row">
                         <td class="cell-title"><?= t('Your Role') ?></td>
