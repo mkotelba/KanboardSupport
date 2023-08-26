@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.10
+
+_(most recent changes are listed on top):_
+- FIX: User Function Name
+- FIX: Message Alerts Bottom Border
+
 ## v2.9
 
 _(most recent changes are listed on top):_
