@@ -35,7 +35,7 @@
                         <td class="cell-value value-ip" colspan="3">
                             <span class="privacy"><?= $_SERVER['REMOTE_ADDR'] ?></span>
                             <?php if ($this->user->isAdmin()): ?>
-                                <a id="valueBTN" href="https://www.whois.com/whois/<?= $_SERVER['REMOTE_ADDR'] ?>" class="value-btn privacy-delete" target="_blank" rel="noopener noreferrer" title="<?= t('Opens in a new window') ?>">
+                                <a id="valueBTN" href="https://www.whois.com/whois/<?= $_SERVER['REMOTE_ADDR'] ?>" class="value-btn privacy-delete" target="_blank" rel="noopener noreferrer" title="<?= t('Opens in a new window') ?> &#8663;">
                                     <i class="fa fa-external-link"></i> <?= t('Lookup IP') ?>
                                 </a>
                             <?php endif ?>
@@ -91,7 +91,7 @@
                     <span class="data-wrap">
                         <li class="app-info-title"><?= t('Updates') ?></li>
                         <li class="app-info-value border-bottom-thick">
-                            <a href="https://github.com/kanboard/kanboard/releases" class="kb-updates-link" target="_blank" rel="noopener noreferrer" title="<?= t('Opens in a new window') ?>">
+                            <a href="https://github.com/kanboard/kanboard/releases" class="kb-updates-link" target="_blank" rel="noopener noreferrer" title="<?= t('Opens in a new window') ?> &#8663;">
                                 <i class="fa fa-external-link"></i> <?= t('Check for updates') ?>
                             </a>
                         </li>
@@ -462,7 +462,7 @@
                             <?= $_SERVER['SERVER_ADDR'] ?>
                         </li>
                         <?php if ($this->user->isAdmin()): ?>
-                            <a id="valueBTN" href="https://www.whois.com/whois/<?= $_SERVER['SERVER_ADDR'] ?>" class="value-btn privacy-delete" target="_blank" rel="noopener noreferrer" title="<?= t('Opens in a new window') ?>">
+                            <a id="valueBTN" href="https://www.whois.com/whois/<?= $_SERVER['SERVER_ADDR'] ?>" class="value-btn privacy-delete" target="_blank" rel="noopener noreferrer" title="<?= t('Opens in a new window') ?> &#8663;">
                                 <i class="fa fa-external-link"></i> <?= t('Lookup IP') ?>
                             </a>
                         <?php endif ?>
