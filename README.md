@@ -31,13 +31,16 @@
     </a>
 </p>
 
-Add a support section in the Kanboard Settings interface so that end users can easily gather any information required by their internal technical support departments and for troubleshooting purposes.
+This plugin shows a configuration section to display all the default and custom values so that users can check and troubleshoot issues without having to open core files. Display or share configurations to identify and troubleshoot problems across the application in a user-friendly format.
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Features
 
 - Hide sensitive data before sharing technical information
+- Display values from the `conf.php` file
+- Troubleshoot plugins with [PluginManager](https://github.com/aljawaid/PluginManager)
+- Display alert in webhooks page to avoid potential token issues
 - **Directory Permissions**
   - Check if directories are writeable or not
   - Display folder owner to Admins
@@ -106,11 +109,11 @@ Add a support section in the Kanboard Settings interface so that end users can e
 
 ## Usage
 
-Go to `Settings` &#10562; `Technical Information`
+Go to `Settings` &#10562; `Configuration`
 
 **_or_**
 
-Go to User Menu (top right) &#10562; `Technical Information`
+Go to User Menu (top right) &#10562; `Configuration`
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
@@ -144,7 +147,7 @@ Go to User Menu (top right) &#10562; `Technical Information`
 - Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
 - **Other Plugins & Action Plugins**
   - _No known issues_
-  - Compatible with [ApplicationBranding](https://github.com/aljawaid/ApplicationBranding), [ContentCleaner](https://github.com/aljawaid/ContentCleaner)
+  - Compatible with [PluginManager](https://github.com/aljawaid/PluginManager), [ApplicationBranding](https://github.com/aljawaid/ApplicationBranding), [ContentCleaner](https://github.com/aljawaid/ContentCleaner)
 - **Core Files & Templates**
   - `01` Template override
   - _No database changes_
@@ -153,8 +156,7 @@ Go to User Menu (top right) &#10562; `Technical Information`
 <details>
     <summary><strong>Translations</strong></summary>
 
-- English (UK)
-- German
+- English (UK), German
 - _Starter template available_
 
 </details>
