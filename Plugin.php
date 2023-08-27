@@ -17,6 +17,7 @@ class Plugin extends Base
 
         // CSS - Asset Hook - keep filename lowercase
         $this->hook->on('template:layout:css', array('template' => 'plugins/KanboardSupport/Assets/css/kanboard-support.css'));
+        $this->hook->on('template:layout:css', array('template' => 'plugins/KanboardSupport/Assets/css/kanboard-support-icons.css'));
         if (!file_exists('plugins/ContentCleaner') || !file_exists('plugins/PluginManager')) {
             $this->hook->on('template:layout:css', array('template' => 'plugins/KanboardSupport/Assets/css/messages.css'));
         }
