@@ -81,7 +81,7 @@
             <ul class="">
                 <span class="data-wrap">
                     <li class="app-info-title"><?= t('Application Name') ?></li>
-                    <li class="app-info-value border-bottom-thick privacy"><?= t('Kanboard') ?></li>
+                    <li class="app-info-value border-bottom-thick privacy">Kanboard</li>
                 </span>
                 <span class="data-wrap">
                     <li class="app-info-title"><?= t('Version') ?></li>
@@ -185,7 +185,7 @@
                         <span class="pass-tick" title="<?= t('This directory is writeable by the web server user') ?>">&#10004;</span>
                     <?php endif ?>
                     <?php if (CACHE_DRIVER == 'memory'): ?>
-                        <span class="p-note"><i><?= t('Not required as Cache Driver is set to') ?></i> <code><?= t('memory') ?></code></span>
+                        <span class="p-note"><i><?= t('Not required as Cache Driver is set to') ?></i> <code>memory</code></span>
                     <?php else: ?>
                         <?php if ($this->user->isAdmin()): ?>
                             <div id="pCheck" class="p-check">
@@ -256,7 +256,7 @@
                     <li class="app-info-title"><?= t('Session Handler') ?></li>
                     <li class="app-info-value border-bottom-thick">
                         <?php if (SESSION_HANDLER == 'php'): ?>
-                            <span><?= t('PHP') ?></span>
+                            <span>PHP</span>
                         <?php else: ?>
                             <span><?= t('Database') ?></span>
                         <?php endif ?>
@@ -308,14 +308,14 @@
                         </li>
                         <li class="">
                             <?= $this->url->link(t('Download Database'), 'ConfigController', 'downloadDb', array(), true, 'btn btn-sm') ?>&nbsp;
-                            <?= t('(Gzip compressed SQLite file)') ?>
+                            (Gzip <?= t('compressed SQLite file') ?>)
                         </li>
                         <li class="">
                             <?= $this->url->link(t('Upload Database'), 'ConfigController', 'uploadDb', array(), false, 'js-modal-medium btn btn-sm') ?>
                         </li>
                         <li class="">
                             <?= $this->url->link(t('Optimize Database'), 'ConfigController', 'optimizeDb', array(), true, 'btn btn-sm') ?>&nbsp;
-                            <?= t('(VACUUM command)') ?>
+                            (VACUUM <?= t('command') ?>)
                         </li>
                     </ul>
                 </div>
@@ -345,7 +345,7 @@
                 </span>
                 <?php if ($this->user->isAdmin()): ?>
                     <span class="data-wrap">
-                        <li class="mail-info-title"><abbr title="Blind Carbon Copy"><?= t('BCC') ?></abbr></li>
+                        <li class="mail-info-title"><abbr title="Blind Carbon Copy">BCC</abbr></li>
                         <li class="mail-info-value border-bottom-thick privacy">
                         <?php if (empty(MAIL_BCC)): ?>
                             <i><?= t('Not Set') ?></i>
@@ -357,21 +357,21 @@
                 <?php endif ?>
                 <span class="data-wrap">
                     <li class="mail-info-title">
-                        <abbr title="<?= t('Mail Transport Agent') ?>"><?= t('Mail Transport') ?></abbr>
+                        <abbr title="Mail Transport Agent"><?= t('Mail Transport') ?></abbr>
                     </li>
                     <li class="mail-info-value border-bottom-thick">
                         <?php if (MAIL_TRANSPORT == 'smtp'): ?>
-                            <?= t('SMTP') ?>
+                            SMTP
                         <?php elseif (MAIL_TRANSPORT == 'sendmail'): ?>
-                            <?= t('Sendmail') ?>
+                            Sendmail
                         <?php elseif (MAIL_TRANSPORT == 'mail'): ?>
-                            <?= t('PHP Mail') ?>
+                            PHP Mail
                         <?php elseif (MAIL_TRANSPORT == 'postmark'): ?>
-                            <?= t('Postmark') ?>
+                            Postmark
                         <?php elseif (MAIL_TRANSPORT == 'Mailgun'): ?>
-                            <?= t('Mailgun') ?>
+                            Mailgun
                         <?php elseif (MAIL_TRANSPORT == 'sendgrid'): ?>
-                            <?= t('SendGrid') ?>
+                            SendGrid
                         <?php else: ?>
                             <?= t('Other') ?>
                         <?php endif ?>
@@ -389,9 +389,9 @@
                             </li>
                             <li class="mail-info-value border-bottom-thick">
                                 <?php if (MAIL_SMTP_ENCRYPTION == 'ssl'): ?>
-                                    <?= t('SSL') ?>
+                                    SSL
                                 <?php elseif (MAIL_SMTP_ENCRYPTION == 'tls'): ?>
-                                    <?= t('TLS') ?>
+                                    TLS
                                 <?php else: ?>
                                     <?= t('Not Set') ?>
                                 <?php endif ?>
@@ -400,7 +400,7 @@
                     <?php endif ?>
                     <span class="data-wrap">
                         <li class="mail-info-title">
-                            <abbr title="Simple Mail Transport Protocol"><?= t('SMTP Port') ?></abbr>
+                            <abbr title="Simple Mail Transport Protocol">SMTP Port</abbr>
                         </li>
                         <li class="mail-info-value value-path border-bottom-thick"><?= MAIL_SMTP_PORT ?></li>
                     </span>
@@ -412,7 +412,7 @@
                     </span>
                     <span class="data-wrap">
                         <li class="mail-info-title">
-                            <abbr title="Simple Mail Transport Protocol"><?= t('SMTP HELO Command Name') ?></abbr>
+                            <abbr title="Simple Mail Transport Protocol">SMTP HELO <?= t('Command Name') ?></abbr>
                         </li>
                         <li class="mail-info-value border-bottom-thick">
                             <?php if (!empty(MAIL_SMTP_HELO_NAME)): ?>
@@ -447,7 +447,7 @@
                         </li>
                     </span>
                     <span class="data-wrap">
-                        <li class="server-config server-config-title"><?= t('HTTP Client') ?></li>
+                        <li class="server-config server-config-title">HTTP Client</li>
                         <li class="server-value server-config-value border-bottom-thick">
                             <?= Kanboard\Core\Http\Client::backend() ?>
                         </li>
@@ -468,7 +468,7 @@
                         <?php endif ?>
                     </span>
                     <span class="data-wrap">
-                        <li class="server-config server-config-title"><?= t('Server Port') ?></li>
+                        <li class="server-config server-config-title">Server Port</li>
                         <li class="server-value server-config-value border-bottom-thick value-ip">
                             <?php if ($_SERVER['SERVER_PORT'] == '443'): ?>
                                 <i class="fa fa-lock pp-green" title="<?= t('Secure') ?>"></i> <?= $_SERVER['SERVER_PORT'] ?>
@@ -482,7 +482,7 @@
                         <li class="server-value server-config-value border-bottom-thick value-path"><?= sys_get_temp_dir() ?></li>
                     </span>
                     <span class="data-wrap">
-                        <li class="server-config server-config-title"><?= t('Document Root') ?></li>
+                        <li class="server-config server-config-title">Document Root</li>
                         <li class="server-value server-config-value border-bottom-thick value-path privacy"><?= $_SERVER['DOCUMENT_ROOT'] ?></li>
                         <?php if (!is_writable($_SERVER['DOCUMENT_ROOT'])): ?>
                             <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
@@ -516,7 +516,7 @@
                         <?php endif ?>
                     </span>
                     <span class="data-wrap">
-                        <li class="server-config server-config-title"><?= t('Session Save Path') ?></li>
+                        <li class="server-config server-config-title">Session Save Path</li>
                         <li class="server-value server-config-value border-bottom-thick value-path"><?= session_save_path() ?></li>
                         <?php if (!is_writable(session_save_path())): ?>
                             <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
@@ -554,7 +554,7 @@
                         <li class="server-value server-config-value border-bottom-thick value-path privacy"><?= $_SERVER['SCRIPT_FILENAME'] ?></li>
                     </span>
                     <span class="data-wrap">
-                        <li class="server-config server-config-title" title="<?= t('Common Gateway Interface') ?>"><?= t('CGI Version') ?></li>
+                        <li class="server-config server-config-title" title="<?= t('Common Gateway Interface') ?>">CGI <?= t('Version') ?></li>
                         <li class="server-value server-config-value border-bottom-thick"><?= $_SERVER['GATEWAY_INTERFACE'] ?></li>
                     </span>
                     <span class="data-wrap">
@@ -599,7 +599,7 @@
                 <span class="data-wrap">
                     <li class="app-info-title"><?= t('Version') ?></li>
                     <li class="app-info-value value-version border-bottom-thick">
-                        <strong><abbr title="Major Version"><?= PHP_MAJOR_VERSION ?></abbr></strong>.<abbr title="Minor Version"><?= PHP_MINOR_VERSION ?></abbr>.<abbr title="Release Version"><?= PHP_RELEASE_VERSION ?></abbr>
+                        <strong><abbr title="<?= t('Major Version') ?>"><?= PHP_MAJOR_VERSION ?></abbr></strong>.<abbr title="<?= t('Minor Version') ?>"><?= PHP_MINOR_VERSION ?></abbr>.<abbr title="<?= t('Release Version') ?>"><?= PHP_RELEASE_VERSION ?></abbr>
                     </li>
                     <?php if (version_compare(PHP_VERSION, '7.2.0', '<')): ?>
                         <span class="fail">
@@ -610,19 +610,19 @@
                     <?php endif ?>
                 </span>
                 <span class="data-wrap">
-                    <li class="app-info-title"><?= t('PHP Config File Path') ?></li>
+                    <li class="app-info-title">PHP <?= t('Config File Path') ?></li>
                     <li class="app-info-value value-path border-bottom-thick"><?= PHP_CONFIG_FILE_PATH ?></li>
                 </span>
                 <span class="data-wrap">
-                    <li class="app-info-title"><?= t('PHP Config File Scan Directory') ?></li>
+                    <li class="app-info-title">PHP <?= t('Config File Scan Directory') ?></li>
                     <li class="app-info-value value-path border-bottom-thick"><?= PHP_CONFIG_FILE_SCAN_DIR ?></li>
                 </span>
                 <span class="data-wrap">
-                    <li class="app-info-title"><?= t('PHP Loaded Configuration File') ?></li>
+                    <li class="app-info-title">PHP <?= t('Loaded Configuration File') ?></li>
                     <li class="app-info-value value-path border-bottom-thick"><?= php_ini_loaded_file() ?></li>
                 </span>
                 <span class="data-wrap">
-                    <li class="app-info-title"><abbr title="<?= t('PHP Server API') ?>"><?= t('PHP SAPI') ?></abbr></li>
+                    <li class="app-info-title"><abbr title="PHP Server API">PHP SAPI</abbr></li>
                     <li class="app-info-value value border-bottom-thick"><?= PHP_SAPI ?></li>
                 </span>
             </ul>
