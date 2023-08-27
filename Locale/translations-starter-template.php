@@ -13,7 +13,7 @@ return array(
     //
     // GENERAL
     //
-    'This plugin shows a configuration section to display all the default and custom values so that users can check and troubleshoot issues without having to open core files.' => 'This plugin shows a configuration section to display all the default and custom values so that users can check and troubleshoot issues without having to open core files.',
+    'This plugin shows a configuration section to display all the default and custom values so that users can check and troubleshoot issues without having to open core files.' => '',
     //
     // Controller/TechnicalSupportController.php
     //
