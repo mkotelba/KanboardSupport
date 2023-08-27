@@ -82,6 +82,10 @@ h2 .fa-code {
     font-weight: bold;
 }
 
+#UserTable {
+    border-collapse: unset;
+}
+
 #UserTable > thead > tr > th, #UserTable > tbody > tr > td, #UserTable > tbody > tr > th {
     padding: 4px 15px;
 }
