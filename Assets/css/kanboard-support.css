@@ -124,6 +124,9 @@ h2 .fa-code {
     border-bottom: 1px solid var(--tech-bg-grey-border-match);
 }
 
+a.user-profile-link:hover, a.user-profile-link:focus, a.kb-updates-link:hover, a.kb-updates-link:focus {
+    color: var(--pp-red-alt-2);
+}
 
 a.user-profile-link {
     font-weight: 600;
