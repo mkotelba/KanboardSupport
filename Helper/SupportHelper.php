@@ -45,7 +45,7 @@ class SupportHelper extends Base
                 $info = 'b';
                 break;
             case 0x4000: // directory
-                $info = '<span class="p-type" title="Directory">d</span>';
+                $info = '<span class="p-type" title="' . t('Directory') . '">d</span>';
                 break;
             case 0x2000: // character special
                 $info = 'c';
