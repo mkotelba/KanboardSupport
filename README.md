@@ -156,7 +156,7 @@ Go to User Menu (top right) &#10562; `Configuration`
 <details>
     <summary><strong>Translations</strong></summary>
 
-- English (UK), French, German
+- English (UK), French, German, Spanish
 - _Starter template available_
 
 </details>
