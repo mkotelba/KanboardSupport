@@ -49,7 +49,7 @@ class Plugin extends Base
 
     public function getPluginDescription()
     {
-        return t('Add a support section in the Kanboard Settings interface so that end users can easily gather any information required by their internal technical support departments for troubleshooting.');
+        return t('This plugin shows a configuration section to display all the default and custom values so that users can check and troubleshoot issues without having to open core files.');
     }
 
     public function getPluginAuthor()

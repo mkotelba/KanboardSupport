@@ -2,7 +2,7 @@
 
 return array(
     'KanboardSupport' => 'Kanboard technische Support-Infos',
-    'Add a support section in the Kanboard Settings interface so that end users can easily gather any information required by their internal technical support departments for troubleshooting.' => 'Fügen Sie einen Support-Bereich in die Kanboard-Einstellungen ein, damit die Endbenutzer leicht alle Informationen sammeln können, die ihre internen technischen Support-Abteilungen für die Fehlersuche benötigen.',
+    'This plugin shows a configuration section to display all the default and custom values so that users can check and troubleshoot issues without having to open core files.' => 'Dieses Plugin zeigt einen Konfigurationsabschnitt zur Anzeige aller Standard- und benutzerdefinierten Werte an, sodass Benutzer Probleme überprüfen und beheben können, ohne Kerndateien öffnen zu müssen.',
     'Configuration' => 'Konfiguration',
     'Application Configuration' => 'Anwendung Konfiguration',
     'User Configuration' => 'Benutzer-Konfiguration',
