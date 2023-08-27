@@ -31,7 +31,7 @@ class Plugin extends Base
         $this->template->hook->attach('template:header:dropdown', 'kanboardSupport:header/user_dropdown');
 
         // SUPPORT PAGE - Routes
-        $this->route->addRoute('/settings/support', 'TechnicalSupportController', 'show', 'KanboardSupport');
+        $this->route->addRoute('/settings/configuration', 'TechnicalSupportController', 'show', 'KanboardSupport');
 
         // HELPER
         $this->helper->register('supportHelper', '\Kanboard\Plugin\KanboardSupport\Helper\SupportHelper');
