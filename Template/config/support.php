@@ -10,9 +10,6 @@
     </div>
     <!-- USER CONFIGURATION -->
     <section class="support-section">
-        <h2 class="">
-            <i class="fa fa-user"></i> <?= t('User Configuration') ?>
-        </h2>
         <div class="table-responsive">
             <table id="UserTable" class="support-table user-table table-center">
                 <thead class="">
