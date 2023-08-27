@@ -2,13 +2,17 @@
     $user = $this->user->getId();
     $user2 = $this->user->getFullname();
 ?>
+<div class="config-page">
     <div class="page-header" style="margin-top: 10px;">
-        <h2><i class="fa fa-question-circle"></i> <?= t('Application Configuration') ?></h2>
+        <h2 class="">
+            <i class="fa fa-question-circle"></i> <?= t('Application Configuration') ?>
+        </h2>
     </div>
-
-<!-- USER CONFIGURATION -->
+    <!-- USER CONFIGURATION -->
     <section class="support-section">
-        <h2><i class="fa fa-user"></i> <?= t('User Configuration') ?></h2>
+        <h2 class="">
+            <i class="fa fa-user"></i> <?= t('User Configuration') ?>
+        </h2>
         <div class="table-responsive">
             <table id="UserTable" class="support-table user-table table-center">
                 <thead class="">
@@ -56,10 +60,11 @@
             </table>
         </div>
     </section>
-
-<!-- PRIVACY WARNING -->
+    <!-- PRIVACY WARNING -->
     <section class="support-section privacy-warning">
-        <h2 class=""><i class="fa fa-warning pp-red"></i> <?= t('Your Data Privacy') ?></h2>
+        <h2 class="">
+            <i class="fa fa-warning pp-red"></i> <?= t('Your Data Privacy') ?>
+        </h2>
         <div class="">
             <p class=""><?= t('This page shows sensitive data. Hide selective information before sharing.') ?></p>
             <button class="data-btn">
@@ -70,10 +75,11 @@
             </button>
         </div>
     </section>
-
-<!-- APPLICATION INFORMATION -->
+    <!-- APPLICATION INFORMATION -->
     <section class="support-section">
-        <h2 class=""><i class="fa fa-cog"></i> <?= t('Application Information') ?></h2>
+        <h2 class="">
+            <i class="fa fa-cog"></i> <?= t('Application Information') ?>
+        </h2>
         <div class="app-info">
             <ul class="">
                 <span class="data-wrap">
@@ -87,14 +93,14 @@
                 </span>
                 <li class="empty-col"></li>
                 <?php if ($this->user->isAdmin()): ?>
-                <span class="data-wrap">
-                    <li class="app-info-title"><?= t('Updates') ?></li>
-                    <li class="app-info-value border-bottom-thick">
-                        <a href="https://github.com/kanboard/kanboard/releases" class="kb-updates-link" target="_blank" rel="noopener noreferrer" title="<?= t('Opens in a new window') ?>">
-                            <i class="fa fa-external-link"></i> <?= t('Check for updates') ?>
-                        </a>
-                    </li>
-                </span>
+                    <span class="data-wrap">
+                        <li class="app-info-title"><?= t('Updates') ?></li>
+                        <li class="app-info-value border-bottom-thick">
+                            <a href="https://github.com/kanboard/kanboard/releases" class="kb-updates-link" target="_blank" rel="noopener noreferrer" title="<?= t('Opens in a new window') ?>">
+                                <i class="fa fa-external-link"></i> <?= t('Check for updates') ?>
+                            </a>
+                        </li>
+                    </span>
                 <?php endif ?>
                 <span class="data-wrap">
                     <li class="app-info-title"><?= t('Debug Mode') ?></li>
@@ -118,13 +124,25 @@
                     <?php if ($this->user->isAdmin()): ?>
                         <div id="pCheck" class="p-check">
                             <?php if (!is_writable(DATA_DIR)): ?>
-                                <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(DATA_DIR) ?></span>
-                                <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(DATA_DIR) ?></span>
-                                <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(DATA_DIR) ?></span>
+                                <span class="p-dir" title="<?= t('Directory Permissions') ?>">
+                                    <?= $this->helper->supportHelper->getPermissions(DATA_DIR) ?>
+                                </span>
+                                <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>">
+                                    <?= $this->helper->supportHelper->getPermissionsLinux(DATA_DIR) ?>
+                                </span>
+                                <span class="p-owner" title="<?= t('Directory Owner') ?>">
+                                    <?= $this->helper->supportHelper->getPermissionsOwner(DATA_DIR) ?>
+                                </span>
                             <?php else: ?>
-                                <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(DATA_DIR) ?></span>
-                                <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(DATA_DIR) ?></span>
-                                <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(DATA_DIR) ?></span>
+                                <span class="p-dir" title="<?= t('Directory Permissions') ?>">
+                                    <?= $this->helper->supportHelper->getPermissions(DATA_DIR) ?>
+                                </span>
+                                <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>">
+                                    <?= $this->helper->supportHelper->getPermissionsLinux(DATA_DIR) ?>
+                                </span>
+                                <span class="p-owner" title="<?= t('Directory Owner') ?>">
+                                    <?= $this->helper->supportHelper->getPermissionsOwner(DATA_DIR) ?>
+                                </span>
                             <?php endif ?>
                         </div>
                     <?php endif ?>
@@ -140,13 +158,25 @@
                     <?php if ($this->user->isAdmin()): ?>
                         <div id="pCheck" class="p-check">
                             <?php if (!is_writable(FILES_DIR)): ?>
-                                <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(FILES_DIR) ?></span>
-                                <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(FILES_DIR) ?></span>
-                                <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(FILES_DIR) ?></span>
+                                <span class="p-dir" title="<?= t('Directory Permissions') ?>">
+                                    <?= $this->helper->supportHelper->getPermissions(FILES_DIR) ?>
+                                </span>
+                                <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>">
+                                    <?= $this->helper->supportHelper->getPermissionsLinux(FILES_DIR) ?>
+                                </span>
+                                <span class="p-owner" title="<?= t('Directory Owner') ?>">
+                                    <?= $this->helper->supportHelper->getPermissionsOwner(FILES_DIR) ?>
+                                </span>
                             <?php else: ?>
-                                <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(FILES_DIR) ?></span>
-                                <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(FILES_DIR) ?></span>
-                                <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(FILES_DIR) ?></span>
+                                <span class="p-dir" title="<?= t('Directory Permissions') ?>">
+                                    <?= $this->helper->supportHelper->getPermissions(FILES_DIR) ?>
+                                </span>
+                                <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>">
+                                    <?= $this->helper->supportHelper->getPermissionsLinux(FILES_DIR) ?>
+                                </span>
+                                <span class="p-owner" title="<?= t('Directory Owner') ?>">
+                                    <?= $this->helper->supportHelper->getPermissionsOwner(FILES_DIR) ?>
+                                </span>
                             <?php endif ?>
                         </div>
                     <?php endif ?>
@@ -165,13 +195,25 @@
                         <?php if ($this->user->isAdmin()): ?>
                             <div id="pCheck" class="p-check">
                                 <?php if (!is_writable(CACHE_DIR)): ?>
-                                    <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(CACHE_DIR) ?></span>
-                                    <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(CACHE_DIR) ?></span>
-                                    <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(CACHE_DIR) ?></span>
+                                    <span class="p-dir" title="<?= t('Directory Permissions') ?>">
+                                        <?= $this->helper->supportHelper->getPermissions(CACHE_DIR) ?>
+                                    </span>
+                                    <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>">
+                                        <?= $this->helper->supportHelper->getPermissionsLinux(CACHE_DIR) ?>
+                                    </span>
+                                    <span class="p-owner" title="<?= t('Directory Owner') ?>">
+                                        <?= $this->helper->supportHelper->getPermissionsOwner(CACHE_DIR) ?>
+                                    </span>
                                 <?php else: ?>
-                                    <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(CACHE_DIR) ?></span>
-                                    <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(CACHE_DIR) ?></span>
-                                    <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(CACHE_DIR) ?></span>
+                                    <span class="p-dir" title="<?= t('Directory Permissions') ?>">
+                                        <?= $this->helper->supportHelper->getPermissions(CACHE_DIR) ?>
+                                    </span>
+                                    <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>">
+                                        <?= $this->helper->supportHelper->getPermissionsLinux(CACHE_DIR) ?>
+                                    </span>
+                                    <span class="p-owner" title="<?= t('Directory Owner') ?>">
+                                        <?= $this->helper->supportHelper->getPermissionsOwner(CACHE_DIR) ?>
+                                    </span>
                                 <?php endif ?>
                             </div>
                         <?php endif ?>
@@ -188,13 +230,25 @@
                     <?php if ($this->user->isAdmin()): ?>
                         <div id="pCheck" class="p-check">
                             <?php if (!is_writable(PLUGINS_DIR)): ?>
-                                <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(PLUGINS_DIR) ?></span>
-                                <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(PLUGINS_DIR) ?></span>
-                                <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(PLUGINS_DIR) ?></span>
+                                <span class="p-dir" title="<?= t('Directory Permissions') ?>">
+                                    <?= $this->helper->supportHelper->getPermissions(PLUGINS_DIR) ?>
+                                </span>
+                                <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>">
+                                    <?= $this->helper->supportHelper->getPermissionsLinux(PLUGINS_DIR) ?>
+                                </span>
+                                <span class="p-owner" title="<?= t('Directory Owner') ?>">
+                                    <?= $this->helper->supportHelper->getPermissionsOwner(PLUGINS_DIR) ?>
+                                </span>
                             <?php else: ?>
-                                <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(PLUGINS_DIR) ?></span>
-                                <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(PLUGINS_DIR) ?></span>
-                                <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(PLUGINS_DIR) ?></span>
+                                <span class="p-dir" title="<?= t('Directory Permissions') ?>">
+                                    <?= $this->helper->supportHelper->getPermissions(PLUGINS_DIR) ?>
+                                </span>
+                                <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>">
+                                    <?= $this->helper->supportHelper->getPermissionsLinux(PLUGINS_DIR) ?>
+                                </span>
+                                <span class="p-owner" title="<?= t('Directory Owner') ?>">
+                                    <?= $this->helper->supportHelper->getPermissionsOwner(PLUGINS_DIR) ?>
+                                </span>
                             <?php endif ?>
                         </div>
                     <?php endif ?>
@@ -215,15 +269,18 @@
                 </span>
                 <span class="data-wrap">
                     <li class="app-info-title"><?= t('Session Duration') ?></li>
-                    <li class="app-info-value value-version border-bottom-thick"><?= SESSION_DURATION ?> <small><i><?= t('Until browser is closed') ?></i></small></li>
+                    <li class="app-info-value value-version border-bottom-thick">
+                        <?= SESSION_DURATION ?> <small><i><?= t('Until browser is closed') ?></i></small>
+                    </li>
                 </span>
             </ul>
         </div>
     </section>
-
-<!-- DATABASE CONNECTION -->
+    <!-- DATABASE CONNECTION -->
     <section id="DBSupportSection" class="support-section">
-        <h2 class=""><i class="fa fa-database"></i> <?= t('Database Connection') ?></h2>
+        <h2 class="">
+            <i class="fa fa-database"></i> <?= t('Database Connection') ?>
+        </h2>
         <div class="db-info">
             <ul class="">
                 <span class="data-wrap">
@@ -249,7 +306,7 @@
             </ul>
             <?php if (DB_DRIVER === 'sqlite'): ?>
                 <div class="panel">
-                    <ul>
+                    <ul class="">
                         <li class="">
                             <?= t('Database Size') ?>
                             <strong><?= $this->text->bytes($db_size) ?></strong>
@@ -270,10 +327,11 @@
             <?php endif ?>
         </div>
     </section>
-
-<!-- EMAIL CONNECTION -->
+    <!-- EMAIL CONNECTION -->
     <section class="support-section">
-        <h2 class=""><i class="fa fa-envelope"></i> <?= t('Email Connection') ?></h2>
+        <h2 class="">
+            <i class="fa fa-envelope"></i> <?= t('Email Connection') ?>
+        </h2>
         <div class="mail-info">
             <ul class="">
                 <span class="data-wrap">
@@ -303,23 +361,25 @@
                     </span>
                 <?php endif ?>
                 <span class="data-wrap">
-                    <li class="mail-info-title"><abbr title="<?= t('Mail Transport Agent') ?>"><?= t('Mail Transport') ?></abbr></li>
+                    <li class="mail-info-title">
+                        <abbr title="<?= t('Mail Transport Agent') ?>"><?= t('Mail Transport') ?></abbr>
+                    </li>
                     <li class="mail-info-value border-bottom-thick">
-                    <?php if (MAIL_TRANSPORT == 'smtp'): ?>
-                        <?= t('SMTP') ?>
-                    <?php elseif (MAIL_TRANSPORT == 'sendmail'): ?>
-                        <?= t('Sendmail') ?>
-                    <?php elseif (MAIL_TRANSPORT == 'mail'): ?>
-                        <?= t('PHP Mail') ?>
-                    <?php elseif (MAIL_TRANSPORT == 'postmark'): ?>
-                        <?= t('Postmark') ?>
-                    <?php elseif (MAIL_TRANSPORT == 'Mailgun'): ?>
-                        <?= t('Mailgun') ?>
-                    <?php elseif (MAIL_TRANSPORT == 'sendgrid'): ?>
-                        <?= t('SendGrid') ?>
-                    <?php else: ?>
-                        <?= t('Other') ?>
-                    <?php endif ?>
+                        <?php if (MAIL_TRANSPORT == 'smtp'): ?>
+                            <?= t('SMTP') ?>
+                        <?php elseif (MAIL_TRANSPORT == 'sendmail'): ?>
+                            <?= t('Sendmail') ?>
+                        <?php elseif (MAIL_TRANSPORT == 'mail'): ?>
+                            <?= t('PHP Mail') ?>
+                        <?php elseif (MAIL_TRANSPORT == 'postmark'): ?>
+                            <?= t('Postmark') ?>
+                        <?php elseif (MAIL_TRANSPORT == 'Mailgun'): ?>
+                            <?= t('Mailgun') ?>
+                        <?php elseif (MAIL_TRANSPORT == 'sendgrid'): ?>
+                            <?= t('SendGrid') ?>
+                        <?php else: ?>
+                            <?= t('Other') ?>
+                        <?php endif ?>
                     </li>
                 </span>
                 <?php if (MAIL_TRANSPORT == 'smtp'): ?>
@@ -329,74 +389,90 @@
                     </span>
                     <?php if (!empty(MAIL_SMTP_ENCRYPTION)): ?>
                         <span class="data-wrap">
-                            <li class="mail-info-title"><abbr title="Simple Mail Transport Protocol"><?= t('SMTP Encryption') ?></abbr></li>
+                            <li class="mail-info-title">
+                                <abbr title="Simple Mail Transport Protocol"><?= t('SMTP Encryption') ?></abbr>
+                            </li>
                             <li class="mail-info-value border-bottom-thick">
-                            <?php if (MAIL_SMTP_ENCRYPTION == 'ssl'): ?>
-                                <?= t('SSL') ?>
-                            <?php elseif (MAIL_SMTP_ENCRYPTION == 'tls'): ?>
-                                <?= t('TLS') ?>
-                            <?php else: ?>
-                                <?= t('Not Set') ?>
-                            <?php endif ?>
+                                <?php if (MAIL_SMTP_ENCRYPTION == 'ssl'): ?>
+                                    <?= t('SSL') ?>
+                                <?php elseif (MAIL_SMTP_ENCRYPTION == 'tls'): ?>
+                                    <?= t('TLS') ?>
+                                <?php else: ?>
+                                    <?= t('Not Set') ?>
+                                <?php endif ?>
                             </li>
                         </span>
                     <?php endif ?>
                     <span class="data-wrap">
-                        <li class="mail-info-title"><abbr title="Simple Mail Transport Protocol"><?= t('SMTP Port') ?></abbr></li>
+                        <li class="mail-info-title">
+                            <abbr title="Simple Mail Transport Protocol"><?= t('SMTP Port') ?></abbr>
+                        </li>
                         <li class="mail-info-value value-path border-bottom-thick"><?= MAIL_SMTP_PORT ?></li>
                     </span>
                     <span class="data-wrap">
-                        <li class="mail-info-title"><abbr title="Simple Mail Transport Protocol"><?= t('SMTP Username') ?></abbr></li>
+                        <li class="mail-info-title">
+                            <abbr title="Simple Mail Transport Protocol"><?= t('SMTP Username') ?></abbr>
+                        </li>
                         <li class="mail-info-value border-bottom-thick privacy"><?= MAIL_SMTP_USERNAME ?></li>
                     </span>
                     <span class="data-wrap">
-                        <li class="mail-info-title"><abbr title="Simple Mail Transport Protocol"><?= t('SMTP HELO Command Name') ?></abbr></li>
+                        <li class="mail-info-title">
+                            <abbr title="Simple Mail Transport Protocol"><?= t('SMTP HELO Command Name') ?></abbr>
+                        </li>
                         <li class="mail-info-value border-bottom-thick">
-                        <?php if (!empty(MAIL_SMTP_HELO_NAME)): ?>
-                            <?= MAIL_SMTP_HELO_NAME ?>
-                        <?php else: ?>
-                            <i><?= t('Not Set') ?></i>
-                        <?php endif ?>
+                            <?php if (!empty(MAIL_SMTP_HELO_NAME)): ?>
+                                <?= MAIL_SMTP_HELO_NAME ?>
+                            <?php else: ?>
+                                <i><?= t('Not Set') ?></i>
+                            <?php endif ?>
                         </li>
                     </span>
                 <?php endif ?>
                 <?php if (MAIL_TRANSPORT == 'sendmail'): ?>
                     <span class="data-wrap">
-                    <li class="mail-info-title"><?= t('Sendmail Command') ?></li>
-                    <li class="mail-info-value value-path border-bottom-thick"><?= MAIL_SENDMAIL_COMMAND ?></li>
+                        <li class="mail-info-title"><?= t('Sendmail Command') ?></li>
+                        <li class="mail-info-value value-path border-bottom-thick"><?= MAIL_SENDMAIL_COMMAND ?></li>
                     </span>
                 <?php endif ?>
             </ul>
         </div>
     </section>
-
-<!-- SERVER CONFIGURATION -->
+    <!-- SERVER CONFIGURATION -->
     <section id="ServerConfig" class="support-section">
-        <h2 class=""><i class="fa fa-server"></i> <?= t('Server Configuration') ?></h2>
+        <h2 class="">
+            <i class="fa fa-server"></i> <?= t('Server Configuration') ?>
+        </h2>
         <div class="server-info">
             <div class="server-col">
                 <ul class="server-list">
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('Operating System') ?></li>
-                        <li class="server-value server-config-value border-bottom-thick"><?= @php_uname('s') . ' ' . @php_uname('r') . ' ' . @php_uname('m') ?></li>
+                        <li class="server-value server-config-value border-bottom-thick">
+                            <?= @php_uname('s') . ' ' . @php_uname('r') . ' ' . @php_uname('m') ?>
+                        </li>
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('HTTP Client') ?></li>
-                        <li class="server-value server-config-value border-bottom-thick"><?= Kanboard\Core\Http\Client::backend() ?></li>
+                        <li class="server-value server-config-value border-bottom-thick">
+                            <?= Kanboard\Core\Http\Client::backend() ?>
+                        </li>
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title" title="<?= t('Website Address') ?>"><?= t('Domain') ?></li>
-                        <li class="server-value server-config-value border-bottom-thick value-url privacy"><?= $_SERVER['SERVER_NAME'] ?></li>
+                        <li class="server-value server-config-value border-bottom-thick value-url privacy">
+                            <?= $_SERVER['SERVER_NAME'] ?>
+                        </li>
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('Server IP Address') ?></li>
-                        <li class="server-value server-config-value border-bottom-thick value-ip privacy"><?= $_SERVER['SERVER_ADDR'] ?>
+                        <li class="server-value server-config-value border-bottom-thick value-ip privacy">
+                            <?= $_SERVER['SERVER_ADDR'] ?>
                         </li>
-                            <?php if ($this->user->isAdmin()): ?>
-                                <a id="valueBTN" href="https://www.whois.com/whois/<?= $_SERVER['SERVER_ADDR'] ?>" class="value-btn privacy-delete" target="_blank" rel="noopener noreferrer" title="<?= t('Opens in a new window') ?>">
-                                    <i class="fa fa-external-link"></i> <?= t('Lookup IP') ?>
-                                </a>
-                            <?php endif ?>
+                        <?php if ($this->user->isAdmin()): ?>
+                            <a id="valueBTN" href="https://www.whois.com/whois/<?= $_SERVER['SERVER_ADDR'] ?>" class="value-btn privacy-delete" target="_blank" rel="noopener noreferrer" title="<?= t('Opens in a new window') ?>">
+                                <i class="fa fa-external-link"></i> <?= t('Lookup IP') ?>
+                            </a>
+                        <?php endif ?>
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('Server Port') ?></li>
@@ -410,11 +486,15 @@
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('System Temporary Directory') ?></li>
-                        <li class="server-value server-config-value border-bottom-thick value-path"><?= sys_get_temp_dir() ?></li>
+                        <li class="server-value server-config-value border-bottom-thick value-path">
+                            <?= sys_get_temp_dir() ?>
+                        </li>
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('Document Root') ?></li>
-                        <li class="server-value server-config-value border-bottom-thick value-path privacy"><?= $_SERVER['DOCUMENT_ROOT'] ?></li>
+                        <li class="server-value server-config-value border-bottom-thick value-path privacy">
+                            <?= $_SERVER['DOCUMENT_ROOT'] ?>
+                        </li>
                         <?php if (!is_writable($_SERVER['DOCUMENT_ROOT'])): ?>
                             <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
                         <?php else: ?>
@@ -423,13 +503,25 @@
                         <?php if ($this->user->isAdmin()): ?>
                             <div id="pCheck" class="p-check">
                                 <?php if (!is_writable($_SERVER['DOCUMENT_ROOT'])): ?>
-                                    <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions($_SERVER['DOCUMENT_ROOT']) ?></span>
-                                    <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux($_SERVER['DOCUMENT_ROOT']) ?></span>
-                                    <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner($_SERVER['DOCUMENT_ROOT']) ?></span>
+                                    <span class="p-dir" title="<?= t('Directory Permissions') ?>">
+                                        <?= $this->helper->supportHelper->getPermissions($_SERVER['DOCUMENT_ROOT']) ?>
+                                    </span>
+                                    <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>">
+                                        <?= $this->helper->supportHelper->getPermissionsLinux($_SERVER['DOCUMENT_ROOT']) ?>
+                                    </span>
+                                    <span class="p-owner" title="<?= t('Directory Owner') ?>">
+                                        <?= $this->helper->supportHelper->getPermissionsOwner($_SERVER['DOCUMENT_ROOT']) ?>
+                                    </span>
                                 <?php else: ?>
-                                    <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions($_SERVER['DOCUMENT_ROOT']) ?></span>
-                                    <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux($_SERVER['DOCUMENT_ROOT']) ?></span>
-                                    <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner($_SERVER['DOCUMENT_ROOT']) ?></span>
+                                    <span class="p-dir" title="<?= t('Directory Permissions') ?>">
+                                        <?= $this->helper->supportHelper->getPermissions($_SERVER['DOCUMENT_ROOT']) ?>
+                                    </span>
+                                    <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>">
+                                        <?= $this->helper->supportHelper->getPermissionsLinux($_SERVER['DOCUMENT_ROOT']) ?>
+                                    </span>
+                                    <span class="p-owner" title="<?= t('Directory Owner') ?>">
+                                        <?= $this->helper->supportHelper->getPermissionsOwner($_SERVER['DOCUMENT_ROOT']) ?>
+                                    </span>
                                 <?php endif ?>
                             </div>
                         <?php endif ?>
@@ -445,28 +537,48 @@
                         <?php if ($this->user->isAdmin()): ?>
                             <div id="pCheck" class="p-check">
                                 <?php if (!is_writable(session_save_path())): ?>
-                                    <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(session_save_path()) ?></span>
-                                    <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(session_save_path()) ?></span>
-                                    <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(session_save_path()) ?></span>
+                                    <span class="p-dir" title="<?= t('Directory Permissions') ?>">
+                                        <?= $this->helper->supportHelper->getPermissions(session_save_path()) ?>
+                                    </span>
+                                    <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>">
+                                        <?= $this->helper->supportHelper->getPermissionsLinux(session_save_path()) ?>
+                                    </span>
+                                    <span class="p-owner" title="<?= t('Directory Owner') ?>">
+                                        <?= $this->helper->supportHelper->getPermissionsOwner(session_save_path()) ?>
+                                    </span>
                                 <?php else: ?>
-                                    <span class="p-dir" title="<?= t('Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissions(session_save_path()) ?></span>
-                                    <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>"><?= $this->helper->supportHelper->getPermissionsLinux(session_save_path()) ?></span>
-                                    <span class="p-owner" title="<?= t('Directory Owner') ?>"><?= $this->helper->supportHelper->getPermissionsOwner(session_save_path()) ?></span>
+                                    <span class="p-dir" title="<?= t('Directory Permissions') ?>">
+                                        <?= $this->helper->supportHelper->getPermissions(session_save_path()) ?>
+                                    </span>
+                                    <span class="p-linux value-ip" title="<?= t('Linux Directory Permissions') ?>">
+                                        <?= $this->helper->supportHelper->getPermissionsLinux(session_save_path()) ?>
+                                    </span>
+                                    <span class="p-owner" title="<?= t('Directory Owner') ?>">
+                                        <?= $this->helper->supportHelper->getPermissionsOwner(session_save_path()) ?>
+                                    </span>
                                 <?php endif ?>
                             </div>
                         <?php endif ?>
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('Absolute Path') ?></li>
-                        <li class="server-value server-config-value border-bottom-thick value-path privacy"><?= $_SERVER['SCRIPT_FILENAME'] ?></li>
+                        <li class="server-value server-config-value border-bottom-thick value-path privacy">
+                            <?= $_SERVER['SCRIPT_FILENAME'] ?>
+                        </li>
                     </span>
                     <span class="data-wrap">
-                        <li class="server-config server-config-title" title="<?= t('Common Gateway Interface') ?>"><?= t('CGI Version') ?></li>
-                        <li class="server-value server-config-value border-bottom-thick"><?= $_SERVER['GATEWAY_INTERFACE'] ?></li>
+                        <li class="server-config server-config-title" title="<?= t('Common Gateway Interface') ?>">
+                            <?= t('CGI Version') ?>
+                        </li>
+                        <li class="server-value server-config-value border-bottom-thick">
+                            <?= $_SERVER['GATEWAY_INTERFACE'] ?>
+                        </li>
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('HTTP Web Server') ?></li>
-                        <li class="server-value server-config-value border-bottom-thick"><?= $_SERVER['SERVER_SOFTWARE'] ?></li>
+                        <li class="server-value server-config-value border-bottom-thick">
+                            <?= $_SERVER['SERVER_SOFTWARE'] ?>
+                        </li>
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('Pretty URLs') ?></li>
@@ -496,10 +608,11 @@
             </div>
         </div>
     </section>
-
-<!-- PHP INFORMATION -->
+    <!-- PHP INFORMATION -->
     <section class="support-section">
-        <h2 class=""><i class="fa fa-code"></i> <?= t('PHP Information') ?></h2>
+        <h2 class="">
+            <i class="fa fa-code"></i> <?= t('PHP Information') ?>
+        </h2>
         <div class="php-info">
             <ul class="">
                 <span class="data-wrap">
@@ -512,9 +625,7 @@
                             <span class="fail-x">&#10008;</span> <?= t('Less than minimum requirement') ?>
                         </span>
                     <?php else: ?>
-                        <span class="pass">
-                            <span class="pass-tick">&#10004;</span> <?= t('Pass') ?>
-                        </span>
+                        <span class="pass"><span class="pass-tick">&#10004;</span> <?= t('Pass') ?></span>
                     <?php endif ?>
                 </span>
                 <li class="empty-col"></li>
@@ -543,33 +654,29 @@
         </div>
         <!-- gd -->
         <div class="tile-wrapper">
-            <div class="tile-name" title="<?= t('PHP Extension Name') ?>">
-                <code>gd</code>
-            </div>
+            <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>gd</code></div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
-            <?php if (extension_loaded('gd')): ?>
-                <span class="value-version"><?= phpversion('gd') ?></span>
-            <?php else: ?>
-                <span class="value-version"><?= t('Not Detected') ?></span>
-            <?php endif ?>
+                <?php if (extension_loaded('gd')): ?>
+                    <span class="value-version"><?= phpversion('gd') ?></span>
+                <?php else: ?>
+                    <span class="value-version"><?= t('Not Detected') ?></span>
+                <?php endif ?>
             </div>
             <?php if (!extension_loaded('gd')): ?>
                 <div class="tile-required" title=""><?= t('Required') ?></div>
             <?php endif ?>
             <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
-                <span class="tile-check">
-            <?php if (extension_loaded('gd')): ?>
+            <span class="tile-check">
+                <?php if (extension_loaded('gd')): ?>
                     <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
-            <?php else: ?>
+                <?php else: ?>
                     <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
-                </span>
-            <?php endif ?>
+                <?php endif ?>
+            </span>
         </div>
         <!-- mbstring -->
         <div class="tile-wrapper">
-            <div class="tile-name" title="<?= t('PHP Extension Name') ?>">
-                <code>mbstring</code>
-            </div>
+            <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>mbstring</code></div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
                 <?php if (extension_loaded('mbstring')): ?>
                     <span class="value-version"><?= phpversion('mbstring') ?></span>
@@ -591,9 +698,7 @@
         </div>
         <!-- hash -->
         <div class="tile-wrapper">
-            <div class="tile-name" title="<?= t('PHP Extension Name') ?>">
-                <code>hash</code>
-            </div>
+            <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>hash</code></div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
                 <?php if (extension_loaded('hash')): ?>
                     <span class="value-version"><?= phpversion('hash') ?></span>
@@ -615,9 +720,7 @@
         </div>
         <!-- openssl -->
         <div class="tile-wrapper">
-            <div class="tile-name" title="<?= t('PHP Extension Name') ?>">
-                <code>openssl</code>
-            </div>
+            <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>openssl</code></div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
                 <?php if (extension_loaded('openssl')): ?>
                     <span class="value-version"><?= phpversion('openssl') ?></span>
@@ -639,9 +742,7 @@
         </div>
         <!-- json -->
         <div class="tile-wrapper">
-            <div class="tile-name" title="<?= t('PHP Extension Name') ?>">
-                <code>json</code>
-            </div>
+            <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>json</code></div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
                 <?php if (extension_loaded('json')): ?>
                     <span class="value-version"><?= phpversion('json') ?></span>
@@ -663,9 +764,7 @@
         </div>
         <!-- ctype -->
         <div class="tile-wrapper">
-            <div class="tile-name" title="<?= t('PHP Extension Name') ?>">
-                <code>ctype</code>
-            </div>
+            <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>ctype</code></div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
                 <?php if (extension_loaded('ctype')): ?>
                     <span class="value-version"><?= phpversion('ctype') ?></span>
@@ -687,9 +786,7 @@
         </div>
         <!-- filter -->
         <div class="tile-wrapper">
-            <div class="tile-name" title="<?= t('PHP Extension Name') ?>">
-                <code>filter</code>
-            </div>
+            <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>filter</code></div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
                 <?php if (extension_loaded('filter')): ?>
                     <span class="value-version"><?= phpversion('filter') ?></span>
@@ -711,9 +808,7 @@
         </div>
         <!-- session -->
         <div class="tile-wrapper">
-            <div class="tile-name" title="<?= t('PHP Extension Name') ?>">
-                <code>session</code>
-            </div>
+            <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>session</code></div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
                 <?php if (extension_loaded('session')): ?>
                     <span class="value-version"><?= phpversion('session') ?></span>
@@ -735,9 +830,7 @@
         </div>
         <!-- dom -->
         <div class="tile-wrapper">
-            <div class="tile-name" title="<?= t('PHP Extension Name') ?>">
-                <code>dom</code>
-            </div>
+            <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>dom</code></div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
                 <?php if (extension_loaded('dom')): ?>
                     <span class="value-version"><?= phpversion('dom') ?></span>
@@ -759,9 +852,7 @@
         </div>
         <!-- SimpleXML -->
         <div class="tile-wrapper">
-            <div class="tile-name" title="<?= t('PHP Extension Name') ?>">
-                <code>SimpleXML</code>
-            </div>
+            <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>SimpleXML</code></div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
                 <?php if (extension_loaded('SimpleXML')): ?>
                     <span class="value-version"><?= phpversion('SimpleXML') ?></span>
@@ -783,9 +874,7 @@
         </div>
         <!-- xml -->
         <div class="tile-wrapper">
-            <div class="tile-name" title="<?= t('PHP Extension Name') ?>">
-                <code>xml</code>
-            </div>
+            <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>xml</code></div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
                 <?php if (extension_loaded('xml')): ?>
                     <span class="value-version"><?= phpversion('xml') ?></span>
@@ -807,9 +896,7 @@
         </div>
         <!-- zip -->
         <div class="tile-wrapper">
-            <div class="tile-name" title="<?= t('PHP Extension Name') ?>">
-                <code>zip</code>
-            </div>
+            <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>zip</code></div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
                 <?php if (extension_loaded('zip')): ?>
                     <span class="value-version"><?= phpversion('zip') ?></span>
@@ -829,9 +916,7 @@
         </div>
         <!-- ldap -->
         <div class="tile-wrapper">
-            <div class="tile-name" title="<?= t('PHP Extension Name') ?>">
-                <code>ldap</code>
-            </div>
+            <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>ldap</code></div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
                 <?php if (extension_loaded('ldap')): ?>
                     <span class="value-version"><?= phpversion('ldap') ?></span>
@@ -851,9 +936,7 @@
         </div>
         <!-- curl -->
         <div class="tile-wrapper">
-            <div class="tile-name" title="<?= t('PHP Extension Name') ?>">
-                <code>curl</code>
-            </div>
+            <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>curl</code></div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
                 <?php if (extension_loaded('curl')): ?>
                     <span class="value-version"><?= phpversion('curl') ?></span>
@@ -876,12 +959,12 @@
             <div class="tile-name" title="<?= t('PHP Extension Name') ?>">
                 <?php if (DB_DRIVER === 'mysql'): ?>
                     <code>pdo_mysql</code>
-                <?php endif ?>
-                <?php if (DB_DRIVER === 'postgres'): ?>
+                <?php elseif (DB_DRIVER === 'postgres'): ?>
                     <code>pdo_pgsql</code>
-                <?php endif ?>
-                <?php if (DB_DRIVER === 'sqlite'): ?>
+                <?php elseif (DB_DRIVER === 'sqlite'): ?>
                     <code>pdo_sqlite</code>
+                <?php else: ?>
+                    <code><?= t('Not Detected') ?></code>
                 <?php endif ?>
             </div>
             <div class="tile-version value-version" title="<?= t('Version') ?>">
@@ -928,3 +1011,4 @@
             </span>
         </div>
     </section>
+</div>
