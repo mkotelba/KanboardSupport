@@ -917,9 +917,11 @@
                 <?php elseif (DB_DRIVER === 'postgres' && !extension_loaded('pdo_pgsql')): ?>
                     <span class="tile-check">
                         <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
+                    </span>
                 <?php elseif (DB_DRIVER === 'sqlite' && !extension_loaded('pdo_sqlite')): ?>
                     <span class="tile-check">
                         <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
+                    </span>
                 <?php else: ?>
                     <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
                 <?php endif ?>
