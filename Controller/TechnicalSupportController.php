@@ -22,7 +22,7 @@ class TechnicalSupportController extends \Kanboard\Controller\ConfigController
             'db_size' => $this->configModel->getDatabaseSize(),
             'db_version' => $this->db->getDriver()->getDatabaseVersion(),
             'user_agent' => $this->request->getServerVariable('HTTP_USER_AGENT'),
-            'title' => t('Settings') . ' &#10562; ' . t('Configuration'),
+            'title' => e('Settings %s Configuration', ' &#10562; '),
         )));
     }
 }
