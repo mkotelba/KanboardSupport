@@ -124,6 +124,13 @@ h2 .fa-code {
     border-bottom: 1px solid var(--tech-bg-grey-border-match);
 }
 
+
+a.user-profile-link {
+    font-weight: 600;
+    text-decoration: none;
+    transition: var(--transition-kanboard-support);
+}
+
 .cell-title, .app-info-title, .db-info-title, .mail-info-title, .server-config-title {
     text-transform: uppercase;
     font-size: .9em;

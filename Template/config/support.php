@@ -22,7 +22,9 @@
                 <tbody>
                     <tr class="support-table-row">
                         <td class="cell-title"><?= t('Your Profile Full Name') ?></td>
-                        <td class="cell-value value-name" width=""><?= $this->user->getFullname() ?></td>
+                        <td class="cell-value value-name">
+                            <?= $this->url->link($this->user->getFullname(), 'UserViewController', 'show', array('user_id' => $this->user->getId()), false, 'user-profile-link', t('View Profile')) ?>
+                        </td>
                         <td class="cell-title"><?= t('Your User ID') ?></td>
                         <td class="cell-value value"><?= $this->user->getId() ?></td>
                     </tr>
