@@ -86,12 +86,10 @@
                     <li class="app-info-title"><?= t('Application Name') ?></li>
                     <li class="app-info-value border-bottom-thick privacy"><?= t('Kanboard') ?></li>
                 </span>
-                <li class="empty-col"></li>
                 <span class="data-wrap">
                     <li class="app-info-title"><?= t('Version') ?></li>
                     <li class="app-info-value value-version border-bottom-thick"><?= APP_VERSION ?></li>
                 </span>
-                <li class="empty-col"></li>
                 <?php if ($this->user->isAdmin()): ?>
                     <span class="data-wrap">
                         <li class="app-info-title"><?= t('Updates') ?></li>
@@ -459,9 +457,7 @@
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title" title="<?= t('Website Address') ?>"><?= t('Domain') ?></li>
-                        <li class="server-value server-config-value border-bottom-thick value-url privacy">
-                            <?= $_SERVER['SERVER_NAME'] ?>
-                        </li>
+                        <li class="server-value server-config-value border-bottom-thick value-url privacy"><?= $_SERVER['SERVER_NAME'] ?></li>
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('Server IP Address') ?></li>
@@ -486,15 +482,11 @@
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('System Temporary Directory') ?></li>
-                        <li class="server-value server-config-value border-bottom-thick value-path">
-                            <?= sys_get_temp_dir() ?>
-                        </li>
+                        <li class="server-value server-config-value border-bottom-thick value-path"><?= sys_get_temp_dir() ?></li>
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('Document Root') ?></li>
-                        <li class="server-value server-config-value border-bottom-thick value-path privacy">
-                            <?= $_SERVER['DOCUMENT_ROOT'] ?>
-                        </li>
+                        <li class="server-value server-config-value border-bottom-thick value-path privacy"><?= $_SERVER['DOCUMENT_ROOT'] ?></li>
                         <?php if (!is_writable($_SERVER['DOCUMENT_ROOT'])): ?>
                             <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
                         <?php else: ?>
@@ -562,23 +554,15 @@
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('Absolute Path') ?></li>
-                        <li class="server-value server-config-value border-bottom-thick value-path privacy">
-                            <?= $_SERVER['SCRIPT_FILENAME'] ?>
-                        </li>
+                        <li class="server-value server-config-value border-bottom-thick value-path privacy"><?= $_SERVER['SCRIPT_FILENAME'] ?></li>
                     </span>
                     <span class="data-wrap">
-                        <li class="server-config server-config-title" title="<?= t('Common Gateway Interface') ?>">
-                            <?= t('CGI Version') ?>
-                        </li>
-                        <li class="server-value server-config-value border-bottom-thick">
-                            <?= $_SERVER['GATEWAY_INTERFACE'] ?>
-                        </li>
+                        <li class="server-config server-config-title" title="<?= t('Common Gateway Interface') ?>"><?= t('CGI Version') ?></li>
+                        <li class="server-value server-config-value border-bottom-thick"><?= $_SERVER['GATEWAY_INTERFACE'] ?></li>
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('HTTP Web Server') ?></li>
-                        <li class="server-value server-config-value border-bottom-thick">
-                            <?= $_SERVER['SERVER_SOFTWARE'] ?>
-                        </li>
+                        <li class="server-value server-config-value border-bottom-thick"><?= $_SERVER['SERVER_SOFTWARE'] ?></li>
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('Pretty URLs') ?></li>
@@ -628,26 +612,20 @@
                         <span class="pass"><span class="pass-tick">&#10004;</span> <?= t('Pass') ?></span>
                     <?php endif ?>
                 </span>
-                <li class="empty-col"></li>
                 <span class="data-wrap">
                     <li class="app-info-title"><?= t('PHP Config File Path') ?></li>
                     <li class="app-info-value value-path border-bottom-thick"><?= PHP_CONFIG_FILE_PATH ?></li>
                 </span>
-                <li class="empty-col"></li>
                 <span class="data-wrap">
                     <li class="app-info-title"><?= t('PHP Config File Scan Directory') ?></li>
                     <li class="app-info-value value-path border-bottom-thick"><?= PHP_CONFIG_FILE_SCAN_DIR ?></li>
                 </span>
-                <li class="empty-col"></li>
                 <span class="data-wrap">
                     <li class="app-info-title"><?= t('PHP Loaded Configuration File') ?></li>
                     <li class="app-info-value value-path border-bottom-thick"><?= php_ini_loaded_file() ?></li>
                 </span>
-                <li class="empty-col"></li>
                 <span class="data-wrap">
-                    <li class="app-info-title">
-                        <abbr title="<?= t('PHP Server API') ?>"><?= t('PHP SAPI') ?></abbr>
-                    </li>
+                    <li class="app-info-title"><abbr title="<?= t('PHP Server API') ?>"><?= t('PHP SAPI') ?></abbr></li>
                     <li class="app-info-value value border-bottom-thick"><?= PHP_SAPI ?></li>
                 </span>
             </ul>

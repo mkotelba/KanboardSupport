@@ -231,10 +231,6 @@ table.support-table.user-table tr td:first-child::before {
     margin-bottom: 2em;
 }
 
-.empty-col {
-    width: 100px;
-}
-
 .app-info ul li, .php-info ul li, .db-info ul li, .mail-info ul li, .server-info ul li {
     list-style-type: none;
     display: inline-block;
