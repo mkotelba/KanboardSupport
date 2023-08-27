@@ -64,6 +64,12 @@
     width: 50px;
 }
 
+.config-page h2 .ks-icon {
+    vertical-align: text-top;
+    width: 22px;
+    height: 22px;
+}
+
 i.fa-lock {
     color: var(--pp-green);
 }

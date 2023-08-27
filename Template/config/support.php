@@ -5,7 +5,7 @@
 <div class="config-page">
     <div class="page-header" style="margin-top: 10px;">
         <h2 class="">
-            <i class="fa fa-question-circle"></i> <?= t('Application Configuration') ?>
+            <span class="ks-icon"></span> <?= t('Application Configuration') ?>
         </h2>
     </div>
     <!-- USER CONFIGURATION -->
