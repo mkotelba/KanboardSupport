@@ -3,7 +3,8 @@
 return array(
     'KanboardSupport' => 'Kanboard Support Information',
     'Add a support section in the Kanboard Settings interface so that end users can easily gather any information required by their internal technical support departments for troubleshooting.' => 'Add a support section in the Kanboard Settings interface so that end users can easily gather any information required by their internal technical support departments for troubleshooting.',
-    'Technical Information' => 'Technical Information',
+    'Configuration' => 'Configuration',
+    'Application Configuration' => 'Application Configuration',
     'User Configuration' => 'User Configuration',
     'User Information' => 'User Information',
     'Your Profile Full Name' => 'Your Profile Full Name',
