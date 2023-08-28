@@ -460,6 +460,8 @@ margin-right: 8px;}
     border: 2px solid var(--tech-bg-grey-border-match);
     border-radius: var(--border-radius-kanboard-support);
     transition: var(--transition-kanboard-support);
+    display: block;
+    margin: 20px auto auto auto;
 }
 
 .data-btn svg {
@@ -470,8 +472,8 @@ margin-right: 8px;}
     display: none;
 }
 
-section.privacy-warning p {
-    display: inline-block;
+section.privacy-warning {
+    margin-bottom: 0;
 }
 
 a.kb-updates-link {

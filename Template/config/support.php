@@ -8,6 +8,23 @@
             <span class="ks-icon"></span> <?= t('Application Configuration') ?>
         </h2>
     </div>
+    <!-- PRIVACY WARNING -->
+    <section class="message error privacy-warning">
+        <header></header>
+        <i class=""></i>
+        <h3 class="">
+            <span class="message-title"><?= t('Data Privacy') ?></span>
+            <span class="message-text">
+                <?= t('This page shows sensitive data. Always hide selective information before sharing.') ?>
+            </span>
+        </h3>
+    </section>
+    <button class="data-btn" title="<?= t('Screenshot friendly') ?>">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
+            <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z"/>
+            <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z"/>
+        </svg> <?= t('Hide Data') ?>
+    </button>
     <!-- USER CONFIGURATION -->
     <section class="support-section">
         <div class="table-responsive">
@@ -57,21 +74,6 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-    </section>
-    <!-- PRIVACY WARNING -->
-    <section class="support-section privacy-warning">
-        <h2 class="">
-            <i class="fa fa-warning pp-red"></i> <?= t('Your Data Privacy') ?>
-        </h2>
-        <div class="">
-            <p class=""><?= t('This page shows sensitive data. Hide selective information before sharing.') ?></p>
-            <button class="data-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
-                    <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z"/>
-                    <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z"/>
-                </svg> <?= t('Hide Data') ?>
-            </button>
         </div>
     </section>
     <!-- APPLICATION INFORMATION -->
