@@ -221,7 +221,7 @@
                 <span class="data-wrap">
                     <li class="app-info-title"><?= t('Plugins Directory') ?></li>
                     <li class="app-info-value value-path border-bottom-thick privacy"><?= PLUGINS_DIR ?></li>
-                    <?php if (! is_writable(PLUGINS_DIR)): ?>
+                    <?php if (!is_writable(PLUGINS_DIR)): ?>
                         <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
                     <?php else: ?>
                         <span class="pass-tick" title="<?= t('This directory is writeable by the web server user') ?>">&#10004;</span>

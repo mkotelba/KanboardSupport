@@ -417,7 +417,8 @@ table.support-table.user-table tr td:first-child::before {
 }
 
 .p-linux {
-margin-right: 8px;}
+    margin-right: 8px;
+}
 
 .p-owner {
     font-family: monospace;
