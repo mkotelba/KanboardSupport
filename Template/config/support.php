@@ -62,7 +62,7 @@
                     </tr>
                     <tr class="support-table-row">
                         <td class="cell-title"><?= t('Current Page') ?></td>
-                        <td class="cell-value value-url privacy" colspan="3"><?= $_SERVER['SCRIPT_URI'] ?></td>
+                        <td class="cell-value value-url privacy privacy-margin" colspan="3"><?= $_SERVER['SCRIPT_URI'] ?></td>
                     </tr>
                     <tr class="support-table-row">
                         <td class="cell-title"><?= t('Your Browser Name') ?></td>
@@ -85,7 +85,7 @@
             <ul class="">
                 <span class="data-wrap">
                     <li class="app-info-title"><?= t('Application Name') ?></li>
-                    <li class="app-info-value border-bottom-thick privacy">Kanboard</li>
+                    <li class="app-info-value border-bottom-thick privacy privacy-fw">Kanboard</li>
                 </span>
                 <span class="data-wrap">
                     <li class="app-info-title"><?= t('Version') ?></li>

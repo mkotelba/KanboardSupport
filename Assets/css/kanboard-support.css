@@ -416,12 +416,21 @@ table.support-table.user-table tr td:first-child::before {
 }
 
 .privacy-data::after {
-    content: "<data hidden>";
+    content: "<data redacted>";
     font-style: italic;
     visibility: visible;
     top: 0;
     left: 0;
     position: absolute;
+    font-size: .85em;
+}
+
+.privacy-margin::after {
+    margin-left: 15px;
+}
+
+.privacy.privacy-fw::after {
+    width: max-content;
 }
 
 .privacy-data {
@@ -429,6 +438,8 @@ table.support-table.user-table tr td:first-child::before {
     visibility: hidden;
     filter: blur(1px) brightness(.5);
     color: var(--pp-grey);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
 }
 
 .data-btn {
@@ -436,7 +447,6 @@ table.support-table.user-table tr td:first-child::before {
     padding: 0 3px 1px 3px;
     font-size: 1em;
     font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    margin-top: 10px;
     text-transform: uppercase;
     border: 2px solid var(--tech-bg-grey-border-match);
     border-radius: var(--border-radius-kanboard-support);
