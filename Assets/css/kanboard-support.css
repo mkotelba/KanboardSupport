@@ -145,7 +145,6 @@ a.user-profile-link {
     text-decoration: none !important;
     padding: 0 3px 1px 3px;
     font-size: .7em;
-    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin-left: 10px;
     text-transform: uppercase;
     border: 2px solid var(--tech-bg-grey-border-match);
@@ -391,7 +390,6 @@ table.support-table.user-table tr td:first-child::before {
 }
 
 .p-dir {
-    font-family: Arial;
     letter-spacing: 1px;
     margin-right: 8px;
 }
@@ -438,7 +436,6 @@ table.support-table.user-table tr td:first-child::before {
     visibility: hidden;
     filter: blur(1px) brightness(.5);
     color: var(--pp-grey);
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em;
 }
 
@@ -446,7 +443,6 @@ table.support-table.user-table tr td:first-child::before {
     text-decoration: none !important;
     padding: 0 3px 1px 3px;
     font-size: 1em;
-    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     border: 2px solid var(--tech-bg-grey-border-match);
     border-radius: var(--border-radius-kanboard-support);
