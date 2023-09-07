@@ -472,3 +472,9 @@ a.kb-updates-link {
     transition: var(--transition-kanboard-support);
     font-style: italic;
 }
+
+.webhooks-page h2 .webhooks-icon {
+    vertical-align: text-top;
+    width: 22px;
+    height: 22px;
+}
