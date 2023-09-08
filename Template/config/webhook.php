@@ -15,7 +15,7 @@
     </form>
 
     <div class="page-header margin-top">
-        <h2 class=""><?= t('Webhook Token') ?></h2>
+        <h2 class=""><span class="webhooks-icon"></span> <?= t('Webhook Token') ?></h2>
     </div>
     <section class="message error cleaner-warning">
                 <header></header>
@@ -26,7 +26,7 @@
                 </h3>
             </section>
     <div class="panel">
-        <?= t('Token:') ?>
+        <span class="webhooks-icon"></span> <?= t('Token:') ?>
         <strong><?= $this->text->e($values['webhook_token']) ?></strong>
     </div>
 
