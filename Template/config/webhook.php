@@ -3,6 +3,13 @@
     <div class="page-header" style="margin-top: 10px;">
         <h2 class=""><span class="webhooks-icon"></span> <?= t('Connecting External Applications') ?></h2>
     </div>
+    <p class="">
+        <?= t('Webhooks are useful to perform actions with external applications such as:') ?>
+        <ul class="">
+            <li class=""><?= t('Using webhooks to create a task by calling a simple URL') ?></li>
+            <li class=""><?= t('Automatically calling an external URL when an event occurs in this application (e.g. task creation, comment updated, etc.)') ?></li>
+        </ul>
+    </p>
     <form method="post" class="" action="<?= $this->url->href('ConfigController', 'save', array('redirect' => 'webhook')) ?>" autocomplete="true">
         <?= $this->form->csrf() ?>
 
