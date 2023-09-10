@@ -33,6 +33,7 @@ class Plugin extends Base
 
         // SUPPORT PAGE - Routes
         $this->route->addRoute('/settings/configuration', 'TechnicalSupportController', 'show', 'KanboardSupport');
+        $this->route->addRoute('/settings/webhook/information', 'TechnicalSupportController', 'showWebhookInformation', 'KanboardSupport');
 
         // HELPER
         $this->helper->register('supportHelper', '\Kanboard\Plugin\KanboardSupport\Helper\SupportHelper');
