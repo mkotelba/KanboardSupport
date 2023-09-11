@@ -18,6 +18,7 @@ return array(
     // Controller/TechnicalSupportController.php
     //
     'Settings %s Configuration' => '',
+    'Webhooks %s Information' => '',
     //
     // Helper/SupportHelper.php
     //

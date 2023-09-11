@@ -9,6 +9,7 @@ return array(
     // Controller/TechnicalSupportController.php
     //
     'Settings %s Configuration' => 'Ajustes %s Configuración',
+    'Webhooks %s Information' => 'Webhooks %s Información',
     //
     // Helper/SupportHelper.php
     //
