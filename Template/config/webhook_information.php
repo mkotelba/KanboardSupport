@@ -56,6 +56,13 @@
                 <?= $this->render('KanboardSupport:config/webhook-code-examples-http') ?>
             </div>
         </details>
+        <details class="accordion-section">
+            <summary class="accordion-title">
+                <?= t('Examples of Event Payloads') ?>
+            </summary>
+            <div class="accordion-content">
+                <?= $this->render('KanboardSupport:config/webhook-code-examples-event-payloads') ?>
+            </div>
+        </details>
     </section>
 </div>
-
