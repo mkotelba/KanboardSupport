@@ -30,7 +30,7 @@
             <h2 class=""><span class="webhooks-icon"></span> <?= t('Writing a Webhook Receiver') ?></h2>
         </div>
         <p class=""><?= t('All internal events of this application can be sent to an external URL.') ?></p>
-        <ul>
+        <ul class="">
             <li class="">
                 <?= e('The webhook URL must be defined in %s.', $this->url->link(t('Webhooks'), 'ConfigController', 'webhook')) ?>
             </li>
@@ -43,6 +43,19 @@
             <li class=""><?= t('The webhook token is also sent as a query string parameter, allowing the user to confirm whether the request was actually called from this application.') ?></li>
             <li class=""><?= t('The custom URL must respond in less than 1 second as such requests are synchronous (a PHP limitation). The user interface can suffer from sever performance issues if your script is too slow.') ?></li>
         </ul>
+    </section>
+    <section class="">
+        <div id="WebhookExamples" class="page-header" style="margin-top: 10px;">
+            <h2 class=""><span class="webhooks-icon"></span> <?= t('Webhook Examples') ?></h2>
+        </div>
+        <details class="accordion-section">
+            <summary class="accordion-title">
+                <?= t('Example of HTTP Request') ?>
+            </summary>
+            <div class="accordion-content">
+                <?= $this->render('KanboardSupport:config/webhook-code-examples-http') ?>
+            </div>
+        </details>
     </section>
 </div>
 
