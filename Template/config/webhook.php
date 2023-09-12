@@ -9,7 +9,7 @@
             <li class=""><?= t('Using webhooks to create a task by calling a simple URL') ?></li>
             <li class=""><?= t('Automatically calling an external URL when an event occurs in this application (e.g. task creation, comment updated, etc.)') ?></li>
         </ul>
-        <?= e('To view the list of supported events or see some examples, visit the %s page', $this->url->link(t('Webhooks Information'),'TechnicalSupportController', 'showWebhookInformation', array('plugin' => 'KanboardSupport'), false, 'webhooks-link', t('Visit page'))) ?>
+        <?= e('To view the list of supported events or see some examples, visit the %s page', $this->url->link(t('Webhooks Information'), 'TechnicalSupportController', 'showWebhookInformation', array('plugin' => 'KanboardSupport'), false, 'webhooks-link', t('Visit page'))) ?>
     </p>
     <form method="post" class="" action="<?= $this->url->href('ConfigController', 'save', array('redirect' => 'webhook')) ?>" autocomplete="true">
         <?= $this->form->csrf() ?>
