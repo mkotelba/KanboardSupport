@@ -33,7 +33,7 @@
         <strong><?= $this->text->e($values['webhook_token']) ?></strong>
         <?= $this->url->link(t('Reset Token'), 'ConfigController', 'token', array('type' => 'webhook'), true, 'btn btn-red reset-token-btn') ?>
     </div>
-    <fieldset class="add-webhook">
+    <fieldset id="AddWebhook" class="add-webhook">
         <legend class=""><?= t('Add Webhook') ?></legend>
         <form method="post" class="add-webhook-form" action="<?= $this->url->href('ConfigController', 'save', array('redirect' => 'webhook')) ?>" autocomplete="true">
             <?= $this->form->csrf() ?>

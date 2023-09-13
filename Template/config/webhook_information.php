@@ -33,7 +33,7 @@
         <ul class="fa-ul">
             <li class="">
                 <i class="fa-li fa fa-terminal"></i>
-                <?= e('The webhook URL must be defined in %s.', $this->url->link(t('Webhooks'), 'ConfigController', 'webhook', array(), false, 'webhooks-link', t('Go to Settings'))) ?>
+                <?= e('The webhook URL must be defined in %s.', $this->url->link(t('Webhooks'), 'ConfigController', 'webhook', array(), false, 'webhooks-link', t('Go to Settings'), false, 'AddWebhook')) ?>
             </li>
             <li class="">
                 <i class="fa-li fa fa-terminal"></i>
