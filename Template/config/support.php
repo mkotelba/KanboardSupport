@@ -328,6 +328,18 @@
                     <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_HOSTNAME ?></li>
                 </span>
                 <span class="data-wrap">
+                    <li class="db-info-title"><?= t('Database Port') ?></li>
+                    <?php if (DB_PORT != null): ?>
+                        <li class="db-info-value border-bottom-thick">
+                            <?= DB_PORT ?>
+                        </li>
+                    <?php else: ?>
+                        <li class="db-info-value border-bottom-thick">
+                            <?= t('Default') ?>
+                        </li>
+                    <?php endif ?>
+                </span>
+                <span class="data-wrap">
                     <li class="db-info-title"><?= t('Database Name') ?></li>
                     <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_NAME ?></li>
                 </span>
