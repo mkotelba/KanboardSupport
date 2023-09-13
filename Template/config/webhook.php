@@ -31,9 +31,8 @@
     <div class="panel">
         <span class="webhooks-icon"></span> <?= t('Token:') ?>
         <strong><?= $this->text->e($values['webhook_token']) ?></strong>
+        <?= $this->url->link(t('Reset Token'), 'ConfigController', 'token', array('type' => 'webhook'), true, 'btn btn-red') ?>
     </div>
-
-    <?= $this->url->link(t('Reset Token'), 'ConfigController', 'token', array('type' => 'webhook'), true, 'btn btn-red') ?>
     <fieldset>
         <legend><?= t('Add Webhook') ?></legend>
         <form method="post" class="" action="<?= $this->url->href('ConfigController', 'save', array('redirect' => 'webhook')) ?>" autocomplete="true">
