@@ -483,7 +483,11 @@ a.kb-updates-link {
     margin-bottom: 30px;
 }
 
-#SupportedEvents ul li {
+#SupportedEvents ul li, #WebhookReceiver ul li {
+    margin-bottom: 10px;
+}
+
+#WebhookReceiver p {
     margin-bottom: 10px;
 }
 
