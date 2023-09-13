@@ -142,6 +142,11 @@ return array(
     'Task Link Creation' => '',
     'File Upload' => '',
     //
+    // Template/config/webhook-code-examples-http.php
+    //
+    'This is a general example based on the %s event.' => '',
+    'See the Supported Events above' => '',
+    //
     // Template/config/webhook.php
     //
     'Connecting External Applications' => '',

@@ -133,6 +133,11 @@ return array(
     'Task Link Creation' => 'Erstellung eines Aufgaben-Links',
     'File Upload' => 'Hochladen von Dateien',
     //
+    // Template/config/webhook-code-examples-http.php
+    //
+    'This is a general example based on the %s event.' => 'Dies ist ein allgemeines Beispiel auf der Grundlage des Ereignisses %s.',
+    'See the Supported Events above' => 'Siehe die unterstützten Ereignisse oben',
+    //
     // Template/config/webhook.php
     //
     'Connecting External Applications' => 'Verbindung mit externen Anwendungen',
