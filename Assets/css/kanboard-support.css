@@ -104,11 +104,11 @@ h2 .fa-code {
     border-bottom: 1px solid var(--tech-bg-grey-border-match);
 }
 
-a.user-profile-link:hover, a.user-profile-link:focus, a.kb-updates-link:hover, a.kb-updates-link:focus {
+a.user-profile-link:hover, a.user-profile-link:focus, a.kb-updates-link:hover, a.kb-updates-link:focus, a.webhooks-link:hover, a.webhooks-link:focus {
     color: var(--pp-red-alt-2);
 }
 
-a.user-profile-link {
+a.user-profile-link, a.webhooks-link {
     font-weight: 600;
     text-decoration: none;
     transition: var(--transition-kanboard-support);
