@@ -221,7 +221,7 @@
                 <span class="data-wrap">
                     <li class="app-info-title"><?= t('Plugins Installer') ?></li>
                     <li class="app-info-value border-bottom-thick">
-                        <?php if(PLUGIN_INSTALLER == false): ?>
+                        <?php if (PLUGIN_INSTALLER == false): ?>
                             <?= t('Disabled') ?>
                         <?php else: ?>
                             <?= t('Enabled') ?>
@@ -330,6 +330,20 @@
                 <span class="data-wrap">
                     <li class="db-info-title"><?= t('Database Name') ?></li>
                     <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_NAME ?></li>
+                </span>
+                <span class="data-wrap">
+                    <li class="db-info-title"><?= t('Database Migrations') ?></li>
+                    <?php if(DB_RUN_MIGRATIONS != true): ?>
+                        <li class="db-info-value border-bottom-thick" title="<?= t('Database migrations must be completed manually through the CLI') ?>">
+                            <?= t('Use CLI') ?>
+                        </li>
+                        <span class="fail-x" title="<?= t('Database migrations must be completed manually through the CLI') ?>">&#10008;</span>
+                    <?php else: ?>
+                        <li class="db-info-value border-bottom-thick" title="<?= t('This is the default and recommended setting') ?>">
+                            <?= t('Enabled') ?>
+                        </li>
+                        <span class="pass-tick" title="<?= t('This is the default and recommended setting') ?>">&#10004;</span>
+                    <?php endif ?>
                 </span>
             </ul>
             <?php if (DB_DRIVER === 'sqlite'): ?>
