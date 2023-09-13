@@ -1,5 +1,5 @@
 <p class="">
-    <?= e('This is a general example based on the %s event', '<code class="event-code"><abbr title="' . t('See the Supported Events above') . '">task.move.column</abbr></code>') ?>
+    <?= e('This is a general example based on the %s event.', '<code class="event-code"><abbr title="' . t('See the Supported Events above') . '">task.move.column</abbr></code>') ?>
 </p>
 <div class="panel">
 <pre class="">
