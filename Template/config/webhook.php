@@ -28,14 +28,14 @@
             <span class="message-text"><?= t('Resetting the webhook token may require the cron background jobs to be manually updated') ?></span>
         </h3>
     </section>
-    <div class="panel">
+    <div class="panel token-panel">
         <span class="webhooks-icon"></span> <?= t('Token:') ?>
         <strong><?= $this->text->e($values['webhook_token']) ?></strong>
         <?= $this->url->link(t('Reset Token'), 'ConfigController', 'token', array('type' => 'webhook'), true, 'btn btn-red') ?>
     </div>
-    <fieldset>
-        <legend><?= t('Add Webhook') ?></legend>
-        <form method="post" class="" action="<?= $this->url->href('ConfigController', 'save', array('redirect' => 'webhook')) ?>" autocomplete="true">
+    <fieldset class="add-webhook">
+        <legend class=""><?= t('Add Webhook') ?></legend>
+        <form method="post" class="add-webhook-form" action="<?= $this->url->href('ConfigController', 'save', array('redirect' => 'webhook')) ?>" autocomplete="true">
             <?= $this->form->csrf() ?>
 
             <?= $this->form->label(t('Webhook URL'), 'webhook_url') ?>

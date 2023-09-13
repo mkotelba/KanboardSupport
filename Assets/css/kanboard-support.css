@@ -539,6 +539,10 @@ code.field-code {
     margin: 0;
 }
 
+.webhooks-page-intro, .token-panel {
+    margin-bottom: 25px;
+}
+
 .webhooks-page-intro ul {
     margin-block: 20px;
 }
