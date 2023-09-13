@@ -56,6 +56,7 @@ This plugin shows a configuration section to display all the default and custom 
   - Displays Kanboard name, version and (if admin user) direct link to GitHub releases for Kanboard
   - Displays useful directory locations and session information
   - Show if debug mode is enabled or not
+  - Display plugin setup information
 - **Database Connection**
   - Display basic database information (without password) from the config file
   - Moved SQLite database (upload/download) options from the About page
