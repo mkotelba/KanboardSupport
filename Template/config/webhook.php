@@ -3,24 +3,20 @@
     <div class="page-header" style="margin-top: 10px;">
         <h2 class=""><span class="webhooks-icon"></span> <?= t('Connecting External Applications') ?></h2>
     </div>
-    <p class="">
+    <div class="webhooks-page-intro">
         <?= t('Webhooks are useful to perform actions with external applications such as:') ?>
-        <ul class="">
-            <li class=""><?= t('Using webhooks to create a task by calling a simple URL') ?></li>
-            <li class=""><?= t('Automatically calling an external URL when an event occurs in this application (e.g. task creation, comment updated, etc.)') ?></li>
+        <ul class="fa-ul">
+            <li class="">
+                <i class="fa-li fa fa-check-square pp-green"></i>
+                <?= t('Using webhooks to create a task by calling a simple URL') ?>
+            </li>
+            <li class="">
+                <i class="fa-li fa fa-check-square pp-green"></i>
+                <?= t('Automatically calling an external URL when an event occurs in this application (e.g. task creation, comment updated, etc.)') ?>
+            </li>
         </ul>
         <?= e('To view the list of supported events or see some examples, visit the %s page', $this->url->link(t('Webhooks Information'), 'TechnicalSupportController', 'showWebhookInformation', array('plugin' => 'KanboardSupport'), false, 'webhooks-link', t('Visit page'))) ?>
-    </p>
-    <form method="post" class="" action="<?= $this->url->href('ConfigController', 'save', array('redirect' => 'webhook')) ?>" autocomplete="true">
-        <?= $this->form->csrf() ?>
-
-        <?= $this->form->label(t('Webhook URL'), 'webhook_url') ?>
-        <?= $this->form->text('webhook_url', $values, $errors) ?>
-
-        <div class="form-actions">
-            <button type="submit" class="btn btn-blue"><?= t('Save') ?></button>
-        </div>
-    </form>
+    </div>
     <div class="page-header margin-top">
         <h2 class=""><span class="webhooks-icon"></span> <?= t('Webhook Token') ?></h2>
     </div>
@@ -38,4 +34,17 @@
     </div>
 
     <?= $this->url->link(t('Reset Token'), 'ConfigController', 'token', array('type' => 'webhook'), true, 'btn btn-red') ?>
+    <fieldset>
+        <legend><?= t('Add Webhook') ?></legend>
+        <form method="post" class="" action="<?= $this->url->href('ConfigController', 'save', array('redirect' => 'webhook')) ?>" autocomplete="true">
+            <?= $this->form->csrf() ?>
+
+            <?= $this->form->label(t('Webhook URL'), 'webhook_url') ?>
+            <?= $this->form->text('webhook_url', $values, $errors) ?>
+
+            <div class="form-actions">
+                <button type="submit" class="btn btn-blue"><?= t('Save') ?></button>
+            </div>
+        </form>
+    </fieldset>
 </div>

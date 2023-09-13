@@ -538,3 +538,11 @@ code.field-code {
 #WebhookExamples pre {
     margin: 0;
 }
+
+.webhooks-page-intro ul {
+    margin-block: 10px;
+}
+
+.webhooks-page-intro ul li {
+    margin-bottom: 5px;
+}
