@@ -121,6 +121,18 @@ return array(
     'PostgreSQL Detected' => 'PostgreSQL Erkannt',
     'SQLite Detected' => 'SQLite Erkannt',
     //
+    // Template/config/webhook-code-examples-event-payloads.php
+    //
+    'All event payloads are in the following format:' => 'Alle Ereignis-Payloads haben das folgende Format:',
+    'The %s values are not necessary normalized across events.' => 'Die %s-Werte müssen nicht ereignisübergreifend normalisiert werden.',
+    'Task Creation' => 'Erstellung einer Aufgabe',
+    'Task Modification' => 'Änderung der Aufgabe',
+    'Task update events have a field called %s that contains updated values.' => 'Aufgabenaktualisierungsereignisse haben ein Feld namens %s, das aktualisierte Werte enthält.',
+    'Comment Creation' => 'Erstellung von Kommentaren',
+    'Subtask Creation' => 'Erstellung von Unteraufgaben',
+    'Task Link Creation' => 'Erstellung eines Aufgaben-Links',
+    'File Upload' => 'Hochladen von Dateien',
+    //
     // Template/config/webhook.php
     //
     'Connecting External Applications' => 'Verbindung mit externen Anwendungen',

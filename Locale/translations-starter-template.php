@@ -130,6 +130,18 @@ return array(
     'PostgreSQL Detected' => '',
     'SQLite Detected' => '',
     //
+    // Template/config/webhook-code-examples-event-payloads.php
+    //
+    'All event payloads are in the following format:' => '',
+    'The %s values are not necessary normalized across events.' => '',
+    'Task Creation' => '',
+    'Task Modification' => '',
+    'Task update events have a field called %s that contains updated values.' => '',
+    'Comment Creation' => '',
+    'Subtask Creation' => '',
+    'Task Link Creation' => '',
+    'File Upload' => '',
+    //
     // Template/config/webhook.php
     //
     'Connecting External Applications' => '',

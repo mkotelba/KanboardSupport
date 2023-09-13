@@ -121,6 +121,18 @@ return array(
     'PostgreSQL Detected' => 'PostgreSQL Detectado',
     'SQLite Detected' => 'SQLite Detectado',
     //
+    // Template/config/webhook-code-examples-event-payloads.php
+    //
+    'All event payloads are in the following format:' => 'Todas las cargas útiles de los eventos tienen el siguiente formato:',
+    'The %s values are not necessary normalized across events.' => 'Los valores %s no son necesarios normalizados a través de eventos.',
+    'Task Creation' => 'Creación de tarea',
+    'Task Modification' => 'Modificación de tareas',
+    'Task update events have a field called %s that contains updated values.' => 'Los eventos de actualización de tareas tienen un campo llamado %s que contiene valores actualizados.',
+    'Comment Creation' => 'Creación de comentarios',
+    'Subtask Creation' => 'Creación de Subtareas',
+    'Task Link Creation' => 'Creación de enlace de tarea',
+    'File Upload' => 'Carga de Archivos',
+    //
     // Template/config/webhook.php
     //
     'Connecting External Applications' => 'Conexión de aplicaciones externas',
