@@ -40,7 +40,10 @@ This plugin shows a configuration section to display all the default and custom 
 - Hide sensitive data before sharing technical information
 - Display values from the `config.php` file
 - Troubleshoot plugins with [PluginManager](https://github.com/aljawaid/PluginManager)
-- Display alert in webhooks page to avoid potential token issues
+- **Webhooks Information**
+  - New improved webhooks page
+  - Display alert in webhooks page to avoid potential token issues
+  - Included extra comprehensive documentation explaining how to work with webhooks
 - **Directory Permissions**
   - Check if directories are writeable or not
   - Display folder owner to Admins
@@ -114,6 +117,10 @@ Go to `Settings` &#10562; `Configuration`
 **_or_**
 
 Go to User Menu (top right) &#10562; `Configuration`
+
+**_or_**
+
+Go to `Settings` &#10562; `Webhooks`
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
