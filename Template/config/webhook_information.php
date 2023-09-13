@@ -53,8 +53,8 @@
             </li>
         </ul>
     </section>
-    <section class="">
-        <div id="WebhookExamples" class="page-header" style="margin-top: 10px;">
+    <section id="WebhookExamples" class="">
+        <div class="page-header" style="margin-top: 10px;">
             <h2 class=""><span class="webhooks-icon"></span> <?= t('Webhook Examples') ?></h2>
         </div>
         <details class="accordion-section">

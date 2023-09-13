@@ -2,22 +2,22 @@
     <?= t('All event payloads are in the following format:') ?>
 </p>
 <div class="panel">
-    <pre class="">
+<pre class="">
 {
     "event_name": "model.event_name",
-    "event_data": {
+    "<strong>event_data</strong>": {
         "key1": "value1",
         "key2": "value2"
     }
 }
-    </pre>
+</pre>
 </div>
 <p class="">
-    <?= e('The %s values are not necessary normalized across events.', '<strong><code>event_data</code></strong>') ?>
+    <?= e('The %s values are not necessary normalized across events.', '<strong><code class="field-code">event_data</code></strong>') ?>
 </p>
 <h3 class=""><?= t('Task Creation') ?></h3>
 <div class="panel">
-    <pre class="">
+<pre class="">
 {
     "event_name": "task.create",
     "event_data": {
@@ -65,11 +65,11 @@
         }
     }
 }
-    </pre>
+</pre>
 </div>
 <h3 class=""><?= t('Task Modification') ?></h3>
 <div class="panel">
-    <pre class="">
+<pre class="">
 {
     "event_name": "task.update",
     "event_data": {
@@ -115,21 +115,21 @@
             "creator_username": "admin",
             "creator_name": null
         },
-        "changes": {
+        "<strong>changes</strong>": {
             "description": "New description",
             "color_id": "purple",
             "date_due": 1469836800
         }
     }
 }
-    </pre>
+</pre>
 </div>
 <p class="">
-    <?= e('Task update events have a field called %s that contains updated values.', '<strong><code>changes</code></strong>') ?>
+    <?= e('Task update events have a field called %s that contains updated values.', '<strong><code class="field-code">changes</code></strong>') ?>
 </p>
 <h3 class=""><?= t('Comment Creation') ?></h3>
 <div class="panel">
-    <pre class="">
+<pre class="">
 {
     "event_name": "comment.create",
     "event_data": {
@@ -188,11 +188,11 @@
         }
     }
 }
-    </pre>
+</pre>
 </div>
 <h3 class=""><?= t('Subtask Creation') ?></h3>
 <div class="panel">
-    <pre class="">
+<pre class="">
 {
     "event_name": "subtask.create",
     "event_data": {
@@ -254,11 +254,11 @@
         }
     }
 }
-    </pre>
+</pre>
 </div>
 <h3 class=""><?= t('Task Link Creation') ?></h3>
 <div class="panel">
-    <pre class="">
+<pre class="">
 {
     "event_name": "task_internal_link.create_update",
     "event_data": {
@@ -313,11 +313,11 @@
         }
     }
 }
-    </pre>
+</pre>
 </div>
 <h3 class=""><?= t('File Upload') ?></h3>
 <div class="panel">
-    <pre class="">
+<pre class="">
 {
     "event_name": "task.file.create",
     "event_data": {
@@ -374,5 +374,5 @@
         }
     }
 }
-    </pre>
+</pre>
 </div>
