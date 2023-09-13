@@ -123,12 +123,19 @@ return array(
     //
     // Template/config/webhook.php
     //
-    'Webhook Settings' => 'Paramètres du Webhook',
-    'Webhook URL' => 'URL du Webhook',
-    'Save' => 'Sauvegarder',
-    'Webhook Token' => 'Token du webhook',
+    'Connecting External Applications' => 'Connexion à des applications externes',
+    'Webhooks are useful to perform actions with external applications such as:' => 'Les webhooks sont utiles pour effectuer des actions avec des applications externes :',
+    'Using webhooks to create a task by calling a simple URL' => 'Utiliser les webhooks pour créer une tâche en appelant une simple URL',
+    'Automatically calling an external URL when an event occurs in this application (e.g. task creation, comment updated, etc.)' => 'Appeler automatiquement une URL externe lorsqu\'un événement se produit dans cette application (par exemple, création d\'une tâche, mise à jour d\'un commentaire, etc.)',
+    'To view the list of supported events or see some examples, visit the %s page' => 'Pour consulter la liste des événements pris en charge ou voir quelques exemples, visitez la page %s.',
+    'Webhooks Information' => 'Informations sur les webhooks',
+    'Visit page' => 'Visiter la page',
+    'Webhook Token' => 'Jeton de Webhook',
     'Warning' => 'Avertissement',
-    'Resetting the webhook token may require the cron background jobs to be manually updated' => 'La réinitialisation du jeton de webhook peut nécessiter la mise à jour manuelle des tâches d\'arrière-plan cron.',
+    'Resetting the webhook token may require the cron background jobs to be manually updated' => 'La réinitialisation du jeton du webhook peut nécessiter la mise à jour manuelle des tâches d\'arrière-plan cron.',
     'Token:' => 'Token :',
     'Reset Token' => 'Réinitialiser le jeton',
+    'Add Webhook' => 'Ajouter un webhook',
+    'Webhook URL' => 'URL du webhook',
+    'Save Webhook' => 'Sauvegarder le webhook',
 );

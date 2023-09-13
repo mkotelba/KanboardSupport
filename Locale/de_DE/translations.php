@@ -123,12 +123,19 @@ return array(
     //
     // Template/config/webhook.php
     //
-    'Webhook Settings' => 'Webhook-Einstellungen',
-    'Webhook URL' => 'Webhook-URL',
-    'Save' => 'Speichern',
+    'Connecting External Applications' => 'Verbindung mit externen Anwendungen',
+    'Webhooks are useful to perform actions with external applications such as:' => 'Webhooks sind nützlich, um Aktionen mit externen Anwendungen durchzuführen, z. B:',
+    'Using webhooks to create a task by calling a simple URL' => 'Verwendung von Webhooks zur Erstellung einer Aufgabe durch Aufruf einer einfachen URL',
+    'Automatically calling an external URL when an event occurs in this application (e.g. task creation, comment updated, etc.)' => 'Automatischer Aufruf einer externen URL, wenn in dieser Anwendung ein Ereignis eintritt (z. B. Erstellung einer Aufgabe, Aktualisierung eines Kommentars usw.)',
+    'To view the list of supported events or see some examples, visit the %s page' => 'Eine Liste der unterstützten Ereignisse und einige Beispiele finden Sie auf der Seite %s',
+    'Webhooks Information' => 'Informationen zu Webhooks',
+    'Visit page' => 'Seite besuchen',
     'Webhook Token' => 'Webhook-Token',
     'Warning' => 'Warnung',
-    'Resetting the webhook token may require the cron background jobs to be manually updated' => 'Das Zurücksetzen des Webhook-Tokens kann es erforderlich machen, dass die Cron-Hintergrundjobs manuell aktualisiert werden',
+    'Resetting the webhook token may require the cron background jobs to be manually updated' => 'Zum Zurücksetzen des Webhook-Tokens müssen die Cron-Hintergrundjobs möglicherweise manuell aktualisiert werden',
     'Token:' => 'Token:',
     'Reset Token' => 'Token Zurücksetzen',
+    'Add Webhook' => 'Webhook Hinzufügen',
+    'Webhook URL' => 'Webhook-URL',
+    'Save Webhook' => 'Webhook Speichern',
 );

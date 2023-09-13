@@ -132,12 +132,19 @@ return array(
     //
     // Template/config/webhook.php
     //
-    'Webhook Settings' => '',
-    'Webhook URL' => '',
-    'Save' => '',
+    'Connecting External Applications' => '',
+    'Webhooks are useful to perform actions with external applications such as:' => '',
+    'Using webhooks to create a task by calling a simple URL' => '',
+    'Automatically calling an external URL when an event occurs in this application (e.g. task creation, comment updated, etc.)' => '',
+    'To view the list of supported events or see some examples, visit the %s page' => '',
+    'Webhooks Information' => '',
+    'Visit page' => '',
     'Webhook Token' => '',
     'Warning' => '',
     'Resetting the webhook token may require the cron background jobs to be manually updated' => '',
     'Token:' => '',
     'Reset Token' => '',
+    'Add Webhook' => '',
+    'Webhook URL' => '',
+    'Save Webhook' => '',
 );

@@ -123,12 +123,19 @@ return array(
     //
     // Template/config/webhook.php
     //
-    'Webhook Settings' => 'Webhook Settings',
-    'Webhook URL' => 'Webhook URL',
-    'Save' => 'Save',
+    'Connecting External Applications' => 'Connecting External Applications',
+    'Webhooks are useful to perform actions with external applications such as:' => 'Webhooks are useful to perform actions with external applications such as:',
+    'Using webhooks to create a task by calling a simple URL' => 'Using webhooks to create a task by calling a simple URL',
+    'Automatically calling an external URL when an event occurs in this application (e.g. task creation, comment updated, etc.)' => 'Automatically calling an external URL when an event occurs in this application (e.g. task creation, comment updated, etc.)',
+    'To view the list of supported events or see some examples, visit the %s page' => 'To view the list of supported events or see some examples, visit the %s page',
+    'Webhooks Information' => 'Webhooks Information',
+    'Visit page' => 'Visit page',
     'Webhook Token' => 'Webhook Token',
     'Warning' => 'Warning',
     'Resetting the webhook token may require the cron background jobs to be manually updated' => 'Resetting the webhook token may require the cron background jobs to be manually updated',
     'Token:' => 'Token:',
     'Reset Token' => 'Reset Token',
+    'Add Webhook' => 'Add Webhook',
+    'Webhook URL' => 'Webhook URL',
+    'Save Webhook' => 'Save Webhook',
 );
