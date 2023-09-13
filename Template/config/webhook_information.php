@@ -49,7 +49,7 @@
             </li>
             <li class="">
                 <i class="fa-li fa fa-terminal"></i>
-                <?= t('The custom URL must respond in less than 1 second as such requests are synchronous (a PHP limitation). The user interface can suffer from sever performance issues if your script is too slow.') ?>
+                <?= t('The custom URL must respond in less than 1 second as such requests are synchronous. This is a PHP limitation. The user interface can suffer from sever performance issues if your script is too slow.') ?>
             </li>
         </ul>
     </section>
@@ -59,7 +59,7 @@
         </div>
         <details class="accordion-section">
             <summary class="accordion-title">
-                <?= t('Example of HTTP Request') ?>
+                <?= t('HTTP Request Example') ?>
             </summary>
             <div class="accordion-content">
                 <?= $this->render('KanboardSupport:config/webhook-code-examples-http') ?>
@@ -67,7 +67,7 @@
         </details>
         <details class="accordion-section">
             <summary class="accordion-title">
-                <?= t('Examples of Event Payloads') ?>
+                <?= t('Event Payload Examples') ?>
             </summary>
             <div class="accordion-content">
                 <?= $this->render('KanboardSupport:config/webhook-code-examples-event-payloads') ?>
