@@ -138,4 +138,20 @@ return array(
     'Add Webhook' => 'Add Webhook',
     'Webhook URL' => 'Webhook URL',
     'Save Webhook' => 'Save Webhook',
+    //
+    // Template/config/webhook_information.php
+    //
+    'Supported Events' => 'Supported Events',
+    'Writing a Webhook Receiver' => 'Writing a Webhook Receiver',
+    'All internal events of this application can be sent to an external URL.' => 'All internal events of this application can be sent to an external URL.',
+    'The webhook URL must be defined in %s.' => 'The webhook URL must be defined in %s.',
+    'Webhooks' => 'Webhooks',
+    'Go to Settings' => 'Go to Settings',
+    'When an event is triggered this application calls the predefined URL automatically.' => 'When an event is triggered this application calls the predefined URL automatically.',
+    'Data is encoded in JSON format and sent with a POST HTTP request.' => 'Data is encoded in JSON format and sent with a POST HTTP request.',
+    'The webhook token is also sent as a query string parameter, allowing the user to confirm whether the request was actually called from this application.' => 'The webhook token is also sent as a query string parameter, allowing the user to confirm whether the request was actually called from this application.',
+    'The custom URL must respond in less than 1 second as such requests are synchronous. This is a PHP limitation. The user interface can suffer from sever performance issues if your script is too slow.' => 'The custom URL must respond in less than 1 second as such requests are synchronous. This is a PHP limitation. The user interface can suffer from sever performance issues if your script is too slow.',
+    'Webhook Examples' => 'Webhook Examples',
+    'HTTP Request Example' => 'HTTP Request Example',
+    'Event Payload Examples' => 'Event Payload Examples',
 );

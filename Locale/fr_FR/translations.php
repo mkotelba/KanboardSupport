@@ -138,4 +138,20 @@ return array(
     'Add Webhook' => 'Ajouter un webhook',
     'Webhook URL' => 'URL du webhook',
     'Save Webhook' => 'Sauvegarder le webhook',
+    //
+    // Template/config/webhook_information.php
+    //
+    'Supported Events' => 'Événements pris en charge',
+    'Writing a Webhook Receiver' => 'Écriture d\'un récepteur Webhook',
+    'All internal events of this application can be sent to an external URL.' => 'Tous les événements internes de cette application peuvent être envoyés à une URL externe.',
+    'The webhook URL must be defined in %s.' => 'L\'URL du webhook doit être définie dans %s.',
+    'Webhooks' => 'Crochets Web',
+    'Go to Settings' => 'Accéder aux paramètres',
+    'When an event is triggered this application calls the predefined URL automatically.' => 'Lorsqu\'un événement est déclenché, cette application appelle automatiquement l\'URL prédéfinie.',
+    'Data is encoded in JSON format and sent with a POST HTTP request.' => 'Les données sont encodées au format JSON et envoyées avec une requête HTTP POST.',
+    'The webhook token is also sent as a query string parameter, allowing the user to confirm whether the request was actually called from this application.' => 'Le jeton du webhook est également envoyé en tant que paramètre de la chaîne de requête, ce qui permet à l\'utilisateur de confirmer que la requête a bien été appelée à partir de cette application.',
+    'The custom URL must respond in less than 1 second as such requests are synchronous. This is a PHP limitation. The user interface can suffer from sever performance issues if your script is too slow.' => 'L\'URL personnalisée doit répondre en moins d\'une seconde, car ces demandes sont synchrones. Il s\'agit d\'une limitation de PHP. L\'interface utilisateur peut souffrir de graves problèmes de performance si votre script est trop lent.',
+    'Webhook Examples' => 'Exemples de Webhook',
+    'HTTP Request Example' => 'Exemple de requête HTTP',
+    'Event Payload Examples' => 'Exemples de charge utile d\'événement',
 );

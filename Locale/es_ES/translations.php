@@ -138,4 +138,20 @@ return array(
     'Add Webhook' => 'Añadir webhook',
     'Webhook URL' => 'URL del webhook',
     'Save Webhook' => 'Guardar Webhook',
+    //
+    // Template/config/webhook_information.php
+    //
+    'Supported Events' => 'Eventos admitidos',
+    'Writing a Webhook Receiver' => 'Escribiendo un Receptor Webhook',
+    'All internal events of this application can be sent to an external URL.' => 'Todos los eventos internos de esta aplicación pueden ser enviados a una URL externa.',
+    'The webhook URL must be defined in %s.' => 'La URL del webhook debe estar definida en %s.',
+    'Webhooks' => 'Webhooks',
+    'Go to Settings' => 'Ir a Configuración',
+    'When an event is triggered this application calls the predefined URL automatically.' => 'Cuando se activa un evento, esta aplicación llama automáticamente a la URL predefinida.',
+    'Data is encoded in JSON format and sent with a POST HTTP request.' => 'Los datos se codifican en formato JSON y se envían con una petición HTTP POST.',
+    'The webhook token is also sent as a query string parameter, allowing the user to confirm whether the request was actually called from this application.' => 'El token del webhook también se envía como un parámetro de cadena de consulta, permitiendo al usuario confirmar si la petición fue realmente llamada desde esta aplicación.',
+    'The custom URL must respond in less than 1 second as such requests are synchronous. This is a PHP limitation. The user interface can suffer from sever performance issues if your script is too slow.' => 'La URL personalizada debe responder en menos de 1 segundo, ya que este tipo de peticiones son síncronas. Esta es una limitación de PHP. La interfaz de usuario puede sufrir graves problemas de rendimiento si su script es demasiado lento.',
+    'Webhook Examples' => 'Ejemplos de Webhooks',
+    'HTTP Request Example' => 'Ejemplo de Petición HTTP',
+    'Event Payload Examples' => 'Ejemplos de Carga de Evento',
 );
