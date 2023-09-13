@@ -474,3 +474,32 @@ a.kb-updates-link {
     width: 22px;
     height: 22px;
 }
+
+.webhooks-info-page section .page-header h2 {
+    border: 0;
+}
+
+#SupportedEvents ul, #WebhookReceiver ul {
+    margin-bottom: 30px;
+}
+
+#SupportedEvents ul li {
+    margin-bottom: 10px;
+}
+
+#WebhookExamples {
+    margin-bottom: 50px;
+}
+
+#SupportedEvents ul > li > code.event-code, code.event-code {
+    white-space: nowrap;
+    max-width: 100%;
+    background: #FFFFFF;
+    border: 1px solid var(--pp-light-grey);
+    font-size: 75%;
+    padding: 2px 5px;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace;
+    color: #E74C3C;
+    overflow-x: auto;
+    border-radius: 2px;
+}
