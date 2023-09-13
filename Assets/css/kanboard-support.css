@@ -475,7 +475,7 @@ a.kb-updates-link {
     height: 22px;
 }
 
-.webhooks-info-page section .page-header h2 {
+.webhooks-page h2, .webhooks-info-page section .page-header h2 {
     border: 0;
 }
 
@@ -543,10 +543,54 @@ code.field-code {
     margin-bottom: 25px;
 }
 
+.token-panel {
+    border: 2px outset var(--pp-light-grey);
+}
+
 .webhooks-page-intro ul {
     margin-block: 20px;
 }
 
 .webhooks-page-intro ul li {
     margin-bottom: 5px;
+}
+
+.token-panel span.webhooks-icon {
+    vertical-align: sub;
+}
+
+.btn.reset-token-btn {
+    margin-left: 20px;
+    display: inline-block;
+    transition: var(--transition-kanboard-support);
+    border-radius: var(--border-radius-kanboard-support);
+}
+
+fieldset.add-webhook {
+    border-radius: var(--border-radius-kanboard-support);
+    border-color: var(--pp-grey);
+}
+
+fieldset.add-webhook legend {
+    font-weight: 600;
+    padding-inline: 5px;
+    background: white;
+}
+
+form.add-webhook-form input#form-webhook_url {
+    width: 600px;
+    border-radius: var(--border-radius-kanboard-support);
+}
+
+form.add-webhook-form .form-actions {
+    display: inline-block;
+    padding: 0;
+}
+
+form.add-webhook-form .form-actions button {
+    margin-left: 5px;
+    font-size: 1em;
+    transition: var(--transition-kanboard-support);
+    border-radius: var(--border-radius-kanboard-support);
+
 }

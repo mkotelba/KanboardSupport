@@ -31,7 +31,7 @@
     <div class="panel token-panel">
         <span class="webhooks-icon"></span> <?= t('Token:') ?>
         <strong><?= $this->text->e($values['webhook_token']) ?></strong>
-        <?= $this->url->link(t('Reset Token'), 'ConfigController', 'token', array('type' => 'webhook'), true, 'btn btn-red') ?>
+        <?= $this->url->link(t('Reset Token'), 'ConfigController', 'token', array('type' => 'webhook'), true, 'btn btn-red reset-token-btn') ?>
     </div>
     <fieldset class="add-webhook">
         <legend class=""><?= t('Add Webhook') ?></legend>
@@ -42,7 +42,7 @@
             <?= $this->form->text('webhook_url', $values, $errors) ?>
 
             <div class="form-actions">
-                <button type="submit" class="btn btn-blue"><?= t('Save') ?></button>
+                <button type="submit" class="btn btn-blue"><?= t('Save Webhook') ?></button>
             </div>
         </form>
     </fieldset>
