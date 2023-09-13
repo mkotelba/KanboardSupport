@@ -71,6 +71,8 @@ return array(
     'Database Version' => 'Datenbank-Version',
     'Database Username' => 'Datenbank-Benutzername',
     'Database Hostname' => 'Datenbank-Hostname',
+    'Database Port' => 'Datenbank-Anschluss',
+    'Default' => 'Standard',
     'Database Name' => 'Datenbank Name',
     'Database Migrations' => 'Datenbank-Migrationen',
     'Database migrations must be completed manually through the CLI' => 'Datenbankmigrationen müssen manuell über die CLI durchgeführt werden',

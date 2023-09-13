@@ -71,6 +71,8 @@ return array(
     'Database Version' => 'Versión de la base de datos',
     'Database Username' => 'Nombre de usuario de la base de datos',
     'Database Hostname' => 'Nombre de host de la base de datos',
+    'Database Port' => 'Puerto de base de datos',
+    'Default' => 'Por defecto',
     'Database Name' => 'Nombre de la base de datos',
     'Database Migrations' => 'Migración de bases de datos',
     'Database migrations must be completed manually through the CLI' => 'Las migraciones de bases de datos deben completarse manualmente a través de la CLI',

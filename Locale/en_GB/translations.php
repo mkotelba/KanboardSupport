@@ -71,6 +71,8 @@ return array(
     'Database Version' => 'Database Version',
     'Database Username' => 'Database Username',
     'Database Hostname' => 'Database Hostname',
+    'Database Port' => 'Database Port',
+    'Default' => 'Default',
     'Database Name' => 'Database Name',
     'Database Migrations' => 'Database Migrations',
     'Database migrations must be completed manually through the CLI' => 'Database migrations must be completed manually through the CLI',

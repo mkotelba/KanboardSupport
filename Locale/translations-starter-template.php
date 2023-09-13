@@ -80,6 +80,8 @@ return array(
     'Database Version' => '',
     'Database Username' => '',
     'Database Hostname' => '',
+    'Database Port' => '',
+    'Default' => '',
     'Database Name' => '',
     'Database Migrations' => '',
     'Database migrations must be completed manually through the CLI' => '',
