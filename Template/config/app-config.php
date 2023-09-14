@@ -1,5 +1,12 @@
 <details class="accordion-section app-config">
     <summary class="accordion-title">
+        <?= t('General Settings') ?>
+    </summary>
+    <div class="accordion-content">
+    </div>
+</details>
+<details class="accordion-section app-config">
+    <summary class="accordion-title">
         <?= t('Plugins Configuration') ?>
     </summary>
     <div class="accordion-content">
