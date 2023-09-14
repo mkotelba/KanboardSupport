@@ -525,10 +525,18 @@ code.field-code {
     border-radius: 2px;
 }
 
-#WebhookExamples details > summary, details.accordion-section.mysql-ssl > summary {
+#WebhookExamples details > summary, details.accordion-section.mysql-ssl > summary, details.accordion-section.app-config > summary {
     margin-bottom: 10px;
     background: var(--pp-white);
     cursor: pointer;
+}
+
+#WebhookExamples details[open] > summary, details.accordion-section.mysql-ssl[open] > summary, details.accordion-section.app-config[open] > summary {
+    font-weight: bold;
+}
+
+#WebhookExamples details, details.accordion-section.mysql-ssl, details.accordion-section.app-config {
+    margin-left: 10px;
 }
 
 #WebhookExamples .panel {
