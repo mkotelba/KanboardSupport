@@ -525,10 +525,15 @@ code.field-code {
     border-radius: 2px;
 }
 
+#WebhookExamples details > summary:hover, details.accordion-section.mysql-ssl > summary:hover, details.accordion-section.app-config > summary:hover {
+    color: var(--pp-red-alt-2);
+}
+
 #WebhookExamples details > summary, details.accordion-section.mysql-ssl > summary, details.accordion-section.app-config > summary {
     margin-bottom: 10px;
     background: var(--pp-white);
     cursor: pointer;
+    transition: var(--transition-kanboard-support);
 }
 
 #WebhookExamples details[open] > summary, details.accordion-section.mysql-ssl[open] > summary, details.accordion-section.app-config[open] > summary {
