@@ -87,6 +87,8 @@ return array(
     'Database migrations must be completed manually through the CLI' => '',
     'Use CLI' => '',
     'This is the default and recommended setting' => '',
+    'Database Timeout' => '',
+    'This value must be in seconds' => '',
     'Database Size' => '',
     'Download Database' => '',
     'compressed SQLite file' => '',

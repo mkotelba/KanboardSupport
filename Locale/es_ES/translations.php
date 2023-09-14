@@ -78,6 +78,8 @@ return array(
     'Database migrations must be completed manually through the CLI' => 'Las migraciones de bases de datos deben completarse manualmente a través de la CLI',
     'Use CLI' => 'Usar CLI',
     'This is the default and recommended setting' => 'Esta es la configuración predeterminada y recomendada',
+    'Database Timeout' => 'Tiempo de espera de la base de datos',
+    'This value must be in seconds' => 'Este valor debe estar en segundos',
     'Database Size' => 'Tamaño de la base de datos',
     'Download Database' => 'Descargar base de datos',
     'compressed SQLite file' => 'archivo SQLite comprimido',
