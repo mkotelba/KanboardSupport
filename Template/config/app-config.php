@@ -220,5 +220,12 @@
         <?= t('Security Configuration') ?>
     </summary>
     <div class="accordion-content">
+<details class="accordion-section app-config">
+    <summary class="accordion-title">
+        <?= t('Group Memberships') ?>
+    </summary>
+    <div class="accordion-content">
+    </div>
+</details>
     </div>
 </details>
