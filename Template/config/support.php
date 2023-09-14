@@ -366,6 +366,69 @@
                         <span class="pass-tick" title="<?= t('This is the default and recommended setting') ?>">&#10004;</span>
                     <?php endif ?>
                 </span>
+                <?php if (DB_DRIVER === 'mysql'): ?>
+                    <details class="accordion-section mysql-ssl">
+                        <summary class="accordion-title">
+                            <?= t('MySQL SSL Connection') ?>
+                        </summary>
+                        <div class="accordion-content">
+                            <p class="">
+                                <?= t('These parameters must be defined in the configuration file in order to enable the MySQL SSL connection. For most installations, it is safe to ignore this section.') ?>
+                            </p>
+                            <fieldset class="parameter-examples">
+                                <legend><?= t('Parameter Examples') ?></legend>
+                                <div class="ssl-example">
+                                    <dt><?= t('MySQL SSL Key') ?></dt>
+                                    <dd><code class="event-code">define('DB_SSL_KEY', '<span class="pp-grey font-weight-bold">/path/to/client-key.pem</span>');</code></dd>
+                                </div>
+                                <div class="ssl-example">
+                                    <dt><?= t('MySQL SSL Certificate') ?></dt>
+                                    <dd><code class="event-code">define('DB_SSL_CERT', '<span class="pp-grey font-weight-bold">/path/to/client-cert.pem</span>');</code></dd>
+                                </div>
+                                <div class="ssl-example">
+                                    <dt><?= t('MySQL SSL Certificate Authority') ?></dt>
+                                    <dd><code class="event-code">define('DB_SSL_CA', '<span class="pp-grey font-weight-bold">/path/to/ca-cert.pem</span>');</code></dd>
+                                </div>
+                                <div class="ssl-example">
+                                    <dt><?= t('MySQL SSL Server Verification') ?></dt>
+                                    <dd><code class="event-code">define('DB_VERIFY_SERVER_CERT', '<span class="pp-grey font-weight-bold">false</span>');</code></dd>
+                                </div>
+                            </fieldset>
+                            <span class="data-wrap">
+                                <li class="db-info-title"><?= t('MySQL SSL Key') ?></li>
+                                <?php if (DB_SSL_KEY != null): ?>
+                                    <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_SSL_KEY ?></li>
+                                <?php else: ?>
+                                    <li class="db-info-value border-bottom-thick"><i><?= t('Not Set') ?></i></li>
+                                <?php endif ?>
+                            </span>
+                            <span class="data-wrap">
+                                <li class="db-info-title"><?= t('MySQL SSL Certificate') ?></li>
+                                <?php if (DB_SSL_CERT != null): ?>
+                                    <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_SSL_CERT ?></li>
+                                <?php else: ?>
+                                    <li class="db-info-value border-bottom-thick"><i><?= t('Not Set') ?></i></li>
+                                <?php endif ?>
+                            </span>
+                            <span class="data-wrap">
+                                <li class="db-info-title"><?= t('MySQL SSL Certificate Authority') ?></li>
+                                <?php if (DB_SSL_CA != null): ?>
+                                    <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_SSL_CA ?></li>
+                                <?php else: ?>
+                                    <li class="db-info-value border-bottom-thick"><i><?= t('Not Set') ?></i></li>
+                                <?php endif ?>
+                            </span>
+                            <span class="data-wrap">
+                                <li class="db-info-title"><?= t('MySQL SSL Server Verification') ?></li>
+                                <?php if (DB_VERIFY_SERVER_CERT != null): ?>
+                                    <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_VERIFY_SERVER_CERT ?></li>
+                                <?php else: ?>
+                                    <li class="db-info-value border-bottom-thick"><i><?= t('Not Set') ?></i></li>
+                                <?php endif ?>
+                            </span>
+                        </div>
+                    </details>
+                <?php endif ?>
             </ul>
             <?php if (DB_DRIVER === 'sqlite'): ?>
                 <div class="panel">

@@ -59,6 +59,7 @@ This plugin shows a configuration section to display all the default and custom 
   - Display plugin setup information
 - **Database Connection**
   - Display database information (without password) from the config file
+  - Display advanced database SSL connection information
   - Moved SQLite database (upload/download) options from the About page
 - **Email Connection**
   - Show basic mail server settings

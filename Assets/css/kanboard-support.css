@@ -525,7 +525,7 @@ code.field-code {
     border-radius: 2px;
 }
 
-#WebhookExamples details > summary {
+#WebhookExamples details > summary, details.accordion-section.mysql-ssl > summary {
     margin-bottom: 10px;
     background: var(--pp-white);
     cursor: pointer;
@@ -566,13 +566,16 @@ code.field-code {
     border-radius: var(--border-radius-kanboard-support);
 }
 
-fieldset.add-webhook {
+fieldset.add-webhook, fieldset.parameter-examples {
     border-radius: var(--border-radius-kanboard-support);
     border-color: var(--pp-grey);
 }
 
 fieldset.add-webhook legend {
     font-weight: 600;
+}
+
+fieldset.add-webhook legend, fieldset.parameter-examples legend {
     padding-inline: 5px;
     background: white;
 }
@@ -592,5 +595,11 @@ form.add-webhook-form .form-actions button {
     font-size: 1em;
     transition: var(--transition-kanboard-support);
     border-radius: var(--border-radius-kanboard-support);
+}
 
+.ssl-example {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 90%;
 }
