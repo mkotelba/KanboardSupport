@@ -365,7 +365,7 @@
                     <?php if (DB_TIMEOUT != null): ?>
                         <li class="db-info-value border-bottom-thick" title="<?= t('This value must be in seconds') ?>"><?= DB_TIMEOUT ?>s</li>
                     <?php else: ?>
-                        <li class="db-info-value border-bottom-thick"><i><?= t('Not Set') ?></i></li>
+                        <li class="db-info-value border-bottom-thick" title="<?= t('This is the default and recommended setting') ?>"><i><?= t('Not Set') ?></i></li>
                         <span class="pass-tick" title="<?= t('This is the default and recommended setting') ?>">&#10004;</span>
                     <?php endif ?>
                 </span>
@@ -402,7 +402,7 @@
                                 <?php if (DB_SSL_KEY != null): ?>
                                     <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_SSL_KEY ?></li>
                                 <?php else: ?>
-                                    <li class="db-info-value border-bottom-thick"><i><?= t('Not Set') ?></i></li>
+                                    <li class="db-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>"><i><?= t('Not Set') ?></i></li>
                                 <?php endif ?>
                             </span>
                             <span class="data-wrap">
@@ -410,7 +410,7 @@
                                 <?php if (DB_SSL_CERT != null): ?>
                                     <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_SSL_CERT ?></li>
                                 <?php else: ?>
-                                    <li class="db-info-value border-bottom-thick"><i><?= t('Not Set') ?></i></li>
+                                    <li class="db-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>"><i><?= t('Not Set') ?></i></li>
                                 <?php endif ?>
                             </span>
                             <span class="data-wrap">
@@ -418,7 +418,7 @@
                                 <?php if (DB_SSL_CA != null): ?>
                                     <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_SSL_CA ?></li>
                                 <?php else: ?>
-                                    <li class="db-info-value border-bottom-thick"><i><?= t('Not Set') ?></i></li>
+                                    <li class="db-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>"><i><?= t('Not Set') ?></i></li>
                                 <?php endif ?>
                             </span>
                             <span class="data-wrap">
@@ -426,7 +426,7 @@
                                 <?php if (DB_VERIFY_SERVER_CERT != null): ?>
                                     <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_VERIFY_SERVER_CERT ?></li>
                                 <?php else: ?>
-                                    <li class="db-info-value border-bottom-thick"><i><?= t('Not Set') ?></i></li>
+                                    <li class="db-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>"><i><?= t('Not Set') ?></i></li>
                                 <?php endif ?>
                             </span>
                         </div>

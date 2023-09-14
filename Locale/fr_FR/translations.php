@@ -85,6 +85,7 @@ return array(
     'These parameters must be defined in the configuration file in order to enable the MySQL SSL connection. For most installations, it is safe to ignore this section.' => 'Ces paramètres doivent être définis dans le fichier de configuration afin d\'activer la connexion SSL de MySQL. Pour la plupart des installations, il est prudent d\'ignorer cette section.',
     'Parameter Examples' => 'Exemples de paramètres',
     'MySQL SSL Key' => 'Clé SSL MySQL',
+    'This is the default setting' => 'Il s\'agit du réglage par défaut',
     'MySQL SSL Certificate' => 'Certificat SSL MySQL',
     'MySQL SSL Certificate Authority' => 'Autorité de certification SSL MySQL',
     'MySQL SSL Server Verification' => 'Vérification du serveur SSL de MySQL',
