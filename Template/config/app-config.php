@@ -254,6 +254,30 @@
         <?= t('Group Memberships') ?>
     </summary>
     <div class="accordion-content">
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('Show Group Memberships in User List') ?></li>
+            <?php if (SHOW_GROUP_MEMBERSHIPS_IN_USERLIST == false): ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('Group memberships will not be shown') ?>">
+                    <?= t('False') ?>
+                </li>
+                <span class="fail-x" title="<?= t('Group memberships will not be shown') ?>">&#10008;</span>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                    <?= t('True') ?>
+                </li>
+                <span class="pass-tick" title="<?= t('This is the default setting') ?>">&#10004;</span>
+            <?php endif ?>
+        </span>
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('Limit Group Memberships in User List') ?></li>
+            <?php if (SHOW_GROUP_MEMBERSHIPS_IN_USERLIST_WITH_LIMIT == '7'): ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting. Set to 0 for all group memberships.') ?>">7</li>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('The default setting is 7. Set to 0 for all group memberships.') ?>">
+                    <?= SHOW_GROUP_MEMBERSHIPS_IN_USERLIST_WITH_LIMIT ?>
+                </li>
+            <?php endif ?>
+        </span>
     </div>
 </details>
 <details class="accordion-section app-config">
