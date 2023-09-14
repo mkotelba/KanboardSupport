@@ -308,6 +308,7 @@
                         <?= SESSION_DURATION ?> <small><i><?= t('Until browser is closed') ?></i></small>
                     </li>
                 </span>
+                <?= $this->render('KanboardSupport:config/app-config') ?>
             </ul>
         </div>
     </section>
