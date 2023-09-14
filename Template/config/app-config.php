@@ -220,6 +220,8 @@
         <?= t('Security Configuration') ?>
     </summary>
     <div class="accordion-content">
+    </div>
+</details>
 <details class="accordion-section app-config">
     <summary class="accordion-title">
         <?= t('Group Memberships') ?>
@@ -227,5 +229,10 @@
     <div class="accordion-content">
     </div>
 </details>
+<details class="accordion-section app-config">
+    <summary class="accordion-title">
+        <?= t('Proxy Settings') ?>
+    </summary>
+    <div class="accordion-content">
     </div>
 </details>
