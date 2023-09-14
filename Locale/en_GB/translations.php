@@ -10,6 +10,8 @@ return array(
     //
     'Settings %s Configuration' => 'Settings %s Configuration',
     'Webhooks %s Information' => 'Webhooks %s Information',
+    'Current Raw Configuration File' => 'Current Raw Configuration File',
+    'Default Raw Configuration File' => 'Default Raw Configuration File',
     //
     // Helper/SupportHelper.php
     //

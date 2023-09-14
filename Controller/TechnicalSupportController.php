@@ -39,4 +39,32 @@ class TechnicalSupportController extends \Kanboard\Controller\ConfigController
             'title' => e('Webhooks %s Information', ' &#10562; '),
         )));
     }
+
+    /**
+     * Display Current Raw Config File (Modal)
+     *
+     * @see     config.php
+     * @return  modal
+     * @author  aljawaid
+     */
+    public function showCurrentRawConfigModal()
+    {
+        $this->response->html($this->template->render('kanboardSupport:modals/current-raw-config', array(
+            'title' => t('Current Raw Configuration File'),
+        )));
+    }
+
+    /**
+     * Display Default Raw Config File (Modal)
+     *
+     * @see     config.default.php
+     * @return  modal
+     * @author  aljawaid
+     */
+    public function showDefaultRawConfigModal()
+    {
+        $this->response->html($this->template->render('kanboardSupport:modals/default-raw-config', array(
+            'title' => t('Default Raw Configuration File'),
+        )));
+    }
 }

@@ -19,6 +19,8 @@ return array(
     //
     'Settings %s Configuration' => '',
     'Webhooks %s Information' => '',
+    'Current Raw Configuration File' => '',
+    'Default Raw Configuration File' => '',
     //
     // Helper/SupportHelper.php
     //
