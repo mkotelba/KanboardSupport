@@ -82,6 +82,7 @@ return array(
     'This is the default and recommended setting' => 'Dies ist die Standardeinstellung und wird empfohlen',
     'Database Timeout' => 'Datenbank-Timeout',
     'This value must be in seconds' => 'Dieser Wert muss in Sekunden angegeben werden.',
+    'This is the default and recommended setting. If set, the value must be in seconds.' => 'Dies ist die Standardeinstellung und wird empfohlen. Falls eingestellt, muss der Wert in Sekunden angegeben werden.',
     'MySQL SSL Connection' => 'MySQL SSL-Verbindung',
     'These parameters must be defined in the configuration file in order to enable the MySQL SSL connection. For most installations, it is safe to ignore this section.' => 'Diese Parameter müssen in der Konfigurationsdatei definiert werden, um die MySQL-SSL-Verbindung zu aktivieren. Bei den meisten Installationen ist es sicher, diesen Abschnitt zu ignorieren.',
     'Parameter Examples' => 'Beispiele für Parameter',

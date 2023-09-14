@@ -181,8 +181,8 @@
                     <?php if (DB_TIMEOUT != null): ?>
                         <li class="db-info-value border-bottom-thick" title="<?= t('This value must be in seconds') ?>"><?= DB_TIMEOUT ?>s</li>
                     <?php else: ?>
-                        <li class="db-info-value border-bottom-thick" title="<?= t('This is the default and recommended setting') ?>"><i><?= t('Not Set') ?></i></li>
-                        <span class="pass-tick" title="<?= t('This is the default and recommended setting') ?>">&#10004;</span>
+                        <li class="db-info-value border-bottom-thick" title="<?= t('This is the default and recommended setting. If set, the value must be in seconds.') ?>"><i><?= t('Not Set') ?></i></li>
+                        <span class="pass-tick" title="<?= t('This is the default and recommended setting. If set, the value must be in seconds.') ?>">&#10004;</span>
                     <?php endif ?>
                 </span>
                 <?php if (DB_DRIVER === 'mysql'): ?>
