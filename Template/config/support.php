@@ -357,6 +357,15 @@
                         <span class="pass-tick" title="<?= t('This is the default and recommended setting') ?>">&#10004;</span>
                     <?php endif ?>
                 </span>
+                <span class="data-wrap">
+                    <li class="db-info-title"><?= t('Database Timeout') ?></li>
+                    <?php if (DB_TIMEOUT != null): ?>
+                        <li class="db-info-value border-bottom-thick" title="<?= t('This value must be in seconds') ?>"><?= DB_TIMEOUT ?>s</li>
+                    <?php else: ?>
+                        <li class="db-info-value border-bottom-thick"><i><?= t('Not Set') ?></i></li>
+                        <span class="pass-tick" title="<?= t('This is the default and recommended setting') ?>">&#10004;</span>
+                    <?php endif ?>
+                </span>
             </ul>
             <?php if (DB_DRIVER === 'sqlite'): ?>
                 <div class="panel">
