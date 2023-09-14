@@ -3,6 +3,20 @@
         <?= t('General Settings') ?>
     </summary>
     <div class="accordion-content">
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('Escape HTML Inside Markdown') ?></li>
+            <?php if (MARKDOWN_ESCAPE_HTML == false): ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('External content will be trusted. Inline HTML will be rendered.') ?>">
+                    <?= t('False') ?>
+                </li>
+                <span class="fail-x" title="<?= t('External content will be trusted. Inline HTML will be rendered.') ?>">&#10008;</span>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('External content is not trusted by default for security reasons therefore inline HTML will not be rendered.') ?>">
+                    <?= t('True') ?>
+                </li>
+                <span class="pass-tick" title="<?= t('External content is not trusted by default for security reasons therefore inline HTML will not be rendered.') ?>">&#10004;</span>
+            <?php endif ?>
+        </span>
     </div>
 </details>
 <details class="accordion-section app-config">
