@@ -22,6 +22,7 @@ return array(
     // Template/config/support.php
     //
     'Application Configuration' => 'Configuración de la aplicación',
+    'This page shows all default and custom values from the configuration file stored in %s combined with application-specific settings detected from your server.' => 'Esta página muestra todos los valores predeterminados y personalizados del archivo de configuración almacenado en %s combinados con los ajustes específicos de la aplicación detectados desde su servidor.',
     'User Configuration' => 'Configuración de usuario',
     'Your Profile Full Name' => 'Nombre completo de su perfil',
     'Your User ID' => 'Su ID de usuario',

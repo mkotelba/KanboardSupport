@@ -8,6 +8,9 @@
             <span class="ks-icon"></span> <?= t('Application Configuration') ?>
         </h2>
     </div>
+    <p class="">
+        <?= e('This page shows all default and custom values from the configuration file stored in %s combined with application-specific settings detected from your server.', '<code class="field-code">/config.php</code>') ?>
+    </p>
     <!-- PRIVACY WARNING -->
     <section class="message error privacy-warning">
         <header></header>

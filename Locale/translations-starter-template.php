@@ -31,6 +31,7 @@ return array(
     // Template/config/support.php
     //
     'Application Configuration' => '',
+    'This page shows all default and custom values from the configuration file stored in %s combined with application-specific settings detected from your server.' => '',
     'User Configuration' => '',
     'Your Profile Full Name' => '',
     'Your User ID' => '',
