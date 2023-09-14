@@ -215,3 +215,10 @@
         </span>
     </div>
 </details>
+<details class="accordion-section app-config">
+    <summary class="accordion-title">
+        <?= t('Security Configuration') ?>
+    </summary>
+    <div class="accordion-content">
+    </div>
+</details>
