@@ -40,16 +40,15 @@
     <div class="accordion-content">
         <span class="data-wrap">
             <li class="app-info-title"><?= t('Plugins Installer') ?></li>
-            <li class="app-info-value border-bottom-thick">
-                <?php if (PLUGIN_INSTALLER == false): ?>
-                    <?= t('Disabled') ?>
-                <?php else: ?>
-                    <?= t('Enabled') ?>
-                <?php endif ?>
-            </li>
             <?php if (PLUGIN_INSTALLER == false): ?>
+                <li class="app-info-value border-bottom-thick" title="">
+                    <?= t('Disabled') ?>
+                </li>
                 <span class="fail-x" title="<?= t('Plugins cannot be installed. This is also set by default for security reasons.') ?>">&#10008;</span>
             <?php else: ?>
+                <li class="app-info-value border-bottom-thick" title="">
+                    <?= t('Enabled') ?>
+                </li>
                 <span class="pass-tick" title="<?= t('Plugins can be automatically installed through the Plugins Directory') ?>">&#10004;</span>
             <?php endif ?>
         </span>
