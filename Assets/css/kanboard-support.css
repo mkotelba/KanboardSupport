@@ -616,3 +616,19 @@ form.add-webhook-form .form-actions button {
     margin-bottom: 20px;
     font-size: 90%;
 }
+
+.config-notice {
+    margin: -7px 10px 15px 10px;
+}
+
+.config-btns {
+    margin-bottom: 15px;
+}
+
+.config-btns button {
+    font-size: 1em;
+    border-radius: var(--border-radius-kanboard-support);
+    border-color: var(--pp-grey-alt);
+    transition: var(--transition-kanboard-support);
+    margin-left: 10px;
+}
