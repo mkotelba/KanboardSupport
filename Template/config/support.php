@@ -119,26 +119,6 @@
                     <?php endif ?>
                 </span>
                 <br>
-                <span class="data-wrap">
-                    <li class="app-info-title"><?= t('Log File') ?></li>
-                    <li class="app-info-value value-path border-bottom-thick privacy"><?= LOG_FILE ?></li>
-                </span>
-                <span class="data-wrap">
-                    <li class="app-info-title"><?= t('Session Handler') ?></li>
-                    <li class="app-info-value border-bottom-thick">
-                        <?php if (SESSION_HANDLER == 'php'): ?>
-                            <span>PHP</span>
-                        <?php else: ?>
-                            <span><?= t('Database') ?></span>
-                        <?php endif ?>
-                    </li>
-                </span>
-                <span class="data-wrap">
-                    <li class="app-info-title"><?= t('Session Duration') ?></li>
-                    <li class="app-info-value value-version border-bottom-thick">
-                        <?= SESSION_DURATION ?> <small><i><?= t('Until browser is closed') ?></i></small>
-                    </li>
-                </span>
                 <?= $this->render('KanboardSupport:config/app-config') ?>
             </ul>
         </div>
