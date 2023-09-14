@@ -43,6 +43,7 @@ return array(
     'Updates' => 'Updates',
     'Check for updates' => 'Check for updates',
     'Debug Mode' => 'Debug Mode',
+    'This setting will affect performance and should only be enabled for troubleshooting purposes' => 'This setting will affect performance and should only be enabled for troubleshooting purposes',
     'Enabled' => 'Enabled',
     'Not Enabled' => 'Not Enabled',
     'Data Directory' => 'Data Directory',

@@ -43,6 +43,7 @@ return array(
     'Updates' => 'Aktualisierungen',
     'Check for updates' => 'Auf Aktualisierungen prüfen',
     'Debug Mode' => 'Debug-Modus',
+    'This setting will affect performance and should only be enabled for troubleshooting purposes' => 'Diese Einstellung beeinträchtigt die Leistung und sollte nur zur Fehlersuche aktiviert werden.',
     'Enabled' => 'Aktiviert',
     'Not Enabled' => 'Nicht Aktiviert',
     'Data Directory' => 'Daten-Verzeichnis',

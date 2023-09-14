@@ -43,6 +43,7 @@ return array(
     'Updates' => 'Mises à jour',
     'Check for updates' => 'Vérifier les mises à jour',
     'Debug Mode' => 'Mode de débogage',
+    'This setting will affect performance and should only be enabled for troubleshooting purposes' => 'Ce paramètre affecte les performances et ne doit être activé qu\'à des fins de dépannage.',
     'Enabled' => 'Activé',
     'Not Enabled' => 'Non activé',
     'Data Directory' => 'Répertoire de données',

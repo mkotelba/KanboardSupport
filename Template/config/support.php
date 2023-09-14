@@ -106,13 +106,17 @@
                 <?php endif ?>
                 <span class="data-wrap">
                     <li class="app-info-title"><?= t('Debug Mode') ?></li>
-                    <li class="app-info-value border-bottom-thick">
-                        <?php if (DEBUG == 'true'): ?>
+                    <?php if (DEBUG == 'true'): ?>
+                        <li class="app-info-value border-bottom-thick" title="<?= t('This setting will affect performance and should only be enabled for troubleshooting purposes') ?>">
                             <?= t('Enabled') ?>
-                        <?php else: ?>
+                        </li>
+                        <span class="fail-x" title="<?= t('This setting will affect performance and should only be enabled for troubleshooting purposes') ?>">&#10008;</span>
+                    <?php else: ?>
+                        <li class="app-info-value border-bottom-thick" title="<?= t('This is the default and recommended setting') ?>">
                             <?= t('Not Enabled') ?>
-                        <?php endif ?>
-                    </li>
+                        </li>
+                        <span class="pass-tick" title="<?= t('This is the default and recommended setting') ?>">&#10004;</span>
+                    <?php endif ?>
                 </span>
                 <br>
                 <span class="data-wrap">

@@ -43,6 +43,7 @@ return array(
     'Updates' => 'Actualizaciones',
     'Check for updates' => 'Buscar actualizaciones',
     'Debug Mode' => 'Modo depuración',
+    'This setting will affect performance and should only be enabled for troubleshooting purposes' => 'Esta configuración afectará al rendimiento y sólo debe activarse para solucionar problemas.',
     'Enabled' => 'Activado',
     'Not Enabled' => 'No activado',
     'Data Directory' => 'Directorio de datos',
