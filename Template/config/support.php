@@ -248,6 +248,12 @@
                         </div>
                     </details>
                 <?php endif ?>
+                <?php if (DB_DRIVER === 'odbc'): ?>
+                    <span class="data-wrap">
+                        <li class="db-info-title"><?= t('ODBC Data Source Name') ?></li>
+                        <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_ODBC_DSN ?></li>
+                    </span>
+                <?php endif ?>
             </ul>
             <?php if (DB_DRIVER === 'sqlite'): ?>
                 <div class="panel">

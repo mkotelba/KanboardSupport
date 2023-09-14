@@ -91,6 +91,7 @@ return array(
     'MySQL SSL Certificate' => 'MySQL SSL Certificate',
     'MySQL SSL Certificate Authority' => 'MySQL SSL Certificate Authority',
     'MySQL SSL Server Verification' => 'MySQL SSL Server Verification',
+    'ODBC Data Source Name' => 'ODBC Data Source Name',
     'Database Size' => 'Database Size',
     'Download Database' => 'Download Database',
     'compressed SQLite file' => 'compressed SQLite file',

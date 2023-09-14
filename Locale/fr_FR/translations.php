@@ -91,6 +91,7 @@ return array(
     'MySQL SSL Certificate' => 'Certificat SSL MySQL',
     'MySQL SSL Certificate Authority' => 'Autorité de certification SSL MySQL',
     'MySQL SSL Server Verification' => 'Vérification du serveur SSL de MySQL',
+    'ODBC Data Source Name' => 'Nom de la source de données ODBC (DSN)',
     'Database Size' => 'Taille de la base de données',
     'Download Database' => 'Télécharger la base de données',
     'compressed SQLite file' => 'fichier SQLite compressé',
