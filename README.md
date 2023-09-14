@@ -39,6 +39,7 @@ This plugin shows a configuration section to display all the default and custom 
 
 - Hide sensitive data before sharing technical information
 - Display values from the `config.php` file
+- Display raw versions of the current and default config files for easy comparison
 - Troubleshoot plugins with [PluginManager](https://github.com/aljawaid/PluginManager)
 - **Webhooks Information**
   - New improved webhooks page
