@@ -119,6 +119,21 @@
                     <?php endif ?>
                 </span>
                 <br>
+                <?php if ($this->user->isAdmin()): ?>
+                    <p class="config-notice">
+                        <?= t('This page contains all the configuration settings from the application config file. You can also view the raw contents of the config file as-is and also compare it to the default version.') ?> <strong><?= t('The raw config file will expose sensitive information which should not be shared.') ?></strong>
+                    </p>
+                    <div class="config-btns">
+                        <button href="<?= $this->url->href('TechnicalSupportController', 'showCurrentRawConfigModal', array(
+                            'plugin' => 'KanboardSupport'), false, '', false) ?>" class="btn config-btn js-modal-confirm">
+                            <span class="plugin-icon"></span> <?= t('Current Raw Config File') ?>
+                        </button>
+                        <button href="<?= $this->url->href('TechnicalSupportController', 'showDefaultRawConfigModal', array(
+                            'plugin' => 'KanboardSupport'), false, '', false) ?>" class="btn config-btn js-modal-confirm">
+                            <span class="plugin-icon"></span> <?= t('Default Raw Config File') ?>
+                        </button>
+                    </div>
+                <?php endif ?>
                 <?= $this->render('KanboardSupport:config/app-config') ?>
             </ul>
         </div>
