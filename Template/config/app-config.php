@@ -17,6 +17,20 @@
                 <span class="pass-tick" title="<?= t('External content is not trusted by default for security reasons therefore inline HTML will not be rendered.') ?>">&#10004;</span>
             <?php endif ?>
         </span>
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('Enable URL Rewrite (Pretty URLs)') ?></li>
+            <?php if (ENABLE_URL_REWRITE == false): ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('Ensure the server configuration is correct before changing this setting') ?>">
+                    <?= t('False') ?>
+                </li>
+                <span class="fail-x" title="<?= t('Ensure the server configuration is correct before changing this setting') ?>">&#10008;</span>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('Pretty URLs are enabled') ?>">
+                    <?= t('True') ?>
+                </li>
+                <span class="pass-tick" title="<?= t('Pretty URLs are enabled') ?>">&#10004;</span>
+            <?php endif ?>
+        </span>
     </div>
 </details>
 <details class="accordion-section app-config">
