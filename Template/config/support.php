@@ -283,7 +283,11 @@
                 <?php if (DB_DRIVER === 'odbc'): ?>
                     <span class="data-wrap">
                         <li class="db-info-title"><?= t('ODBC Data Source Name') ?></li>
-                        <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_ODBC_DSN ?></li>
+                        <?php if (APP_VERSION >= '1.2.25'): ?>
+                            <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_ODBC_DSN ?></li>
+                        <?php else: ?>
+                            <li class="db-info-value border-bottom-thick not-available"><?= t('Not available in this version') ?></li>
+                        <?php endif ?>
                     </span>
                 <?php endif ?>
             </ul>
