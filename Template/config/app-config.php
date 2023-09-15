@@ -381,6 +381,66 @@
     <div class="accordion-content">
         <fieldset class="http-client-proxy">
             <legend class=""><?= t('HTTP Client Proxy') ?></legend>
+            <span class="data-wrap">
+                <li class="app-info-title"><?= t('Proxy Hostname') ?></li>
+                <?php if (HTTP_PROXY_HOSTNAME == ''): ?>
+                    <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                        <i><?= t('Not Set') ?></i>
+                    </li>
+                <?php else: ?>
+                    <li class="app-info-value border-bottom-thick">
+                        <?= HTTP_PROXY_HOSTNAME ?>
+                    </li>
+                <?php endif ?>
+            </span>
+            <span class="data-wrap">
+                <li class="app-info-title"><?= t('Proxy Port') ?></li>
+                <?php if (HTTP_PROXY_PORT == '3128'): ?>
+                    <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                        <?= HTTP_PROXY_PORT ?>
+                    </li>
+                <?php else: ?>
+                    <li class="app-info-value border-bottom-thick">
+                        <?= HTTP_PROXY_PORT ?>
+                    </li>
+                <?php endif ?>
+            </span>
+            <span class="data-wrap">
+                <li class="app-info-title"><?= t('Proxy Username') ?></li>
+                <?php if (HTTP_PROXY_USERNAME == ''): ?>
+                    <li class="app-info-value border-bottom-thick privacy" title="<?= t('This is the default setting') ?>">
+                        <i><?= t('Not Set') ?></i>
+                    </li>
+                <?php else: ?>
+                    <li class="app-info-value border-bottom-thick privacy">
+                        <?= HTTP_PROXY_USERNAME ?>
+                    </li>
+                <?php endif ?>
+            </span>
+            <span class="data-wrap">
+                <li class="app-info-title"><?= t('Proxy Password') ?></li>
+                <?php if (HTTP_PROXY_PASSWORD == ''): ?>
+                    <li class="app-info-value border-bottom-thick privacy" title="<?= t('This is the default setting') ?>">
+                        <i><?= t('Not Set') ?></i>
+                    </li>
+                <?php else: ?>
+                    <li class="app-info-value border-bottom-thick privacy">
+                        <?= HTTP_PROXY_PASSWORD ?>
+                    </li>
+                <?php endif ?>
+            </span>
+            <span class="data-wrap">
+                <li class="app-info-title"><?= t('Proxy Exclude') ?></li>
+                <?php if (HTTP_PROXY_EXCLUDE == 'localhost'): ?>
+                    <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                        <?= HTTP_PROXY_EXCLUDE ?>
+                    </li>
+                <?php else: ?>
+                    <li class="app-info-value border-bottom-thick">
+                        <?= HTTP_PROXY_EXCLUDE ?>
+                    </li>
+                <?php endif ?>
+            </span>
         </fieldset>
         <fieldset class="reverse-proxy">
             <legend class=""><?= t('Reverse Proxy') ?></legend>
