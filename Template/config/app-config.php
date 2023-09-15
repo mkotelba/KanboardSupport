@@ -41,12 +41,12 @@
         <span class="data-wrap">
             <li class="app-info-title"><?= t('Plugins Installer') ?></li>
             <?php if (PLUGIN_INSTALLER == false): ?>
-                <li class="app-info-value border-bottom-thick" title="">
+                <li class="app-info-value border-bottom-thick" title="<?= t('Plugins cannot be installed. This is also set by default for security reasons.') ?>">
                     <?= t('Disabled') ?>
                 </li>
                 <span class="fail-x" title="<?= t('Plugins cannot be installed. This is also set by default for security reasons.') ?>">&#10008;</span>
             <?php else: ?>
-                <li class="app-info-value border-bottom-thick" title="">
+                <li class="app-info-value border-bottom-thick" title="<?= t('Plugins can be automatically installed through the Plugins Directory') ?>">
                     <?= t('Enabled') ?>
                 </li>
                 <span class="pass-tick" title="<?= t('Plugins can be automatically installed through the Plugins Directory') ?>">&#10004;</span>
