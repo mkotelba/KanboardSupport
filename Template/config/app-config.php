@@ -244,7 +244,7 @@
 </details>
 <details class="accordion-section app-config">
     <summary class="accordion-title">
-        <?= t('Security Configuration') ?>
+        <?= t('Login and Security Configuration') ?>
     </summary>
     <div class="accordion-content">
         <span class="data-wrap">
