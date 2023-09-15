@@ -588,6 +588,10 @@
                     <?php endif ?>
                 </span>
                 <span class="data-wrap">
+                    <li class="app-info-title"><abbr title="PHP Server API">PHP SAPI</abbr></li>
+                    <li class="app-info-value value border-bottom-thick"><?= PHP_SAPI ?></li>
+                </span>
+                <span class="data-wrap">
                     <li class="app-info-title">PHP <?= t('Config File Path') ?></li>
                     <li class="app-info-value value-path border-bottom-thick"><?= PHP_CONFIG_FILE_PATH ?></li>
                 </span>
@@ -598,10 +602,6 @@
                 <span class="data-wrap">
                     <li class="app-info-title">PHP <?= t('Loaded Configuration File') ?></li>
                     <li class="app-info-value value-path border-bottom-thick"><?= php_ini_loaded_file() ?></li>
-                </span>
-                <span class="data-wrap">
-                    <li class="app-info-title"><abbr title="PHP Server API">PHP SAPI</abbr></li>
-                    <li class="app-info-value value border-bottom-thick"><?= PHP_SAPI ?></li>
                 </span>
             </ul>
         </div>
