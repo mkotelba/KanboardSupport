@@ -63,7 +63,6 @@ return array(
     'Directory Owner' => 'Propietario del directorio',
     'Files Directory' => 'Directorio de archivos',
     'Cache Directory' => 'Directorio Cache',
-    'Not required as Cache Driver is set to' => 'No es necesario ya que el controlador de caché está configurado como',
     'Plugins Installer' => 'Instalador de plugins',
     'Disabled' => 'Desactivado',
     'Plugins cannot be installed. This is also set by default for security reasons.' => 'No se pueden instalar plugins. Esto también se establece por defecto por razones de seguridad.',

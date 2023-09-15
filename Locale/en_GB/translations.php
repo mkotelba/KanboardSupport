@@ -63,7 +63,6 @@ return array(
     'Directory Owner' => 'Directory Owner',
     'Files Directory' => 'Files Directory',
     'Cache Directory' => 'Cache Directory',
-    'Not required as Cache Driver is set to' => 'Not required as Cache Driver is set to',
     'Plugins Installer' => 'Plugins Installer',
     'Disabled' => 'Disabled',
     'Plugins cannot be installed. This is also set by default for security reasons.' => 'Plugins cannot be installed. This is also set by default for security reasons.',

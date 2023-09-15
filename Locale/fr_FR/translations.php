@@ -63,7 +63,6 @@ return array(
     'Directory Owner' => 'Propriétaire du répertoire',
     'Files Directory' => 'Répertoire des fichiers',
     'Cache Directory' => 'Répertoire Cache',
-    'Not required as Cache Driver is set to' => 'Non requis car le pilote de cache est défini sur',
     'Plugins Installer' => 'Installateur de plugins',
     'Disabled' => 'Désactivé',
     'Plugins cannot be installed. This is also set by default for security reasons.' => 'Les plugins ne peuvent pas être installés. Ce paramètre est également défini par défaut pour des raisons de sécurité.',

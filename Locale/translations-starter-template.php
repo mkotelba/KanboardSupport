@@ -72,7 +72,6 @@ return array(
     'Directory Owner' => '',
     'Files Directory' => '',
     'Cache Directory' => '',
-    'Not required as Cache Driver is set to' => '',
     'Plugins Installer' => '',
     'Disabled' => '',
     'Plugins cannot be installed. This is also set by default for security reasons.' => '',
