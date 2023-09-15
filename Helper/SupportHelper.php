@@ -4,8 +4,22 @@ namespace Kanboard\Plugin\KanboardSupport\Helper;
 
 use Kanboard\Core\Base;
 
+/**
+ * Plugin KanboardSupport
+ * Class SupportHelper
+ *
+ * @package  Plugin\KanboardSupport\Helper
+ * @author   aljawaid
+ */
 class SupportHelper extends Base
 {
+    /**
+     * Detect User Browser
+     *
+     * @see     support.php
+     * @return  string
+     * @author  W3docs https://www.w3docs.com/snippets/php/browser-detection.html
+     */
     public function getBrowser()
     {
         $user_agent = $_SERVER['HTTP_USER_AGENT'];
@@ -24,9 +38,18 @@ class SupportHelper extends Base
                 $browser = $value;
             }
         }
+
         return $browser;
     }
 
+    /**
+     * Get Directory Permissions
+     *
+     * @var     $dir
+     * @see     support.php app-config.php
+     * @return  string
+     * @author  PHP Example #2 https://www.php.net/manual/en/function.fileperms.php
+     */
     public function getPermissions($dir)
     {
         $perms = fileperms($dir);
@@ -82,6 +105,15 @@ class SupportHelper extends Base
         clearstatcache();
     }
 
+    /**
+     * Get Linux Directory Permissions
+     *
+     * Displays as octal value
+     * @var     $directory
+     * @see     support.php app-config.php
+     * @return  string
+     * @author  PHP Example #1 https://www.php.net/manual/en/function.fileperms.php
+     */
     public function getPermissionsLinux($directory)
     {
         // phpcs:ignore Generic.ControlStructures.InlineControlStructure.NotAllowed
@@ -91,6 +123,14 @@ class SupportHelper extends Base
         clearstatcache();
     }
 
+    /**
+     * Get Directory Owner
+     *
+     * @var     $dir
+     * @see     support.php app-config.php
+     * @return  string
+     * @author  PHP https://www.php.net/manual/en/function.posix-getpwuid.php
+     */
     public function getPermissionsOwner($directory)
     {
         $owner = posix_getpwuid(fileowner($directory));
