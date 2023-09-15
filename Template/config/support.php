@@ -203,7 +203,9 @@
                     <?php if (DB_TIMEOUT != null): ?>
                         <li class="db-info-value border-bottom-thick" title="<?= t('This value must be in seconds') ?>"><?= DB_TIMEOUT ?>s</li>
                     <?php else: ?>
-                        <li class="db-info-value border-bottom-thick" title="<?= t('This is the default and recommended setting. If set, the value must be in seconds.') ?>"><i><?= t('Not Set') ?></i></li>
+                        <li class="db-info-value border-bottom-thick not-set" title="<?= t('This is the default and recommended setting. If set, the value must be in seconds.') ?>">
+                            <?= t('Not Set') ?>
+                        </li>
                         <span class="pass-tick" title="<?= t('This is the default and recommended setting. If set, the value must be in seconds.') ?>">&#10004;</span>
                     <?php endif ?>
                 </span>
@@ -240,7 +242,9 @@
                                 <?php if (DB_SSL_KEY != null): ?>
                                     <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_SSL_KEY ?></li>
                                 <?php else: ?>
-                                    <li class="db-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>"><i><?= t('Not Set') ?></i></li>
+                                    <li class="db-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                                        <?= t('Not Set') ?>
+                                    </li>
                                 <?php endif ?>
                             </span>
                             <span class="data-wrap">
@@ -248,7 +252,9 @@
                                 <?php if (DB_SSL_CERT != null): ?>
                                     <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_SSL_CERT ?></li>
                                 <?php else: ?>
-                                    <li class="db-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>"><i><?= t('Not Set') ?></i></li>
+                                    <li class="db-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                                        <?= t('Not Set') ?>
+                                    </li>
                                 <?php endif ?>
                             </span>
                             <span class="data-wrap">
@@ -256,7 +262,9 @@
                                 <?php if (DB_SSL_CA != null): ?>
                                     <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_SSL_CA ?></li>
                                 <?php else: ?>
-                                    <li class="db-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>"><i><?= t('Not Set') ?></i></li>
+                                    <li class="db-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                                        <?= t('Not Set') ?>
+                                    </li>
                                 <?php endif ?>
                             </span>
                             <span class="data-wrap">
@@ -264,7 +272,9 @@
                                 <?php if (DB_VERIFY_SERVER_CERT != null): ?>
                                     <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_VERIFY_SERVER_CERT ?></li>
                                 <?php else: ?>
-                                    <li class="db-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>"><i><?= t('Not Set') ?></i></li>
+                                    <li class="db-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                                        <?= t('Not Set') ?>
+                                    </li>
                                 <?php endif ?>
                             </span>
                         </div>
@@ -324,13 +334,11 @@
                 <?php if ($this->user->isAdmin()): ?>
                     <span class="data-wrap">
                         <li class="mail-info-title"><abbr title="Blind Carbon Copy">BCC</abbr></li>
-                        <li class="mail-info-value border-bottom-thick privacy">
                         <?php if (empty(MAIL_BCC)): ?>
-                            <i><?= t('Not Set') ?></i>
+                            <li class="mail-info-value border-bottom-thick not-set"><?= t('Not Set') ?></li>
                         <?php else: ?>
-                            <?= MAIL_BCC ?>
+                            <li class="mail-info-value border-bottom-thick privacy"><?= MAIL_BCC ?></li>
                         <?php endif ?>
-                        </li>
                     </span>
                 <?php endif ?>
                 <span class="data-wrap">
@@ -365,15 +373,13 @@
                             <li class="mail-info-title">
                                 <abbr title="Simple Mail Transport Protocol"><?= t('SMTP Encryption') ?></abbr>
                             </li>
-                            <li class="mail-info-value border-bottom-thick">
-                                <?php if (MAIL_SMTP_ENCRYPTION == 'ssl'): ?>
-                                    SSL
-                                <?php elseif (MAIL_SMTP_ENCRYPTION == 'tls'): ?>
-                                    TLS
-                                <?php else: ?>
-                                    <?= t('Not Set') ?>
-                                <?php endif ?>
-                            </li>
+                            <?php if (MAIL_SMTP_ENCRYPTION == 'ssl'): ?>
+                                <li class="mail-info-value border-bottom-thick">SSL</li>
+                            <?php elseif (MAIL_SMTP_ENCRYPTION == 'tls'): ?>
+                                <li class="mail-info-value border-bottom-thick">TLS</li>
+                            <?php else: ?>
+                                <li class="mail-info-value border-bottom-thick not-set"><?= t('Not Set') ?></li>
+                            <?php endif ?>
                         </span>
                     <?php endif ?>
                     <span class="data-wrap">
@@ -392,13 +398,11 @@
                         <li class="mail-info-title">
                             <abbr title="Simple Mail Transport Protocol">SMTP HELO <?= t('Command Name') ?></abbr>
                         </li>
-                        <li class="mail-info-value border-bottom-thick">
-                            <?php if (!empty(MAIL_SMTP_HELO_NAME)): ?>
-                                <?= MAIL_SMTP_HELO_NAME ?>
-                            <?php else: ?>
-                                <i><?= t('Not Set') ?></i>
-                            <?php endif ?>
-                        </li>
+                        <?php if (!empty(MAIL_SMTP_HELO_NAME)): ?>
+                            <li class="mail-info-value border-bottom-thick"><?= MAIL_SMTP_HELO_NAME ?></li>
+                        <?php else: ?>
+                            <li class="mail-info-value border-bottom-thick not-set"><?= t('Not Set') ?></li>
+                        <?php endif ?>
                     </span>
                 <?php endif ?>
                 <?php if (MAIL_TRANSPORT == 'sendmail'): ?>

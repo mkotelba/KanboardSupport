@@ -384,8 +384,8 @@
             <span class="data-wrap">
                 <li class="app-info-title"><?= t('Proxy Hostname') ?></li>
                 <?php if (HTTP_PROXY_HOSTNAME == ''): ?>
-                    <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
-                        <i><?= t('Not Set') ?></i>
+                    <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                        <?= t('Not Set') ?>
                     </li>
                 <?php else: ?>
                     <li class="app-info-value border-bottom-thick">
@@ -408,8 +408,8 @@
             <span class="data-wrap">
                 <li class="app-info-title"><?= t('Proxy Username') ?></li>
                 <?php if (HTTP_PROXY_USERNAME == ''): ?>
-                    <li class="app-info-value border-bottom-thick privacy" title="<?= t('This is the default setting') ?>">
-                        <i><?= t('Not Set') ?></i>
+                    <li class="app-info-value border-bottom-thick privacy not-set" title="<?= t('This is the default setting') ?>">
+                        <?= t('Not Set') ?>
                     </li>
                 <?php else: ?>
                     <li class="app-info-value border-bottom-thick privacy">
@@ -420,8 +420,8 @@
             <span class="data-wrap">
                 <li class="app-info-title"><?= t('Proxy Password') ?></li>
                 <?php if (HTTP_PROXY_PASSWORD == ''): ?>
-                    <li class="app-info-value border-bottom-thick privacy" title="<?= t('This is the default setting') ?>">
-                        <i><?= t('Not Set') ?></i>
+                    <li class="app-info-value border-bottom-thick privacy not-set" title="<?= t('This is the default setting') ?>">
+                        <?= t('Not Set') ?>
                     </li>
                 <?php else: ?>
                     <li class="app-info-value border-bottom-thick privacy">

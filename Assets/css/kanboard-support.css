@@ -693,3 +693,8 @@ fieldset.brute-force-protection {
 fieldset.brute-force-protection p:first-of-type {
     line-height: 1.25;
 }
+
+li.not-set, li.not-available {
+    color: var(--pp-grey-alt);
+    font-style: italic;
+}
