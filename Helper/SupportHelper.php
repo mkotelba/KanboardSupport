@@ -25,8 +25,8 @@ class SupportHelper extends Base
         $user_agent = $_SERVER['HTTP_USER_AGENT'];
         $browser = "N/A";
         $browsers = [
-            '/msie/i' => 'Internet explorer',
-            '/firefox/i' => 'Firefox',
+            '/msie/i' => 'Internet Explorer',
+            '/firefox/i' => 'Mozilla Firefox',
             '/safari/i' => 'Safari',
             '/chrome/i' => 'Chrome',
             '/edge/i' => 'Edge',
