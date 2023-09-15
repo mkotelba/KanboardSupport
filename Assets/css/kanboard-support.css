@@ -356,7 +356,7 @@ table.support-table.user-table tr td:first-child::before {
 
 .data-wrap {
     display: inline-block;
-    margin-top: 20px 25px 15px 10px;
+    margin: 20px 25px 15px 10px;
     position: relative;
 }
 
@@ -539,6 +539,11 @@ code.field-code {
 
 #WebhookExamples details, details.accordion-section.mysql-ssl, details.accordion-section.app-config {
     margin-left: 10px;
+}
+
+#WebhookExamples details .accordion-content, details.accordion-section.mysql-ssl .accordion-content, details.accordion-section.app-config .accordion-content {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #WebhookExamples .panel {
