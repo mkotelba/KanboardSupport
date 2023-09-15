@@ -164,6 +164,10 @@ a.user-profile-link, a.webhooks-link {
     padding-right: 0;
 }
 
+.app-info-value {
+    font-size: .95em;
+}
+
 .app-info-value.value-version {
     font-family: monospace;
     font-size: 1.1em;
