@@ -234,7 +234,7 @@
                 <?php endif ?>
             </li>
         </span>
-        <span class="data-wrap">
+        <span class="data-wrap mt-0">
             <li class="app-info-title"><?= t('Session Duration') ?></li>
             <li class="app-info-value value-version border-bottom-thick">
                 <?= SESSION_DURATION ?> <small><i><?= t('Until browser is closed') ?></i></small>
@@ -274,7 +274,7 @@
                 </li>
             <?php endif ?>
         </span>
-        <span class="data-wrap">
+        <span class="data-wrap mt-0">
             <li class="app-info-title"><?= t('Excluded Fields During External Authentication') ?></li>
             <?php if (EXTERNAL_AUTH_EXCLUDE_FIELDS == 'username'): ?>
                 <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
@@ -314,7 +314,7 @@
                     <li class="app-info-value border-bottom-thick"><?= BRUTEFORCE_LOCKDOWN ?></li>
                 <?php endif ?>
             </span>
-            <span class="data-wrap">
+            <span class="data-wrap mt-0">
                 <li class="app-info-title"><?= t('Locked User Account Duration') ?></li>
                 <?php if (BRUTEFORCE_LOCKDOWN_DURATION == '15'): ?>
                     <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting in minutes') ?>">

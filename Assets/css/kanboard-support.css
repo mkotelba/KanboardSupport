@@ -360,6 +360,10 @@ table.support-table.user-table tr td:first-child::before {
     position: relative;
 }
 
+.data-wrap.mt-0 {
+    margin-top: 0;
+}
+
 .server-col {
     display: block;
 }
