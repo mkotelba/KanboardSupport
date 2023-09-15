@@ -1,6 +1,6 @@
 <details class="accordion-section app-config">
     <summary class="accordion-title">
-        <?= t('General Settings') ?>
+        <?= t('General Configuration') ?>
     </summary>
     <div class="accordion-content">
         <span class="data-wrap">
