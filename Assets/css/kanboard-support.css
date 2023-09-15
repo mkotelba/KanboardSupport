@@ -642,6 +642,11 @@ form.add-webhook-form .form-actions button {
     border-color: var(--pp-red-alt-2);
 }
 
+.config-btns button.config-btn-red:disabled {
+    cursor: not-allowed;
+    color: var(--pp-grey);
+}
+
 .config-btns button span {
     vertical-align: bottom;
     width: 22px;

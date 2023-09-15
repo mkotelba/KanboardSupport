@@ -52,6 +52,7 @@ return array(
     'The raw config file will expose sensitive information which should not be shared.' => 'Die rohe Konfigurationsdatei enthält sensible Informationen, die nicht weitergegeben werden sollten.',
     'Current Raw Config File' => 'Aktuelle Rohkonfigurationsdatei',
     'The settings in this file apply to the current application environment' => 'Die Einstellungen in dieser Datei gelten für die aktuelle Anwendungsumgebung',
+    'An active configuration file has not been detected. Make sure the filename is correct.' => 'Eine aktive Konfigurationsdatei wurde nicht erkannt. Stellen Sie sicher, dass der Dateiname korrekt ist.',
     'Default Raw Config File' => 'Standard-Konfigurationsdatei (Raw Config)',
     'This file is for reference only' => 'Diese Datei ist nur als Referenz gedacht',
     'Data Directory' => 'Daten-Verzeichnis',

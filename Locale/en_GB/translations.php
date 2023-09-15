@@ -52,6 +52,7 @@ return array(
     'The raw config file will expose sensitive information which should not be shared.' => 'The raw config file will expose sensitive information which should not be shared.',
     'Current Raw Config File' => 'Current Raw Config File',
     'The settings in this file apply to the current application environment' => 'The settings in this file apply to the current application environment',
+    'An active configuration file has not been detected. Make sure the filename is correct.' => 'An active configuration file has not been detected. Make sure the filename is correct.',
     'Default Raw Config File' => 'Default Raw Config File',
     'This file is for reference only' => 'This file is for reference only',
     'Data Directory' => 'Data Directory',

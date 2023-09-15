@@ -124,10 +124,17 @@
                         <?= t('This page contains all the configuration settings from the application config file. You can also view the raw contents of the config file as-is and also compare it to the default version.') ?> <strong><?= t('The raw config file will expose sensitive information which should not be shared.') ?></strong>
                     </p>
                     <div class="config-btns">
-                        <button href="<?= $this->url->href('TechnicalSupportController', 'showCurrentRawConfigModal', array(
-                            'plugin' => 'KanboardSupport'), false, '', false) ?>" class="btn config-btn config-btn-green js-modal-confirm" title="<?= t('The settings in this file apply to the current application environment') ?>">
-                            <span class="raw-icon-green"></span> <?= t('Current Raw Config File') ?>
-                        </button>
+                        <?php if (file_exists(ROOT_DIR . DIRECTORY_SEPARATOR . 'config.php')): ?>
+                            <button href="<?= $this->url->href('TechnicalSupportController', 'showCurrentRawConfigModal', array(
+                                'plugin' => 'KanboardSupport'), false, '', false) ?>" class="btn config-btn config-btn-green js-modal-confirm" title="<?= t('The settings in this file apply to the current application environment') ?>">
+                                <span class="raw-icon-green"></span> <?= t('Current Raw Config File') ?>
+                            </button>
+                        <?php else: ?>
+                            <button href="<?= $this->url->href('TechnicalSupportController', 'showCurrentRawConfigModal', array(
+                                'plugin' => 'KanboardSupport'), false, '', false) ?>" class="btn config-btn config-btn-red js-modal-confirm" title="<?= t('An active configuration file has not been detected. Make sure the filename is correct.') ?>" disabled>
+                                <span class="raw-icon-green"></span> <?= t('Current Raw Config File') ?>
+                            </button>
+                        <?php endif ?>
                         <button href="<?= $this->url->href('TechnicalSupportController', 'showDefaultRawConfigModal', array(
                             'plugin' => 'KanboardSupport'), false, '', false) ?>" class="btn config-btn config-btn-red js-modal-confirm" title="<?= t('This file is for reference only') ?>">
                             <span class="raw-icon-red"></span> <?= t('Default Raw Config File') ?>
