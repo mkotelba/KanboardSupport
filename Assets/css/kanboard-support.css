@@ -125,7 +125,7 @@ a.user-profile-link, a.webhooks-link {
     padding-top: 2px;
 }
 
-.value {
+.app-info-value.value {
     font-family: monospace;
     font-size: 1.2em;
     padding-top: 5px;
