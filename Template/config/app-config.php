@@ -287,6 +287,15 @@
                 </li>
             <?php endif ?>
         </span>
+        <fieldset class="brute-force-protection">
+            <legend class=""><?= t('Brute Force Protection') ?></legend>
+            <p class="">
+                <?= t('When the login form is used, this feature works at the user account level. After numerous failed login attempts, the application shows a CAPTCHA image to prevent automated bot attacks. After further consistent failed attempts the user account is temporarily locked. Administrators can unlock users at any time from the user interface.') ?>
+            </p>
+            <p class="">
+                <?= e('%s, the account must be unlocked using the login form.', '<strong>' . t('After three authentication failures through the user API') . '</strong>') ?>
+            </p>
+        </fieldset>
     </div>
 </details>
 <details class="accordion-section app-config">

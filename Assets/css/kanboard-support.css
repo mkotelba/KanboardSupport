@@ -581,7 +581,7 @@ code.field-code {
     border-radius: var(--border-radius-kanboard-support);
 }
 
-fieldset.add-webhook, fieldset.parameter-examples {
+fieldset.add-webhook, fieldset.parameter-examples, fieldset.brute-force-protection {
     border-radius: var(--border-radius-kanboard-support);
     border-color: var(--pp-grey);
 }
@@ -590,7 +590,7 @@ fieldset.add-webhook legend {
     font-weight: 600;
 }
 
-fieldset.add-webhook legend, fieldset.parameter-examples legend {
+fieldset.add-webhook legend, fieldset.parameter-examples legend, fieldset.brute-force-protection legend {
     padding-inline: 5px;
     background: white;
 }
@@ -675,4 +675,9 @@ form.add-webhook-form .form-actions button {
 
 .config-modal .modal-contents.panel.panel-red {
     border: 2px outset var(--pp-red-alt-2);
+}
+
+fieldset.brute-force-protection {
+    margin-top: 0;
+    margin-bottom: 20px;
 }
