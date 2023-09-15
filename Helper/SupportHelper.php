@@ -101,7 +101,7 @@ class SupportHelper extends Base
                     (($perms & 0x0200) ? 't' : 'x') :
                     (($perms & 0x0200) ? 'T' : '-'));
 
-        echo $info;
+        return $info;
         clearstatcache();
     }
 
@@ -119,7 +119,7 @@ class SupportHelper extends Base
         // phpcs:ignore Generic.ControlStructures.InlineControlStructure.NotAllowed
         if (!file_exists($directory)) return false;
 
-        echo substr(sprintf('%o', fileperms($directory)), -4);
+        return substr(sprintf('%o', fileperms($directory)), -4);
         clearstatcache();
     }
 
@@ -134,6 +134,7 @@ class SupportHelper extends Base
     public function getPermissionsOwner($directory)
     {
         $owner = posix_getpwuid(fileowner($directory));
-        echo $owner['name'];
+
+        return $owner['name'];
     }
 }
