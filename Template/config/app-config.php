@@ -274,6 +274,19 @@
                 </li>
             <?php endif ?>
         </span>
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('Excluded Fields During External Authentication') ?></li>
+            <?php if (EXTERNAL_AUTH_EXCLUDE_FIELDS == 'username'): ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                    <?= EXTERNAL_AUTH_EXCLUDE_FIELDS ?>
+                </li>
+                <span class="pass-tick" title="<?= t('This is the default setting') ?>">&#10004;</span>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('External content is not trusted by default for security reasons therefore inline HTML will not be rendered.') ?>">
+                    <?= EXTERNAL_AUTH_EXCLUDE_FIELDS ?>
+                </li>
+            <?php endif ?>
+        </span>
     </div>
 </details>
 <details class="accordion-section app-config">
