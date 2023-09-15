@@ -261,6 +261,19 @@
                 <span class="pass-tick" title="<?= t('Correctly configured self-signed security certificates can be used') ?>">&#10004;</span>
             <?php endif ?>
         </span>
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('TOTP Issuer Name') ?></li>
+            <?php if (TOTP_ISSUER == 'Kanboard'): ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                    <?= TOTP_ISSUER ?>
+                </li>
+                <span class="pass-tick" title="<?= t('This is the default setting') ?>">&#10004;</span>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick">
+                    <?= TOTP_ISSUER ?>
+                </li>
+            <?php endif ?>
+        </span>
     </div>
 </details>
 <details class="accordion-section app-config">
@@ -299,5 +312,6 @@
         <?= t('Proxy Settings') ?>
     </summary>
     <div class="accordion-content">
+        uuu
     </div>
 </details>
