@@ -285,9 +285,9 @@
         <span class="data-wrap">
             <li class="app-info-title"><?= t('Limit Group Memberships in User List') ?></li>
             <?php if (SHOW_GROUP_MEMBERSHIPS_IN_USERLIST_WITH_LIMIT == '7'): ?>
-                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting. Set to 0 for all group memberships.') ?>">7</li>
+                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting. Set to \'0\' for all group memberships.') ?>">7</li>
             <?php else: ?>
-                <li class="app-info-value border-bottom-thick" title="<?= t('The default setting is 7. Set to 0 for all group memberships.') ?>">
+                <li class="app-info-value border-bottom-thick" title="<?= t('The default setting is 7. Set to \'0\' for all group memberships.') ?>">
                     <?= SHOW_GROUP_MEMBERSHIPS_IN_USERLIST_WITH_LIMIT ?>
                 </li>
             <?php endif ?>
