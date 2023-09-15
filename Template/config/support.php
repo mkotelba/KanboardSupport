@@ -286,7 +286,10 @@
                         <?php if (APP_VERSION >= '1.2.25'): ?>
                             <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_ODBC_DSN ?></li>
                         <?php else: ?>
-                            <li class="db-info-value border-bottom-thick not-available"><?= t('Not available in this version') ?></li>
+                            <li class="db-info-value border-bottom-thick not-available" title="<?= e('This setting is available from %s', 'v1.2.25') ?>">
+                                <?= t('Not available in this application version') ?>
+                            </li>
+                            <span class="fail-x" title="<?= e('This setting is available from %s', 'v1.2.25') ?>">&#10008;</span>
                         <?php endif ?>
                     </span>
                 <?php endif ?>
