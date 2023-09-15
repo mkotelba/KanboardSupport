@@ -318,6 +318,16 @@
                     <li class="app-info-value border-bottom-thick"><?= BRUTEFORCE_LOCKDOWN ?></li>
                 <?php endif ?>
             </span>
+            <span class="data-wrap">
+                <li class="app-info-title"><?= t('Locked User Account Duration') ?></li>
+                <?php if (BRUTEFORCE_LOCKDOWN_DURATION == '15'): ?>
+                    <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting in minutes') ?>">
+                        <?= BRUTEFORCE_LOCKDOWN_DURATION ?>
+                    </li>
+                    <span class="pass-tick" title="<?= t('This is the default setting in minutes') ?>">&#10004;</span>
+                <?php else: ?>
+                    <li class="app-info-value border-bottom-thick" title="<?= t('This value is in minutes') ?>">
+                        <?= BRUTEFORCE_LOCKDOWN_DURATION ?>
                     </li>
                 <?php endif ?>
             </span>
