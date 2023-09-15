@@ -444,6 +444,85 @@
         </fieldset>
         <fieldset class="reverse-proxy">
             <legend class=""><?= t('Reverse Proxy') ?></legend>
+            <span class="data-wrap">
+                <li class="app-info-title"><?= t('Reverse Proxy Authentication') ?></li>
+                <?php if (REVERSE_PROXY_AUTH == 'false'): ?>
+                    <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                        <?= t('Disabled') ?>
+                    </li>
+                <?php else: ?>
+                    <li class="app-info-value border-bottom-thick">
+                        <?= t('Enabled') ?>
+                    </li>
+                <?php endif ?>
+            </span>
+            <span class="data-wrap">
+                <li class="app-info-title"><?= t('Username Header Name') ?></li>
+                <?php if (REVERSE_PROXY_USER_HEADER == 'REMOTE_USER'): ?>
+                    <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                        <?= REVERSE_PROXY_USER_HEADER ?>
+                    </li>
+                <?php else: ?>
+                    <li class="app-info-value border-bottom-thick">
+                        <?= REVERSE_PROXY_USER_HEADER ?>
+                    </li>
+                <?php endif ?>
+            </span>
+            <span class="data-wrap">
+                <li class="app-info-title"><?= t('Admin Username') ?></li>
+                <?php if (REVERSE_PROXY_DEFAULT_ADMIN == ''): ?>
+                    <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                        <?= t('Not Set') ?>
+                    </li>
+                <?php else: ?>
+                    <li class="app-info-value border-bottom-thick">
+                        <?= REVERSE_PROXY_DEFAULT_ADMIN ?>
+                    </li>
+                <?php endif ?>
+            </span>
+            <span class="data-wrap">
+                <li class="app-info-title"><?= t('User Email Header Name') ?></li>
+                <?php if (REVERSE_PROXY_EMAIL_HEADER == 'REMOTE_EMAIL'): ?>
+                    <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                        <?= REVERSE_PROXY_EMAIL_HEADER ?>
+                    </li>
+                <?php else: ?>
+                    <li class="app-info-value border-bottom-thick">
+                        <?= REVERSE_PROXY_EMAIL_HEADER ?>
+                    </li>
+                <?php endif ?>
+            </span>
+            <span class="data-wrap">
+                <li class="app-info-title"><?= t('User Full Name Header Name') ?></li>
+                <?php if (APP_VERSION >= '1.2.27'): ?>
+                    <?php if (REVERSE_PROXY_FULLNAME_HEADER == 'REMOTE_FULLNAME'): ?>
+                        <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                            <?= REVERSE_PROXY_FULLNAME_HEADER ?>
+                        </li>
+                    <?php else: ?>
+                        <li class="app-info-value border-bottom-thick">
+                            <?= REVERSE_PROXY_FULLNAME_HEADER ?>
+                        </li>
+                    <?php endif ?>
+                <?php else: ?>
+                    <li class="app-info-value border-bottom-thick not-available" title="<?= e('This setting is available from %s', 'v1.2.27') ?>">
+                        <?= t('Not available in this application version') ?>
+                    </li>
+                    <span class="fail-x" title="<?= e('This setting is available from %s', 'v1.2.27') ?>">&#10008;</span>
+                <?php endif ?>
+            </span>
+            <span class="data-wrap">
+                <li class="app-info-title"><?= t('Default Domain') ?></li>
+                <?php if (REVERSE_PROXY_DEFAULT_DOMAIN == ''): ?>
+                    <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                        <?= t('Not Set') ?>
+                    </li>
+                <?php else: ?>
+                    <li class="app-info-value border-bottom-thick">
+                        <?= REVERSE_PROXY_DEFAULT_DOMAIN ?>
+                    </li>
+                <?php endif ?>
+            </span>
         </fieldset>
     </div>
 </details>
