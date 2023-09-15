@@ -117,7 +117,6 @@ class SupportHelper extends Base
     public function getPermissionsLinux($directory)
     {
         if (!file_exists($directory)) {
-
             return false;
         }
 
