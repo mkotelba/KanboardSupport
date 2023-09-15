@@ -14,6 +14,23 @@ use Kanboard\Core\Base;
 class SupportHelper extends Base
 {
     /**
+     * Get SVG Icons for Inline Markup and CSS Styling (Embed SVG Fly Method)
+     *
+     * Include filename as class inside SVG file
+     * Set 'color' as 'currentColor' to use CSS or define a color
+     * Style using normal CSS
+     * @uses    $this->helper->supportHelper->embedSVGIcon('icon-filename-without-extension')
+     * @var     $svgFilename
+     * @return  svg
+     * @author  Erik Moberg https://www.erikmoberg.net/article/embed-svg-icons-in-html-with-php
+     * @author  aljawaid
+     */
+    public function embedSVGIcon($icon_filename)
+    {
+        return file_get_contents('plugins/' . $this->helper->app->getPluginName() . '/Assets/icons/' . $icon_filename . '.svg');
+    }
+
+    /**
      * Detect User Browser
      *
      * @see     support.php
