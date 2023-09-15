@@ -685,3 +685,7 @@ fieldset.brute-force-protection {
     margin-top: 0;
     margin-bottom: 20px;
 }
+
+fieldset.brute-force-protection p:first-of-type {
+    line-height: 1.25;
+}
