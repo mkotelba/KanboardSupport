@@ -282,9 +282,7 @@
                 </li>
                 <span class="pass-tick" title="<?= t('This is the default setting') ?>">&#10004;</span>
             <?php else: ?>
-                <li class="app-info-value border-bottom-thick" title="<?= t('External content is not trusted by default for security reasons therefore inline HTML will not be rendered.') ?>">
-                    <?= EXTERNAL_AUTH_EXCLUDE_FIELDS ?>
-                </li>
+                <li class="app-info-value border-bottom-thick"><?= EXTERNAL_AUTH_EXCLUDE_FIELDS ?></li>
             <?php endif ?>
         </span>
         <fieldset class="brute-force-protection">
@@ -302,9 +300,7 @@
                     </li>
                     <span class="pass-tick" title="<?= t('This is the default setting') ?>">&#10004;</span>
                 <?php else: ?>
-                    <li class="app-info-value border-bottom-thick" title="<?= t('External content is not trusted by default for security reasons therefore inline HTML will not be rendered.') ?>">
-                        <?= BRUTEFORCE_CAPTCHA ?>
-                    </li>
+                    <li class="app-info-value border-bottom-thick"><?= BRUTEFORCE_CAPTCHA ?></li>
                 <?php endif ?>
             </span>
             <span class="data-wrap">
