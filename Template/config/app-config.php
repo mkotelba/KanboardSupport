@@ -335,6 +335,16 @@
 </details>
 <details class="accordion-section app-config">
     <summary class="accordion-title">
+        <?= t('LDAP Configuration') ?>
+    </summary>
+    <div class="accordion-content">
+        <fieldset class="http-client-proxy">
+            <legend class=""><?= t('LDAP') ?></legend>
+        </fieldset>
+    </div>
+</details>
+<details class="accordion-section app-config">
+    <summary class="accordion-title">
         <?= t('Group Memberships') ?>
     </summary>
     <div class="accordion-content">
