@@ -292,6 +292,21 @@
             <p class="">
                 <?= t('When the login form is used, this feature works at the user account level. After numerous failed login attempts, the application shows a CAPTCHA image to prevent automated bot attacks. After further consistent failed attempts the user account is temporarily locked. Administrators can unlock users at any time from the user interface.') ?>
             </p>
+            <span class="data-wrap">
+                <li class="app-info-title">
+                    <?= e('Enable %s After x Failed Logins', '<abbr title="' . t('Completely Automated Public Turing test to tell Computers and Humans Apart') . '">CAPTCHA</abbr>') ?>
+                </li>
+                <?php if (BRUTEFORCE_CAPTCHA == '3'): ?>
+                    <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                        <?= BRUTEFORCE_CAPTCHA ?>
+                    </li>
+                    <span class="pass-tick" title="<?= t('This is the default setting') ?>">&#10004;</span>
+                <?php else: ?>
+                    <li class="app-info-value border-bottom-thick" title="<?= t('External content is not trusted by default for security reasons therefore inline HTML will not be rendered.') ?>">
+                        <?= BRUTEFORCE_CAPTCHA ?>
+                    </li>
+                <?php endif ?>
+            </span>
             <p class="">
                 <?= e('%s, the account must be unlocked using the login form.', '<strong>' . t('After three authentication failures through the user API') . '</strong>') ?>
             </p>
