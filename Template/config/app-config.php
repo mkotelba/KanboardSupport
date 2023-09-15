@@ -369,6 +369,11 @@
         <?= t('Proxy Settings') ?>
     </summary>
     <div class="accordion-content">
-        uuu
+        <fieldset class="http-client-proxy">
+            <legend class=""><?= t('HTTP Client Proxy') ?></legend>
+        </fieldset>
+        <fieldset class="reverse-proxy">
+            <legend class=""><?= t('Reverse Proxy') ?></legend>
+        </fieldset>
     </div>
 </details>
