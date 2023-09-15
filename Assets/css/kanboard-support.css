@@ -645,7 +645,7 @@ form.add-webhook-form .form-actions button {
 }
 
 .config-btns button span {
-    vertical-align: bottom;
+    vertical-align: sub;
     width: 22px;
 }
 
