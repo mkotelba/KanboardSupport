@@ -34,3 +34,15 @@
         text-shadow: 0 0 1px var(--pp-white);
     }
 </style>
+<div class="config-modal">
+    <div class="modal-page-header">
+        <h2 class="relative">
+            <span class="modal-title">
+                <span class="raw-icon-red"></span> <?= $title ?>
+            </span>
+        </h2>
+    </div>
+    <div class="modal-contents panel">
+        <pre class=""><?= file_get_contents(ROOT_DIR . DIRECTORY_SEPARATOR . 'config.default.php', false, null, 7); ?></pre>
+    </div>
+</div>
