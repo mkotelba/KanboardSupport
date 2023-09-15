@@ -646,4 +646,26 @@ form.add-webhook-form .form-actions button {
     vertical-align: bottom;
     width: 22px;
 }
+
+.config-modal .modal-page-header h2 {
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.config-modal .modal-page-header h2 .modal-title span {
+    width: 24px;
+    height: 24px;
+    vertical-align: sub;
+}
+
+.config-modal .modal-contents.panel pre {
+    margin-top: 0;
+}
+
+.config-modal .modal-contents.panel.panel-green {
+    border: 2px outset var(--pp-green);
+}
+
+.config-modal .modal-contents.panel.panel-red {
+    border: 2px outset var(--pp-red-alt-2);
 }

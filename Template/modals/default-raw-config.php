@@ -42,7 +42,7 @@
             </span>
         </h2>
     </div>
-    <div class="modal-contents panel">
+    <div class="modal-contents panel panel-red">
         <pre class=""><?= file_get_contents(ROOT_DIR . DIRECTORY_SEPARATOR . 'config.default.php', false, null, 7); ?></pre>
     </div>
 </div>
