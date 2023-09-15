@@ -247,6 +247,20 @@
         <?= t('Security Configuration') ?>
     </summary>
     <div class="accordion-content">
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('Self-Signed Certificates') ?></li>
+            <?php if (HTTP_VERIFY_SSL_CERTIFICATE == true): ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting. Change the value to \'false\' if your server is using self-signed security certificates.') ?>">
+                    <?= t('Not Allowed') ?>
+                </li>
+                <span class="fail-x" title="<?= t('This is the default setting. Change the value to \'false\' if your server is using self-signed security certificates.') ?>">&#10008;</span>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('Correctly configured self-signed security certificates can be used') ?>">
+                    <?= t('Allowed') ?>
+                </li>
+                <span class="pass-tick" title="<?= t('Correctly configured self-signed security certificates can be used') ?>">&#10004;</span>
+            <?php endif ?>
+        </span>
     </div>
 </details>
 <details class="accordion-section app-config">
