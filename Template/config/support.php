@@ -186,7 +186,7 @@
                 </span>
                 <span class="data-wrap">
                     <li class="db-info-title"><?= t('Database Migrations') ?></li>
-                    <?php if(DB_RUN_MIGRATIONS != true): ?>
+                    <?php if (DB_RUN_MIGRATIONS != true): ?>
                         <li class="db-info-value border-bottom-thick" title="<?= t('Database migrations must be completed manually through the CLI') ?>">
                             <?= t('Use CLI') ?>
                         </li>

@@ -356,10 +356,7 @@ table.support-table.user-table tr td:first-child::before {
 
 .data-wrap {
     display: inline-block;
-    margin-right: 25px;
-    margin-left: 10px;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: 20px 25px 15px 10px;
     position: relative;
 }
 
