@@ -307,6 +307,20 @@
                     </li>
                 <?php endif ?>
             </span>
+            <span class="data-wrap">
+                <li class="app-info-title"><?= t('Lock User Account After x Failed Logins') ?></li>
+                <?php if (BRUTEFORCE_LOCKDOWN == '6'): ?>
+                    <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                        <?= BRUTEFORCE_LOCKDOWN ?>
+                    </li>
+                    <span class="pass-tick" title="<?= t('This is the default setting') ?>">&#10004;</span>
+                <?php else: ?>
+                    <li class="app-info-value border-bottom-thick"><?= BRUTEFORCE_LOCKDOWN ?></li>
+                <?php endif ?>
+            </span>
+                    </li>
+                <?php endif ?>
+            </span>
             <p class="">
                 <?= e('%s, the account must be unlocked using the login form.', '<strong>' . t('After three authentication failures through the user API') . '</strong>') ?>
             </p>
