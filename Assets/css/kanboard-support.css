@@ -57,7 +57,7 @@
 }
 
 .support-section {
-    margin: 20px 15px 55px 15px;
+    margin: 20px 15px 40px 0;
 }
 
 .w-50 {
@@ -370,7 +370,7 @@ table.support-table.user-table tr td:first-child::before {
 
 .data-wrap {
     display: inline-block;
-    margin: 20px 25px 15px 10px;
+    margin: 20px 25px 15px 0;
     position: relative;
 }
 
@@ -380,10 +380,6 @@ table.support-table.user-table tr td:first-child::before {
 
 .server-col {
     display: block;
-}
-
-.server-list {
-    margin-left: 10px;
 }
 
 .server-config-value code {
@@ -566,6 +562,7 @@ code.field-code {
 
 #WebhookExamples details, details.accordion-section.mysql-ssl, details.accordion-section.app-config {
     margin-left: 10px;
+    margin-bottom: 15px;
 }
 
 #WebhookExamples details .accordion-content, details.accordion-section.mysql-ssl .accordion-content, details.accordion-section.app-config .accordion-content {
@@ -575,6 +572,7 @@ code.field-code {
 
 details.accordion-section.mysql-ssl .accordion-content p {
     color: var(--pp-grey-alt);
+    margin-top: 15px;
 }
 
 #WebhookExamples .panel {
@@ -617,6 +615,11 @@ details.accordion-section.mysql-ssl .accordion-content p {
 fieldset.add-webhook, fieldset.parameter-examples, fieldset.brute-force-protection, fieldset.http-client-proxy, fieldset.reverse-proxy {
     border-radius: var(--border-radius-kanboard-support);
     border-color: var(--pp-grey);
+    margin: 20px 15px;
+}
+
+fieldset.parameter-examples {
+    margin-bottom: 0;
 }
 
 fieldset.add-webhook legend {
@@ -653,7 +656,8 @@ form.add-webhook-form .form-actions button {
 }
 
 .config-notice {
-    margin: -7px 10px 15px 10px;
+    margin: -7px 10px 15px 0;
+    line-height: 1.5;
     color: var(--pp-grey-alt);
 }
 
@@ -739,6 +743,7 @@ fieldset.brute-force-protection p:first-of-type {
 }
 
 fieldset.brute-force-protection p:last-of-type {
+    line-height: 1.25;
     color: var(--pp-grey-alt);
 }
 
