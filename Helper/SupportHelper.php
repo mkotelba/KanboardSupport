@@ -27,7 +27,13 @@ class SupportHelper extends Base
      */
     public function embedSVGIcon($icon_filename)
     {
-        return file_get_contents('plugins/' . $this->helper->app->getPluginName() . '/Assets/icons/' . $icon_filename . '.svg');
+        if ($this->router->getPlugin()) {
+            //For plugin templates
+            return file_get_contents('plugins/' . $this->helper->app->getPluginName() . '/Assets/icons/' . $icon_filename . '.svg');
+        } else {
+            // For core templates
+            return file_get_contents('plugins/KanboardSupport/Assets/icons/' . $icon_filename . '.svg');
+        }
     }
 
     /**
