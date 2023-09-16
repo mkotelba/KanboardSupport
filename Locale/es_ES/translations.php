@@ -4,7 +4,7 @@ return array(
     //
     // GENERAL
     //
-    'This plugin shows a configuration section to display all the default and custom values so that users can check and troubleshoot issues without having to open core files.' => 'Este plugin muestra una sección de configuración para mostrar todos los valores predeterminados y personalizados para que los usuarios puedan comprobar y solucionar problemas sin tener que abrir los archivos del núcleo.',
+    'This plugin shows a dedicated section to display the environment and configuration settings allowing users to quickly troubleshoot issues without having to open core files. Display or share configurations to identify problems across the application in a user-friendly format. Helpful tips, webhook documentation and access to view the default and current config files from within the interface are just some of the features included in this powerful plugin.' => 'Este plugin muestra una sección dedicada para mostrar el entorno y los ajustes de configuración permitiendo a los usuarios solucionar rápidamente los problemas sin tener que abrir los archivos del núcleo. Muestra o comparte configuraciones para identificar problemas en toda la aplicación en un formato fácil de usar. Consejos útiles, documentación webhook y acceso para ver los archivos de configuración por defecto y actuales desde dentro de la interfaz son sólo algunas de las características incluidas en este potente plugin.',
     //
     // Controller/TechnicalSupportController.php
     //

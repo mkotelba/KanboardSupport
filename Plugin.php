@@ -50,7 +50,7 @@ class Plugin extends Base
 
     public function getPluginDescription()
     {
-        return t('This plugin shows a configuration section to display all the default and custom values so that users can check and troubleshoot issues without having to open core files.');
+        return t('This plugin shows a dedicated section to display the environment and configuration settings allowing users to quickly troubleshoot issues without having to open core files. Display or share configurations to identify problems across the application in a user-friendly format. Helpful tips, webhook documentation and access to view the default and current config files from within the interface are just some of the features included in this powerful plugin.');
     }
 
     public function getPluginAuthor()
