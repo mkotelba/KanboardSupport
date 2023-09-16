@@ -1,7 +1,7 @@
 <!-- KanboardSupport Plugin -->
 <div class="webhooks-page">
     <div class="page-header" style="margin-top: 10px;">
-        <h2 class=""><span class="webhooks-icon"></span> <?= t('Connecting External Applications') ?></h2>
+        <h2 class=""><?= $this->helper->supportHelper->embedSVGIcon('webhooks-icon') ?> <?= t('Connecting External Applications') ?></h2>
     </div>
     <div class="webhooks-page-intro">
         <?= t('Webhooks are useful to perform actions with external applications such as:') ?>
@@ -18,7 +18,7 @@
         <?= e('To view the list of supported events or see some examples, visit the %s page', $this->url->link(t('Webhooks Information'), 'TechnicalSupportController', 'showWebhookInformation', array('plugin' => 'KanboardSupport'), false, 'webhooks-link', t('Visit page'))) ?>
     </div>
     <div class="page-header margin-top">
-        <h2 class=""><span class="webhooks-icon"></span> <?= t('Webhook Token') ?></h2>
+        <h2 class=""><?= $this->helper->supportHelper->embedSVGIcon('webhooks-icon') ?> <?= t('Webhook Token') ?></h2>
     </div>
     <section class="message error cleaner-warning">
         <header></header>
@@ -29,7 +29,7 @@
         </h3>
     </section>
     <div class="panel token-panel">
-        <span class="webhooks-icon"></span> <?= t('Token:') ?>
+        <?= $this->helper->supportHelper->embedSVGIcon('webhooks-icon') ?> <?= t('Token:') ?>
         <strong><?= $this->text->e($values['webhook_token']) ?></strong>
         <?= $this->url->link(t('Reset Token'), 'ConfigController', 'token', array('type' => 'webhook'), true, 'btn btn-red reset-token-btn') ?>
     </div>

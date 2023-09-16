@@ -64,10 +64,19 @@
     width: 50px;
 }
 
+/* User Dropdown Menu Icon */
+li.support-dropdown svg {
+    pointer-events: none;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
 .config-page h2 .ks-icon {
     vertical-align: text-top;
     width: 22px;
     height: 22px;
+    pointer-events: none;
+    display: inline-block;
 }
 
 i.fa-lock {
@@ -458,6 +467,11 @@ table.support-table.user-table tr td:first-child::before {
 
 .data-btn svg {
     vertical-align: bottom;
+    transition: var(--transition-kanboard-support);
+}
+
+.data-btn:hover svg {
+    color: var(--pp-red-alt-2);
 }
 
 .privacy-none {
@@ -478,6 +492,8 @@ a.kb-updates-link {
     vertical-align: text-top;
     width: 22px;
     height: 22px;
+    pointer-events: none;
+    display: inline-block;
 }
 
 .webhooks-page h2, .webhooks-info-page section .page-header h2 {
@@ -578,7 +594,9 @@ code.field-code {
     margin-bottom: 5px;
 }
 
-.token-panel span.webhooks-icon {
+.token-panel svg.webhooks-icon {
+    pointer-events: none;
+    display: inline-block;
     vertical-align: sub;
 }
 
@@ -652,14 +670,29 @@ form.add-webhook-form .form-actions button {
     border-color: var(--pp-red-alt-2);
 }
 
+.config-btns button.config-btn-green svg, .config-btns button.config-btn-green svg {
+    color: var(--pp-green);
+}
+
+.config-btns button.config-btn-red svg, .config-btns button.config-btn-red svg {
+    color: var(--pp-red-alt-2);
+}
+
+.config-btns button:hover svg, .config-btns button:focus svg {
+    color: var(--pp-black);
+}
+
 .config-btns button.config-btn-red:disabled {
     cursor: not-allowed;
     color: var(--pp-grey);
 }
 
-.config-btns button span {
+.config-btns button svg {
     vertical-align: sub;
     width: 22px;
+    display: inline-block;
+    pointer-events: none;
+    transition: var(--transition-kanboard-support);
 }
 
 .config-modal .modal-page-header h2 {
@@ -667,10 +700,12 @@ form.add-webhook-form .form-actions button {
     font-weight: bold;
 }
 
-.config-modal .modal-page-header h2 .modal-title span {
+.config-modal .modal-page-header h2 .modal-title svg {
     width: 24px;
     height: 24px;
     vertical-align: sub;
+    display: inline-block;
+    pointer-events: none;
 }
 
 .config-modal .modal-contents.panel pre {

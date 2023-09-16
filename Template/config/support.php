@@ -5,7 +5,7 @@
 <div class="config-page">
     <div class="page-header" style="margin-top: 10px;">
         <h2 class="">
-            <span class="ks-icon"></span> <?= t('Application Configuration') ?>
+            <?= $this->helper->supportHelper->embedSVGIcon('ks-icon') ?> <?= t('Application Configuration') ?>
         </h2>
     </div>
     <p class="">
@@ -23,10 +23,7 @@
         </h3>
     </section>
     <button class="data-btn" title="<?= t('Screenshot friendly') ?>">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-eye-slash-fill" viewBox="0 0 16 16">
-            <path d="m10.79 12.912-1.614-1.615a3.5 3.5 0 0 1-4.474-4.474l-2.06-2.06C.938 6.278 0 8 0 8s3 5.5 8 5.5a7.029 7.029 0 0 0 2.79-.588zM5.21 3.088A7.028 7.028 0 0 1 8 2.5c5 0 8 5.5 8 5.5s-.939 1.721-2.641 3.238l-2.062-2.062a3.5 3.5 0 0 0-4.474-4.474L5.21 3.089z"/>
-            <path d="M5.525 7.646a2.5 2.5 0 0 0 2.829 2.829l-2.83-2.829zm4.95.708-2.829-2.83a2.5 2.5 0 0 1 2.829 2.829zm3.171 6-12-12 .708-.708 12 12-.708.708z"/>
-        </svg> <?= t('Hide Data') ?>
+        <?= $this->helper->supportHelper->embedSVGIcon('privacy-icon') ?> <?= t('Hide Data') ?>
     </button>
     <!-- USER CONFIGURATION -->
     <section class="support-section">
@@ -127,17 +124,17 @@
                         <?php if (file_exists(ROOT_DIR . DIRECTORY_SEPARATOR . 'config.php')): ?>
                             <button href="<?= $this->url->href('TechnicalSupportController', 'showCurrentRawConfigModal', array(
                                 'plugin' => 'KanboardSupport'), false, '', false) ?>" class="btn config-btn config-btn-green js-modal-confirm" title="<?= t('The settings in this file apply to the current application environment') ?>">
-                                <span class="raw-icon-green"></span> <?= t('Current Raw Config File') ?>
+                                <?= $this->helper->supportHelper->embedSVGIcon('raw-icon') ?> <?= t('Current Raw Config File') ?>
                             </button>
                         <?php else: ?>
                             <button href="<?= $this->url->href('TechnicalSupportController', 'showCurrentRawConfigModal', array(
                                 'plugin' => 'KanboardSupport'), false, '', false) ?>" class="btn config-btn config-btn-red js-modal-confirm" title="<?= t('An active configuration file has not been detected. Make sure the filename is correct.') ?>" disabled>
-                                <span class="raw-icon-green"></span> <?= t('Current Raw Config File') ?>
+                                <?= $this->helper->supportHelper->embedSVGIcon('raw-icon') ?> <?= t('Current Raw Config File') ?>
                             </button>
                         <?php endif ?>
                         <button href="<?= $this->url->href('TechnicalSupportController', 'showDefaultRawConfigModal', array(
                             'plugin' => 'KanboardSupport'), false, '', false) ?>" class="btn config-btn config-btn-red js-modal-confirm" title="<?= t('This file is for reference only') ?>">
-                            <span class="raw-icon-red"></span> <?= t('Default Raw Config File') ?>
+                            <?= $this->helper->supportHelper->embedSVGIcon('raw-icon') ?> <?= t('Default Raw Config File') ?>
                         </button>
                     </div>
                 <?php endif ?>
