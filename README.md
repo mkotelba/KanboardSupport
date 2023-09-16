@@ -45,6 +45,7 @@ Works smoothly with [PluginManager](https://github.com/aljawaid/PluginManager) a
   - A single privacy button hides all sensitive information
 - Display raw versions of the current and default config files for easy comparison
 - Troubleshoot plugins with [PluginManager](https://github.com/aljawaid/PluginManager)
+- Shows the required PHP modules for [Mailmagik](https://github.com/creecros/Mailmagik)
 - **Webhooks Information**
   - New improved webhooks page
   - Display alert in webhooks page to avoid potential token issues
@@ -163,7 +164,7 @@ Go to `Settings` &#10562; `Webhooks`
 - Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
 - **Other Plugins & Action Plugins**
   - _No known issues_
-  - Compatible with [PluginManager](https://github.com/aljawaid/PluginManager), [ApplicationBranding](https://github.com/aljawaid/ApplicationBranding), [ContentCleaner](https://github.com/aljawaid/ContentCleaner)
+  - Compatible with [PluginManager](https://github.com/aljawaid/PluginManager), [ApplicationBranding](https://github.com/aljawaid/ApplicationBranding), [ContentCleaner](https://github.com/aljawaid/ContentCleaner), [MailMagik](https://github.com/creecros/Mailmagik)
 - **Core Files & Templates**
   - `01` Template override
   - _No database changes_
