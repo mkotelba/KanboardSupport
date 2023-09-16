@@ -1,5 +1,110 @@
 # Changelog
 
+## v3.0
+
+_(most recent changes are listed on top):_
+- FIX: Better Plugin Description
+- NEW: Migrate Icons to SVG Using Helper to Improve Performance - #15
+- FIX: Remove CSS Icon Dependency - #15
+- NEW: Remember Me Authentication Setting - #19
+- NEW: Strict Transport Security HTTP Header Setting - #19
+- NEW: X-Frame DENY HTTP Header Setting - #19
+- NEW: API Authentication Header Setting - #19
+- NEW: Disable Logout Setting - #19
+- NEW: Hide Login Form Setting - #19
+- NEW: Add Reverse Proxy Settings - #19
+- NEW: Specify Applicable Version in Tooltip - #19
+- FIX: Add ODBC Data Source Name - only show for relevant KB versions - #19
+- FIX: CSS Target Value Fields
+- NEW: Fade Not Set and Unavailable Default Values
+- FIX: Value Fields Font Size
+- FIX: Line Height for Brute Force Protection Text
+- FIX: CSS Target Version Value Fields
+- NEW: Add HTTP Client Proxy Settings - #19
+- FIX: Helper Function Syntax - remove ignore syntax test
+- FIX: Browser Names
+- FIX: Helper Function Returns - switch from `echo` to `return` for coding standards compliance
+- FIX: Cleanup Helper Comments
+- NEW: Add LDAP Section - #19
+- NEW: Add Proxy Sections - #19
+- FIX: Switch Order to Save Screen Space - PHP SAPI
+- FIX: Field Spacing on Section Overflow - #19
+- FIX: Tooltips - #19
+- NEW: Add Account Lockdown Duration Setting - #19
+- NEW: Add Account Lockdown Setting - #19
+- NEW: Add Captcha Setting - #19
+- NEW: Add Brute Force Protection Section explain details about built-in protection - #19
+- NEW: Add Excluded Fields During External Authentication - #19
+- FIX: Translation Syntax
+- FIX: Margins
+- NEW: Add TOTP Issuer Name Value - #19
+- FIX: Tooltip Value - #19
+- NEW: Add Self-Signed SSL Setting - #19
+- FIX: Code Syntax
+- NEW: Display Warning if Config File Not Found - closes #20
+- NEW: Display Raw Config Files for Easy Comparison and Reference - #20
+- NEW: Add Group Membership Settings - #19
+- FIX: PHP IF Statement - #19
+- NEW: Add Enable URL Rewrite (Pretty URLs) Setting - #19
+- NEW: Add Escape HTML Inside Markdown Setting - #19
+- NEW: Create Proxy Settings Accordion - #19
+- NEW: Create Group Memberships Accordion - #19
+- NEW: Create Security Configuration Accordion - #19
+- NEW: Create General Settings Accordion - #19
+- NEW: Add ODBC Data Source Name - #19
+- NEW: Better Tooltip for Database Timeout - #19
+- NEW: Create Logs & Sessions Accordion - migrate values - #19
+- NEW: Create Directory Paths Accordion - migrate values - #19
+- NEW: Create Plugins Configuration Accordion - migrate values - #19
+- NEW: Simplify Application Information Section - migrate values to groups under accordions - #19
+- FIX: Add Icons & Tooltips for Debug Mode
+- FIX: Tooltips for Default Settings - #19
+- NEW: Add Page Description
+- NEW: Add MySQL SSL Connection Details - #19
+- NEW: Add Database Timeout Setting - #19
+- NEW: Add Database Port - #19
+- NEW: Display Database Migrations Setting - #19
+- NEW: Display Plugin Setup Information - #19
+- NEW: Redesigned Webhook Page - closes #18
+- NEW: Add Webhook Information Page - #18
+- FIX: Duplicate Page Title - title was already displayed in the header - #18
+- FIX: Remove Font Dependencies
+- FIX: Migrate Icons for Improved Performance - Resolves #15
+- FIX: Privacy Warning Margins & Styling
+- FIX: Remove Conflicting Borders
+- FIX: Code Syntax
+- NEW: Improved Data Privacy Warning - moved section into message box for better visibility
+- FIX: Link Hover Colour Consistency
+- NEW: Link User Name to User Profile
+- NEW: Consistent Plugin Icon - #15
+- NEW: Add Spanish Translations - #16
+- NEW: Add French Translations - #16
+- FIX: Update `de_DE` Translations - #16
+- FIX: Update `en_GB` Translations - #16
+- Fix: Translation Starter Template - #16
+- NEW: Updated Translation Starter Template - resolves #16
+- FIX: Webhook Translations - #16
+- FIX: Untranslate Software Terms - #16
+- FIX: Update Starter Translation Template - #16
+- NEW: Add HTML Icon to External Links
+- FIX: Missing Translation String
+- FIX: Remove Duplicate Title
+- FIX: Page Title Syntax - #17
+- FIX: Page Title - removed duplicate word on page - #17
+- FIX: Data Alignments
+- FIX: Table Borders
+- NEW: Rename Plugin Interface - closes #17
+- FIX: Page Code Structure
+- FIX: Missing Closing HTML Tags
+- FIX: Update Plugin Description - #17
+- FIX: Update Translations - #17
+- FIX: Rename Page - #17
+- FIX: Rename Page Title Dropdown Menu - #17
+- FIX: Rename Page Title URL Sidebar - #17
+- FIX: Rename Page Title URL Route - #17
+- FIX: Rename Page Title - #17
+
+
 ## v2.10
 
 _(most recent changes are listed on top):_
