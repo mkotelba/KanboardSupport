@@ -93,6 +93,8 @@ Works smoothly with [PluginManager](https://github.com/aljawaid/PluginManager) a
 
 **Application Information Section**
 
+![Application Information](../master/screenshot-app-v3.png "Application Information")
+
 ![Application Information](../master/screenshot-app.png "Application Information")
 
 **Database Connection Section**
@@ -110,6 +112,10 @@ Works smoothly with [PluginManager](https://github.com/aljawaid/PluginManager) a
 **PHP Section**
 
 ![PHP Information](../master/screenshot-php.png "PHP Information")
+
+**Webhooks Section**
+
+![Webhooks](../master/screenshot-webhooks.png "Webhooks Information")
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
