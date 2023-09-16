@@ -335,6 +335,20 @@
                 <span class="fail-x" title="<?= t('This is not the recommended setting') ?>">&#10008;</span>
             <?php endif ?>
         </span>
+        <span class="data-wrap mt-0">
+            <li class="app-info-title"><?= t('Strict Transport Security HTTP Header') ?></li>
+            <?php if (ENABLE_HSTS == true): ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                    <?= t('Enabled') ?>
+                </li>
+                <span class="pass-tick" title="<?= t('This is the default and recommended setting') ?>">&#10004;</span>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick">
+                    <?= t('Disabled') ?>
+                </li>
+                <span class="fail-x" title="<?= t('This is not the recommended setting') ?>">&#10008;</span>
+            <?php endif ?>
+        </span>
         <fieldset class="brute-force-protection">
             <legend class=""><?= t('Brute Force Protection') ?></legend>
             <p class="">
