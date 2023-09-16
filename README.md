@@ -31,20 +31,24 @@
     </a>
 </p>
 
-This plugin shows a configuration section to display all the default and custom values so that users can check and troubleshoot issues without having to open core files. Display or share configurations to identify and troubleshoot problems across the application in a user-friendly format.
+This plugin shows a dedicated section to display the environment and configuration settings allowing users to quickly troubleshoot issues without having to open core files.
+
+Display or share configurations to identify problems across the application in a user-friendly format. Helpful tips, webhook documentation and access to view the default and current config files from within the interface are just some of the features included in this powerful plugin.
+
+Works smoothly with [PluginManager](https://github.com/aljawaid/PluginManager) and [ContentCleaner](https://github.com/aljawaid/ContentCleaner).
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Features
 
 - Hide sensitive data before sharing technical information
-- Display values from the `config.php` file
+  - A single privacy button hides all sensitive information
 - Display raw versions of the current and default config files for easy comparison
 - Troubleshoot plugins with [PluginManager](https://github.com/aljawaid/PluginManager)
 - **Webhooks Information**
   - New improved webhooks page
   - Display alert in webhooks page to avoid potential token issues
-  - Included extra comprehensive documentation explaining how to work with webhooks
+  - Comprehensive documentation explaining how to work with webhooks
 - **Directory Permissions**
   - Check if directories are writeable or not
   - Display folder owner to Admins
@@ -55,24 +59,20 @@ This plugin shows a configuration section to display all the default and custom 
   - IP Lookup button for Admin
 - **Application Information**
   - Displays Kanboard name, version and (if admin user) direct link to GitHub releases for Kanboard
-  - Displays useful directory locations and session information
-  - Show if debug mode is enabled or not
-  - Display plugin setup information
+  - Display all values from the `config.php` file
 - **Database Connection**
   - Display database information (without password) from the config file
   - Display advanced database SSL connection information
-  - Moved SQLite database (upload/download) options from the About page
+  - Relocated SQLite database (upload/download) options from the About page
 - **Email Connection**
   - Show basic mail server settings
   - BCC field value only displayed for Admins
-  - Show SMTP details if set
-  - Show Sendmail details if set
-  - Show if mail settings are configured or not
+  - Show SMTP details
+  - Show Sendmail details
 - **Server Configuration**
   - Show useful path locations
   - Display operating system, versions and ports
   - IP Lookup button for Admin
-  - Make secure ports easier to identify
 - **PHP Information**
   - Display general PHP settings based on the Kanboard installation requirements
   - Check if both required and optional PHP extensions are installed
@@ -107,7 +107,7 @@ This plugin shows a configuration section to display all the default and custom 
 
 ![Server Configuration](../master/screenshot-server.png "Server Configuration")
 
-**PHP Information Section**
+**PHP Section**
 
 ![PHP Information](../master/screenshot-php.png "PHP Information")
 
