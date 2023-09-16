@@ -285,6 +285,18 @@
                 <li class="app-info-value border-bottom-thick"><?= EXTERNAL_AUTH_EXCLUDE_FIELDS ?></li>
             <?php endif ?>
         </span>
+        <span class="data-wrap mt-0">
+            <li class="app-info-title"><?= t('Hide Login Form') ?></li>
+            <?php if (HIDE_LOGIN_FORM == false): ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                    <?= t('Not Hidden') ?>
+                </li>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick">
+                    <?= t('Hidden') ?>
+                </li>
+            <?php endif ?>
+        </span>
         <fieldset class="brute-force-protection">
             <legend class=""><?= t('Brute Force Protection') ?></legend>
             <p class="">
