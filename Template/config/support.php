@@ -455,13 +455,17 @@
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title">Server Port</li>
-                        <li class="server-value server-config-value border-bottom-thick value-ip">
-                            <?php if ($_SERVER['SERVER_PORT'] == '443'): ?>
-                                <i class="fa fa-lock pp-green" title="<?= t('Secure') ?>"></i> <?= $_SERVER['SERVER_PORT'] ?>
-                            <?php else: ?>
-                                <i class="fa fa-unlock pp-red" title="<?= t('Not Secure') ?>"></i> <?= $_SERVER['SERVER_PORT'] ?>
-                            <?php endif ?>
-                        </li>
+                        <?php if ($_SERVER['SERVER_PORT'] == '443'): ?>
+                            <li class="server-value server-config-value border-bottom-thick value-ip" title="<?= t('SSL Secure Port') ?>">
+                                <i class="fa fa-lock pp-green"></i> <?= $_SERVER['SERVER_PORT'] ?> https
+                            </li>
+                            <span class="pass-tick" title="<?= t('This is the default and recommended setting') ?>">&#10004;</span>
+                        <?php else: ?>
+                            <li class="server-value server-config-value border-bottom-thick value-ip" title="<?= t('Unsecure Port') ?>">
+                                <i class="fa fa-unlock pp-red" title="<?= t('Unsecure http') ?>"></i> <?= $_SERVER['SERVER_PORT'] ?>
+                            </li>
+                            <span class="fail-x" title="<?= t('The site is not encrypted before being transmitted over the Internet. This port should be secured.') ?>">&#10008;</span>
+                        <?php endif ?>
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('System Temporary Directory') ?></li>
