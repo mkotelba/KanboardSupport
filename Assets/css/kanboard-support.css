@@ -682,11 +682,11 @@ form.add-webhook-form .form-actions button {
     border-color: var(--pp-red-alt-2);
 }
 
-.config-btns button.config-btn-green svg, .config-btns button.config-btn-green svg {
+.config-btns button.config-btn-green svg {
     color: var(--pp-green);
 }
 
-.config-btns button.config-btn-red svg, .config-btns button.config-btn-red svg {
+.config-btns button.config-btn-red svg {
     color: var(--pp-red-alt-2);
 }
 
