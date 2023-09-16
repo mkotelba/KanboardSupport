@@ -297,6 +297,18 @@
                 </li>
             <?php endif ?>
         </span>
+        <span class="data-wrap mt-0">
+            <li class="app-info-title"><?= t('Disable Logout') ?></li>
+            <?php if (DISABLE_LOGOUT == false): ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                    <?= t('Not Disabled') ?>
+                </li>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick">
+                    <?= t('Disabled') ?>
+                </li>
+            <?php endif ?>
+        </span>
         <fieldset class="brute-force-protection">
             <legend class=""><?= t('Brute Force Protection') ?></legend>
             <p class="">
