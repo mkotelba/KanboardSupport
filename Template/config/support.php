@@ -375,7 +375,7 @@
                     <?php if (!empty(MAIL_SMTP_ENCRYPTION)): ?>
                         <span class="data-wrap">
                             <li class="mail-info-title">
-                                <abbr title="Simple Mail Transport Protocol"><?= t('SMTP Encryption') ?></abbr>
+                                <abbr title="Simple Mail Transport Protocol">SMTP</abbr> <?= t('Encryption') ?>
                             </li>
                             <?php if (MAIL_SMTP_ENCRYPTION == 'ssl'): ?>
                                 <li class="mail-info-value border-bottom-thick">SSL</li>
@@ -388,7 +388,7 @@
                     <?php endif ?>
                     <span class="data-wrap">
                         <li class="mail-info-title">
-                            <abbr title="Simple Mail Transport Protocol">SMTP Port</abbr>
+                            <abbr title="Simple Mail Transport Protocol">SMTP</abbr> Port
                         </li>
                         <li class="mail-info-value value-path border-bottom-thick"><?= MAIL_SMTP_PORT ?></li>
                     </span>

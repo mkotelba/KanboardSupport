@@ -182,7 +182,7 @@ return array(
     'Mail Transport' => 'Mail-Transport',
     'Other' => 'Andere',
     'Mail Server Hostname' => 'Mail-Server Hostname',
-    'SMTP Encryption' => 'SMTP-Verschlüsselung',
+    'Encryption' => 'Verschlüsselung',
     'SMTP Username' => 'SMTP-Benutzername',
     'Command Name' => 'Befehl Name',
     'Sendmail Command' => 'Sendmail-Befehl',
