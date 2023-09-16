@@ -365,6 +365,7 @@ table.support-table.user-table tr td:first-child::before {
     font-size: .8em;
     text-transform: uppercase;
     font-style: italic;
+    color: var(--pp-grey-alt);
 }
 
 .data-wrap {
@@ -395,6 +396,7 @@ table.support-table.user-table tr td:first-child::before {
     right: 20px;
     margin-top: -3px;
     font-size: .9em;
+    color: var(--pp-grey-alt);
 }
 
 .p-type {
@@ -421,6 +423,7 @@ table.support-table.user-table tr td:first-child::before {
     right: 20px;
     font-size: .8em;
     bottom: -16px;
+    color: var(--pp-grey-alt);
 }
 
 .p-note code {
@@ -570,6 +573,10 @@ code.field-code {
     margin-bottom: 0;
 }
 
+details.accordion-section.mysql-ssl .accordion-content p {
+    color: var(--pp-grey-alt);
+}
+
 #WebhookExamples .panel {
     padding: 8px 35px 8px 8px;
 }
@@ -647,6 +654,7 @@ form.add-webhook-form .form-actions button {
 
 .config-notice {
     margin: -7px 10px 15px 10px;
+    color: var(--pp-grey-alt);
 }
 
 .config-btns {
@@ -727,6 +735,11 @@ fieldset.brute-force-protection {
 
 fieldset.brute-force-protection p:first-of-type {
     line-height: 1.25;
+    color: var(--pp-grey-alt);
+}
+
+fieldset.brute-force-protection p:last-of-type {
+    color: var(--pp-grey-alt);
 }
 
 li.not-set, li.not-available {
