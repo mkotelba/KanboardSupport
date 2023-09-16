@@ -435,7 +435,11 @@
                     <span class="data-wrap">
                         <li class="server-config server-config-title">HTTP Client</li>
                         <li class="server-value server-config-value border-bottom-thick">
-                            <?= Kanboard\Core\Http\Client::backend() ?>
+                            <?php if (Kanboard\Core\Http\Client::backend() == 'cURL'): ?>
+                                <abbr title="<?= t('Client for URL') ?>"><?= Kanboard\Core\Http\Client::backend() ?></abbr>
+                            <?php else: ?>
+                                <?= Kanboard\Core\Http\Client::backend() ?>
+                            <?php endif ?>
                         </li>
                     </span>
                     <span class="data-wrap">

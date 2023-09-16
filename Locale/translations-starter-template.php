@@ -197,6 +197,7 @@ return array(
     'Sendmail Command' => '',
     'Server Configuration' => '',
     'Operating System' => '',
+    'Client for URL' => '',
     'Website Address' => '',
     'Domain' => '',
     'Server IP Address' => '',

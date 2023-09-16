@@ -188,6 +188,7 @@ return array(
     'Sendmail Command' => 'Commande Sendmail',
     'Server Configuration' => 'Configuration du serveur',
     'Operating System' => 'Système d\'exploitation',
+    'Client for URL' => 'Client pour l\'URL',
     'Website Address' => 'Adresse du site Web',
     'Domain' => 'Domaine',
     'Server IP Address' => 'Adresse IP du serveur',
