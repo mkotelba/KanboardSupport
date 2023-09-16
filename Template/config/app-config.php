@@ -309,6 +309,18 @@
                 </li>
             <?php endif ?>
         </span>
+        <span class="data-wrap mt-0">
+            <li class="app-info-title"><?= t('API Authentication Header') ?></li>
+            <?php if (API_AUTHENTICATION_HEADER == false): ?>
+                <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                    <?= t('Not Set') ?>
+                </li>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick">
+                    <?= API_AUTHENTICATION_HEADER ?>
+                </li>
+            <?php endif ?>
+        </span>
         <fieldset class="brute-force-protection">
             <legend class=""><?= t('Brute Force Protection') ?></legend>
             <p class="">
