@@ -28,7 +28,7 @@ class SupportHelper extends Base
     public function embedSVGIcon($icon_filename)
     {
         if ($this->router->getPlugin()) {
-            //For plugin templates
+            // For plugin templates
             return file_get_contents('plugins/' . $this->helper->app->getPluginName() . '/Assets/icons/' . $icon_filename . '.svg');
         } else {
             // For core templates
