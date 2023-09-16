@@ -87,7 +87,6 @@ return array(
     '%s, the account must be unlocked using the login form.' => '%s, muss das Konto über das Anmeldeformular entsperrt werden.',
     'After three authentication failures through the user API' => 'Nach drei fehlgeschlagenen Authentifizierungen über die Benutzer-API',
     'LDAP Configuration' => 'LDAP-Konfiguration',
-    'LDAP' => 'LDAP',
     'Group Memberships' => 'Gruppenmitgliedschaften',
     'Show Group Memberships in User List' => 'Gruppenmitgliedschaften in der Benutzerliste anzeigen',
     'Group memberships will not be shown' => 'Gruppenmitgliedschaften werden nicht angezeigt',

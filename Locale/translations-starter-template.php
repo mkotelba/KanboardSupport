@@ -96,7 +96,6 @@ return array(
     '%s, the account must be unlocked using the login form.' => '',
     'After three authentication failures through the user API' => '',
     'LDAP Configuration' => '',
-    'LDAP' => '',
     'Group Memberships' => '',
     'Show Group Memberships in User List' => '',
     'Group memberships will not be shown' => '',

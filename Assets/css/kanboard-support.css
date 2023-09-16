@@ -612,7 +612,7 @@ details.accordion-section.mysql-ssl .accordion-content p {
     border-radius: var(--border-radius-kanboard-support);
 }
 
-fieldset.add-webhook, fieldset.parameter-examples, fieldset.brute-force-protection, fieldset.http-client-proxy, fieldset.reverse-proxy, fieldset.ldap {
+fieldset.add-webhook, fieldset.parameter-examples, fieldset.brute-force-protection, fieldset.http-client-proxy, fieldset.reverse-proxy {
     border-radius: var(--border-radius-kanboard-support);
     border-color: var(--pp-grey);
     margin: 20px 15px;
@@ -626,7 +626,7 @@ fieldset.add-webhook legend {
     font-weight: 600;
 }
 
-fieldset.add-webhook legend, fieldset.parameter-examples legend, fieldset.brute-force-protection legend, fieldset.http-client-proxy legend, fieldset.reverse-proxy legend, fieldset.ldap legend {
+fieldset.add-webhook legend, fieldset.parameter-examples legend, fieldset.brute-force-protection legend, fieldset.http-client-proxy legend, fieldset.reverse-proxy legend {
     padding-inline: 5px;
     background: white;
 }
