@@ -230,6 +230,7 @@ return array(
     'PHP Extension' => '',
     'Required Extension' => '',
     'Optional' => '',
+    'Optional Extension' => '',
     'Missing PDO Extension' => '',
     'MySQL Detected' => '',
     'PostgreSQL Detected' => '',

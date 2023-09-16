@@ -879,7 +879,7 @@
                 <?php if (extension_loaded('zip')): ?>
                     <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
                 <?php else: ?>
-                    <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
+                    <span class="tile-fail-x" title="<?= t('Optional Extension') ?>">&#10008;</span>
                 <?php endif ?>
             </span>
         </div>
@@ -899,7 +899,7 @@
                 <?php if (extension_loaded('ldap')): ?>
                     <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
                 <?php else: ?>
-                    <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
+                    <span class="tile-fail-x" title="<?= t('Optional Extension') ?>">&#10008;</span>
                 <?php endif ?>
             </span>
         </div>
@@ -919,7 +919,7 @@
                 <?php if (extension_loaded('curl')): ?>
                     <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
                 <?php else: ?>
-                    <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
+                    <span class="tile-fail-x" title="<?= t('Optional Extension') ?>">&#10008;</span>
                 <?php endif ?>
             </span>
         </div>

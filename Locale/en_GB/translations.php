@@ -221,6 +221,7 @@ return array(
     'PHP Extension' => 'PHP Extension',
     'Required Extension' => 'Required Extension',
     'Optional' => 'Optional',
+    'Optional Extension' => 'Optional Extension',
     'Missing PDO Extension' => 'Missing PDO Extension',
     'MySQL Detected' => 'MySQL Detected',
     'PostgreSQL Detected' => 'PostgreSQL Detected',
