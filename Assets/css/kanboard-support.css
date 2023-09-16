@@ -317,6 +317,41 @@ table.support-table.user-table tr td:first-child::before {
     cursor: context-menu;
 }
 
+.tile-wrapper:hover .tile-hover-plugin {
+    opacity: 1;
+}
+
+.tile-wrapper.tile-optional-hover:hover .tile-optional {
+    opacity: 0;
+}
+
+.tile-hover-plugin {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: var(--transition-kanboard-support);
+}
+
+.tile-hover-plugin-text-wrapper {
+    width: 200px;
+    height: 100px;
+    vertical-align: middle;
+    display: table-cell;
+    overflow: hidden;
+    font-size: .75em;
+    text-align: center;
+    font-style: italic;
+}
+
+.tile-hover-plugin-text {
+    background-color: var(--pp-white);
+    font-weight: 600;
+    padding: 3px;
+}
+
 .tile-icon {
     position: absolute;
     bottom: 0;
@@ -366,6 +401,7 @@ table.support-table.user-table tr td:first-child::before {
     text-transform: uppercase;
     font-style: italic;
     color: var(--pp-grey-alt);
+    transition: var(--transition-kanboard-support);
 }
 
 .data-wrap {

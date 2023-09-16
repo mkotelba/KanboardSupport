@@ -226,6 +226,7 @@ return array(
     'MySQL Detected' => 'MySQL Erkannt',
     'PostgreSQL Detected' => 'PostgreSQL Erkannt',
     'SQLite Detected' => 'SQLite Erkannt',
+    'Required for the Mailmagik plugin' => 'Erforderlich für das Mailmagik-Plugin',
     //
     // Template/config/webhook-code-examples-event-payloads.php
     //

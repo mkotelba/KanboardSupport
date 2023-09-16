@@ -979,5 +979,86 @@
                 <?php endif ?>
             </span>
         </div>
+        <!-- imap -->
+        <div class="tile-wrapper tile-optional-hover">
+            <div class="tile-hover-plugin">
+                <div class="tile-hover-plugin-text-wrapper">
+                    <div class="tile-hover-plugin-text"><?= t('Required for the Mailmagik plugin') ?></div>
+                </div>
+            </div>
+            <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>imap</code></div>
+            <div class="tile-version value-version" title="<?= t('Version') ?>">
+                <?php if (extension_loaded('imap')): ?>
+                    <span class="value-version"><?= phpversion('imap') ?></span>
+                <?php else: ?>
+                    <span class="value-version"><?= t('Not Detected') ?></span>
+                <?php endif ?>
+            </div>
+            <?php if (!file_exists('plugins/Mailmagik')): ?>
+                <div class="tile-optional" title=""><?= t('Optional') ?></div>
+            <?php endif ?>
+            <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+            <span class="tile-check">
+                <?php if (extension_loaded('imap')): ?>
+                    <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
+                <?php else: ?>
+                    <span class="tile-fail-x" title="<?= t('Optional Extension') ?>">&#10008;</span>
+                <?php endif ?>
+            </span>
+        </div>
+        <!-- fileinfo -->
+        <div class="tile-wrapper tile-optional-hover">
+            <div class="tile-hover-plugin">
+                <div class="tile-hover-plugin-text-wrapper">
+                    <div class="tile-hover-plugin-text"><?= t('Required for the Mailmagik plugin') ?></div>
+                </div>
+            </div>
+            <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>fileinfo</code></div>
+            <div class="tile-version value-version" title="<?= t('Version') ?>">
+                <?php if (extension_loaded('fileinfo')): ?>
+                    <span class="value-version"><?= phpversion('fileinfo') ?></span>
+                <?php else: ?>
+                    <span class="value-version"><?= t('Not Detected') ?></span>
+                <?php endif ?>
+            </div>
+            <?php if (!file_exists('plugins/Mailmagik')): ?>
+                <div class="tile-optional" title=""><?= t('Optional') ?></div>
+            <?php endif ?>
+            <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+            <span class="tile-check">
+                <?php if (extension_loaded('fileinfo')): ?>
+                    <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
+                <?php else: ?>
+                    <span class="tile-fail-x" title="<?= t('Optional Extension') ?>">&#10008;</span>
+                <?php endif ?>
+            </span>
+        </div>
+        <!-- iconv -->
+        <div class="tile-wrapper tile-optional-hover">
+            <div class="tile-hover-plugin">
+                <div class="tile-hover-plugin-text-wrapper">
+                    <div class="tile-hover-plugin-text"><?= t('Required for the Mailmagik plugin') ?></div>
+                </div>
+            </div>
+            <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>iconv</code></div>
+            <div class="tile-version value-version" title="<?= t('Version') ?>">
+                <?php if (extension_loaded('iconv')): ?>
+                    <span class="value-version"><?= phpversion('iconv') ?></span>
+                <?php else: ?>
+                    <span class="value-version"><?= t('Not Detected') ?></span>
+                <?php endif ?>
+            </div>
+            <?php if (!file_exists('plugins/Mailmagik')): ?>
+                <div class="tile-optional" title=""><?= t('Optional') ?></div>
+            <?php endif ?>
+            <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+            <span class="tile-check">
+                <?php if (extension_loaded('iconv')): ?>
+                    <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
+                <?php else: ?>
+                    <span class="tile-fail-x" title="<?= t('Optional Extension') ?>">&#10008;</span>
+                <?php endif ?>
+            </span>
+        </div>
     </section>
 </div>
