@@ -55,13 +55,13 @@ class SupportHelper extends Base
         // Split the subnets of the IP address
         $ip_items = explode('.', $ip_address);
 
-        // The var to store the filtered subnets
+        // The variable to store the filtered subnets
         $filtered_ip = '';
 
         foreach($ip_items as $item) {
             // check if its the first three parts of the IP
             if($item == $ip_items[0] || $item == $ip_items[1] || $item == $ip_items[2]) {
-                $ip_part = 'xxx.'; //we added the '.' to that one because its the first item
+                $ip_part = 'xxx.';
             } else {
                 $ip_part = $item;
             }
