@@ -52,11 +52,13 @@
                     <tr class="support-table-row">
                         <td class="cell-title"><?= t('Your IP Address') ?></td>
                         <td class="cell-value value-ip" colspan="3">
-                            <span class="privacy"><?= $_SERVER['REMOTE_ADDR'] ?></span>
                             <?php if ($this->user->isAdmin()): ?>
+                                <span class="privacy"><?= $_SERVER['REMOTE_ADDR'] ?></span>
                                 <a id="valueBTN" href="https://www.whois.com/whois/<?= $_SERVER['REMOTE_ADDR'] ?>" class="value-btn privacy-delete" target="_blank" rel="noopener noreferrer" title="<?= t('Opens in a new window') ?> &#8663;">
                                     <i class="fa fa-external-link"></i> <?= t('Lookup IP') ?>
                                 </a>
+                            <?php else: ?>
+                                <?= $this->helper->supportHelper->maskIPAddress($_SERVER['REMOTE_ADDR']) ?>
                             <?php endif ?>
                         </td>
                     </tr>
@@ -163,7 +165,15 @@
                 </span>
                 <span class="data-wrap">
                     <li class="db-info-title"><?= t('Database Hostname') ?></li>
-                    <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_HOSTNAME ?></li>
+                    <?php if ($this->user->isAdmin()): ?>
+                        <li class="db-info-value value-code border-bottom-thick privacy">
+                            <?= DB_HOSTNAME ?>
+                        </li>
+                    <?php else: ?>
+                        <li class="db-info-value value-code border-bottom-thick">
+                            <?= $this->helper->supportHelper->maskIPAddress(DB_HOSTNAME) ?>
+                        </li>
+                    <?php endif ?>
                 </span>
                 <span class="data-wrap">
                     <li class="db-info-title"><?= t('Database Port') ?></li>
@@ -448,9 +458,15 @@
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('Server IP Address') ?></li>
-                        <li class="server-value server-config-value border-bottom-thick value-ip privacy">
-                            <?= $_SERVER['SERVER_ADDR'] ?>
-                        </li>
+                        <?php if ($this->user->isAdmin()): ?>
+                            <li class="server-value server-config-value border-bottom-thick value-ip privacy">
+                                <?= $_SERVER['SERVER_ADDR'] ?>
+                            </li>
+                        <?php else: ?>
+                            <li class="server-value server-config-value border-bottom-thick value-ip">
+                                <?= $this->helper->supportHelper->maskIPAddress($_SERVER['SERVER_ADDR']) ?>
+                            </li>
+                        <?php endif ?>
                         <?php if ($this->user->isAdmin()): ?>
                             <a id="valueBTN" href="https://www.whois.com/whois/<?= $_SERVER['SERVER_ADDR'] ?>" class="value-btn privacy-delete" target="_blank" rel="noopener noreferrer" title="<?= t('Opens in a new window') ?> &#8663;">
                                 <i class="fa fa-external-link"></i> <?= t('Lookup IP') ?>
