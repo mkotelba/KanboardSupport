@@ -787,3 +787,9 @@ li.not-set, li.not-available {
     color: var(--pp-grey-alt);
     font-style: italic;
 }
+
+th.support-table-title .user-icon {
+    vertical-align: text-top;
+    margin-right: 5px;
+    pointer-events: none;
+}

@@ -31,8 +31,8 @@
             <table id="UserTable" class="support-table user-table table-center">
                 <thead class="">
                     <tr class="support-table-row">
-                        <th class="support-table-title border-bottom-thick" colspan="4" scope="col">
-                            <i class="fa fa-user i-fw"></i> <?= t('User Configuration') ?>
+                        <th class="support-table-title border-bottom-thick text-center" colspan="4" scope="col">
+                            <?= $this->helper->supportHelper->embedSVGIcon('user-icon') ?> </i> <?= t('User Configuration') ?>
                         </th>
                     </tr>
                 </thead>
