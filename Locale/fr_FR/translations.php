@@ -16,6 +16,8 @@ return array(
     // Helper/SupportHelper.php
     //
     'Directory' => 'Annuaire',
+    'Invalid IP' => 'IP non valide',
+    'Only Administrators can see the full value' => 'Seuls les administrateurs peuvent voir la valeur totale',
     //
     // Template/config/app-config.php
     //

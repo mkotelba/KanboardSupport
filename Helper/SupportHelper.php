@@ -37,6 +37,21 @@ class SupportHelper extends Base
     }
 
     /**
+     * Mask the IP Address for Security Reasons
+     *
+     * @uses    $this->helper->supportHelper->maskIPAddress('ip address')
+     * @var     $ip_address
+     * @return  string          xxx.xxx.xxx.123
+     * @author  aljawaid
+     */
+    public function maskIPAddress($ip_address)
+    {
+        $maskedIP = (strlen($ip_address) >= 4) ? substr($ip_address, -3) : t('Invalid IP');
+
+        return '<span title="' . t('Only Administrators can see the full value') . '" style="cursor: help;">xxx.xxx.xxx.' . $maskedIP . '</span>';
+    }
+
+    /**
      * Detect User Browser
      *
      * @see     support.php

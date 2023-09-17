@@ -16,6 +16,8 @@ return array(
     // Helper/SupportHelper.php
     //
     'Directory' => 'Directory',
+    'Invalid IP' => 'Invalid IP',
+    'Only Administrators can see the full value' => 'Only Administrators can see the full value',
     //
     // Template/config/app-config.php
     //
