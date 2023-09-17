@@ -400,7 +400,7 @@
                     </span>
                     <span class="data-wrap">
                         <li class="mail-info-title">
-                            <abbr title="Simple Mail Transport Protocol">SMTP HELO <?= t('Command Name') ?></abbr>
+                            <abbr title="Simple Mail Transport Protocol">SMTP</abbr> HELO <?= t('Command Name') ?>
                         </li>
                         <?php if (!empty(MAIL_SMTP_HELO_NAME)): ?>
                             <li class="mail-info-value border-bottom-thick"><?= MAIL_SMTP_HELO_NAME ?></li>
