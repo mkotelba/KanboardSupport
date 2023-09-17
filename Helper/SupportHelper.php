@@ -58,9 +58,9 @@ class SupportHelper extends Base
         // The variable to store the filtered subnets
         $filtered_ip = '';
 
-        foreach($ip_items as $item) {
+        foreach ($ip_items as $item) {
             // check if its the first three parts of the IP
-            if($item == $ip_items[0] || $item == $ip_items[1] || $item == $ip_items[2]) {
+            if ($item == $ip_items[0] || $item == $ip_items[1] || $item == $ip_items[2]) {
                 $ip_part = 'xxx.';
             } else {
                 $ip_part = $item;
