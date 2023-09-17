@@ -39,16 +39,37 @@ class SupportHelper extends Base
     /**
      * Mask the IP Address for Security Reasons
      *
+     * Works with hostnames e.g. 'localhost' will become 'host'
      * @uses    $this->helper->supportHelper->maskIPAddress('ip address')
      * @var     $ip_address
-     * @return  string          xxx.xxx.xxx.123
+     * @return  string          'xxx.xxx.xxx.123' or 'xhost'
+     * @author  latrarchy       https://stackoverflow.com/a/31195574
      * @author  aljawaid
      */
     public function maskIPAddress($ip_address)
     {
-        $maskedIP = (strlen($ip_address) >= 4) ? substr($ip_address, -3) : t('Invalid IP');
+        if ($ip_address == 'localhost') {
+            return '<span title="' . t('Only Administrators can see the full value') . '" style="cursor: help;">xhost</span>';
+        }
 
-        return '<span title="' . t('Only Administrators can see the full value') . '" style="cursor: help;">xxx.xxx.xxx.' . $maskedIP . '</span>';
+        // Split the subnets of the IP address
+        $ip_items = explode('.', $ip_address);
+
+        // The var to store the filtered subnets
+        $filtered_ip = '';
+
+        foreach($ip_items as $item) {
+            // check if its the first three parts of the IP
+            if($item == $ip_items[0] || $item == $ip_items[1] || $item == $ip_items[2]) {
+                $ip_part = 'xxx.'; //we added the '.' to that one because its the first item
+            } else {
+                $ip_part = $item;
+            }
+
+            $filtered_ip .= $ip_part;
+        }
+
+        return '<span title="' . t('Only Administrators can see the full value') . '" style="cursor: help;">' . $filtered_ip . '</span>';
     }
 
     /**
