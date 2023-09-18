@@ -43,6 +43,7 @@ Works smoothly with [PluginManager](https://github.com/aljawaid/PluginManager) a
 
 - Hide sensitive data before sharing technical information
   - A single privacy button hides all sensitive information
+  - Enhanced privacy for regular users displaying selective information for sensitive values
 - Display raw versions of the current and default config files for easy comparison
 - Troubleshoot plugins with [PluginManager](https://github.com/aljawaid/PluginManager)
 - Shows the required PHP modules for [Mailmagik](https://github.com/creecros/Mailmagik)
