@@ -75,6 +75,41 @@ class SupportHelper extends Base
     }
 
     /**
+     * Mask the Directory Path for Security Reasons
+     *
+     * @uses    $this->helper->supportHelper->maskPath('directory/path')
+     * @var     $path
+     * @return  string          '/xxx/xxx/xxx/public_html'
+     * @author  aljawaid
+     */
+    public function maskPath($path)
+    {
+        // Split the directories of the path
+        $directories = explode('/', $path);
+
+        // The variable to store the filtered subnets
+        $masked_path = '';
+
+        foreach ($directories as $directory) {
+            if ($directory == $directories[0]) {
+                // Remove first trailing slash
+                $masked_directory = '';
+            } elseif ($directory != $directories[0] && $directory != end($directories)) {
+                // Mask all but the last directory in the path
+                $masked_directory = '/xxx';
+            } else {
+                // Leave the last directory intact
+                $masked_directory = '/' . $directory;
+            }
+
+            // Append to the variable
+            $masked_path .= $masked_directory;
+        }
+
+        return '<span title="' . t('Only Administrators can see the full value') . '" style="cursor: help;">' . $masked_path . '</span>';
+    }
+
+    /**
      * Detect User Browser
      *
      * @see     support.php
