@@ -119,16 +119,6 @@ return array(
     //
     'Application Configuration' => 'Application Configuration',
     'This page shows all default and custom values from the configuration file stored in %s combined with application-specific settings detected from your server.' => 'This page shows all default and custom values from the configuration file stored in %s combined with application-specific settings detected from your server.',
-    'User Configuration' => 'User Configuration',
-    'Your Profile Full Name' => 'Your Profile Full Name',
-    'Your User ID' => 'Your User ID',
-    'Your Role' => 'Your Role',
-    'Your IP Address' => 'Your IP Address',
-    'Opens in a new window' => 'Opens in a new window',
-    'Lookup IP' => 'Lookup IP',
-    'Current Page' => 'Current Page',
-    'Your Browser Name' => 'Your Browser Name',
-    'Your Browser' => 'Your Browser',
     'Data Privacy' => 'Data Privacy',
     'This page shows sensitive data. Hide selective information before sharing.' => 'This page shows sensitive data. Hide selective information before sharing.',
     'Screenshot friendly' => 'Screenshot friendly',
@@ -279,4 +269,17 @@ return array(
     'Webhook Examples' => 'Webhook Examples',
     'HTTP Request Example' => 'HTTP Request Example',
     'Event Payload Examples' => 'Event Payload Examples',
+    //
+    // Template/config_sections/user-config.php
+    //
+    'User Configuration' => 'User Configuration',
+    'Your Profile Full Name' => 'Your Profile Full Name',
+    'Your User ID' => 'Your User ID',
+    'Your Role' => 'Your Role',
+    'Your IP Address' => 'Your IP Address',
+    'Opens in a new window' => 'Opens in a new window',
+    'Lookup IP' => 'Lookup IP',
+    'Current Page' => 'Current Page',
+    'Your Browser Name' => 'Your Browser Name',
+    'Your Browser' => 'Your Browser',
 );

@@ -128,16 +128,6 @@ return array(
     //
     'Application Configuration' => '',
     'This page shows all default and custom values from the configuration file stored in %s combined with application-specific settings detected from your server.' => '',
-    'User Configuration' => '',
-    'Your Profile Full Name' => '',
-    'Your User ID' => '',
-    'Your Role' => '',
-    'Your IP Address' => '',
-    'Opens in a new window' => '',
-    'Lookup IP' => '',
-    'Current Page' => '',
-    'Your Browser Name' => '',
-    'Your Browser' => '',
     'Data Privacy' => '',
     'This page shows sensitive data. Hide selective information before sharing.' => '',
     'Screenshot friendly' => '',
@@ -288,4 +278,17 @@ return array(
     'Webhook Examples' => '',
     'HTTP Request Example' => '',
     'Event Payload Examples' => '',
+    //
+    // Template/config_sections/user-config.php
+    //
+    'User Configuration' => '',
+    'Your Profile Full Name' => '',
+    'Your User ID' => '',
+    'Your Role' => '',
+    'Your IP Address' => '',
+    'Opens in a new window' => '',
+    'Lookup IP' => '',
+    'Current Page' => '',
+    'Your Browser Name' => '',
+    'Your Browser' => '',
 );

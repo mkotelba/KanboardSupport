@@ -119,16 +119,6 @@ return array(
     //
     'Application Configuration' => 'Konfiguration der Anwendung',
     'This page shows all default and custom values from the configuration file stored in %s combined with application-specific settings detected from your server.' => 'Auf dieser Seite werden alle Standard- und benutzerdefinierten Werte aus der in %s gespeicherten Konfigurationsdatei zusammen mit den von Ihrem Server erkannten anwendungsspezifischen Einstellungen angezeigt.',
-    'User Configuration' => 'Benutzer-Konfiguration',
-    'Your Profile Full Name' => 'Ihr vollständiger Profilname',
-    'Your User ID' => 'Ihre Benutzer-ID',
-    'Your Role' => 'Ihre Rolle',
-    'Your IP Address' => 'Ihre IP-Adresse',
-    'Opens in a new window' => 'Öffnet in einem neuen Fenster',
-    'Lookup IP' => 'IP nachschlagen',
-    'Current Page' => 'Aktuelle Seite',
-    'Your Browser Name' => 'Ihr Browsername',
-    'Your Browser' => 'Ihr Browser',
     'Data Privacy' => 'Daten Datenschutz',
     'This page shows sensitive data. Hide selective information before sharing.' => 'Diese Seite zeigt sensible Daten. Blenden Sie ausgewählte Informationen aus, bevor Sie sie weitergeben.',
     'Screenshot friendly' => 'Screenshot-freundlich',
@@ -279,4 +269,17 @@ return array(
     'Webhook Examples' => 'Webhook-Beispiele',
     'HTTP Request Example' => 'HTTP-Anfrage Beispiel',
     'Event Payload Examples' => 'Beispiele für Ereignis-Payloads',
+    //
+    // Template/config_sections/user-config.php
+    //
+    'User Configuration' => 'Benutzer-Konfiguration',
+    'Your Profile Full Name' => 'Ihr vollständiger Profilname',
+    'Your User ID' => 'Ihre Benutzer-ID',
+    'Your Role' => 'Ihre Rolle',
+    'Your IP Address' => 'Ihre IP-Adresse',
+    'Opens in a new window' => 'Öffnet in einem neuen Fenster',
+    'Lookup IP' => 'IP nachschlagen',
+    'Current Page' => 'Aktuelle Seite',
+    'Your Browser Name' => 'Ihr Browsername',
+    'Your Browser' => 'Ihr Browser',
 );
