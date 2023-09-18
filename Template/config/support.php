@@ -247,7 +247,15 @@
                             <span class="data-wrap">
                                 <li class="db-info-title"><?= t('MySQL SSL Key') ?></li>
                                 <?php if (DB_SSL_KEY != null): ?>
-                                    <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_SSL_KEY ?></li>
+                                    <?php if ($this->user->isAdmin()): ?>
+                                        <li class="db-info-value value-path border-bottom-thick privacy">
+                                            <?= DB_SSL_KEY ?>
+                                        </li>
+                                    <?php else: ?>
+                                        <li class="db-info-value value-path border-bottom-thick">
+                                            <?= $this->helper->supportHelper->maskPath(DB_SSL_KEY) ?>
+                                        </li>
+                                    <?php endif ?>
                                 <?php else: ?>
                                     <li class="db-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
                                         <?= t('Not Set') ?>
@@ -257,7 +265,15 @@
                             <span class="data-wrap">
                                 <li class="db-info-title"><?= t('MySQL SSL Certificate') ?></li>
                                 <?php if (DB_SSL_CERT != null): ?>
-                                    <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_SSL_CERT ?></li>
+                                    <?php if ($this->user->isAdmin()): ?>
+                                        <li class="db-info-value value-path border-bottom-thick privacy">
+                                            <?= DB_SSL_CERT ?>
+                                        </li>
+                                    <?php else: ?>
+                                        <li class="db-info-value value-path border-bottom-thick">
+                                            <?= $this->helper->supportHelper->maskPath(DB_SSL_CERT) ?>
+                                        </li>
+                                    <?php endif ?>
                                 <?php else: ?>
                                     <li class="db-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
                                         <?= t('Not Set') ?>
@@ -267,7 +283,15 @@
                             <span class="data-wrap">
                                 <li class="db-info-title"><?= t('MySQL SSL Certificate Authority') ?></li>
                                 <?php if (DB_SSL_CA != null): ?>
-                                    <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_SSL_CA ?></li>
+                                    <?php if ($this->user->isAdmin()): ?>
+                                        <li class="db-info-value value-path border-bottom-thick privacy">
+                                            <?= DB_SSL_CA ?>
+                                        </li>
+                                    <?php else: ?>
+                                        <li class="db-info-value value-path border-bottom-thick">
+                                            <?= $this->helper->supportHelper->maskPath(DB_SSL_CA) ?>
+                                        </li>
+                                    <?php endif ?>
                                 <?php else: ?>
                                     <li class="db-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
                                         <?= t('Not Set') ?>
@@ -493,7 +517,15 @@
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title">Document Root</li>
-                        <li class="server-value server-config-value border-bottom-thick value-path privacy"><?= $_SERVER['DOCUMENT_ROOT'] ?></li>
+                        <?php if ($this->user->isAdmin()): ?>
+                            <li class="server-value server-config-value border-bottom-thick value-path privacy">
+                                <?= $_SERVER['DOCUMENT_ROOT'] ?>
+                            </li>
+                        <?php else: ?>
+                            <li class="server-value server-config-value border-bottom-thick value-path">
+                                <?= $this->helper->supportHelper->maskPath($_SERVER['DOCUMENT_ROOT']) ?>
+                            </li>
+                        <?php endif ?>
                         <?php if (!is_writable($_SERVER['DOCUMENT_ROOT'])): ?>
                             <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
                         <?php else: ?>
@@ -561,7 +593,15 @@
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title"><?= t('Absolute Path') ?></li>
-                        <li class="server-value server-config-value border-bottom-thick value-path privacy"><?= $_SERVER['SCRIPT_FILENAME'] ?></li>
+                        <?php if ($this->user->isAdmin()): ?>
+                            <li class="server-value server-config-value border-bottom-thick value-path privacy">
+                                <?= $_SERVER['SCRIPT_FILENAME'] ?>
+                            </li>
+                        <?php else: ?>
+                            <li class="server-value server-config-value border-bottom-thick value-path">
+                                <?= $this->helper->supportHelper->maskPath($_SERVER['SCRIPT_FILENAME']) ?>
+                            </li>
+                        <?php endif ?>
                     </span>
                     <span class="data-wrap">
                         <li class="server-config server-config-title" title="<?= t('Common Gateway Interface') ?>">CGI <?= t('Version') ?></li>

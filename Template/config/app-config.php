@@ -54,7 +54,15 @@
         </span>
         <span class="data-wrap">
             <li class="app-info-title"><?= t('Plugins Directory') ?></li>
-            <li class="app-info-value value-path border-bottom-thick privacy"><?= PLUGINS_DIR ?></li>
+            <?php if ($this->user->isAdmin()): ?>
+                <li class="app-info-value value-path border-bottom-thick privacy">
+                    <?= PLUGINS_DIR ?>
+                </li>
+            <?php else: ?>
+                <li class="app-info-value value-path border-bottom-thick">
+                    <?= $this->helper->supportHelper->maskPath(PLUGINS_DIR) ?>
+                </li>
+            <?php endif ?>
             <?php if (!is_writable(PLUGINS_DIR)): ?>
                 <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
             <?php else: ?>
@@ -109,7 +117,15 @@
     <div class="accordion-content">
         <span class="data-wrap">
             <li class="app-info-title"><?= t('Data Directory') ?></li>
-            <li class="app-info-value value-path border-bottom-thick privacy"><?= DATA_DIR ?></li>
+            <?php if ($this->user->isAdmin()): ?>
+                <li class="app-info-value value-path border-bottom-thick privacy">
+                    <?= DATA_DIR ?>
+                </li>
+            <?php else: ?>
+                <li class="app-info-value value-path border-bottom-thick">
+                    <?= $this->helper->supportHelper->maskPath(DATA_DIR) ?>
+                </li>
+            <?php endif ?>
             <?php if (!is_writable(DATA_DIR)): ?>
                 <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
             <?php else: ?>
@@ -143,7 +159,15 @@
         </span>
         <span class="data-wrap">
             <li class="app-info-title"><?= t('Files Directory') ?></li>
-            <li class="app-info-value value-path border-bottom-thick privacy"><?= FILES_DIR ?></li>
+            <?php if ($this->user->isAdmin()): ?>
+                <li class="app-info-value value-path border-bottom-thick privacy">
+                    <?= FILES_DIR ?>
+                </li>
+            <?php else: ?>
+            <li class="app-info-value value-path border-bottom-thick">
+                <?= $this->helper->supportHelper->maskPath(FILES_DIR) ?>
+            </li>
+            <?php endif ?>
             <?php if (!is_writable(FILES_DIR)): ?>
                 <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
             <?php else: ?>
@@ -177,7 +201,15 @@
         </span>
         <span class="data-wrap">
             <li class="app-info-title"><?= t('Cache Directory') ?></li>
-            <li class="app-info-value value-path border-bottom-thick privacy"><?= CACHE_DIR ?></li>
+            <?php if ($this->user->isAdmin()): ?>
+                <li class="app-info-value value-path border-bottom-thick privacy">
+                    <?= CACHE_DIR ?>
+                </li>
+            <?php else: ?>
+                <li class="app-info-value value-path border-bottom-thick">
+                    <?= $this->helper->supportHelper->maskPath(CACHE_DIR) ?>
+                </li>
+            <?php endif ?>
             <?php if (!is_writable(CACHE_DIR)): ?>
                 <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
             <?php else: ?>
@@ -222,7 +254,15 @@
     <div class="accordion-content">
         <span class="data-wrap">
             <li class="app-info-title"><?= t('Log File') ?></li>
-            <li class="app-info-value value-path border-bottom-thick privacy"><?= LOG_FILE ?></li>
+            <?php if (!$this->user->isAdmin()): ?>
+                <li class="app-info-value value-path border-bottom-thick privacy">
+                    <?= LOG_FILE ?>
+                </li>
+            <?php else: ?>
+                <li class="app-info-value value-path border-bottom-thick">
+                    <?= $this->helper->supportHelper->maskPath(LOG_FILE) ?>
+                </li>
+            <?php endif ?>
         </span>
         <span class="data-wrap">
             <li class="app-info-title"><?= t('Session Handler') ?></li>

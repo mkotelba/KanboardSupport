@@ -184,7 +184,7 @@ a.user-profile-link, a.webhooks-link {
 }
 
 .value-url, .value-path {
-    white-space: pre;
+    /* white-space: pre; */
     font-family: monospace;
     font-size: 1.2em;
     padding-top: 5px;
