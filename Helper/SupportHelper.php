@@ -39,7 +39,8 @@ class SupportHelper extends Base
     /**
      * Mask the IP Address for Security Reasons
      *
-     * Works with IP addresses and hostnames (e.g. 'localhost' will become 'host')
+     * Works with IP addresses and hostnames (e.g. 'localhost' will become 'xhost')
+     * Use for where the value is either an IP address or a 'localhost' hostname
      * @uses    $this->helper->supportHelper->maskIPAddress('ip address')
      * @var     $ip_address
      * @return  string          'xxx.xxx.xxx.123' or 'xhost'
@@ -52,7 +53,7 @@ class SupportHelper extends Base
             return '<span title="' . t('Only Administrators can see the full value') . '" style="cursor: help;">xhost</span>';
         }
 
-        // Split the subnets of the IP address
+        // Split the subnets of the IP address using the dot as the seperator
         $ip_subnets = explode('.', $ip_address);
 
         // The variable to store the filtered subnets
