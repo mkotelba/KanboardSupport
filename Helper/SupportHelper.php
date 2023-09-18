@@ -125,7 +125,7 @@ class SupportHelper extends Base
         $address_part = explode('.', $server_name);
 
         // The variable to store the filtered parts
-        $masked_ip = '';
+        $masked_server = '';
 
         foreach ($address_part as $part) {
             // Mask the middle parts of the server name
