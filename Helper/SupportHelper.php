@@ -111,6 +111,39 @@ class SupportHelper extends Base
     }
 
     /**
+     * Mask the Server Name for Security Reasons
+     *
+     * Works with mail servers to display the first and last part of the value only deriving from a domain
+     * @uses    $this->helper->supportHelper->maskServer('mail.server.com')
+     * @var     $server_name
+     * @return  string          'mail.xxx.com'
+     * @author  aljawaid
+     */
+    public function maskServer($server_name)
+    {
+        // Split the server name using the dot as the seperator
+        $address_part = explode('.', $server_name);
+
+        // The variable to store the filtered parts
+        $masked_ip = '';
+
+        foreach ($address_part as $part) {
+            // Mask the middle parts of the server name
+            if ($part != $address_part[0] && $part != end($address_part)) {
+                $masked_part = '.xxx.';
+            // Leave the first and last part intact
+            } else {
+                $masked_part = $part;
+            }
+
+            // Append to the variable
+            $masked_server .= $masked_part;
+        }
+
+        return '<span title="' . t('Only Administrators can see the full value') . '" style="cursor: help;">' . $masked_server . '</span>';
+    }
+
+    /**
      * Detect User Browser
      *
      * @see     support.php
