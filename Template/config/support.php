@@ -91,7 +91,7 @@
                         </button>
                     </div>
                 <?php endif ?>
-                <?= $this->render('KanboardSupport:config/app-config') ?>
+                <?= $this->render('KanboardSupport:config_sections/app-sections') ?>
             </ul>
         </div>
     </section>
