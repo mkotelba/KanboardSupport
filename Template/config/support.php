@@ -404,7 +404,15 @@
                 <?php if (MAIL_TRANSPORT == 'smtp'): ?>
                     <span class="data-wrap">
                         <li class="mail-info-title"><?= t('Mail Server Hostname') ?></li>
-                        <li class="mail-info-value value-path border-bottom-thick privacy"><?= MAIL_SMTP_HOSTNAME ?></li>
+                        <?php if ($this->user->isAdmin()): ?>
+                            <li class="mail-info-value value-path border-bottom-thick privacy">
+                                <?= MAIL_SMTP_HOSTNAME ?>
+                            </li>
+                        <?php else: ?>
+                        <li class="mail-info-value value-path border-bottom-thick">
+                            <?= $this->helper->supportHelper->maskServer(MAIL_SMTP_HOSTNAME) ?>
+                            </li>
+                        <?php endif ?>
                     </span>
                     <?php if (!empty(MAIL_SMTP_ENCRYPTION)): ?>
                         <span class="data-wrap">
