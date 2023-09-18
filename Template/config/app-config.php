@@ -254,7 +254,7 @@
     <div class="accordion-content">
         <span class="data-wrap">
             <li class="app-info-title"><?= t('Log File') ?></li>
-            <?php if (!$this->user->isAdmin()): ?>
+            <?php if ($this->user->isAdmin()): ?>
                 <li class="app-info-value value-path border-bottom-thick privacy">
                     <?= LOG_FILE ?>
                 </li>
