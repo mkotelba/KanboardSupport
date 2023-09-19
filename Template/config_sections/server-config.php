@@ -42,7 +42,7 @@
                 <?php endif ?>
             </span>
             <span class="data-wrap">
-                <li class="server-config server-config-title">Server Port</li>
+                <li class="server-config server-config-title"><?= t('Server Port') ?></li>
                 <?php if ($_SERVER['SERVER_PORT'] == '443'): ?>
                     <li class="server-value server-config-value border-bottom-thick value-ip" title="<?= t('SSL Secure Port') ?>">
                         <i class="fa fa-lock pp-green"></i> <?= $_SERVER['SERVER_PORT'] ?> https
@@ -60,7 +60,7 @@
                 <li class="server-value server-config-value border-bottom-thick value-path"><?= sys_get_temp_dir() ?></li>
             </span>
             <span class="data-wrap">
-                <li class="server-config server-config-title">Document Root</li>
+                <li class="server-config server-config-title"><?= t('Document Root') ?></li>
                 <?php if ($this->user->isAdmin()): ?>
                     <li class="server-value server-config-value border-bottom-thick value-path privacy">
                         <?= $_SERVER['DOCUMENT_ROOT'] ?>
@@ -102,7 +102,7 @@
                 <?php endif ?>
             </span>
             <span class="data-wrap">
-                <li class="server-config server-config-title">Session Save Path</li>
+                <li class="server-config server-config-title"><?= t('Session Save Path') ?></li>
                 <li class="server-value server-config-value border-bottom-thick value-path"><?= session_save_path() ?></li>
                 <?php if (!is_writable(session_save_path())): ?>
                     <span class="fail-x" title="<?= t('This directory is not writeable by the web server user') ?>">&#10008;</span>
