@@ -1,7 +1,3 @@
-<?php
-    $user = $this->user->getId();
-    $user2 = $this->user->getFullname();
-?>
 <div class="config-page">
     <div class="page-header" style="margin-top: 10px;">
         <h2 class="">
