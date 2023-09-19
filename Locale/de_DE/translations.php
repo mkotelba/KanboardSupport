@@ -234,6 +234,9 @@ return array(
     'Command Name' => 'Befehl Name',
     'Sendmail Command' => 'Sendmail-Befehl',
     //
+    // Template/config_sections/ldap-config.php
+    //
+    //
     // Template/config_sections/php-info.php
     //
     'PHP Information' => 'PHP-Informationen',

@@ -454,7 +454,7 @@
         <?= t('LDAP Configuration') ?>
     </summary>
     <div class="accordion-content">
-        <?= $this->render('KanboardSupport:config_sections/ldap-section') ?>
+        <?= $this->render('KanboardSupport:config_sections/ldap-config') ?>
     </div>
 </details>
 <details class="accordion-section app-config">

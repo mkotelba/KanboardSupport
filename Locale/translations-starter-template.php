@@ -243,6 +243,9 @@ return array(
     'Command Name' => '',
     'Sendmail Command' => '',
     //
+    // Template/config_sections/ldap-config.php
+    //
+    //
     // Template/config_sections/php-info.php
     //
     'PHP Information' => '',
