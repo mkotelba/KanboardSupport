@@ -35,7 +35,7 @@
     </section>
     <!-- DATABASE CONNECTION -->
     <section id="DBSupportSection" class="support-section">
-        <?= $this->render('KanboardSupport:config_sections/db-connection') ?>
+        <?= $this->render('KanboardSupport:config_sections/db-connection', array('db_size' => $db_size, 'db_version' => $db_version)) ?>
     </section>
     <!-- EMAIL CONNECTION -->
     <section class="support-section">
