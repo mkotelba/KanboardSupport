@@ -54,27 +54,6 @@ return array(
     'An active configuration file has not been detected. Make sure the filename is correct.' => '',
     'Default Raw Config File' => '',
     'This file is for reference only' => '',
-    'PHP Information' => '',
-    'Major Version' => '',
-    'Minor Version' => '',
-    'Release Version' => '',
-    'Less than minimum requirement' => '',
-    'Pass' => '',
-    'Config File Path' => '',
-    'Config File Scan Directory' => '',
-    'Loaded Configuration File' => '',
-    'PHP Extension Name' => '',
-    'Not Detected' => '',
-    'Required' => '',
-    'PHP Extension' => '',
-    'Required Extension' => '',
-    'Optional' => '',
-    'Optional Extension' => '',
-    'Missing PDO Extension' => '',
-    'MySQL Detected' => '',
-    'PostgreSQL Detected' => '',
-    'SQLite Detected' => '',
-    'Required for the Mailmagik plugin' => '',
     //
     // Template/config/webhook-code-examples-event-payloads.php
     //
@@ -263,6 +242,30 @@ return array(
     'SMTP Username' => '',
     'Command Name' => '',
     'Sendmail Command' => '',
+    //
+    // Template/config_sections/php-info.php
+    //
+    'PHP Information' => '',
+    'Major Version' => '',
+    'Minor Version' => '',
+    'Release Version' => '',
+    'Less than minimum requirement' => '',
+    'Pass' => '',
+    'Config File Path' => '',
+    'Config File Scan Directory' => '',
+    'Loaded Configuration File' => '',
+    'PHP Extension Name' => '',
+    'Not Detected' => '',
+    'Required' => '',
+    'PHP Extension' => '',
+    'Required Extension' => '',
+    'Optional' => '',
+    'Optional Extension' => '',
+    'Missing PDO Extension' => '',
+    'MySQL Detected' => '',
+    'PostgreSQL Detected' => '',
+    'SQLite Detected' => '',
+    'Required for the Mailmagik plugin' => '',
     //
     // Template/config_sections/server-config.php
     //

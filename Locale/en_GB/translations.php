@@ -45,27 +45,6 @@ return array(
     'An active configuration file has not been detected. Make sure the filename is correct.' => 'An active configuration file has not been detected. Make sure the filename is correct.',
     'Default Raw Config File' => 'Default Raw Config File',
     'This file is for reference only' => 'This file is for reference only',
-    'PHP Information' => 'PHP Information',
-    'Major Version' => 'Major Version',
-    'Minor Version' => 'Minor Version',
-    'Release Version' => 'Release Version',
-    'Less than minimum requirement' => 'Less than minimum requirement',
-    'Pass' => 'Pass',
-    'Config File Path' => 'Config File Path',
-    'Config File Scan Directory' => 'Config File Scan Directory',
-    'Loaded Configuration File' => 'Loaded Configuration File',
-    'PHP Extension Name' => 'PHP Extension Name',
-    'Not Detected' => 'Not Detected',
-    'Required' => 'Required',
-    'PHP Extension' => 'PHP Extension',
-    'Required Extension' => 'Required Extension',
-    'Optional' => 'Optional',
-    'Optional Extension' => 'Optional Extension',
-    'Missing PDO Extension' => 'Missing PDO Extension',
-    'MySQL Detected' => 'MySQL Detected',
-    'PostgreSQL Detected' => 'PostgreSQL Detected',
-    'SQLite Detected' => 'SQLite Detected',
-    'Required for the Mailmagik plugin' => 'Required for the Mailmagik plugin',
     //
     // Template/config/webhook-code-examples-event-payloads.php
     //
@@ -254,6 +233,30 @@ return array(
     'SMTP Username' => 'SMTP Username',
     'Command Name' => 'Command Name',
     'Sendmail Command' => 'Sendmail Command',
+    //
+    // Template/config_sections/php-info.php
+    //
+    'PHP Information' => 'PHP Information',
+    'Major Version' => 'Major Version',
+    'Minor Version' => 'Minor Version',
+    'Release Version' => 'Release Version',
+    'Less than minimum requirement' => 'Less than minimum requirement',
+    'Pass' => 'Pass',
+    'Config File Path' => 'Config File Path',
+    'Config File Scan Directory' => 'Config File Scan Directory',
+    'Loaded Configuration File' => 'Loaded Configuration File',
+    'PHP Extension Name' => 'PHP Extension Name',
+    'Not Detected' => 'Not Detected',
+    'Required' => 'Required',
+    'PHP Extension' => 'PHP Extension',
+    'Required Extension' => 'Required Extension',
+    'Optional' => 'Optional',
+    'Optional Extension' => 'Optional Extension',
+    'Missing PDO Extension' => 'Missing PDO Extension',
+    'MySQL Detected' => 'MySQL Detected',
+    'PostgreSQL Detected' => 'PostgreSQL Detected',
+    'SQLite Detected' => 'SQLite Detected',
+    'Required for the Mailmagik plugin' => 'Required for the Mailmagik plugin',
     //
     // Template/config_sections/server-config.php
     //
