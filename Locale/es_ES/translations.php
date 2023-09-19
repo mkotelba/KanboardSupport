@@ -45,16 +45,6 @@ return array(
     'An active configuration file has not been detected. Make sure the filename is correct.' => 'No se ha detectado un archivo de configuración activo. Asegúrese de que el nombre del archivo es correcto.',
     'Default Raw Config File' => 'Archivo de configuración por defecto',
     'This file is for reference only' => 'Este archivo es sólo de referencia',
-    'Email Connection' => 'Conexión de correo',
-    'Mail Configuration' => 'Configuración de correo',
-    'Sender Email' => 'Correo del remitente',
-    'Mail Transport' => 'Transporte de correo',
-    'Other' => 'Otro',
-    'Mail Server Hostname' => 'Nombre de host del servidor de correo',
-    'Encryption' => 'Cifrado',
-    'SMTP Username' => 'Nombre de usuario SMTP',
-    'Command Name' => 'Nombre del comando',
-    'Sendmail Command' => 'Comando Sendmail',
     'Server Configuration' => 'Configuración del servidor',
     'Operating System' => 'Sistema operativo',
     'Client for URL' => 'Cliente para URL',
@@ -272,6 +262,19 @@ return array(
     'Upload Database' => 'Cargar base de datos',
     'Optimize Database' => 'Optimizar base de datos',
     'command' => 'comando',
+    //
+    // Template/config_sections/email-connection.php
+    //
+    'Email Connection' => 'Conexión de correo',
+    'Mail Configuration' => 'Configuración de correo',
+    'Sender Email' => 'Correo del remitente',
+    'Mail Transport' => 'Transporte de correo',
+    'Other' => 'Otro',
+    'Mail Server Hostname' => 'Nombre de host del servidor de correo',
+    'Encryption' => 'Cifrado',
+    'SMTP Username' => 'Nombre de usuario SMTP',
+    'Command Name' => 'Nombre del comando',
+    'Sendmail Command' => 'Comando Sendmail',
     //
     // Template/config_sections/user-config.php
     //

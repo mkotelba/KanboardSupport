@@ -45,16 +45,6 @@ return array(
     'An active configuration file has not been detected. Make sure the filename is correct.' => 'An active configuration file has not been detected. Make sure the filename is correct.',
     'Default Raw Config File' => 'Default Raw Config File',
     'This file is for reference only' => 'This file is for reference only',
-    'Email Connection' => 'Email Connection',
-    'Mail Configuration' => 'Mail Configuration',
-    'Sender Email' => 'Sender Email',
-    'Mail Transport' => 'Mail Transport',
-    'Other' => 'Other',
-    'Mail Server Hostname' => 'Mail Server Hostname',
-    'Encryption' => 'Encryption',
-    'SMTP Username' => 'SMTP Username',
-    'Command Name' => 'Command Name',
-    'Sendmail Command' => 'Sendmail Command',
     'Server Configuration' => 'Server Configuration',
     'Operating System' => 'Operating System',
     'Client for URL' => 'Client for URL',
@@ -272,6 +262,19 @@ return array(
     'Upload Database' => 'Upload Database',
     'Optimize Database' => 'Optimize Database',
     'command' => 'command',
+    //
+    // Template/config_sections/email-connection.php
+    //
+    'Email Connection' => 'Email Connection',
+    'Mail Configuration' => 'Mail Configuration',
+    'Sender Email' => 'Sender Email',
+    'Mail Transport' => 'Mail Transport',
+    'Other' => 'Other',
+    'Mail Server Hostname' => 'Mail Server Hostname',
+    'Encryption' => 'Encryption',
+    'SMTP Username' => 'SMTP Username',
+    'Command Name' => 'Command Name',
+    'Sendmail Command' => 'Sendmail Command',
     //
     // Template/config_sections/user-config.php
     //
