@@ -99,6 +99,7 @@ return array(
     'An active configuration file has not been detected. Make sure the filename is correct.' => 'No se ha detectado un archivo de configuración activo. Asegúrese de que el nombre del archivo es correcto.',
     'Default Raw Config File' => 'Archivo de configuración por defecto',
     'This file is for reference only' => 'Este archivo es sólo de referencia',
+    'Download Config Files' => 'Descargar archivos de configuración',
     //
     // Template/config_sections/app-sections.php
     //

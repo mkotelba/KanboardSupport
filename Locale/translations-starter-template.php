@@ -108,6 +108,7 @@ return array(
     'An active configuration file has not been detected. Make sure the filename is correct.' => '',
     'Default Raw Config File' => '',
     'This file is for reference only' => '',
+    'Download Config Files' => '',
     //
     // Template/config_sections/app-sections.php
     //
