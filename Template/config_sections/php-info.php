@@ -293,8 +293,10 @@
             <span class="value-version"><?= t('Not Detected') ?></span>
         <?php endif ?>
     </div>
-    <div class="tile-optional" title=""><?= t('Optional') ?></div>
     <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+    <?php if (extension_loaded('zip')): ?>
+        <div class="tile-optional static" title=""><?= t('Optional') ?></div>
+    <?php endif ?>
     <span class="tile-check">
         <?php if (extension_loaded('zip')): ?>
             <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
