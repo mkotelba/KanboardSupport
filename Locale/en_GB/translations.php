@@ -30,21 +30,6 @@ return array(
     'This page shows sensitive data. Hide selective information before sharing.' => 'This page shows sensitive data. Hide selective information before sharing.',
     'Screenshot friendly' => 'Screenshot friendly',
     'Hide Data' => 'Hide Data',
-    'Application Information' => 'Application Information',
-    'Application Name' => 'Application Name',
-    'Version' => 'Version',
-    'Updates' => 'Updates',
-    'Check for updates' => 'Check for updates',
-    'Debug Mode' => 'Debug Mode',
-    'This setting will affect performance and should only be enabled for troubleshooting purposes' => 'This setting will affect performance and should only be enabled for troubleshooting purposes',
-    'Not Enabled' => 'Not Enabled',
-    'This page contains all the configuration settings from the application config file. You can also view the raw contents of the config file as-is and also compare it to the default version.' => 'This page contains all the configuration settings from the application config file. You can also view the raw contents of the config file as-is and also compare it to the default version.',
-    'The raw config file will expose sensitive information which should not be shared.' => 'The raw config file will expose sensitive information which should not be shared.',
-    'Current Raw Config File' => 'Current Raw Config File',
-    'The settings in this file apply to the current application environment' => 'The settings in this file apply to the current application environment',
-    'An active configuration file has not been detected. Make sure the filename is correct.' => 'An active configuration file has not been detected. Make sure the filename is correct.',
-    'Default Raw Config File' => 'Default Raw Config File',
-    'This file is for reference only' => 'This file is for reference only',
     //
     // Template/config/webhook-code-examples-event-payloads.php
     //
@@ -96,6 +81,24 @@ return array(
     'Webhook Examples' => 'Webhook Examples',
     'HTTP Request Example' => 'HTTP Request Example',
     'Event Payload Examples' => 'Event Payload Examples',
+    //
+    // Template/config_sections/app-info.php
+    //
+    'Application Information' => 'Application Information',
+    'Application Name' => 'Application Name',
+    'Version' => 'Version',
+    'Updates' => 'Updates',
+    'Check for updates' => 'Check for updates',
+    'Debug Mode' => 'Debug Mode',
+    'This setting will affect performance and should only be enabled for troubleshooting purposes' => 'This setting will affect performance and should only be enabled for troubleshooting purposes',
+    'Not Enabled' => 'Not Enabled',
+    'This page contains all the configuration settings from the application config file. You can also view the raw contents of the config file as-is and also compare it to the default version.' => 'This page contains all the configuration settings from the application config file. You can also view the raw contents of the config file as-is and also compare it to the default version.',
+    'The raw config file will expose sensitive information which should not be shared.' => 'The raw config file will expose sensitive information which should not be shared.',
+    'Current Raw Config File' => 'Current Raw Config File',
+    'The settings in this file apply to the current application environment' => 'The settings in this file apply to the current application environment',
+    'An active configuration file has not been detected. Make sure the filename is correct.' => 'An active configuration file has not been detected. Make sure the filename is correct.',
+    'Default Raw Config File' => 'Default Raw Config File',
+    'This file is for reference only' => 'This file is for reference only',
     //
     // Template/config_sections/app-sections.php
     //

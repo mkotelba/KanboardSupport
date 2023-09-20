@@ -39,21 +39,6 @@ return array(
     'This page shows sensitive data. Hide selective information before sharing.' => '',
     'Screenshot friendly' => '',
     'Hide Data' => '',
-    'Application Information' => '',
-    'Application Name' => '',
-    'Version' => '',
-    'Updates' => '',
-    'Check for updates' => '',
-    'Debug Mode' => '',
-    'This setting will affect performance and should only be enabled for troubleshooting purposes' => '',
-    'Not Enabled' => '',
-    'This page contains all the configuration settings from the application config file. You can also view the raw contents of the config file as-is and also compare it to the default version.' => '',
-    'The raw config file will expose sensitive information which should not be shared.' => '',
-    'Current Raw Config File' => '',
-    'The settings in this file apply to the current application environment' => '',
-    'An active configuration file has not been detected. Make sure the filename is correct.' => '',
-    'Default Raw Config File' => '',
-    'This file is for reference only' => '',
     //
     // Template/config/webhook-code-examples-event-payloads.php
     //
@@ -105,6 +90,24 @@ return array(
     'Webhook Examples' => '',
     'HTTP Request Example' => '',
     'Event Payload Examples' => '',
+    //
+    // Template/config_sections/app-info.php
+    //
+    'Application Information' => '',
+    'Application Name' => '',
+    'Version' => '',
+    'Updates' => '',
+    'Check for updates' => '',
+    'Debug Mode' => '',
+    'This setting will affect performance and should only be enabled for troubleshooting purposes' => '',
+    'Not Enabled' => '',
+    'This page contains all the configuration settings from the application config file. You can also view the raw contents of the config file as-is and also compare it to the default version.' => '',
+    'The raw config file will expose sensitive information which should not be shared.' => '',
+    'Current Raw Config File' => '',
+    'The settings in this file apply to the current application environment' => '',
+    'An active configuration file has not been detected. Make sure the filename is correct.' => '',
+    'Default Raw Config File' => '',
+    'This file is for reference only' => '',
     //
     // Template/config_sections/app-sections.php
     //

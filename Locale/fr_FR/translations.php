@@ -30,21 +30,6 @@ return array(
     'This page shows sensitive data. Hide selective information before sharing.' => 'Cette page contient des données sensibles. Masquez certaines informations avant de les partager.',
     'Screenshot friendly' => 'Compatible avec les captures d\'écran',
     'Hide Data' => 'Masquer les données',
-    'Application Information' => 'Informations sur l\'application',
-    'Application Name' => 'Nom de l\'application',
-    'Version' => 'Version de l\'application',
-    'Updates' => 'Mises à jour',
-    'Check for updates' => 'Vérifier les mises à jour',
-    'Debug Mode' => 'Mode de débogage',
-    'This setting will affect performance and should only be enabled for troubleshooting purposes' => 'Ce paramètre affecte les performances et ne doit être activé qu\'à des fins de dépannage.',
-    'Not Enabled' => 'Non activé',
-    'This page contains all the configuration settings from the application config file. You can also view the raw contents of the config file as-is and also compare it to the default version.' => 'Cette page contient tous les paramètres de configuration du fichier de configuration de l\'application. Vous pouvez également consulter le contenu brut du fichier de configuration tel quel et le comparer à la version par défaut.',
-    'The raw config file will expose sensitive information which should not be shared.' => 'Le fichier de configuration brut expose des informations sensibles qui ne doivent pas être partagées.',
-    'Current Raw Config File' => 'Fichier de configuration brut actuel',
-    'The settings in this file apply to the current application environment' => 'Les paramètres de ce fichier s\'appliquent à l\'environnement d\'application actuel',
-    'An active configuration file has not been detected. Make sure the filename is correct.' => 'Un fichier de configuration actif n\'a pas été détecté. Assurez-vous que le nom du fichier est correct.',
-    'Default Raw Config File' => 'Fichier de configuration brut par défaut',
-    'This file is for reference only' => 'Ce fichier est uniquement destiné à servir de référence',
     //
     // Template/config/webhook-code-examples-event-payloads.php
     //
@@ -96,6 +81,24 @@ return array(
     'Webhook Examples' => 'Exemples de Webhook',
     'HTTP Request Example' => 'Exemple de requête HTTP',
     'Event Payload Examples' => 'Exemples de charge utile d\'événement',
+    //
+    // Template/config_sections/app-info.php
+    //
+    'Application Information' => 'Informations sur l\'application',
+    'Application Name' => 'Nom de l\'application',
+    'Version' => 'Version de l\'application',
+    'Updates' => 'Mises à jour',
+    'Check for updates' => 'Vérifier les mises à jour',
+    'Debug Mode' => 'Mode de débogage',
+    'This setting will affect performance and should only be enabled for troubleshooting purposes' => 'Ce paramètre affecte les performances et ne doit être activé qu\'à des fins de dépannage.',
+    'Not Enabled' => 'Non activé',
+    'This page contains all the configuration settings from the application config file. You can also view the raw contents of the config file as-is and also compare it to the default version.' => 'Cette page contient tous les paramètres de configuration du fichier de configuration de l\'application. Vous pouvez également consulter le contenu brut du fichier de configuration tel quel et le comparer à la version par défaut.',
+    'The raw config file will expose sensitive information which should not be shared.' => 'Le fichier de configuration brut expose des informations sensibles qui ne doivent pas être partagées.',
+    'Current Raw Config File' => 'Fichier de configuration brut actuel',
+    'The settings in this file apply to the current application environment' => 'Les paramètres de ce fichier s\'appliquent à l\'environnement d\'application actuel',
+    'An active configuration file has not been detected. Make sure the filename is correct.' => 'Un fichier de configuration actif n\'a pas été détecté. Assurez-vous que le nom du fichier est correct.',
+    'Default Raw Config File' => 'Fichier de configuration brut par défaut',
+    'This file is for reference only' => 'Ce fichier est uniquement destiné à servir de référence',
     //
     // Template/config_sections/app-sections.php
     //

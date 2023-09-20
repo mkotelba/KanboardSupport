@@ -30,21 +30,6 @@ return array(
     'This page shows sensitive data. Hide selective information before sharing.' => 'Esta página muestra datos sensibles. Oculta información selectiva antes de compartirla.',
     'Screenshot friendly' => 'Compatible con capturas de pantalla',
     'Hide Data' => 'Ocultar datos',
-    'Application Information' => 'Información de la aplicación',
-    'Application Name' => 'Nombre de la aplicación',
-    'Version' => 'Versión',
-    'Updates' => 'Actualizaciones',
-    'Check for updates' => 'Buscar actualizaciones',
-    'Debug Mode' => 'Modo depuración',
-    'This setting will affect performance and should only be enabled for troubleshooting purposes' => 'Esta configuración afectará al rendimiento y sólo debe activarse para solucionar problemas.',
-    'Not Enabled' => 'No activado',
-    'This page contains all the configuration settings from the application config file. You can also view the raw contents of the config file as-is and also compare it to the default version.' => 'Esta página contiene todos los ajustes de configuración del archivo de configuración de la aplicación. También puede ver el contenido en bruto del archivo de configuración tal cual y compararlo con la versión por defecto.',
-    'The raw config file will expose sensitive information which should not be shared.' => 'El archivo de configuración sin procesar expondrá información sensible que no debe ser compartida.',
-    'Current Raw Config File' => 'Archivo de configuración actual',
-    'The settings in this file apply to the current application environment' => 'Los ajustes de este archivo se aplican al entorno actual de la aplicación',
-    'An active configuration file has not been detected. Make sure the filename is correct.' => 'No se ha detectado un archivo de configuración activo. Asegúrese de que el nombre del archivo es correcto.',
-    'Default Raw Config File' => 'Archivo de configuración por defecto',
-    'This file is for reference only' => 'Este archivo es sólo de referencia',
     //
     // Template/config/webhook-code-examples-event-payloads.php
     //
@@ -96,6 +81,24 @@ return array(
     'Webhook Examples' => 'Ejemplos de Webhooks',
     'HTTP Request Example' => 'Ejemplo de Petición HTTP',
     'Event Payload Examples' => 'Ejemplos de Carga de Evento',
+    //
+    // Template/config_sections/app-info.php
+    //
+    'Application Information' => 'Información de la aplicación',
+    'Application Name' => 'Nombre de la aplicación',
+    'Version' => 'Versión',
+    'Updates' => 'Actualizaciones',
+    'Check for updates' => 'Buscar actualizaciones',
+    'Debug Mode' => 'Modo depuración',
+    'This setting will affect performance and should only be enabled for troubleshooting purposes' => 'Esta configuración afectará al rendimiento y sólo debe activarse para solucionar problemas.',
+    'Not Enabled' => 'No activado',
+    'This page contains all the configuration settings from the application config file. You can also view the raw contents of the config file as-is and also compare it to the default version.' => 'Esta página contiene todos los ajustes de configuración del archivo de configuración de la aplicación. También puede ver el contenido en bruto del archivo de configuración tal cual y compararlo con la versión por defecto.',
+    'The raw config file will expose sensitive information which should not be shared.' => 'El archivo de configuración sin procesar expondrá información sensible que no debe ser compartida.',
+    'Current Raw Config File' => 'Archivo de configuración actual',
+    'The settings in this file apply to the current application environment' => 'Los ajustes de este archivo se aplican al entorno actual de la aplicación',
+    'An active configuration file has not been detected. Make sure the filename is correct.' => 'No se ha detectado un archivo de configuración activo. Asegúrese de que el nombre del archivo es correcto.',
+    'Default Raw Config File' => 'Archivo de configuración por defecto',
+    'This file is for reference only' => 'Este archivo es sólo de referencia',
     //
     // Template/config_sections/app-sections.php
     //

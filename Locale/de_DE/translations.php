@@ -30,21 +30,6 @@ return array(
     'This page shows sensitive data. Hide selective information before sharing.' => 'Diese Seite zeigt sensible Daten. Blenden Sie ausgewählte Informationen aus, bevor Sie sie weitergeben.',
     'Screenshot friendly' => 'Screenshot-freundlich',
     'Hide Data' => 'Daten Verbergen',
-    'Application Information' => 'Informationen zur Anwendung',
-    'Application Name' => 'Name der Anwendung',
-    'Version' => 'Version',
-    'Updates' => 'Aktualisierungen',
-    'Check for updates' => 'Auf Aktualisierungen prüfen',
-    'Debug Mode' => 'Debug-Modus',
-    'This setting will affect performance and should only be enabled for troubleshooting purposes' => 'Diese Einstellung beeinträchtigt die Leistung und sollte nur zur Fehlersuche aktiviert werden.',
-    'Not Enabled' => 'Nicht Aktiviert',
-    'This page contains all the configuration settings from the application config file. You can also view the raw contents of the config file as-is and also compare it to the default version.' => 'Diese Seite enthält alle Konfigurationseinstellungen aus der Konfigurationsdatei der Anwendung. Sie können sich auch den Rohinhalt der Konfigurationsdatei ansehen und ihn mit der Standardversion vergleichen.',
-    'The raw config file will expose sensitive information which should not be shared.' => 'Die rohe Konfigurationsdatei enthält sensible Informationen, die nicht weitergegeben werden sollten.',
-    'Current Raw Config File' => 'Aktuelle Rohkonfigurationsdatei',
-    'The settings in this file apply to the current application environment' => 'Die Einstellungen in dieser Datei gelten für die aktuelle Anwendungsumgebung',
-    'An active configuration file has not been detected. Make sure the filename is correct.' => 'Eine aktive Konfigurationsdatei wurde nicht erkannt. Stellen Sie sicher, dass der Dateiname korrekt ist.',
-    'Default Raw Config File' => 'Standard-Konfigurationsdatei (Raw Config)',
-    'This file is for reference only' => 'Diese Datei ist nur als Referenz gedacht',
     //
     // Template/config/webhook-code-examples-event-payloads.php
     //
@@ -96,6 +81,24 @@ return array(
     'Webhook Examples' => 'Webhook-Beispiele',
     'HTTP Request Example' => 'HTTP-Anfrage Beispiel',
     'Event Payload Examples' => 'Beispiele für Ereignis-Payloads',
+    //
+    // Template/config_sections/app-info.php
+    //
+    'Application Information' => 'Informationen zur Anwendung',
+    'Application Name' => 'Name der Anwendung',
+    'Version' => 'Version',
+    'Updates' => 'Aktualisierungen',
+    'Check for updates' => 'Auf Aktualisierungen prüfen',
+    'Debug Mode' => 'Debug-Modus',
+    'This setting will affect performance and should only be enabled for troubleshooting purposes' => 'Diese Einstellung beeinträchtigt die Leistung und sollte nur zur Fehlersuche aktiviert werden.',
+    'Not Enabled' => 'Nicht Aktiviert',
+    'This page contains all the configuration settings from the application config file. You can also view the raw contents of the config file as-is and also compare it to the default version.' => 'Diese Seite enthält alle Konfigurationseinstellungen aus der Konfigurationsdatei der Anwendung. Sie können sich auch den Rohinhalt der Konfigurationsdatei ansehen und ihn mit der Standardversion vergleichen.',
+    'The raw config file will expose sensitive information which should not be shared.' => 'Die rohe Konfigurationsdatei enthält sensible Informationen, die nicht weitergegeben werden sollten.',
+    'Current Raw Config File' => 'Aktuelle Rohkonfigurationsdatei',
+    'The settings in this file apply to the current application environment' => 'Die Einstellungen in dieser Datei gelten für die aktuelle Anwendungsumgebung',
+    'An active configuration file has not been detected. Make sure the filename is correct.' => 'Eine aktive Konfigurationsdatei wurde nicht erkannt. Stellen Sie sicher, dass der Dateiname korrekt ist.',
+    'Default Raw Config File' => 'Standard-Konfigurationsdatei (Raw Config)',
+    'This file is for reference only' => 'Diese Datei ist nur als Referenz gedacht',
     //
     // Template/config_sections/app-sections.php
     //
