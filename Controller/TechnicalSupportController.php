@@ -102,7 +102,7 @@ class TechnicalSupportController extends \Kanboard\Controller\ConfigController
         $zip->close();
 
         // Send the file to the browser as a download
-        $filename = 'KB_v'. APP_VERSION .'_Config_Backup-' . date('d-m-Y\THi') . '.zip';
+        $filename = 'KB_v' . APP_VERSION . '_Config_Backup-' . date('d-m-Y\THi') . '.zip';
         header('Content-disposition: attachment; filename=' . $filename . '');
         header('Content-type: application/zip');
         readfile($tmp_file);
