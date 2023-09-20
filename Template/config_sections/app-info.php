@@ -56,6 +56,11 @@
                     'plugin' => 'KanboardSupport'), false, '', false) ?>" class="btn config-btn config-btn-red js-modal-confirm" title="<?= t('This file is for reference only') ?>">
                     <?= $this->helper->supportHelper->embedSVGIcon('raw-icon') ?> <?= t('Default Raw Config File') ?>
                 </button>
+                    <form method="post" action="<?= $this->url->href('TechnicalSupportController', 'backupConfigFiles', array('plugin' => 'KanboardSupport'), true, '', false) ?>">
+                        <button type="submit" class="btn config-download-btn">
+                            <?= $this->helper->supportHelper->embedSVGIcon('zip-icon') ?> <?= t('Download Config Files') ?>
+                        </button>
+                    </form>
             </div>
         <?php endif ?>
         <?= $this->render('KanboardSupport:config_sections/app-sections') ?>
