@@ -277,7 +277,14 @@
     </span>
 </div>
 <!-- zip -->
-<div class="tile-wrapper">
+<div class="tile-wrapper tile-optional-hover">
+    <?php if (!extension_loaded('zip')): ?>
+        <div class="tile-hover-plugin">
+            <div class="tile-hover-plugin-text-wrapper">
+                <div class="tile-hover-plugin-text"><?= t('Required for downloading config files') ?></div>
+            </div>
+        </div>
+    <?php endif ?>
     <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>zip</code></div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
         <?php if (extension_loaded('zip')): ?>
