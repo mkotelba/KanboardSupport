@@ -331,6 +331,10 @@ table.support-table.user-table tr td:first-child::before {
     opacity: 0;
 }
 
+.tile-wrapper.tile-optional-hover:hover .tile-optional.static {
+    opacity: 1;
+}
+
 .tile-hover-plugin {
     opacity: 0;
     position: absolute;
