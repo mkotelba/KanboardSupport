@@ -36,7 +36,7 @@
 </div>
 <!-- gd -->
 <div class="tile-wrapper">
-    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>gd</code></div>
+    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code class="ext-name">gd</code></div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
         <?php if (extension_loaded('gd')): ?>
             <span class="value-version"><?= phpversion('gd') ?></span>
@@ -47,7 +47,7 @@
     <?php if (!extension_loaded('gd')): ?>
         <div class="tile-required" title=""><?= t('Required') ?></div>
     <?php endif ?>
-    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
         <?php if (extension_loaded('gd')): ?>
             <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
@@ -58,7 +58,7 @@
 </div>
 <!-- mbstring -->
 <div class="tile-wrapper">
-    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>mbstring</code></div>
+    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code class="ext-name">mbstring</code></div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
         <?php if (extension_loaded('mbstring')): ?>
             <span class="value-version"><?= phpversion('mbstring') ?></span>
@@ -69,7 +69,7 @@
     <?php if (!extension_loaded('mbstring')): ?>
         <div class="tile-required" title=""><?= t('Required') ?></div>
     <?php endif ?>
-    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
         <?php if (extension_loaded('mbstring')): ?>
             <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
@@ -80,7 +80,7 @@
 </div>
 <!-- hash -->
 <div class="tile-wrapper">
-    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>hash</code></div>
+    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code class="ext-name">hash</code></div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
         <?php if (extension_loaded('hash')): ?>
             <span class="value-version"><?= phpversion('hash') ?></span>
@@ -91,7 +91,7 @@
     <?php if (!extension_loaded('hash')): ?>
         <div class="tile-required" title=""><?= t('Required') ?></div>
     <?php endif ?>
-    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
         <?php if (extension_loaded('hash')): ?>
             <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
@@ -102,7 +102,7 @@
 </div>
 <!-- openssl -->
 <div class="tile-wrapper">
-    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>openssl</code></div>
+    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code class="ext-name">openssl</code></div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
         <?php if (extension_loaded('openssl')): ?>
             <span class="value-version"><?= phpversion('openssl') ?></span>
@@ -113,7 +113,7 @@
     <?php if (!extension_loaded('openssl')): ?>
         <div class="tile-required" title=""><?= t('Required') ?></div>
     <?php endif ?>
-    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
         <?php if (extension_loaded('openssl')): ?>
             <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
@@ -124,7 +124,7 @@
 </div>
 <!-- json -->
 <div class="tile-wrapper">
-    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>json</code></div>
+    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code class="ext-name">json</code></div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
         <?php if (extension_loaded('json')): ?>
             <span class="value-version"><?= phpversion('json') ?></span>
@@ -135,7 +135,7 @@
     <?php if (!extension_loaded('json')): ?>
         <div class="tile-required" title=""><?= t('Required') ?></div>
     <?php endif ?>
-    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
         <?php if (extension_loaded('json')): ?>
             <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
@@ -146,7 +146,7 @@
 </div>
 <!-- ctype -->
 <div class="tile-wrapper">
-    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>ctype</code></div>
+    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code class="ext-name">ctype</code></div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
         <?php if (extension_loaded('ctype')): ?>
             <span class="value-version"><?= phpversion('ctype') ?></span>
@@ -157,7 +157,7 @@
     <?php if (!extension_loaded('ctype')): ?>
         <div class="tile-required" title=""><?= t('Required') ?></div>
     <?php endif ?>
-    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
         <?php if (extension_loaded('ctype')): ?>
             <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
@@ -168,7 +168,7 @@
 </div>
 <!-- filter -->
 <div class="tile-wrapper">
-    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>filter</code></div>
+    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code class="ext-name">filter</code></div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
         <?php if (extension_loaded('filter')): ?>
             <span class="value-version"><?= phpversion('filter') ?></span>
@@ -179,7 +179,7 @@
     <?php if (!extension_loaded('filter')): ?>
         <div class="tile-required" title=""><?= t('Required') ?></div>
     <?php endif ?>
-    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
         <?php if (extension_loaded('filter')): ?>
             <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
@@ -190,7 +190,7 @@
 </div>
 <!-- session -->
 <div class="tile-wrapper">
-    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>session</code></div>
+    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code class="ext-name">session</code></div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
         <?php if (extension_loaded('session')): ?>
             <span class="value-version"><?= phpversion('session') ?></span>
@@ -201,7 +201,7 @@
     <?php if (!extension_loaded('session')): ?>
         <div class="tile-required" title=""><?= t('Required') ?></div>
     <?php endif ?>
-    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
         <?php if (extension_loaded('session')): ?>
             <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
@@ -212,7 +212,7 @@
 </div>
 <!-- dom -->
 <div class="tile-wrapper">
-    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>dom</code></div>
+    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code class="ext-name">dom</code></div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
         <?php if (extension_loaded('dom')): ?>
             <span class="value-version"><?= phpversion('dom') ?></span>
@@ -223,7 +223,7 @@
     <?php if (!extension_loaded('dom')): ?>
         <div class="tile-required" title=""><?= t('Required') ?></div>
     <?php endif ?>
-    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
         <?php if (extension_loaded('dom')): ?>
             <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
@@ -234,7 +234,7 @@
 </div>
 <!-- SimpleXML -->
 <div class="tile-wrapper">
-    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>SimpleXML</code></div>
+    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code class="ext-name">SimpleXML</code></div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
         <?php if (extension_loaded('SimpleXML')): ?>
             <span class="value-version"><?= phpversion('SimpleXML') ?></span>
@@ -245,7 +245,7 @@
     <?php if (!extension_loaded('SimpleXML')): ?>
         <div class="tile-required" title=""><?= t('Required') ?></div>
     <?php endif ?>
-    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
         <?php if (extension_loaded('SimpleXML')): ?>
             <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
@@ -256,7 +256,7 @@
 </div>
 <!-- xml -->
 <div class="tile-wrapper">
-    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>xml</code></div>
+    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code class="ext-name">xml</code></div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
         <?php if (extension_loaded('xml')): ?>
             <span class="value-version"><?= phpversion('xml') ?></span>
@@ -267,7 +267,7 @@
     <?php if (!extension_loaded('xml')): ?>
         <div class="tile-required" title=""><?= t('Required') ?></div>
     <?php endif ?>
-    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
         <?php if (extension_loaded('xml')): ?>
             <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
@@ -285,7 +285,7 @@
             </div>
         </div>
     <?php endif ?>
-    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>zip</code></div>
+    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code class="ext-name">zip</code></div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
         <?php if (extension_loaded('zip')): ?>
             <span class="value-version"><?= phpversion('zip') ?></span>
@@ -293,10 +293,10 @@
             <span class="value-version"><?= t('Not Detected') ?></span>
         <?php endif ?>
     </div>
-    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
     <?php if (extension_loaded('zip')): ?>
         <div class="tile-optional static" title=""><?= t('Optional') ?></div>
     <?php endif ?>
+    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
         <?php if (extension_loaded('zip')): ?>
             <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
@@ -307,7 +307,7 @@
 </div>
 <!-- ldap -->
 <div class="tile-wrapper">
-    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>ldap</code></div>
+    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code class="ext-name">ldap</code></div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
         <?php if (extension_loaded('ldap')): ?>
             <span class="value-version"><?= phpversion('ldap') ?></span>
@@ -316,7 +316,7 @@
         <?php endif ?>
     </div>
     <div class="tile-optional" title=""><?= t('Optional') ?></div>
-    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
         <?php if (extension_loaded('ldap')): ?>
             <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
@@ -327,7 +327,7 @@
 </div>
 <!-- curl -->
 <div class="tile-wrapper">
-    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>curl</code></div>
+    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code class="ext-name">curl</code></div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
         <?php if (extension_loaded('curl')): ?>
             <span class="value-version"><?= phpversion('curl') ?></span>
@@ -336,7 +336,7 @@
         <?php endif ?>
     </div>
     <div class="tile-optional" title=""><?= t('Optional') ?></div>
-    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
         <?php if (extension_loaded('curl')): ?>
             <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
@@ -349,13 +349,13 @@
 <div class="tile-wrapper">
     <div class="tile-name" title="<?= t('PHP Extension Name') ?>">
         <?php if (DB_DRIVER === 'mysql'): ?>
-            <code>pdo_mysql</code>
+            <code class="ext-name">pdo_mysql</code>
         <?php elseif (DB_DRIVER === 'postgres'): ?>
-            <code>pdo_pgsql</code>
+            <code class="ext-name">pdo_pgsql</code>
         <?php elseif (DB_DRIVER === 'sqlite'): ?>
-            <code>pdo_sqlite</code>
+            <code class="ext-name">pdo_sqlite</code>
         <?php else: ?>
-            <code><?= t('Not Detected') ?></code>
+            <code class="ext-name"><?= t('Not Detected') ?></code>
         <?php endif ?>
     </div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
@@ -384,7 +384,7 @@
     <?php if (DB_DRIVER === 'sqlite'): ?>
         <div class="tile-detected" title=""><?= t('SQLite Detected') ?></div>
     <?php endif ?>
-    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
         <?php if (DB_DRIVER === 'mysql' && !extension_loaded('pdo_mysql')): ?>
             <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
@@ -408,7 +408,7 @@
             <div class="tile-hover-plugin-text"><?= t('Required for the Mailmagik plugin') ?></div>
         </div>
     </div>
-    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>imap</code></div>
+    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code class="ext-name">imap</code></div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
         <?php if (extension_loaded('imap')): ?>
             <span class="value-version"><?= phpversion('imap') ?></span>
@@ -419,7 +419,7 @@
     <?php if (!file_exists('plugins/Mailmagik')): ?>
         <div class="tile-optional" title=""><?= t('Optional') ?></div>
     <?php endif ?>
-    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
         <?php if (extension_loaded('imap')): ?>
             <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
@@ -435,7 +435,7 @@
             <div class="tile-hover-plugin-text"><?= t('Required for the Mailmagik plugin') ?></div>
         </div>
     </div>
-    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>fileinfo</code></div>
+    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code class="ext-name">fileinfo</code></div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
         <?php if (extension_loaded('fileinfo')): ?>
             <span class="value-version"><?= phpversion('fileinfo') ?></span>
@@ -446,7 +446,7 @@
     <?php if (!file_exists('plugins/Mailmagik')): ?>
         <div class="tile-optional" title=""><?= t('Optional') ?></div>
     <?php endif ?>
-    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
         <?php if (extension_loaded('fileinfo')): ?>
             <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
@@ -462,7 +462,7 @@
             <div class="tile-hover-plugin-text"><?= t('Required for the Mailmagik plugin') ?></div>
         </div>
     </div>
-    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code>iconv</code></div>
+    <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code class="ext-name">iconv</code></div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
         <?php if (extension_loaded('iconv')): ?>
             <span class="value-version"><?= phpversion('iconv') ?></span>
@@ -473,7 +473,7 @@
     <?php if (!file_exists('plugins/Mailmagik')): ?>
         <div class="tile-optional" title=""><?= t('Optional') ?></div>
     <?php endif ?>
-    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><i class="fa fa-cogs i-fw"></i></div>
+    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
         <?php if (extension_loaded('iconv')): ?>
             <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>

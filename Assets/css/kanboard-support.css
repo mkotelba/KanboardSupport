@@ -366,9 +366,6 @@ table.support-table.user-table tr td:first-child::before {
     position: absolute;
     bottom: 0;
     left: 1px;
-    font-size: 1.3em;
-    color: var(--tech-bg-grey-border-match);
-    cursor: context-menu;
 }
 
 .tile-check {
@@ -383,13 +380,19 @@ table.support-table.user-table tr td:first-child::before {
     text-align: center;
 }
 
+.tile-name > code.ext-name {
+    color: #000;
+    background-color: rgba(27, 31, 35, .12);
+    box-shadow: 0 0 1px 1px var(--pp-grey);
+}
+
 .tile-name code, .server-config-value code {
     border-radius: var(--border-radius-kanboard-support);
-    background-color: rgba(27, 31, 35, .22) !important;
+    background-color: rgba(27, 31, 35, .22);
     font-size: .9rem !important;
     font-family: monospace !important;
     letter-spacing: .08rem;
-    color: var(--pp-red-alt-2) !important;
+    color: var(--pp-red-alt-2);
     margin: auto 3px !important;
     padding: 1px 3px 0 4px !important;
 }
