@@ -109,6 +109,7 @@ return array(
     'Default Raw Config File' => '',
     'This file is for reference only' => '',
     'Download Config Files' => '',
+    'PHP \'zip\' Extension Not Detected. Check the \'PHP Information\' section of this page.' => '',
     //
     // Template/config_sections/app-sections.php
     //
@@ -268,6 +269,7 @@ return array(
     'Required Extension' => '',
     'Optional' => '',
     'Optional Extension' => '',
+    'Required for downloading config files' => '',
     'Missing PDO Extension' => '',
     'MySQL Detected' => '',
     'PostgreSQL Detected' => '',

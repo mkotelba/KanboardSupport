@@ -100,6 +100,7 @@ return array(
     'Default Raw Config File' => 'Standard-Konfigurationsdatei (Raw Config)',
     'This file is for reference only' => 'Diese Datei ist nur als Referenz gedacht',
     'Download Config Files' => 'Download von Konfigurationsdateien',
+    'PHP \'zip\' Extension Not Detected. Check the \'PHP Information\' section of this page.' => 'Die PHP-Erweiterung \'zip\' wurde nicht erkannt. Überprüfen Sie den Abschnitt \'PHP-Informationen\' auf dieser Seite.',
     //
     // Template/config_sections/app-sections.php
     //
@@ -260,6 +261,7 @@ return array(
     'Optional' => 'Wahlweise',
     'Optional Extension' => 'Wahlweise Erweiterung',
     'Missing PDO Extension' => 'Fehlende PDO-Erweiterung',
+    'Required for downloading config files' => 'Erforderlich für das Herunterladen von Konfigurationsdateien',
     'MySQL Detected' => 'MySQL Erkannt',
     'PostgreSQL Detected' => 'PostgreSQL Erkannt',
     'SQLite Detected' => 'SQLite Erkannt',
