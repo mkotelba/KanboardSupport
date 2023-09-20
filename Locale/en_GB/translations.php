@@ -262,9 +262,9 @@ return array(
     'Optional Extension' => 'Optional Extension',
     'Missing PDO Extension' => 'Missing PDO Extension',
     'Required for downloading config files' => 'Required for downloading config files',
-    'MySQL Detected' => 'MySQL Detected',
-    'PostgreSQL Detected' => 'PostgreSQL Detected',
-    'SQLite Detected' => 'SQLite Detected',
+    'MySQL' => 'MySQL',
+    'PostgreSQL' => 'PostgreSQL',
+    'SQLite' => 'SQLite',
     'Required for the Mailmagik plugin' => 'Required for the Mailmagik plugin',
     //
     // Template/config_sections/server-config.php

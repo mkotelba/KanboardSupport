@@ -376,13 +376,13 @@
         <?php endif ?>
     </div>
     <?php if (DB_DRIVER === 'mysql'): ?>
-        <div class="tile-detected" title=""><?= t('MySQL Detected') ?></div>
+        <div class="tile-detected" title=""><?= t('MySQL') ?></div>
     <?php endif ?>
     <?php if (DB_DRIVER === 'postgres'): ?>
-        <div class="tile-detected" title=""><?= t('PostgreSQL Detected') ?></div>
+        <div class="tile-detected" title=""><?= t('PostgreSQL') ?></div>
     <?php endif ?>
     <?php if (DB_DRIVER === 'sqlite'): ?>
-        <div class="tile-detected" title=""><?= t('SQLite Detected') ?></div>
+        <div class="tile-detected" title=""><?= t('SQLite') ?></div>
     <?php endif ?>
     <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
