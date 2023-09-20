@@ -745,6 +745,10 @@ form.add-webhook-form .form-actions button {
     color: var(--pp-grey);
 }
 
+.config-btns button.config-download-btn:disabled svg {
+    color: var(--pp-red-alt-2);
+}
+
 .config-btns button svg, .config-download-btn svg {
     vertical-align: sub;
     width: 22px;
