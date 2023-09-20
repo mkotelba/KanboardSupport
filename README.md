@@ -44,9 +44,12 @@ Works smoothly with [PluginManager](https://github.com/aljawaid/PluginManager) a
 - Hide sensitive data before sharing technical information
   - A single privacy button hides all sensitive information
   - Enhanced privacy for regular users displaying selective information for sensitive values
-- Display raw versions of the current and default config files for easy comparison
 - Troubleshoot plugins with [PluginManager](https://github.com/aljawaid/PluginManager)
 - Shows the required PHP modules for [Mailmagik](https://github.com/creecros/Mailmagik)
+- **Display and Backup Config Files**
+  - Display raw versions of the current and default config files for easy comparison
+  - Easily download a `.zip` archive file containing both config files named according to the current Kanboard version and date
+  - _Requires PHP `zip` extension to be installed_
 - **Webhooks Information**
   - New improved webhooks page
   - Display alert in webhooks page to avoid potential token issues
