@@ -312,7 +312,7 @@ table.support-table.user-table tr td:first-child::before {
 }
 
 .tile-wrapper {
-    border: 2px inset var(--tech-bg-grey-border-match);
+    border: 2px inset #777BB3;
     border-radius: var(--border-radius-kanboard-support);
     display: inline-grid;
     position: relative;
@@ -321,6 +321,11 @@ table.support-table.user-table tr td:first-child::before {
     height: 95px;
     margin: 10px 5px;
     cursor: context-menu;
+}
+
+.tile-wrapper.tile-optional-hover {
+    border: 1px outset var(--pp-light-grey);
+    margin-inline: 6px;
 }
 
 .tile-wrapper:hover .tile-hover-plugin {
