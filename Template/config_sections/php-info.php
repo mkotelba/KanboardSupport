@@ -276,6 +276,62 @@
         <?php endif ?>
     </span>
 </div>
+<!-- PDO Extension -->
+<div class="tile-wrapper">
+    <div class="tile-name" title="<?= t('PHP Extension Name') ?>">
+        <?php if (DB_DRIVER === 'mysql'): ?>
+            <code class="ext-name">pdo_mysql</code>
+        <?php elseif (DB_DRIVER === 'postgres'): ?>
+            <code class="ext-name">pdo_pgsql</code>
+        <?php elseif (DB_DRIVER === 'sqlite'): ?>
+            <code class="ext-name">pdo_sqlite</code>
+        <?php else: ?>
+            <code class="ext-name"><?= t('Not Detected') ?></code>
+        <?php endif ?>
+    </div>
+    <div class="tile-version value-version" title="<?= t('Version') ?>">
+        <?php if (DB_DRIVER === 'mysql' && !extension_loaded('pdo_mysql')): ?>
+            <small><?= t('Missing PDO Extension') ?></small>
+        <?php else: ?>
+            <?= phpversion('pdo_mysql') ?>
+        <?php endif ?>
+        <?php if (DB_DRIVER === 'postgres' && !extension_loaded('pdo_pgsql')): ?>
+            <small><?= t('Missing PDO Extension') ?></small>
+        <?php else: ?>
+            <?= phpversion('pdo_pgsql') ?>
+        <?php endif ?>
+        <?php if (DB_DRIVER === 'sqlite' && !extension_loaded('pdo_sqlite')): ?>
+            <small><?= t('Missing PDO Extension') ?></small>
+        <?php else: ?>
+            <?= phpversion('pdo_sqlite') ?>
+        <?php endif ?>
+    </div>
+    <?php if (DB_DRIVER === 'mysql'): ?>
+        <div class="tile-detected" title=""><?= t('MySQL') ?></div>
+    <?php endif ?>
+    <?php if (DB_DRIVER === 'postgres'): ?>
+        <div class="tile-detected" title=""><?= t('PostgreSQL') ?></div>
+    <?php endif ?>
+    <?php if (DB_DRIVER === 'sqlite'): ?>
+        <div class="tile-detected" title=""><?= t('SQLite') ?></div>
+    <?php endif ?>
+    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
+    <span class="tile-check">
+        <?php if (DB_DRIVER === 'mysql' && !extension_loaded('pdo_mysql')): ?>
+            <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
+        <?php elseif (DB_DRIVER === 'postgres' && !extension_loaded('pdo_pgsql')): ?>
+            <span class="tile-check">
+                <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
+            </span>
+        <?php elseif (DB_DRIVER === 'sqlite' && !extension_loaded('pdo_sqlite')): ?>
+            <span class="tile-check">
+                <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
+            </span>
+        <?php else: ?>
+            <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
+        <?php endif ?>
+    </span>
+</div>
 <!-- zip -->
 <div class="tile-wrapper tile-optional-hover">
     <?php if (!extension_loaded('zip')): ?>
@@ -342,62 +398,6 @@
             <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
         <?php else: ?>
             <span class="tile-fail-x" title="<?= t('Optional Extension') ?>">&#10008;</span>
-        <?php endif ?>
-    </span>
-</div>
-<!-- PDO Extension -->
-<div class="tile-wrapper">
-    <div class="tile-name" title="<?= t('PHP Extension Name') ?>">
-        <?php if (DB_DRIVER === 'mysql'): ?>
-            <code class="ext-name">pdo_mysql</code>
-        <?php elseif (DB_DRIVER === 'postgres'): ?>
-            <code class="ext-name">pdo_pgsql</code>
-        <?php elseif (DB_DRIVER === 'sqlite'): ?>
-            <code class="ext-name">pdo_sqlite</code>
-        <?php else: ?>
-            <code class="ext-name"><?= t('Not Detected') ?></code>
-        <?php endif ?>
-    </div>
-    <div class="tile-version value-version" title="<?= t('Version') ?>">
-        <?php if (DB_DRIVER === 'mysql' && !extension_loaded('pdo_mysql')): ?>
-            <small><?= t('Missing PDO Extension') ?></small>
-        <?php else: ?>
-            <?= phpversion('pdo_mysql') ?>
-        <?php endif ?>
-        <?php if (DB_DRIVER === 'postgres' && !extension_loaded('pdo_pgsql')): ?>
-            <small><?= t('Missing PDO Extension') ?></small>
-        <?php else: ?>
-            <?= phpversion('pdo_pgsql') ?>
-        <?php endif ?>
-        <?php if (DB_DRIVER === 'sqlite' && !extension_loaded('pdo_sqlite')): ?>
-            <small><?= t('Missing PDO Extension') ?></small>
-        <?php else: ?>
-            <?= phpversion('pdo_sqlite') ?>
-        <?php endif ?>
-    </div>
-    <?php if (DB_DRIVER === 'mysql'): ?>
-        <div class="tile-detected" title=""><?= t('MySQL') ?></div>
-    <?php endif ?>
-    <?php if (DB_DRIVER === 'postgres'): ?>
-        <div class="tile-detected" title=""><?= t('PostgreSQL') ?></div>
-    <?php endif ?>
-    <?php if (DB_DRIVER === 'sqlite'): ?>
-        <div class="tile-detected" title=""><?= t('SQLite') ?></div>
-    <?php endif ?>
-    <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
-    <span class="tile-check">
-        <?php if (DB_DRIVER === 'mysql' && !extension_loaded('pdo_mysql')): ?>
-            <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
-        <?php elseif (DB_DRIVER === 'postgres' && !extension_loaded('pdo_pgsql')): ?>
-            <span class="tile-check">
-                <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
-            </span>
-        <?php elseif (DB_DRIVER === 'sqlite' && !extension_loaded('pdo_sqlite')): ?>
-            <span class="tile-check">
-                <span class="tile-fail-x" title="<?= t('Required Extension') ?>">&#10008;</span>
-            </span>
-        <?php else: ?>
-            <span class="tile-pass" title="<?= t('Pass') ?>">&#10004;</span>
         <?php endif ?>
     </span>
 </div>
