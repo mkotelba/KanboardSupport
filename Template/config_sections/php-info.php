@@ -362,7 +362,7 @@
     </span>
 </div>
 <!-- ldap -->
-<div class="tile-wrapper">
+<div class="tile-wrapper tile-optional-hover">
     <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code class="ext-name">ldap</code></div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
         <?php if (extension_loaded('ldap')): ?>
@@ -371,7 +371,7 @@
             <span class="value-version"><?= t('Not Detected') ?></span>
         <?php endif ?>
     </div>
-    <div class="tile-optional" title=""><?= t('Optional') ?></div>
+    <div class="tile-optional static" title=""><?= t('Optional') ?></div>
     <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
         <?php if (extension_loaded('ldap')): ?>
@@ -382,7 +382,7 @@
     </span>
 </div>
 <!-- curl -->
-<div class="tile-wrapper">
+<div class="tile-wrapper tile-optional-hover">
     <div class="tile-name" title="<?= t('PHP Extension Name') ?>"><code class="ext-name">curl</code></div>
     <div class="tile-version value-version" title="<?= t('Version') ?>">
         <?php if (extension_loaded('curl')): ?>
@@ -391,7 +391,7 @@
             <span class="value-version"><?= t('Not Detected') ?></span>
         <?php endif ?>
     </div>
-    <div class="tile-optional" title=""><?= t('Optional') ?></div>
+    <div class="tile-optional static" title=""><?= t('Optional') ?></div>
     <div class="tile-icon" title="<?= t('PHP Extension') ?>"><?= $this->helper->supportHelper->embedSVGIcon('php-logo-icon') ?></div>
     <span class="tile-check">
         <?php if (extension_loaded('curl')): ?>
