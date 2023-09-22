@@ -59,7 +59,7 @@
                 <?php else: ?>
                 <li class="mail-info-value value-path border-bottom-thick">
                     <?= $this->helper->supportHelper->maskServer(MAIL_SMTP_HOSTNAME) ?>
-                    </li>
+                </li>
                 <?php endif ?>
             </span>
             <?php if (!empty(MAIL_SMTP_ENCRYPTION)): ?>
