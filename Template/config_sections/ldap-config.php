@@ -15,7 +15,7 @@
 </span>
 <?php if (LDAP_AUTH == true): ?>
     <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
+        <li class="app-info-title"><?= e('%s Server', '<abbr title="' . t('Lightweight Directory Access Protocol') . '">LDAP</abbr>') ?></li>
         <?php if (LDAP_SERVER): ?>
         <?php endif ?>
     </span>
