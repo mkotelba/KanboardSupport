@@ -71,7 +71,7 @@
         <?php if (DB_DRIVER === 'mysql'): ?>
             <details class="accordion-section mysql-ssl">
                 <summary class="accordion-title">
-                    <?= t('MySQL SSL Connection') ?>
+                    <?= e('MySQL %s Connection', '<abbr title="' . t('Secure Sockets Layer') . '">SSL</abbr>') ?>
                 </summary>
                 <div class="accordion-content">
                     <p class="">
@@ -80,24 +80,24 @@
                     <fieldset class="parameter-examples">
                         <legend><?= t('Parameter Examples') ?></legend>
                         <div class="ssl-example">
-                            <dt><?= t('MySQL SSL Key') ?></dt>
+                            <dt><?= e('MySQL %s Key', '<abbr title="' . t('Secure Sockets Layer') . '">SSL</abbr>') ?></dt>
                             <dd><code class="event-code">define('DB_SSL_KEY', '<span class="pp-grey font-weight-bold">/path/to/client-key.pem</span>');</code></dd>
                         </div>
                         <div class="ssl-example">
-                            <dt><?= t('MySQL SSL Certificate') ?></dt>
+                            <dt><?= e('MySQL %s Certificate', '<abbr title="' . t('Secure Sockets Layer') . '">SSL</abbr>') ?></dt>
                             <dd><code class="event-code">define('DB_SSL_CERT', '<span class="pp-grey font-weight-bold">/path/to/client-cert.pem</span>');</code></dd>
                         </div>
                         <div class="ssl-example">
-                            <dt><?= t('MySQL SSL Certificate Authority') ?></dt>
+                            <dt><?= e('MySQL %s Certificate Authority', '<abbr title="' . t('Secure Sockets Layer') . '">SSL</abbr>') ?></dt>
                             <dd><code class="event-code">define('DB_SSL_CA', '<span class="pp-grey font-weight-bold">/path/to/ca-cert.pem</span>');</code></dd>
                         </div>
                         <div class="ssl-example">
-                            <dt><?= t('MySQL SSL Server Verification') ?></dt>
+                            <dt><?= e('MySQL %s Server Verification', '<abbr title="' . t('Secure Sockets Layer') . '">SSL</abbr>') ?></dt>
                             <dd><code class="event-code">define('DB_VERIFY_SERVER_CERT', '<span class="pp-grey font-weight-bold">false</span>');</code></dd>
                         </div>
                     </fieldset>
                     <span class="data-wrap">
-                        <li class="db-info-title"><?= t('MySQL SSL Key') ?></li>
+                        <li class="db-info-title"><?= e('MySQL %s Key', '<abbr title="' . t('Secure Sockets Layer') . '">SSL</abbr>') ?></li>
                         <?php if (DB_SSL_KEY != null): ?>
                             <?php if ($this->user->isAdmin()): ?>
                                 <li class="db-info-value value-path border-bottom-thick privacy">
@@ -115,7 +115,7 @@
                         <?php endif ?>
                     </span>
                     <span class="data-wrap">
-                        <li class="db-info-title"><?= t('MySQL SSL Certificate') ?></li>
+                        <li class="db-info-title"><?= e('MySQL %s Certificate', '<abbr title="' . t('Secure Sockets Layer') . '">SSL</abbr>') ?></li>
                         <?php if (DB_SSL_CERT != null): ?>
                             <?php if ($this->user->isAdmin()): ?>
                                 <li class="db-info-value value-path border-bottom-thick privacy">
@@ -133,7 +133,7 @@
                         <?php endif ?>
                     </span>
                     <span class="data-wrap">
-                        <li class="db-info-title"><?= t('MySQL SSL Certificate Authority') ?></li>
+                        <li class="db-info-title"><?= e('MySQL %s Certificate Authority', '<abbr title="' . t('Secure Sockets Layer') . '">SSL</abbr>') ?></li>
                         <?php if (DB_SSL_CA != null): ?>
                             <?php if ($this->user->isAdmin()): ?>
                                 <li class="db-info-value value-path border-bottom-thick privacy">
@@ -151,7 +151,7 @@
                         <?php endif ?>
                     </span>
                     <span class="data-wrap">
-                        <li class="db-info-title"><?= t('MySQL SSL Server Verification') ?></li>
+                        <li class="db-info-title"><?= e('MySQL %s Server Verification', '<abbr title="' . t('Secure Sockets Layer') . '">SSL</abbr>') ?></li>
                         <?php if (DB_VERIFY_SERVER_CERT != null): ?>
                             <li class="db-info-value value-path border-bottom-thick privacy"><?= DB_VERIFY_SERVER_CERT ?></li>
                         <?php else: ?>

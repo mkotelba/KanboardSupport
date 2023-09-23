@@ -68,9 +68,9 @@
                         <abbr title="Simple Mail Transport Protocol">SMTP</abbr> <?= t('Encryption') ?>
                     </li>
                     <?php if (MAIL_SMTP_ENCRYPTION == 'ssl'): ?>
-                        <li class="mail-info-value border-bottom-thick">SSL</li>
+                        <li class="mail-info-value border-bottom-thick"><abbr title="<?= t('Secure Sockets Layer') ?>">SSL</abbr></li>
                     <?php elseif (MAIL_SMTP_ENCRYPTION == 'tls'): ?>
-                        <li class="mail-info-value border-bottom-thick">TLS</li>
+                        <li class="mail-info-value border-bottom-thick"><abbr title="<?= t('Transport Layer Security') ?>">TLS</abbr></li>
                     <?php else: ?>
                         <li class="mail-info-value border-bottom-thick not-set"><?= t('Not Set') ?></li>
                     <?php endif ?>
@@ -84,7 +84,7 @@
             </span>
             <span class="data-wrap">
                 <li class="mail-info-title">
-                    <abbr title="Simple Mail Transport Protocol"><?= t('SMTP Username') ?></abbr>
+                    <?= e('%s Username', '<abbr title="' . t('Simple Mail Transport Protocol') . '">SMTP</abbr>') ?>
                 </li>
                 <li class="mail-info-value border-bottom-thick privacy"><?= MAIL_SMTP_USERNAME ?></li>
             </span>
