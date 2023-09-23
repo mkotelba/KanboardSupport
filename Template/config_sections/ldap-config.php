@@ -40,6 +40,16 @@
             <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">389</li>
         <?php endif ?>
     </span>
+    <span class="data-wrap">
+        <li class="app-info-title"><?= e('Verify %s Security Cerificate', '<abbr title="' . t('Secure Sockets Layer') . '">SSL</abbr>') ?></li>
+        <?php if (!LDAP_SSL_VERIFY): ?>
+            <li class="app-info-value border-bottom-thick">
+                <?= t('Disabled') ?>
+            </li>
+        <?php else: ?>
+            <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                <?= t('Enabled') ?>
+            </li>
         <?php endif ?>
     </span>
     <span class="data-wrap">
