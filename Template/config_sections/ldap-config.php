@@ -16,7 +16,20 @@
 <?php if (LDAP_AUTH == true): ?>
     <span class="data-wrap">
         <li class="app-info-title"><?= e('%s Server', '<abbr title="' . t('Lightweight Directory Access Protocol') . '">LDAP</abbr>') ?></li>
-        <?php if (LDAP_SERVER): ?>
+        <?php if (LDAP_SERVER != ''): ?>
+            <?php if ($this->user->isAdmin()): ?>
+                <li class="app-info-value value-path border-bottom-thick privacy">
+                    <?= LDAP_SERVER ?>
+                </li>
+            <?php else: ?>
+                <li class="app-info-value value-path border-bottom-thick">
+                    <?= $this->helper->supportHelper->maskServer(LDAP_SERVER) ?>
+                </li>
+            <?php endif ?>
+        <?php else: ?>
+            <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                <?= t('Not Set') ?>
+            </li>
         <?php endif ?>
     </span>
     <span class="data-wrap">
