@@ -75,7 +75,7 @@
                 </summary>
                 <div class="accordion-content">
                     <p class="">
-                        <?= t('These parameters must be defined in the configuration file in order to enable the MySQL SSL connection. For most installations, it is safe to ignore this section.') ?>
+                        <?= e('These parameters must be defined in the configuration file in order to enable the MySQL %s connection. For most installations, it is safe to ignore this section.', '<abbr title="' . t('Secure Sockets Layer') . '">SSL</abbr>') ?>
                     </p>
                     <fieldset class="parameter-examples">
                         <legend><?= t('Parameter Examples') ?></legend>
