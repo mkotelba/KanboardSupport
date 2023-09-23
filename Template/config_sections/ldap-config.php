@@ -33,8 +33,13 @@
         <?php endif ?>
     </span>
     <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_SSL_VERIFY): ?>
+        <li class="app-info-title"><?= e('%s Port', '<abbr title="' . t('Lightweight Directory Access Protocol') . '">LDAP</abbr>') ?></li>
+        <?php if (LDAP_PORT != 389): ?>
+            <?= LDAP_PORT ?>
+        <?php else: ?>
+            <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">389</li>
+        <?php endif ?>
+    </span>
         <?php endif ?>
     </span>
     <span class="data-wrap">
