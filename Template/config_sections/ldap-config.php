@@ -53,8 +53,15 @@
         <?php endif ?>
     </span>
     <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
+        <li class="app-info-title"><?= e('Start with %s', '<abbr title="' . t('Transport Security Layer') . '">TLS</abbr>') ?></li>
         <?php if (LDAP_START_TLS): ?>
+            <li class="app-info-value border-bottom-thick">
+                <?= t('Enabled') ?>
+            </li>
+        <?php else: ?>
+            <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                <?= t('Disabled') ?>
+            </li>
         <?php endif ?>
     </span>
     <span class="data-wrap">
