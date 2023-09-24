@@ -77,8 +77,19 @@
         <?php endif ?>
     </span>
     <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_BIND_TYPE): ?>
+        <li class="app-info-title"><?= t('Bind Type') ?></li>
+        <?php if (LDAP_BIND_TYPE == 'user'): ?>
+            <li class="app-info-value border-bottom-thick">
+                <?= t('User') ?>
+            </li>
+        <?php elseif (LDAP_BIND_TYPE == 'proxy'): ?>
+            <li class="app-info-value border-bottom-thick">
+                <?= t('Proxy') ?>
+            </li>
+        <?php elseif (LDAP_BIND_TYPE == 'anonymous'): ?>
+            <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                <?= t('Anonymous') ?>
+            </li>
         <?php endif ?>
     </span>
     <span class="data-wrap">
