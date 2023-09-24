@@ -65,8 +65,15 @@
         <?php endif ?>
     </span>
     <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
+        <li class="app-info-title"><?= t('Username Case') ?></li>
         <?php if (LDAP_USERNAME_CASE_SENSITIVE): ?>
+            <li class="app-info-value border-bottom-thick">
+                <?= t('Preserve Case') ?>
+            </li>
+        <?php else: ?>
+            <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                <?= t('Lowercase') ?>
+            </li>
         <?php endif ?>
     </span>
     <span class="data-wrap">
