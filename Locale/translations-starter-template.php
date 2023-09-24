@@ -253,6 +253,20 @@ return array(
     //
     // Template/config_sections/ldap-config.php
     //
+    '%s Authentication' => '',
+    'Lightweight Directory Access Protocol' => '',
+    'Enable LDAP in your configuration file to display the related settings.' => '',
+    '%s Server' => '',
+    '%s Port' => '',
+    'Verify %s Security Cerificate' => '',
+    'Start with %s' => '',
+    'Username Case' => '',
+    'Preserve Case' => '',
+    'Lowercase' => '',
+    'Bind Type' => '',
+    'User' => '',
+    'Proxy' => '',
+    'Anonymous' => '',
     //
     // Template/config_sections/php-info.php
     //
