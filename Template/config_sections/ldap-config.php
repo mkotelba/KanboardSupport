@@ -93,13 +93,13 @@
         <?php endif ?>
     </span>
     <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_USERNAME): ?>
-        <?php endif ?>
-    </span>
-    <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_PASSWORD): ?>
+        <li class="app-info-title"><?= t('Username for Proxy & User Modes') ?></li>
+        <?php if (LDAP_USERNAME == null): ?>
+            <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                <?= t('Not Set') ?>
+            </li>
+        <?php else: ?>
+            <li class="mail-info-value border-bottom-thick privacy"><?= LDAP_USERNAME ?></li>
         <?php endif ?>
     </span>
     <span class="data-wrap">
