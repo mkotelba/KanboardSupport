@@ -35,7 +35,7 @@
     <span class="data-wrap">
         <li class="app-info-title"><?= e('%s Port', '<abbr title="' . t('Lightweight Directory Access Protocol') . '">LDAP</abbr>') ?></li>
         <?php if (LDAP_PORT != 389): ?>
-            <?= LDAP_PORT ?>
+            <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>"><?= LDAP_PORT ?></li>
         <?php else: ?>
             <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">389</li>
         <?php endif ?>
