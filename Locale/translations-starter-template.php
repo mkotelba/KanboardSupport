@@ -271,6 +271,15 @@ return array(
     'Username for Proxy & User Modes' => '',
     'Distinguished Name' => '',
     'User Filter' => '',
+    'Attribute for Username' => '',
+    'Attribute for Full Name' => '',
+    'Attribute for User Email' => '',
+    'Attribute for Groups' => '',
+    'Attribute for User Avatar Image' => '',
+    'User Language Sync' => '',
+    'Automatic User Creation' => '',
+    'Local user profiles must exist for matching users' => '',
+    'Local user profiles will be created' => '',
     //
     // Template/config_sections/php-info.php
     //
