@@ -103,8 +103,13 @@
         <?php endif ?>
     </span>
     <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_USER_BASE_DN): ?>
+        <li class="app-info-title"><?= t('Distinguished Name') ?></li>
+        <?php if (LDAP_USER_BASE_DN != ''): ?>
+            <li class="mail-info-value border-bottom-thick"><?= LDAP_USER_BASE_DN ?></li>
+        <?php else: ?>
+            <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                <?= t('Not Set') ?>
+            </li>
         <?php endif ?>
     </span>
     <span class="data-wrap">
