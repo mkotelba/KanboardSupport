@@ -25,7 +25,8 @@ return array(
     // Template/config/support.php
     //
     'Application Configuration' => 'Configuration de l\'application',
-    'This page shows all default and custom values from the configuration file stored in %s combined with application-specific settings detected from your server.' => 'Cette page affiche toutes les valeurs par défaut et personnalisées du fichier de configuration stocké dans %s, ainsi que les paramètres spécifiques à l\'application détectés sur votre serveur.',
+    'This page shows all default and custom values from the configuration file stored in %s combined with application-specific settings detected from your server. %s' => 'Cette page affiche toutes les valeurs par défaut et personnalisées du fichier de configuration stocké dans %s, ainsi que les paramètres spécifiques à l\'application détectés sur votre serveur. %s',
+    'Passwords are not included.' => 'Les mots de passe ne sont pas inclus.',
     'Data Privacy' => 'Confidentialité de Données',
     'This page shows sensitive data. Hide selective information before sharing.' => 'Cette page contient des données sensibles. Masquez certaines informations avant de les partager.',
     'Screenshot friendly' => 'Compatible avec les captures d\'écran',

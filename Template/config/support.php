@@ -5,7 +5,7 @@
         </h2>
     </div>
     <p class="">
-        <?= e('This page shows all default and custom values from the configuration file stored in %s combined with application-specific settings detected from your server.', '<code class="field-code">/config.php</code>') ?>
+        <?= e('This page shows all default and custom values from the configuration file stored in %s combined with application-specific settings detected from your server. %s', '<code class="field-code">/config.php</code>', '<i>' . t('Passwords are not included.') . '</i>') ?>
     </p>
     <!-- PRIVACY WARNING -->
     <section class="message error privacy-warning">
