@@ -43,9 +43,7 @@
     <span class="data-wrap">
         <li class="app-info-title"><?= e('Verify %s Security Cerificate', '<abbr title="' . t('Secure Sockets Layer') . '">SSL</abbr>') ?></li>
         <?php if (!LDAP_SSL_VERIFY): ?>
-            <li class="app-info-value border-bottom-thick">
-                <?= t('Disabled') ?>
-            </li>
+            <li class="app-info-value border-bottom-thick"><?= t('Disabled') ?></li>
         <?php else: ?>
             <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
                 <?= t('Enabled') ?>
@@ -55,9 +53,7 @@
     <span class="data-wrap">
         <li class="app-info-title"><?= e('Start with %s', '<abbr title="' . t('Transport Security Layer') . '">TLS</abbr>') ?></li>
         <?php if (LDAP_START_TLS): ?>
-            <li class="app-info-value border-bottom-thick">
-                <?= t('Enabled') ?>
-            </li>
+            <li class="app-info-value border-bottom-thick"><?= t('Enabled') ?></li>
         <?php else: ?>
             <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
                 <?= t('Disabled') ?>
@@ -67,9 +63,7 @@
     <span class="data-wrap">
         <li class="app-info-title"><?= t('Username Case') ?></li>
         <?php if (LDAP_USERNAME_CASE_SENSITIVE): ?>
-            <li class="app-info-value border-bottom-thick">
-                <?= t('Preserve Case') ?>
-            </li>
+            <li class="app-info-value border-bottom-thick"><?= t('Preserve Case') ?></li>
         <?php else: ?>
             <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
                 <?= t('Lowercase') ?>
@@ -79,17 +73,11 @@
     <span class="data-wrap">
         <li class="app-info-title"><?= t('Bind Type') ?></li>
         <?php if (LDAP_BIND_TYPE == 'user'): ?>
-            <li class="app-info-value border-bottom-thick">
-                <?= t('User') ?>
-            </li>
+            <li class="app-info-value border-bottom-thick"><?= t('User') ?></li>
         <?php elseif (LDAP_BIND_TYPE == 'proxy'): ?>
-            <li class="app-info-value border-bottom-thick">
-                <?= t('Proxy') ?>
-            </li>
+            <li class="app-info-value border-bottom-thick"><?= t('Proxy') ?></li>
         <?php elseif (LDAP_BIND_TYPE == 'anonymous'): ?>
-            <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
-                <?= t('Anonymous') ?>
-            </li>
+            <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>"><?= t('Anonymous') ?></li>
         <?php endif ?>
     </span>
     <span class="data-wrap">
