@@ -268,6 +268,9 @@ return array(
     'User' => '',
     'Proxy' => '',
     'Anonymous' => '',
+    'Username for Proxy & User Modes' => '',
+    'Distinguished Name' => '',
+    'User Filter' => '',
     //
     // Template/config_sections/php-info.php
     //
