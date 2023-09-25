@@ -113,8 +113,13 @@
         <?php endif ?>
     </span>
     <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_USER_FILTER): ?>
+        <li class="app-info-title"><?= t('User Filter') ?></li>
+        <?php if (LDAP_USER_FILTER != ''): ?>
+            <li class="mail-info-value border-bottom-thick"><?= LDAP_USER_FILTER ?></li>
+        <?php else: ?>
+            <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                <?= t('Not Set') ?>
+            </li>
         <?php endif ?>
     </span>
     <span class="data-wrap">
