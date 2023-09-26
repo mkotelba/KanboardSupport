@@ -135,8 +135,11 @@
         <?php endif ?>
     </span>
     <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_USER_ATTRIBUTE_GROUPS): ?>
+        <li class="app-info-title"><?= t('Attribute for Groups') ?></li>
+        <?php if (LDAP_USER_ATTRIBUTE_GROUPS != 'memberof'): ?>
+            <li class="mail-info-value border-bottom-thick"><?= LDAP_USER_ATTRIBUTE_GROUPS ?></li>
+        <?php else: ?>
+            <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">memberof</li>
         <?php endif ?>
     </span>
     <span class="data-wrap">
