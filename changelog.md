@@ -1,5 +1,52 @@
 # Changelog
 
+## v4.0
+
+_(most recent changes are listed on top):_
+- FIX: LDAP Translations - closes #19
+- FIX: Mention Excluded Passwords for Clarity
+- FIX: Abbreviations Are Not Consistent - #26
+- FIX: Translation - #19
+- FIX: Translation - #19
+- FIX: Update Plugin Description - include new features
+- NEW: Different Colours for Tiles - match php colour for required extensions - light grey for optional
+- FIX: Optional Tiles Hover
+- FIX: Keep Required Extensions Together in Order
+- FIX: Database Translation String - was unnecessarily too long for the tile
+- NEW: Make PHP Extension Tiles Neater - styling consistency - use PHP logo - restyle extension names
+- FIX: Optional Tile Hover for Installed Extension
+- FIX: Style Optional Tile Hover for Installed Extension
+- NEW: Show Required PHP Module on Hover for `zip` - detects as optional, mentions config files on hover - closes #25
+- NEW: Disable Download if `zip` Extension Not Installed - #25
+- NEW: Download Config Files Locally - download `.zip` archive file containing both config files named according to the current Kanboard version and date - requires PHP `zip` extension to be installed - #25
+- FIX: Migrate Code - `app-info.php` Translations - #24
+- FIX: Missing Translations
+- FIX: Add Missing Variables - closes #24
+- FIX: Migrate Code - `php-info.php` - #24
+- FIX: Migrate Code - `server-config.php` - #24
+- FIX: Migrate Code - `email-connection.php` - #24
+- FIX: Migrate Code - `db-connection.php` - #24
+- FIX: Migrate Code - `app-info.php` - #24
+- FIX: Migrate Code - `ldap-section.php` - #24
+- FIX: Migrate Code - `app-sections` - #24
+- FIX: Migrate Code - `user-config.php` - #24
+- NEW: Enhanced Privacy for Regular Users - mask mail server - #23
+- NEW: Enhanced Privacy for Regular Users - mask directory paths - #23
+- NEW: Enhanced Privacy for Regular Users - mask IP addresses - #23
+- NEW: Show LDAP Settings Only When Enabled - hides all 26 settings to save screen space unless LDAP is enabled - #19
+- FIX: Abbreviation Translation for SMTP
+- NEW: Better User Icon
+- NEW: Show Required PHP Modules for Mailmagik Plugin - detects as optional, mentions Mailmagik on hover - closes #22
+- FIX: Incorrect Tooltips
+- FIX: CSS Duplicate Selectors
+- NEW: Add LDAP Authentication Setting - #19
+- NEW: Add Abbreviation for cURL
+- FIX: Better SSL Server Port Wording
+- FIX: Content Margins & Spacing
+- FIX: Abbreviation Translations
+- FIX: Secondary Text Colour Consistency
+
+
 ## v3.0
 
 _(most recent changes are listed on top):_
