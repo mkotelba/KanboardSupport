@@ -269,6 +269,7 @@ return array(
     'Proxy' => '',
     'Anonymous' => '',
     'Username for Proxy & User Modes' => '',
+    '%s Users'
     'Distinguished Name' => '',
     'User Filter' => '',
     'Attribute for Username' => '',
@@ -280,6 +281,12 @@ return array(
     'Automatic User Creation' => '',
     'Local user profiles must exist for matching users' => '',
     'Local user profiles will be created' => '',
+    'Default User Role' => '',
+    'Manager' => '',
+    'User' => '',
+    '%s Groups' => '',
+    'Administrator Distinguished Name' => '',
+    'Manager Distinguished Name' => '',
     //
     // Template/config_sections/php-info.php
     //
