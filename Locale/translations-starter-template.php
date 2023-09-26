@@ -269,7 +269,7 @@ return array(
     'Proxy' => '',
     'Anonymous' => '',
     'Username for Proxy & User Modes' => '',
-    '%s Users'
+    '%s Users' => '',
     'Distinguished Name' => '',
     'User Filter' => '',
     'Attribute for Username' => '',
