@@ -153,8 +153,13 @@
         <?php endif ?>
     </span>
     <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_USER_ATTRIBUTE_LANGUAGE): ?>
+        <li class="app-info-title"><?= t('User Language Sync') ?></li>
+        <?php if (LDAP_USER_ATTRIBUTE_LANGUAGE != ''): ?>
+            <li class="app-info-value border-bottom-thick"><?= LDAP_USER_ATTRIBUTE_LANGUAGE ?></li>
+        <?php else: ?>
+            <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                <?= t('Disabled') ?>
+            </li>
         <?php endif ?>
     </span>
     <span class="data-wrap">
