@@ -127,8 +127,11 @@
         <?php endif ?>
     </span>
     <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_USER_ATTRIBUTE_EMAIL): ?>
+        <li class="app-info-title"><?= t('Attribute for User Email') ?></li>
+        <?php if (LDAP_USER_ATTRIBUTE_EMAIL != 'mail'): ?>
+            <li class="mail-info-value border-bottom-thick"><?= LDAP_USER_ATTRIBUTE_EMAIL ?></li>
+        <?php else: ?>
+            <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">mail</li>
         <?php endif ?>
     </span>
     <span class="data-wrap">
