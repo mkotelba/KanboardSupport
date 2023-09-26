@@ -229,5 +229,15 @@
                 </li>
             <?php endif ?>
         </span>
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('Group Filter') ?></li>
+            <?php if (LDAP_GROUP_FILTER != ''): ?>
+                <li class="app-info-value border-bottom-thick"><?= LDAP_GROUP_FILTER ?></li>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                    <?= t('Not Set') ?>
+                </li>
+            <?php endif ?>
+        </span>
     </fieldset>
 <?php endif ?>
