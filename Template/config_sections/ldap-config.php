@@ -249,5 +249,15 @@
                 </li>
             <?php endif ?>
         </span>
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('User Attribute in Group Filter') ?></li>
+            <?php if (LDAP_GROUP_USER_ATTRIBUTE != 'username'): ?>
+                <li class="app-info-value border-bottom-thick">
+                    <?= t('Manager') ?>
+                </li>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">username</li>
+            <?php endif ?>
+        </span>
     </fieldset>
 <?php endif ?>
