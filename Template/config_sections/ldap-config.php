@@ -119,8 +119,11 @@
         <?php endif ?>
     </span>
     <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_USER_ATTRIBUTE_FULLNAME): ?>
+        <li class="app-info-title"><?= t('Attribute for Full Name') ?></li>
+        <?php if (LDAP_USER_ATTRIBUTE_FULLNAME != 'cn'): ?>
+            <li class="mail-info-value border-bottom-thick"><?= LDAP_USER_ATTRIBUTE_FULLNAME ?></li>
+        <?php else: ?>
+            <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">cn</li>
         <?php endif ?>
     </span>
     <span class="data-wrap">
