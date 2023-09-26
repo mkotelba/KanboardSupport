@@ -259,5 +259,13 @@
                 <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">username</li>
             <?php endif ?>
         </span>
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('Group Name Attribute') ?></li>
+            <?php if (LDAP_GROUP_ATTRIBUTE_NAME != 'cn'): ?>
+                <li class="app-info-value border-bottom-thick"><?= LDAP_GROUP_ATTRIBUTE_NAME ?></li>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">cn</li>
+            <?php endif ?>
+        </span>
     </fieldset>
 <?php endif ?>
