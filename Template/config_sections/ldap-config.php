@@ -267,5 +267,17 @@
                 <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">cn</li>
             <?php endif ?>
         </span>
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('Group Sync') ?></li>
+            <?php if (LDAP_GROUP_SYNC): ?>
+                <li class="app-info-value border-bottom-thick">
+                    <?= t('Enabled') ?>
+                </li>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                    <?= t('Disabled') ?>
+                </li>
+            <?php endif ?>
+        </span>
     </fieldset>
 <?php endif ?>
