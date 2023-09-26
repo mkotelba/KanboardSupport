@@ -90,136 +90,101 @@
             <li class="mail-info-value border-bottom-thick privacy"><?= LDAP_USERNAME ?></li>
         <?php endif ?>
     </span>
-    <span class="data-wrap">
-        <li class="app-info-title"><?= t('Distinguished Name') ?></li>
-        <?php if (LDAP_USER_BASE_DN != ''): ?>
-            <li class="mail-info-value border-bottom-thick"><?= LDAP_USER_BASE_DN ?></li>
-        <?php else: ?>
-            <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
-                <?= t('Not Set') ?>
-            </li>
-        <?php endif ?>
-    </span>
-    <span class="data-wrap">
-        <li class="app-info-title"><?= t('User Filter') ?></li>
-        <?php if (LDAP_USER_FILTER != ''): ?>
-            <li class="mail-info-value border-bottom-thick"><?= LDAP_USER_FILTER ?></li>
-        <?php else: ?>
-            <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
-                <?= t('Not Set') ?>
-            </li>
-        <?php endif ?>
-    </span>
-    <span class="data-wrap">
-        <li class="app-info-title"><?= t('Attribute for Username') ?></li>
-        <?php if (LDAP_USER_ATTRIBUTE_USERNAME != 'uid'): ?>
-            <li class="mail-info-value border-bottom-thick"><?= LDAP_USER_ATTRIBUTE_USERNAME ?></li>
-        <?php else: ?>
-            <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">uid</li>
-        <?php endif ?>
-    </span>
-    <span class="data-wrap">
-        <li class="app-info-title"><?= t('Attribute for Full Name') ?></li>
-        <?php if (LDAP_USER_ATTRIBUTE_FULLNAME != 'cn'): ?>
-            <li class="mail-info-value border-bottom-thick"><?= LDAP_USER_ATTRIBUTE_FULLNAME ?></li>
-        <?php else: ?>
-            <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">cn</li>
-        <?php endif ?>
-    </span>
-    <span class="data-wrap">
-        <li class="app-info-title"><?= t('Attribute for User Email') ?></li>
-        <?php if (LDAP_USER_ATTRIBUTE_EMAIL != 'mail'): ?>
-            <li class="mail-info-value border-bottom-thick"><?= LDAP_USER_ATTRIBUTE_EMAIL ?></li>
-        <?php else: ?>
-            <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">mail</li>
-        <?php endif ?>
-    </span>
-    <span class="data-wrap">
-        <li class="app-info-title"><?= t('Attribute for Groups') ?></li>
-        <?php if (LDAP_USER_ATTRIBUTE_GROUPS != 'memberof'): ?>
-            <li class="mail-info-value border-bottom-thick"><?= LDAP_USER_ATTRIBUTE_GROUPS ?></li>
-        <?php else: ?>
-            <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">memberof</li>
-        <?php endif ?>
-    </span>
-    <span class="data-wrap">
-        <li class="app-info-title"><?= t('Attribute for User Avatar Image') ?></li>
-        <?php if (LDAP_USER_ATTRIBUTE_PHOTO == 'thumbnailPhoto' || LDAP_USER_ATTRIBUTE_PHOTO == 'jpegPhoto'): ?>
-            <li class="app-info-value border-bottom-thick"><?= LDAP_USER_ATTRIBUTE_PHOTO ?></li>
-        <?php else: ?>
-            <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
-                <?= t('Not Set') ?>
-            </li>
-        <?php endif ?>
-    </span>
-    <span class="data-wrap">
-        <li class="app-info-title"><?= t('User Language Sync') ?></li>
-        <?php if (LDAP_USER_ATTRIBUTE_LANGUAGE != ''): ?>
-            <li class="app-info-value border-bottom-thick"><?= LDAP_USER_ATTRIBUTE_LANGUAGE ?></li>
-        <?php else: ?>
-            <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
-                <?= t('Disabled') ?>
-            </li>
-        <?php endif ?>
-    </span>
-    <span class="data-wrap">
-        <li class="app-info-title"><?= t('Automatic User Creation') ?></li>
-        <?php if (LDAP_USER_CREATION == false): ?>
-            <li class="app-info-value border-bottom-thick"><?= t('Disabled') ?></li>
-            <span class="p-note ldap-note"><i><?= t('Local user profiles must exist for matching users') ?></i></span>
-        <?php else: ?>
-            <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>"><?= t('Enabled') ?></li>
-            <span class="p-note ldap-note"><i><?= t('Local user profiles will be created') ?></i></span>
-        <?php endif ?>
-    </span>
-    <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_USER_DEFAULT_ROLE_MANAGER): ?>
-        <?php endif ?>
-    </span>
-    <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_GROUP_ADMIN_DN): ?>
-        <?php endif ?>
-    </span>
-    <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_GROUP_MANAGER_DN): ?>
-        <?php endif ?>
-    </span>
-    <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_GROUP_PROVIDER): ?>
-        <?php endif ?>
-    </span>
-    <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_GROUP_BASE_DN): ?>
-        <?php endif ?>
-    </span>
-    <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_GROUP_FILTER): ?>
-        <?php endif ?>
-    </span>
-    <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_GROUP_USER_FILTER): ?>
-        <?php endif ?>
-    </span>
-    <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_GROUP_USER_ATTRIBUTE): ?>
-        <?php endif ?>
-    </span>
-    <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_GROUP_ATTRIBUTE_NAME): ?>
-        <?php endif ?>
-    </span>
-    <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_GROUP_SYNC): ?>
-        <?php endif ?>
-    </span>
+    <fieldset class="ldap-users">
+        <legend><?= e('%s Users', '<abbr title="' . t('Lightweight Directory Access Protocol') . '">LDAP</abbr>') ?></legend>
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('Distinguished Name') ?></li>
+            <?php if (LDAP_USER_BASE_DN != ''): ?>
+                <li class="mail-info-value border-bottom-thick"><?= LDAP_USER_BASE_DN ?></li>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                    <?= t('Not Set') ?>
+                </li>
+            <?php endif ?>
+        </span>
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('User Filter') ?></li>
+            <?php if (LDAP_USER_FILTER != ''): ?>
+                <li class="mail-info-value border-bottom-thick"><?= LDAP_USER_FILTER ?></li>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                    <?= t('Not Set') ?>
+                </li>
+            <?php endif ?>
+        </span>
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('Attribute for Username') ?></li>
+            <?php if (LDAP_USER_ATTRIBUTE_USERNAME != 'uid'): ?>
+                <li class="mail-info-value border-bottom-thick"><?= LDAP_USER_ATTRIBUTE_USERNAME ?></li>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">uid</li>
+            <?php endif ?>
+        </span>
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('Attribute for Full Name') ?></li>
+            <?php if (LDAP_USER_ATTRIBUTE_FULLNAME != 'cn'): ?>
+                <li class="mail-info-value border-bottom-thick"><?= LDAP_USER_ATTRIBUTE_FULLNAME ?></li>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">cn</li>
+            <?php endif ?>
+        </span>
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('Attribute for User Email') ?></li>
+            <?php if (LDAP_USER_ATTRIBUTE_EMAIL != 'mail'): ?>
+                <li class="mail-info-value border-bottom-thick"><?= LDAP_USER_ATTRIBUTE_EMAIL ?></li>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">mail</li>
+            <?php endif ?>
+        </span>
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('Attribute for Groups') ?></li>
+            <?php if (LDAP_USER_ATTRIBUTE_GROUPS != 'memberof'): ?>
+                <li class="mail-info-value border-bottom-thick"><?= LDAP_USER_ATTRIBUTE_GROUPS ?></li>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">memberof</li>
+            <?php endif ?>
+        </span>
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('Attribute for User Avatar Image') ?></li>
+            <?php if (LDAP_USER_ATTRIBUTE_PHOTO == 'thumbnailPhoto' || LDAP_USER_ATTRIBUTE_PHOTO == 'jpegPhoto'): ?>
+                <li class="app-info-value border-bottom-thick"><?= LDAP_USER_ATTRIBUTE_PHOTO ?></li>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                    <?= t('Not Set') ?>
+                </li>
+            <?php endif ?>
+        </span>
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('User Language Sync') ?></li>
+            <?php if (LDAP_USER_ATTRIBUTE_LANGUAGE != ''): ?>
+                <li class="app-info-value border-bottom-thick"><?= LDAP_USER_ATTRIBUTE_LANGUAGE ?></li>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                    <?= t('Disabled') ?>
+                </li>
+            <?php endif ?>
+        </span>
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('Automatic User Creation') ?></li>
+            <?php if (LDAP_USER_CREATION == false): ?>
+                <li class="app-info-value border-bottom-thick"><?= t('Disabled') ?></li>
+                <span class="p-note ldap-note"><i><?= t('Local user profiles must exist for matching users') ?></i></span>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>"><?= t('Enabled') ?></li>
+                <span class="p-note ldap-note"><i><?= t('Local user profiles will be created') ?></i></span>
+            <?php endif ?>
+        </span>
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('Default User Role') ?></li>
+            <?php if (LDAP_USER_DEFAULT_ROLE_MANAGER == true): ?>
+                <li class="app-info-value border-bottom-thick">
+                    <?= t('Manager') ?>
+                </li>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                    <?= t('User') ?>
+                </li>
+            <?php endif ?>
+        </span>
+    </fieldset>
 <?php endif ?>
