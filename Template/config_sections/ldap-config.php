@@ -50,7 +50,7 @@
             </li>
         <?php endif ?>
     </span>
-    <span class="data-wrap">
+    <span class="data-wrap mt-0">
         <li class="app-info-title"><?= e('Start with %s', '<abbr title="' . t('Transport Security Layer') . '">TLS</abbr>') ?></li>
         <?php if (LDAP_START_TLS): ?>
             <li class="app-info-value border-bottom-thick"><?= t('Enabled') ?></li>
@@ -60,7 +60,7 @@
             </li>
         <?php endif ?>
     </span>
-    <span class="data-wrap">
+    <span class="data-wrap mt-0">
         <li class="app-info-title"><?= t('Username Case') ?></li>
         <?php if (LDAP_USERNAME_CASE_SENSITIVE): ?>
             <li class="app-info-value border-bottom-thick"><?= t('Preserve Case') ?></li>
@@ -70,7 +70,7 @@
             </li>
         <?php endif ?>
     </span>
-    <span class="data-wrap">
+    <span class="data-wrap mt-0">
         <li class="app-info-title"><?= t('Bind Type') ?></li>
         <?php if (LDAP_BIND_TYPE == 'user'): ?>
             <li class="app-info-value border-bottom-thick"><?= t('User') ?></li>
@@ -80,7 +80,7 @@
             <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>"><?= t('Anonymous') ?></li>
         <?php endif ?>
     </span>
-    <span class="data-wrap">
+    <span class="data-wrap mt-0">
         <li class="app-info-title"><?= t('Username for Proxy & User Modes') ?></li>
         <?php if (LDAP_USERNAME == null): ?>
             <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
