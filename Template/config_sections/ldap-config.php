@@ -163,8 +163,13 @@
         <?php endif ?>
     </span>
     <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_USER_CREATION): ?>
+        <li class="app-info-title"><?= t('Automatic User Creation') ?></li>
+        <?php if (LDAP_USER_CREATION == false): ?>
+            <li class="app-info-value border-bottom-thick"><?= t('Disabled') ?></li>
+            <span class="p-note ldap-note"><i><?= t('Local user profiles must exist for matching users') ?></i></span>
+        <?php else: ?>
+            <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>"><?= t('Enabled') ?></li>
+            <span class="p-note ldap-note"><i><?= t('Local user profiles will be created') ?></i></span>
         <?php endif ?>
     </span>
     <span class="data-wrap">

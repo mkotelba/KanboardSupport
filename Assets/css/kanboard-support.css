@@ -476,6 +476,11 @@ table.support-table.user-table tr td:first-child::before {
     color: var(--pp-grey-alt);
 }
 
+.p-note.ldap-note {
+    right: 0;
+    bottom: -20px;
+}
+
 .p-note code {
     font-size: .8rem !important;
 }
