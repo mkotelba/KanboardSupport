@@ -98,7 +98,7 @@ Works smoothly with [PluginManager](https://github.com/aljawaid/PluginManager) a
 
 **Application Information Section**
 
-![Application Information](../master/screenshot-app-v3.png "Application Information")
+![Application Information](../master/screenshot-app-v4.png "Application Information")
 
 ![Application Information](../master/screenshot-app.png "Application Information")
 
