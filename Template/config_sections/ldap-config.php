@@ -187,4 +187,7 @@
             <?php endif ?>
         </span>
     </fieldset>
+    <fieldset class="ldap-groups">
+        <legend><?= e('%s Groups', '<abbr title="' . t('Lightweight Directory Access Protocol') . '">LDAP</abbr>') ?></legend>
+    </fieldset>
 <?php endif ?>
