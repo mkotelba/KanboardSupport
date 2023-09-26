@@ -143,8 +143,13 @@
         <?php endif ?>
     </span>
     <span class="data-wrap">
-        <li class="app-info-title"><?= t('') ?></li>
-        <?php if (LDAP_USER_ATTRIBUTE_PHOTO): ?>
+        <li class="app-info-title"><?= t('Attribute for User Avatar Image') ?></li>
+        <?php if (LDAP_USER_ATTRIBUTE_PHOTO == 'thumbnailPhoto' || LDAP_USER_ATTRIBUTE_PHOTO == 'jpegPhoto'): ?>
+            <li class="app-info-value border-bottom-thick"><?= LDAP_USER_ATTRIBUTE_PHOTO ?></li>
+        <?php else: ?>
+            <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                <?= t('Not Set') ?>
+            </li>
         <?php endif ?>
     </span>
     <span class="data-wrap">
