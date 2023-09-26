@@ -283,10 +283,16 @@ return array(
     'Local user profiles will be created' => '',
     'Default User Role' => '',
     'Manager' => '',
-    'User' => '',
     '%s Groups' => '',
     'Administrator Distinguished Name' => '',
     'Manager Distinguished Name' => '',
+    'Group Provider' => '',
+    'Base Distinguished Name' => '',
+    'Group Filter' => '',
+    'Group User Filter' => '',
+    'User Attribute in Group Filter' => '',
+    'Group Name Attribute' => '',
+    'Group Sync' => '',
     //
     // Template/config_sections/php-info.php
     //
