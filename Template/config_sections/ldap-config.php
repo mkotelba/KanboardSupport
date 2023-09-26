@@ -189,5 +189,15 @@
     </fieldset>
     <fieldset class="ldap-groups">
         <legend><?= e('%s Groups', '<abbr title="' . t('Lightweight Directory Access Protocol') . '">LDAP</abbr>') ?></legend>
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('Administrator Distinguished Name') ?></li>
+            <?php if (LDAP_GROUP_ADMIN_DN != ''): ?>
+                <li class="app-info-value border-bottom-thick"><?= LDAP_GROUP_ADMIN_DN ?></li>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick not-set" title="<?= t('This is the default setting') ?>">
+                    <?= t('Not Set') ?>
+                </li>
+            <?php endif ?>
+        </span>
     </fieldset>
 <?php endif ?>
