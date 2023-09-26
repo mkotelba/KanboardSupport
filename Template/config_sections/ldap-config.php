@@ -209,5 +209,15 @@
                 </li>
             <?php endif ?>
         </span>
+        <span class="data-wrap">
+            <li class="app-info-title"><?= t('Group Provider') ?></li>
+            <?php if (LDAP_GROUP_PROVIDER): ?>
+                <li class="app-info-value border-bottom-thick"><?= t('Enabled') ?></li>
+            <?php else: ?>
+                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default setting') ?>">
+                    <?= t('Disabled') ?>
+                </li>
+            <?php endif ?>
+        </span>
     </fieldset>
 <?php endif ?>
