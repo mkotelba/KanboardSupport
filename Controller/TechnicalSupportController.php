@@ -70,6 +70,20 @@ class TechnicalSupportController extends \Kanboard\Controller\ConfigController
     }
 
     /**
+     * Display Debug Log (Modal)
+     *
+     * @see     debug.log
+     * @return  modal
+     * @author  aljawaid
+     */
+    public function showDebugLogModal()
+    {
+        $this->response->html($this->template->render('kanboardSupport:modals/debug-log', array(
+            'title' => t('Debug Log'),
+        )));
+    }
+
+    /**
      * Compress and Download Config Files
      *
      * Archive includes 'config.php' and 'config.default.php' named as 'KB_Config_Backup-(date/time).zip'
