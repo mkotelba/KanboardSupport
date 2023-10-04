@@ -33,6 +33,12 @@
                         'plugin' => 'KanboardSupport'), false, '', false) ?>" class="btn js-modal-confirm" title="<?= t('View the last few entries of the log file') ?>">
                         <?= $this->helper->supportHelper->embedSVGIcon('raw-icon') ?> <?= t('View Log') ?>
                     </button>
+                    <?php if ($this->user->isAdmin()): ?>
+                        <button href="<?= $this->url->href('TechnicalSupportController', 'showCurrentRawConfigModal', array(
+                            'plugin' => 'KanboardSupport'), false, '', false) ?>" class="btn config-btn config-btn-green js-modal-confirm" title="<?= t('Download the log file') ?>">
+                            <?= $this->helper->supportHelper->embedSVGIcon('raw-icon') ?> <?= t('Download Log') ?>
+                        </button>
+                    <?php endif ?>
                 </div>
             <?php else: ?>
                 <li class="app-info-value border-bottom-thick" title="<?= t('This is the default and recommended setting') ?>">
