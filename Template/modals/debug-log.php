@@ -43,5 +43,6 @@
         </h2>
     </div>
     <div class="modal-contents panel">
+        <pre class=""><?= file_get_contents(LOG_FILE, false, null, 7); ?></pre>
     </div>
 </div>
