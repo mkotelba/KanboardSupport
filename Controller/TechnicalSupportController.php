@@ -122,4 +122,44 @@ class TechnicalSupportController extends \Kanboard\Controller\ConfigController
         readfile($tmp_file);
         unlink($tmp_file);
     }
+
+    /**
+     * Compress and Download Debug Log File
+     *
+     * Archive includes 'debug.log' named as 'KB_v(version)_Debug_Backup-(date/time).zip'
+     * @see     app-info.php
+     * @return  zip archive
+     * @author  Phani https://stackoverflow.com/a/20216192
+     * @author  aljawaid
+     */
+    public function downloadDebugFile()
+    {
+        $files = array(LOG_FILE);
+
+        // Create new zip object
+        $zip = new ZipArchive();
+
+        // Create a temp file and open it
+        $tmp_file = tempnam('.', '');
+        $zip->open($tmp_file, ZipArchive::CREATE);
+
+        // Loop through each file
+        foreach ($files as $file) {
+            // Download file
+            $download_file = file_get_contents($file);
+
+            // Add it to the zip
+            $zip->addFromString(basename($file), $download_file);
+        }
+
+        // Close zip
+        $zip->close();
+
+        // Send the file to the browser as a download
+        $filename = 'KB_v' . APP_VERSION . '_Debug_Backup-' . date('d-m-Y\THi') . '.zip';
+        header('Content-disposition: attachment; filename=' . $filename . '');
+        header('Content-type: application/zip');
+        readfile($tmp_file);
+        unlink($tmp_file);
+    }
 }
