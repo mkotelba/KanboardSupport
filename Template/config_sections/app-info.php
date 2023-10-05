@@ -31,7 +31,7 @@
                 <div class="debug-btns">
                     <button href="<?= $this->url->href('TechnicalSupportController', 'showDebugLogModal', array(
                         'plugin' => 'KanboardSupport'), false, '', false) ?>" class="btn js-modal-confirm" title="<?= t('View the last few entries of the log file') ?>">
-                        <?= $this->helper->supportHelper->embedSVGIcon('raw-icon') ?> <?= t('View Log') ?>
+                        <?= $this->helper->supportHelper->embedSVGIcon('log-icon-red') ?> <?= t('View Log') ?>
                     </button>
                     <?php if ($this->user->isAdmin()): ?>
                         <button href="<?= $this->url->href('TechnicalSupportController', 'showCurrentRawConfigModal', array(

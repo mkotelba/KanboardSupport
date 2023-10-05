@@ -38,7 +38,7 @@
     <div class="modal-page-header">
         <h2 class="relative">
             <span class="modal-title">
-                <?= $this->helper->supportHelper->embedSVGIcon('raw-icon') ?> <?= $title ?>
+                <?= $this->helper->supportHelper->embedSVGIcon('log-icon-red') ?> <?= $title ?>
             </span>
         </h2>
     </div>
