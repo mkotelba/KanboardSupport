@@ -86,7 +86,7 @@ class TechnicalSupportController extends \Kanboard\Controller\ConfigController
     /**
      * Compress and Download Config Files
      *
-     * Archive includes 'config.php' and 'config.default.php' named as 'KB_Config_Backup-(date/time).zip'
+     * Archive includes 'config.php' and 'config.default.php' named as 'KB_v(version)_Config_Backup-(date/time).zip'
      * @see     app-info.php
      * @return  zip archive
      * @author  Phani https://stackoverflow.com/a/20216192
@@ -96,7 +96,7 @@ class TechnicalSupportController extends \Kanboard\Controller\ConfigController
     {
         $files = array(ROOT_DIR . DIRECTORY_SEPARATOR . 'config.php', ROOT_DIR . DIRECTORY_SEPARATOR . 'config.default.php');
 
-        // Create new zip opbject
+        // Create new zip object
         $zip = new ZipArchive();
 
         // Create a temp file and open it
