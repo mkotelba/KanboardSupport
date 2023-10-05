@@ -36,7 +36,7 @@
                     <?php if ($this->user->isAdmin()): ?>
                         <button href="<?= $this->url->href('TechnicalSupportController', 'showCurrentRawConfigModal', array(
                             'plugin' => 'KanboardSupport'), false, '', false) ?>" class="btn config-btn config-btn-green js-modal-confirm" title="<?= t('Download the log file') ?>">
-                            <?= $this->helper->supportHelper->embedSVGIcon('raw-icon') ?> <?= t('Download Log') ?>
+                            <?= $this->helper->supportHelper->embedSVGIcon('log-icon-green') ?> <?= t('Download Log') ?>
                         </button>
                     <?php endif ?>
                 </div>
