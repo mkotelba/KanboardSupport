@@ -21,32 +21,6 @@
                 </li>
             </span>
         <?php endif ?>
-        <span class="data-wrap">
-            <li class="app-info-title"><?= t('Debug Mode') ?></li>
-            <?php if (DEBUG == 'true'): ?>
-                <li class="app-info-value border-bottom-thick" title="<?= t('This setting will affect performance and should only be enabled for troubleshooting purposes') ?>">
-                    <?= t('Enabled') ?>
-                </li>
-                <span class="fail-x" title="<?= t('This setting will affect performance and should only be enabled for troubleshooting purposes') ?>">&#10008;</span>
-                <div class="debug-btns">
-                    <button href="<?= $this->url->href('TechnicalSupportController', 'showDebugLogModal', array(
-                        'plugin' => 'KanboardSupport'), false, '', false) ?>" class="btn js-modal-confirm" title="<?= t('View the last few entries of the log file') ?>">
-                        <?= $this->helper->supportHelper->embedSVGIcon('log-icon-red') ?> <?= t('View Log') ?>
-                    </button>
-                    <?php if ($this->user->isAdmin()): ?>
-                        <button href="<?= $this->url->href('TechnicalSupportController', 'showCurrentRawConfigModal', array(
-                            'plugin' => 'KanboardSupport'), false, '', false) ?>" class="btn config-btn config-btn-green js-modal-confirm" title="<?= t('Download the log file') ?>">
-                            <?= $this->helper->supportHelper->embedSVGIcon('log-icon-green') ?> <?= t('Download Log') ?>
-                        </button>
-                    <?php endif ?>
-                </div>
-            <?php else: ?>
-                <li class="app-info-value border-bottom-thick" title="<?= t('This is the default and recommended setting') ?>">
-                    <?= t('Not Enabled') ?>
-                </li>
-                <span class="pass-tick" title="<?= t('This is the default and recommended setting') ?>">&#10004;</span>
-            <?php endif ?>
-        </span>
         <br>
         <?php if ($this->user->isAdmin()): ?>
             <p class="config-notice">
