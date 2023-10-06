@@ -275,10 +275,11 @@ class SupportHelper extends Base
      * Slightly modified version of http://www.geekality.net/2011/05/28/php-tail-tackling-large-files/
      * @author      Torleif Berger, Lorenzo Stanco
      * @link        http://stackoverflow.com/a/15025877/995958
+     * @link        https://gist.github.com/lorenzos/1711e81a9162320fde20
      * @license     http://creativecommons.org/licenses/by/3.0/
      */
-    public function displayDebugFile($filepath = LOG_FILE, $lines = 10, $adaptive = true) {
-
+    public function displayDebugFile($filepath = LOG_FILE, $lines = 50, $adaptive = true)
+    {
         // Open file
         $f = @fopen($filepath, "rb");
         if ($f === false) {
@@ -308,7 +309,6 @@ class SupportHelper extends Base
 
         // While we would like more
         while (ftell($f) > 0 && $lines >= 0) {
-
             // Figure out how far back we should jump
             $seek = min(ftell($f), $buffer);
 
@@ -329,10 +329,8 @@ class SupportHelper extends Base
         // While we have too many lines
         // (Because of buffer size we might have read too many)
         while ($lines++ < 0) {
-
             // Find first newline and remove all text before that
             $output = substr($output, strpos($output, "\n") + 1);
-
         }
 
         // Close file and return
