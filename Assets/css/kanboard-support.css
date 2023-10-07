@@ -826,6 +826,14 @@ th.support-table-title .user-icon {
     pointer-events: none;
 }
 
+.debug-wrapper {
+    display: block;
+}
+
+.debug-btns, .debug-btns form {
+    display: inline;
+}
+
 p.debug-entries-text {
     margin-block: 20px 15px;
 }

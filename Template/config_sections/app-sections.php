@@ -280,8 +280,7 @@
                 <?= SESSION_DURATION ?> <small><i><?= t('Until browser is closed') ?></i></small>
             </li>
         </span>
-        <br>
-        <span class="data-wrap mt-0">
+        <span class="data-wrap mt-0 debug-wrapper">
             <li class="app-info-title"><?= t('Debug Mode') ?></li>
             <?php if (DEBUG == 'true'): ?>
                 <li class="app-info-value border-bottom-thick" title="<?= t('This setting will affect performance and should only be enabled for troubleshooting purposes') ?>">
@@ -290,7 +289,7 @@
                 <span class="fail-x" title="<?= t('This setting will affect performance and should only be enabled for troubleshooting purposes') ?>">&#10008;</span>
                 <div class="debug-btns">
                     <button href="<?= $this->url->href('TechnicalSupportController', 'showDebugLogModal', array(
-                        'plugin' => 'KanboardSupport'), false, '', false) ?>" class="btn js-modal-confirm" title="<?= t('View the last few entries of the log file') ?>">
+                        'plugin' => 'KanboardSupport'), false, '', false) ?>" class="btn js-modal-confirm config-download-btn" title="<?= t('View the last few entries of the log file') ?>">
                         <?= $this->helper->supportHelper->embedSVGIcon('log-icon-red') ?> <?= t('View Log') ?>
                     </button>
                     <?php if ($this->user->isAdmin()): ?>
