@@ -299,6 +299,7 @@
                                 <button type="submit" class="btn config-download-btn" title="<?= t('Download the log file') ?>">
                                     <?= $this->helper->supportHelper->embedSVGIcon('zip-icon') ?> <?= t('Download Log') ?>
                                 </button>
+                                <?= $this->helper->supportHelper->getLogFileSize() ?>
                             </form>
                         <?php else: ?>
                             <button type="submit" class="btn config-download-btn" title="<?= t('PHP \'zip\' Extension Not Detected. Check the \'PHP Information\' section of this page.') ?>" disabled>

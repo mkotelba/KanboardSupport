@@ -338,4 +338,22 @@ class SupportHelper extends Base
 
         return trim($output);
     }
+
+    /**
+     * Get the Debug Log File Size in MB
+     *
+     * @see         app-sections.php
+     * @return      $filesize       string
+     * @author      aljawaid
+     */
+    public function getLogFileSize()
+    {
+        $debug_log_file = filesize(LOG_FILE);
+        $filesizeMB = ($debug_log_file / 1024 / 1024);
+        $filesize = number_format($filesizeMB, 1);
+
+        return $filesize . '&nbsp;MB';
+
+        clearstatcache();
+    }
 }
