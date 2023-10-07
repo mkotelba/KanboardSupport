@@ -825,3 +825,7 @@ th.support-table-title .user-icon {
     margin-right: 5px;
     pointer-events: none;
 }
+
+p.debug-entries-text {
+    margin-block: 20px 15px;
+}

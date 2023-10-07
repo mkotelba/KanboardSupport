@@ -42,7 +42,7 @@
             </span>
         </h2>
     </div>
-    <p class=""><?= t('Displaying the last 50 entries from the log file.') ?></p>
+    <p class="debug-entries-text"><?= t('Displaying the last 50 entries from the log file.') ?></p>
     <div class="modal-contents panel">
         <pre class=""><?= $this->helper->supportHelper->displayDebugFile() ?></pre>
     </div>
