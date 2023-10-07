@@ -42,7 +42,8 @@
             </span>
         </h2>
     </div>
+    <p class=""><?= t('Displaying the last 50 entries from the log file.') ?></p>
     <div class="modal-contents panel">
-        <pre class=""><?= file_get_contents(LOG_FILE, false, null, 7); ?></pre>
+        <pre class=""><?= $this->helper->supportHelper->displayDebugFile() ?></pre>
     </div>
 </div>
