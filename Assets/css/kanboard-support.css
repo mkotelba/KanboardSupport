@@ -715,6 +715,7 @@ form.add-webhook-form .form-actions button {
 }
 
 .config-notice {
+    display: block;
     margin: -7px 10px 15px 0;
     line-height: 1.5;
     color: var(--pp-grey-alt);
