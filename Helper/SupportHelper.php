@@ -350,7 +350,7 @@ class SupportHelper extends Base
     {
         $debug_log_file = filesize(LOG_FILE);
         $filesizeMB = ($debug_log_file / 1024 / 1024);
-        $filesize = number_format($filesizeMB, 1);
+        $filesize = number_format($filesizeMB, 2);
 
         return $filesize . '&nbsp;MB';
 
