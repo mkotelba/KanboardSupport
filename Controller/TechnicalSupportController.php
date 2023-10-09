@@ -162,4 +162,25 @@ class TechnicalSupportController extends \Kanboard\Controller\ConfigController
         readfile($tmp_file);
         unlink($tmp_file);
     }
+
+    /**
+     * Delete the Debug Log File
+     *
+     * @return  void
+     * @author  aljawaid
+     */
+    public function deleteDebugLog()
+    {
+        if (is_writable(dirname(LOG_FILE))) {
+            if (unlink(LOG_FILE)) {
+                $this->flash->success(t('Debug Log Deleted Successfully'));
+            } else {
+                $this->flash->failure(t('Unable to Delete Debug Log'));
+            }
+        } else {
+            $this->flash->failure(t('Unable to delete the file. Check the folder permissions.'));
+        }
+
+        $this->response->redirect($this->helper->url->to('TechnicalSupportController', 'show', array('plugin' => 'KanboardSupport')));
+    }
 }
