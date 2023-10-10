@@ -293,9 +293,34 @@
                         <?= $this->helper->supportHelper->embedSVGIcon('log-icon-red') ?> <?= t('View Log') ?>
                     </button>
                     <?php if ($this->user->isAdmin()): ?>
+                        <div class="btn-group" role="group">
+                            <span class=""><?= t('Download Log') ?></span>
+                            <?php if (extension_loaded('zip')): ?>
+                                <form method="post" action="<?= $this->url->href('TechnicalSupportController', 'downloadDebugFile', array('plugin' => 'KanboardSupport'), true, '', false) ?>">
+                                    <button type="submit" class="btn config-download-btn debug-download-btn" title="<?= t('Download Compressed Log File') ?>">
+                                        <?= $this->helper->supportHelper->embedSVGIcon('zip-icon') ?>
+                                    </button>
+                                </form>
+                            <?php else: ?>
+                                <button type="submit" class="btn config-download-btn debug-download-btn" title="<?= t('Download Log File') ?>">
+                                    <?= $this->helper->supportHelper->embedSVGIcon('log-icon-green') ?>
+                                </button>
+                            <?php endif ?>
+                            <form method="post" action="<?= $this->url->href('TechnicalSupportController', 'downloadRawDebugFile', array('plugin' => 'KanboardSupport'), true, '', false) ?>">
+                                <button type="submit" class="btn config-download-btn debug-raw-download-btn" title="<?= t('Download Log File') ?>">
+                                    <?= $this->helper->supportHelper->embedSVGIcon('log-icon-green') ?>
                                 </button>
                             </form>
+                            <span class="" title="<?= t('Uncompressed file size') ?>">
+                                <?= $this->helper->supportHelper->getLogFileSize() ?>
+                            </span>
+                        </div>
+                        <form class="delete-log" method="post" action="<?= $this->url->href('TechnicalSupportController', 'deleteDebugLog', array('plugin' => 'KanboardSupport'), true, '', false) ?>">
+                            <button type="submit" class="btn config-download-btn config-btn-red" title="<?= t('Delete the log file') ?>">
+                                <i class="fa fa-trash-o fa-fw" aria-hidden="true"></i> <?= t('Delete Log') ?>
                             </button>
+                            <p class="form-help"><?= t('Once deleted, the file will be immediately recreated.') ?></p>
+                        </form>
                     <?php endif ?>
                 </div>
             <?php else: ?>

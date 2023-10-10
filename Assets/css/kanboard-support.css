@@ -742,7 +742,7 @@ form.add-webhook-form .form-actions button {
     border-color: var(--pp-green);
 }
 
-.config-btns button.config-btn-red:hover, .config-btns button.config-btn-red:focus {
+.config-btns button.config-btn-red:hover, .config-btns button.config-btn-red:focus, .debug-btns button.config-btn-red:hover, .debug-btns button.config-btn-red:focus {
     border-color: var(--pp-red-alt-2);
 }
 
@@ -750,7 +750,7 @@ form.add-webhook-form .form-actions button {
     color: var(--pp-green);
 }
 
-.config-btns button.config-btn-red svg {
+.config-btns button.config-btn-red svg, .debug-btns button.config-btn-red, .debug-btns button.config-btn-red i {
     color: var(--pp-red-alt-2);
 }
 
@@ -830,10 +830,48 @@ th.support-table-title .user-icon {
     display: block;
 }
 
-.debug-btns, .debug-btns form {
+.debug-btns, .debug-btns .btn-group, .debug-btns form {
     display: inline;
 }
 
 p.debug-entries-text {
     margin-block: 20px 15px;
+}
+
+form.delete-log .form-help {
+    display: inline;
+    opacity: 0;
+    transition: var(--transition-kanboard-support);
+}
+
+form.delete-log button:hover + .form-help {
+    opacity: 1;
+}
+
+.debug-btns .btn-group {
+    border: 1px solid var(--tech-bg-grey-border-match);
+    padding: 11px 3px 8px 6px;
+    border-radius: var(--border-radius-kanboard-support);
+}
+
+button.debug-download-btn, button.debug-raw-download-btn {
+    font-size: 1em;
+    border: 2px solid var(--tech-bg-grey-border-match);
+    border-radius: var(--border-radius-kanboard-support);
+    transition: var(--transition-kanboard-support);
+    margin-inline: 0;
+}
+
+.debug-btns button.debug-download-btn {
+    margin-right: 0;
+    margin-left: 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.debug-btns button.debug-raw-download-btn {
+    margin-left: -7px;
+    margin-right: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
