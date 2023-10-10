@@ -293,18 +293,9 @@
                         <?= $this->helper->supportHelper->embedSVGIcon('log-icon-red') ?> <?= t('View Log') ?>
                     </button>
                     <?php if ($this->user->isAdmin()): ?>
-                        <?php if (extension_loaded('zip')): ?>
-                            <form method="post" action="<?= $this->url->href('TechnicalSupportController', 'downloadDebugFile', array('plugin' => 'KanboardSupport'), true, '', false) ?>">
-                                <button type="submit" class="btn config-download-btn" title="<?= t('Download the log file') ?>">
-                                    <?= $this->helper->supportHelper->embedSVGIcon('zip-icon') ?> <?= t('Download Log') ?>
                                 </button>
-                                <?= $this->helper->supportHelper->getLogFileSize() ?>
                             </form>
-                        <?php else: ?>
-                            <button type="submit" class="btn config-download-btn" title="<?= t('PHP \'zip\' Extension Not Detected. Check the \'PHP Information\' section of this page.') ?>" disabled>
-                                <?= $this->helper->supportHelper->embedSVGIcon('log-icon-green') ?> <?= t('Download Log') ?>
                             </button>
-                        <?php endif ?>
                     <?php endif ?>
                 </div>
             <?php else: ?>
