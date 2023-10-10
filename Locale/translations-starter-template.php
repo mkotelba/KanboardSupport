@@ -21,6 +21,7 @@ return array(
     'Webhooks %s Information' => '',
     'Current Raw Configuration File' => '',
     'Default Raw Configuration File' => '',
+    'Debug Log' => '',
     //
     // Helper/SupportHelper.php
     //
@@ -99,9 +100,6 @@ return array(
     'Version' => '',
     'Updates' => '',
     'Check for updates' => '',
-    'Debug Mode' => '',
-    'This setting will affect performance and should only be enabled for troubleshooting purposes' => '',
-    'Not Enabled' => '',
     'This page contains all the configuration settings from the application config file. You can also view the raw contents of the config file as-is and also compare it to the default version.' => '',
     'The raw config file will expose sensitive information which should not be shared.' => '',
     'Current Raw Config File' => '',
@@ -150,6 +148,18 @@ return array(
     'Database' => '',
     'Session Duration' => '',
     'Until browser is closed' => '',
+    'Debug Mode' => '',
+    'This setting will affect performance and should only be enabled for troubleshooting purposes' => '',
+    'Not Enabled' => '',
+    'View the last few entries of the log file' => '',
+    'View Log' => '',
+    'Download Log' => '',
+    'Download Compressed Log File' => '',
+    'Download Log File' => '',
+    'Uncompressed file size' => '',
+    'Delete the log file' => '',
+    'Delete Log' => '',
+    'Once deleted, the file will be immediately recreated.' => '',
     'Login and Security Configuration' => '',
     'Self-Signed Certificates' => '',
     'This is the default setting. Change the value to \'false\' if your server is using self-signed security certificates.' => '',
@@ -358,4 +368,8 @@ return array(
     'Current Page' => '',
     'Your Browser Name' => '',
     'Your Browser' => '',
+    //
+    // Template/modals/debug-log.php
+    //
+    'Displaying the most recent entries (50 maximum) from the log file.' => '',
 );

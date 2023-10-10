@@ -12,6 +12,7 @@ return array(
     'Webhooks %s Information' => 'Webhooks %s Información',
     'Current Raw Configuration File' => 'Archivo de configuración actual',
     'Default Raw Configuration File' => 'Archivo de configuración por defecto',
+    'Debug Log' => 'Registro de Depuración',
     //
     // Helper/SupportHelper.php
     //
@@ -90,9 +91,6 @@ return array(
     'Version' => 'Versión',
     'Updates' => 'Actualizaciones',
     'Check for updates' => 'Buscar actualizaciones',
-    'Debug Mode' => 'Modo depuración',
-    'This setting will affect performance and should only be enabled for troubleshooting purposes' => 'Esta configuración afectará al rendimiento y sólo debe activarse para solucionar problemas.',
-    'Not Enabled' => 'No activado',
     'This page contains all the configuration settings from the application config file. You can also view the raw contents of the config file as-is and also compare it to the default version.' => 'Esta página contiene todos los ajustes de configuración del archivo de configuración de la aplicación. También puede ver el contenido en bruto del archivo de configuración tal cual y compararlo con la versión por defecto.',
     'The raw config file will expose sensitive information which should not be shared.' => 'El archivo de configuración sin procesar expondrá información sensible que no debe ser compartida.',
     'Current Raw Config File' => 'Archivo de configuración actual',
@@ -141,6 +139,18 @@ return array(
     'Database' => 'Base de datos',
     'Session Duration' => 'Duración de la sesión',
     'Until browser is closed' => 'Hasta que se cierra el navegador',
+    'Debug Mode' => 'Modo depuración',
+    'This setting will affect performance and should only be enabled for troubleshooting purposes' => 'Este ajuste afectará al rendimiento y sólo debe activarse para solucionar problemas.',
+    'Not Enabled' => 'No activado',
+    'View the last few entries of the log file' => 'Ver las últimas entradas del archivo de registro',
+    'View Log' => 'Ver registro',
+    'Download Log' => 'Descargar registro',
+    'Download Compressed Log File' => 'Descargar archivo de registro comprimido',
+    'Download Log File' => 'Descargar archivo de registro',
+    'Uncompressed file size' => 'Tamaño del archivo sin comprimir',
+    'Delete the log file' => 'Eliminar el archivo de registro',
+    'Delete Log' => 'Borrar registro',
+    'Once deleted, the file will be immediately recreated.' => 'Una vez borrado, el archivo se volverá a crear inmediatamente.',
     'Login and Security Configuration' => 'Inicio de sesión y configuración de seguridad',
     'Self-Signed Certificates' => 'Certificados autofirmados',
     'This is the default setting. Change the value to \'false\' if your server is using self-signed security certificates.' => 'Esta es la configuración por defecto. Cambie el valor a "false" si su servidor utiliza certificados de seguridad autofirmados.',
@@ -349,4 +359,8 @@ return array(
     'Current Page' => 'Página actual',
     'Your Browser Name' => 'Nombre de su navegador',
     'Your Browser' => 'Tu navegador',
+    //
+    // Template/modals/debug-log.php
+    //
+    'Displaying the most recent entries (50 maximum) from the log file.' => 'Mostrar las entradas más recientes (50 como máximo) del archivo de registro.',
 );

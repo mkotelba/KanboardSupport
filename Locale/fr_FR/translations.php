@@ -12,6 +12,7 @@ return array(
     'Webhooks %s Information' => 'Webhooks %s Information',
     'Current Raw Configuration File' => 'Fichier de configuration brut actuel',
     'Default Raw Configuration File' => 'Fichier de configuration brute par défaut',
+    'Debug Log' => 'Journal de Débogage',
     //
     // Helper/SupportHelper.php
     //
@@ -90,9 +91,6 @@ return array(
     'Version' => 'Version de l\'application',
     'Updates' => 'Mises à jour',
     'Check for updates' => 'Vérifier les mises à jour',
-    'Debug Mode' => 'Mode de débogage',
-    'This setting will affect performance and should only be enabled for troubleshooting purposes' => 'Ce paramètre affecte les performances et ne doit être activé qu\'à des fins de dépannage.',
-    'Not Enabled' => 'Non activé',
     'This page contains all the configuration settings from the application config file. You can also view the raw contents of the config file as-is and also compare it to the default version.' => 'Cette page contient tous les paramètres de configuration du fichier de configuration de l\'application. Vous pouvez également consulter le contenu brut du fichier de configuration tel quel et le comparer à la version par défaut.',
     'The raw config file will expose sensitive information which should not be shared.' => 'Le fichier de configuration brut expose des informations sensibles qui ne doivent pas être partagées.',
     'Current Raw Config File' => 'Fichier de configuration brut actuel',
@@ -141,6 +139,18 @@ return array(
     'Database' => 'Base de données',
     'Session Duration' => 'Durée de la session',
     'Until browser is closed' => 'Jusqu\'à la fermeture du navigateur',
+    'Debug Mode' => 'Mode débogage',
+    'This setting will affect performance and should only be enabled for troubleshooting purposes' => 'Ce paramètre affecte les performances et ne doit être activé qu\'à des fins de dépannage.',
+    'Not Enabled' => 'Non activé',
+    'View the last few entries of the log file' => 'Afficher les dernières entrées du fichier journal',
+    'View Log' => 'Afficher le journal',
+    'Download Log' => 'Télécharger le journal',
+    'Download Compressed Log File' => 'Télécharger le fichier journal compressé',
+    'Download Log File' => 'Télécharger le fichier journal',
+    'Uncompressed file size' => 'Taille du fichier non compressé',
+    'Delete the log file' => 'Supprimer le fichier journal',
+    'Delete Log' => 'Supprimer le journal',
+    'Once deleted, the file will be immediately recreated.' => 'Une fois supprimé, le fichier sera immédiatement recréé.',
     'Login and Security Configuration' => 'Configuration de la connexion et de la sécurité',
     'Self-Signed Certificates' => 'Certificats auto-signés',
     'This is the default setting. Change the value to \'false\' if your server is using self-signed security certificates.' => 'Il s\'agit du paramètre par défaut. Modifiez la valeur en "faux" si votre serveur utilise des certificats de sécurité auto-signés.',
@@ -349,4 +359,8 @@ return array(
     'Current Page' => 'Page actuelle',
     'Your Browser Name' => 'Nom de votre navigateur',
     'Your Browser' => 'Votre navigateur',
+    //
+    // Template/modals/debug-log.php
+    //
+    'Displaying the most recent entries (50 maximum) from the log file.' => 'Affichage des entrées les plus récentes (50 au maximum) du fichier journal.',
 );

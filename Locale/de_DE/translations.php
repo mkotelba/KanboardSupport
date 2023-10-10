@@ -12,6 +12,7 @@ return array(
     'Webhooks %s Information' => 'Webhooks %s Informationen',
     'Current Raw Configuration File' => 'Aktuelle Raw-Konfigurationsdatei',
     'Default Raw Configuration File' => 'Standard-Raw-Konfigurationsdatei',
+    'Debug Log' => 'Debug-Protokoll',
     //
     // Helper/SupportHelper.php
     //
@@ -90,9 +91,6 @@ return array(
     'Version' => 'Version',
     'Updates' => 'Aktualisierungen',
     'Check for updates' => 'Auf Aktualisierungen prüfen',
-    'Debug Mode' => 'Debug-Modus',
-    'This setting will affect performance and should only be enabled for troubleshooting purposes' => 'Diese Einstellung beeinträchtigt die Leistung und sollte nur zur Fehlersuche aktiviert werden.',
-    'Not Enabled' => 'Nicht Aktiviert',
     'This page contains all the configuration settings from the application config file. You can also view the raw contents of the config file as-is and also compare it to the default version.' => 'Diese Seite enthält alle Konfigurationseinstellungen aus der Konfigurationsdatei der Anwendung. Sie können sich auch den Rohinhalt der Konfigurationsdatei ansehen und ihn mit der Standardversion vergleichen.',
     'The raw config file will expose sensitive information which should not be shared.' => 'Die rohe Konfigurationsdatei enthält sensible Informationen, die nicht weitergegeben werden sollten.',
     'Current Raw Config File' => 'Aktuelle Rohkonfigurationsdatei',
@@ -141,6 +139,18 @@ return array(
     'Database' => 'Datenbank',
     'Session Duration' => 'Dauer der Sitzung',
     'Until browser is closed' => 'Bis der Browser geschlossen wird',
+    'Debug Mode' => 'Debug-Modus',
+    'This setting will affect performance and should only be enabled for troubleshooting purposes' => 'Diese Einstellung wirkt sich auf die Leistung aus und sollte nur zur Fehlersuche aktiviert werden',
+    'Not Enabled' => 'Nicht aktiviert',
+    'View the last few entries of the log file' => 'Die letzten Einträge der Protokolldatei anzeigen',
+    'View Log' => 'Log anzeigen',
+    'Download Log' => 'Log herunterladen',
+    'Download Compressed Log File' => 'Komprimierte Logdatei herunterladen',
+    'Download Log File' => 'Logdatei herunterladen',
+    'Uncompressed file size' => 'Unkomprimierte Dateigröße',
+    'Delete the log file' => 'Löschen der Logdatei',
+    'Delete Log' => 'Logdatei löschen',
+    'Once deleted, the file will be immediately recreated.' => 'Nach dem Löschen wird die Datei sofort neu erstellt.',
     'Login and Security Configuration' => 'Anmeldung und Sicherheitskonfiguration',
     'Self-Signed Certificates' => 'Selbstsignierte Zertifikate',
     'This is the default setting. Change the value to \'false\' if your server is using self-signed security certificates.' => 'Dies ist die Standardeinstellung. Ändern Sie den Wert auf \'false\', wenn Ihr Server selbstsignierte Sicherheitszertifikate verwendet.',
@@ -349,4 +359,8 @@ return array(
     'Current Page' => 'Aktuelle Seite',
     'Your Browser Name' => 'Ihr Browsername',
     'Your Browser' => 'Ihr Browser',
+    //
+    // Template/modals/debug-log.php
+    //
+    'Displaying the most recent entries (50 maximum) from the log file.' => 'Anzeige der jüngsten Einträge (maximal 50) aus der Protokolldatei.',
 );
