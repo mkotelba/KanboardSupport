@@ -50,6 +50,12 @@ Works smoothly with [PluginManager](https://github.com/aljawaid/PluginManager) a
   - Display raw versions of the current and default config files for easy comparison
   - Easily download a `.zip` archive file containing both config files named according to the current Kanboard version and date
   - _Requires PHP `zip` extension to be installed_
+- **Display and Backup Debug Log File**
+  - Display up to the last 50 entries from the debug log file
+  - Download the log file in a compressed `zip` file for archiving
+  - Download the log file in raw format
+  - Delete the log file (automatically recreates the log)
+  - Display the file size
 - **Webhooks Information**
   - New improved webhooks page
   - Display alert in webhooks page to avoid potential token issues
@@ -101,6 +107,10 @@ Works smoothly with [PluginManager](https://github.com/aljawaid/PluginManager) a
 ![Application Information](../master/screenshot-app-v4.png "Application Information")
 
 ![Application Information](../master/screenshot-app.png "Application Information")
+
+**Debug Log File**
+
+![Logs & Sessions](../master/screenshot-logs.png "Logs & Sessions")
 
 **Database Connection Section**
 
