@@ -87,7 +87,7 @@ class TechnicalSupportController extends \Kanboard\Controller\ConfigController
      * Compress and Download Config Files
      *
      * Archive includes 'config.php' and 'config.default.php' named as 'KB_v(version)_Config_Backup-(date/time).zip'
-     * @see     app-info.php
+     * @see     app-sections.php
      * @return  zip archive
      * @author  Phani https://stackoverflow.com/a/20216192
      * @author  aljawaid
@@ -127,7 +127,7 @@ class TechnicalSupportController extends \Kanboard\Controller\ConfigController
      * Compress and Download Debug Log File
      *
      * Archive includes 'debug.log' named as 'KB_v(version)_Debug_Backup-(date/time).zip'
-     * @see     app-info.php
+     * @see     app-sections.php
      * @return  zip archive
      * @author  Phani https://stackoverflow.com/a/20216192
      * @author  aljawaid
@@ -161,6 +161,29 @@ class TechnicalSupportController extends \Kanboard\Controller\ConfigController
         header('Content-type: application/zip');
         readfile($tmp_file);
         unlink($tmp_file);
+    }
+
+    /**
+     * Download Raw Debug Log File
+     *
+     * @see     app-sections.php
+     * @return  download debug.log
+     * @author  aljawaid
+     */
+    public function downloadRawDebugFile()
+    {
+        if (file_exists(LOG_FILE)) {
+            // Send the file to the browser as a download
+            $filename = 'KB_v' . APP_VERSION . '-' . date('d-m-Y\THi') . '-debug.log';
+
+            header('Content-disposition: attachment; filename=' . $filename . '');
+            header('Content-type: application/octet-stream');
+            flush();
+            readfile(LOG_FILE);
+        } else {
+            $this->flash->failure(t('Unable to download the log file. Check that the file exists.'));
+            $this->response->redirect($this->helper->url->to('TechnicalSupportController', 'show', array('plugin' => 'KanboardSupport')));
+        }
     }
 
     /**
