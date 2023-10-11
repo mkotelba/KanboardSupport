@@ -1,5 +1,18 @@
 # Changelog
 
+## v4.5
+
+_(most recent changes are listed on top):_
+- FIX: Update Translations - closes #28
+- FIX: Update Plugin Description - #28
+- NEW: Display/Download/Delete Debug Log File - displays last 50 entries - download in raw or `zip` format - delete log - #28
+- FIX: File Size Precision - #28
+- NEW: Show Debug Log File Size - #28
+- FIX: Config Notice Alignment - #28
+- NEW: Display Last 50 Entries From Debug Log - #28
+- NEW: Move Debug Settings to 'Logs & Sessions' Section - #28
+
+
 ## v4.0
 
 _(most recent changes are listed on top):_
