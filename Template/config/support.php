@@ -41,6 +41,12 @@
     <section id="ServerConfig" class="support-section">
         <?= $this->render('KanboardSupport:config_sections/server-config') ?>
     </section>
+    <?php if (strpos($_SERVER['SERVER_SOFTWARE'], 'Apache') !== false): ?>
+        <!-- APACHE CONFIGURATION -->
+        <section id="ApacheConfig" class="support-section">
+            <?= $this->render('KanboardSupport:config_sections/apache-settings') ?>
+        </section>
+    <?php endif ?>
     <!-- PHP INFORMATION -->
     <section class="support-section">
         <?= $this->render('KanboardSupport:config_sections/php-info') ?>

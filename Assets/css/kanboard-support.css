@@ -235,11 +235,11 @@ table.support-table.user-table tr td:first-child::before {
 
 /* END OF TABLE ROW NUMBERS */
 
-.app-info, .php-info, .db-info, .mail-info, .server-info {
+.app-info, .php-info, .db-info, .mail-info, .server-info, .apache-info {
     margin-bottom: 2em;
 }
 
-.app-info ul li, .php-info ul li, .db-info ul li, .mail-info ul li, .server-info ul li {
+.app-info ul li, .php-info ul li, .db-info ul li, .mail-info ul li, .server-info ul li, .apache-info ul li {
     list-style-type: none;
     display: inline-block;
 }
