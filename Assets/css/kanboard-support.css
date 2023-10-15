@@ -244,6 +244,16 @@ table.support-table.user-table tr td:first-child::before {
     display: inline-block;
 }
 
+ul.apache-modules li {
+    display: inline-block;
+    width: 200px;
+    line-height: 1.3;
+}
+
+ul.apache-modules li svg {
+    vertical-align: sub;
+}
+
 .app-info-value, .db-info-value, .mail-info-value, .server-config-value {
     padding: 0 5px;
 }
@@ -608,14 +618,14 @@ code.field-code {
     color: var(--pp-red-alt-2);
 }
 
-#WebhookExamples details > summary, details.accordion-section.mysql-ssl > summary, details.accordion-section.app-config > summary {
+#WebhookExamples details > summary, details.accordion-section.mysql-ssl > summary, details.accordion-section.app-config > summary, details.accordion-section.apache-config > summary {
     margin-bottom: 10px;
     background: var(--pp-white);
     cursor: pointer;
     transition: var(--transition-kanboard-support);
 }
 
-#WebhookExamples details[open] > summary, details.accordion-section.mysql-ssl[open] > summary, details.accordion-section.app-config[open] > summary {
+#WebhookExamples details[open] > summary, details.accordion-section.mysql-ssl[open] > summary, details.accordion-section.app-config[open] > summary, details.accordion-section.apache-config[open] > summary {
     font-weight: bold;
 }
 
