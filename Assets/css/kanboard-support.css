@@ -899,3 +899,11 @@ button.debug-download-btn, button.debug-raw-download-btn {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
+
+.htaccess-file {
+    border: 1px solid var(--tech-bg-grey-border-match);
+    border-radius: var(--border-radius-kanboard-support);
+    white-space: break-spaces;
+    padding: 10px;
+    background-color: #DFDFDF;
+}
