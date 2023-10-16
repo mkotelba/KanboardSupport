@@ -269,6 +269,10 @@ return array(
     'Command Name' => '',
     'Sendmail Command' => '',
     //
+    // Template/config_sections/htaccess.php
+    //
+    'Hypertext Access File' => '',
+    //
     // Template/config_sections/ldap-config.php
     //
     '%s Authentication' => '',

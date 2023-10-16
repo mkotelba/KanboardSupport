@@ -260,6 +260,10 @@ return array(
     'Command Name' => 'Nombre del comando',
     'Sendmail Command' => 'Comando Sendmail',
     //
+    // Template/config_sections/htaccess.php
+    //
+    'Hypertext Access File' => 'Archivo de Acceso Hipertexto',
+    //
     // Template/config_sections/ldap-config.php
     //
     '%s Authentication' => '%s Autenticación',
