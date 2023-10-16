@@ -51,7 +51,7 @@ Works smoothly with [PluginManager](https://github.com/aljawaid/PluginManager) a
   - Easily download a `.zip` archive file containing both config files named according to the current Kanboard version and date
   - _Requires PHP `zip` extension to be installed_
 - **Display and Backup Debug Log File**
-  - Display up to the last 50 entries from the debug log file
+  - Display up to the last 50 entries from the debug log file (regardless of whether the setting is enabled)
   - Download the log file in a compressed `zip` file for archiving
   - Download the log file in raw format
   - Delete the log file (automatically recreates the log)
