@@ -328,6 +328,14 @@
                     <?= t('Not Enabled') ?>
                 </li>
                 <span class="pass-tick" title="<?= t('This is the default and recommended setting') ?>">&#10004;</span>
+                <?php if (file_exists(LOG_FILE)): ?>
+                    <div class="debug-btns">
+                        <button href="<?= $this->url->href('TechnicalSupportController', 'showDebugLogModal', array(
+                            'plugin' => 'KanboardSupport'), false, '', false) ?>" class="btn js-modal-confirm config-download-btn" title="<?= t('View the last few entries of the log file') ?>">
+                            <?= $this->helper->supportHelper->embedSVGIcon('log-icon-red') ?> <?= t('View Log') ?>
+                        </button>
+                    </div>
+                <?php endif ?>
             <?php endif ?>
         </span>
     </div>
