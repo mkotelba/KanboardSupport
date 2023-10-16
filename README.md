@@ -87,6 +87,8 @@ Works smoothly with [PluginManager](https://github.com/aljawaid/PluginManager) a
   - **Apache Configuration**
     - Display installed Apache modules
     - HIghlight relevant module for URL rewriting
+  - **Hypertext Access File**
+    - Display the `.htaccess` file to admin users
 - **PHP Information**
   - Display general PHP settings based on the Kanboard installation requirements
   - Check if both required and optional PHP extensions are installed
