@@ -84,6 +84,9 @@ Works smoothly with [PluginManager](https://github.com/aljawaid/PluginManager) a
   - Show useful path locations
   - Display operating system, versions and ports
   - IP Lookup button for Admin
+  - **Apache Configuration**
+    - Display installed Apache modules
+    - HIghlight relevant module for URL rewriting
 - **PHP Information**
   - Display general PHP settings based on the Kanboard installation requirements
   - Check if both required and optional PHP extensions are installed
