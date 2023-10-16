@@ -93,6 +93,13 @@ return array(
     'HTTP Request Example' => '',
     'Event Payload Examples' => '',
     //
+    // Template/config_sections/apache-settings.php
+    //
+    'Apache Web Server Information' => '',
+    'Apache Version' => '',
+    'Apache Modules' => '',
+    'Required for URL Rewriting' => '',
+    //
     // Template/config_sections/app-info.php
     //
     'Application Information' => '',
