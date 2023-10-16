@@ -650,6 +650,7 @@ code.field-code {
 
 .apache-config summary svg {
     vertical-align: sub;
+    margin-left: -3px;
 }
 
 details.accordion-section.mysql-ssl .accordion-content p {
