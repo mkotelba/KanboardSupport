@@ -185,4 +185,7 @@
     <?php if (strpos($_SERVER['SERVER_SOFTWARE'], 'Apache') !== false): ?>
         <?= $this->render('KanboardSupport:config_sections/apache-settings') ?>
     <?php endif ?>
+    <?php if (file_exists(ROOT_DIR . DIRECTORY_SEPARATOR . '.htaccess')): ?>
+        <?= $this->render('KanboardSupport:config_sections/htaccess') ?>
+    <?php endif ?>
 </div>
