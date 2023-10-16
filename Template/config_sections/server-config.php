@@ -181,4 +181,8 @@
             </span>
         </ul>
     </div>
+    <!-- APACHE CONFIGURATION -->
+    <?php if (strpos($_SERVER['SERVER_SOFTWARE'], 'Apache') !== false): ?>
+        <?= $this->render('KanboardSupport:config_sections/apache-settings') ?>
+    <?php endif ?>
 </div>
