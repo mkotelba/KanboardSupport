@@ -1,6 +1,6 @@
 <details class="accordion-section apache-config">
     <summary class="accordion-title">
-        <?= $this->helper->supportHelper->embedSVGIcon('apache-logo-icon') ?> <?= t('Apache Web Server Information') ?>
+        <?= $this->helper->supportHelper->embedSVGIcon('apache-logo-accordion-icon') ?> <?= t('Apache Web Server Information') ?>
     </summary>
     <div class="accordion-content apache-info">
         <ul class="">
