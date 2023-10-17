@@ -8,6 +8,7 @@
     --pp-red-alt-2: #AE003D;
     --pp-black: #000000;
     --pp-grey: #4D4D4D;
+    --pp-grey-alt: #737373;
     --pp-white: #FFFFFF;
     --pp-green: #2EA02E;
     --pp-green-dark: #055D20;
@@ -649,6 +650,20 @@ details.accordion-section.app-config > summary.accordion-title,  details.accordi
     margin-bottom: 15px;
 }
 
+details.accordion-section.mysql-ssl svg {
+    vertical-align: bottom;
+    pointer-events: none;
+}
+
+details.accordion-section.mysql-ssl .parameter-examples svg {
+    position: absolute;
+    right: 10px;
+    bottom: -12px;
+    width: 100px;
+    height: 100px;
+    fill: var(--pp-grey-alt);
+}
+
 #WebhookExamples details .accordion-content, details.accordion-section.mysql-ssl .accordion-content, details.accordion-section.app-config .accordion-content, details.accordion-section.apache-config .accordion-content, details.accordion-section.htaccess-config .accordion-content {
     margin-top: 0;
     margin-bottom: 0;
@@ -717,6 +732,7 @@ fieldset.add-webhook, fieldset.parameter-examples, fieldset.brute-force-protecti
 
 fieldset.parameter-examples {
     margin-bottom: 0;
+    position: relative;
 }
 
 fieldset.add-webhook legend {

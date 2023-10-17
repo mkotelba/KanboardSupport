@@ -71,14 +71,15 @@
         <?php if (DB_DRIVER === 'mysql'): ?>
             <details class="accordion-section mysql-ssl">
                 <summary class="accordion-title">
-                    <?= e('MySQL %s Connection', '<abbr title="' . t('Secure Sockets Layer') . '">SSL</abbr>') ?>
+                    <?= $this->helper->supportHelper->embedSVGIcon('mysql-icon') ?> <?= e('MySQL %s Connection', '<abbr title="' . t('Secure Sockets Layer') . '">SSL</abbr>') ?>
                 </summary>
                 <div class="accordion-content">
                     <p class="">
                         <?= e('These parameters must be defined in the configuration file in order to enable the MySQL %s connection. For most installations, it is safe to ignore this section.', '<abbr title="' . t('Secure Sockets Layer') . '">SSL</abbr>') ?>
                     </p>
                     <fieldset class="parameter-examples">
-                        <legend><?= t('Parameter Examples') ?></legend>
+                        <?= $this->helper->supportHelper->embedSVGIcon('mysql-full-icon') ?>
+                        <legend> <?= t('Parameter Examples') ?></legend>
                         <div class="ssl-example">
                             <dt><?= e('MySQL %s Key', '<abbr title="' . t('Secure Sockets Layer') . '">SSL</abbr>') ?></dt>
                             <dd><code class="event-code">define('DB_SSL_KEY', '<span class="pp-grey font-weight-bold">/path/to/client-key.pem</span>');</code></dd>
