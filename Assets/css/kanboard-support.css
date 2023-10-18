@@ -682,6 +682,11 @@ details.accordion-section.mysql-ssl .parameter-examples svg {
     margin-left: -3px;
 }
 
+.htaccess-config summary svg {
+    vertical-align: sub;
+    margin-left: -4px;
+}
+
 details.accordion-section.mysql-ssl .accordion-content p {
     color: var(--pp-grey-alt);
     margin-top: 15px;
