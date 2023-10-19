@@ -356,4 +356,17 @@ class SupportHelper extends Base
 
         clearstatcache();
     }
+
+    /**
+     * Get Latest Kanboard Version from GitHub
+     *
+     * @return string
+     * @author
+     */
+    public function getLatestVersion()
+    {
+        $githubRelease =
+
+        return $githubRelease
+    }
 }
